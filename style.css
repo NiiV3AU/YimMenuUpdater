@@ -8,52 +8,59 @@
 
 body {
     font-family: 'JetBrains Mono', monospace;
-    color: #DCE4EE; /* WHITE */
-    background-color: #272727; /* BG_COLOR_D */
+    color: #DCE4EE;
+    /* WHITE */
+    background-color: #272727;
+    /* BG_COLOR_D */
     line-height: 1.6;
 }
 
 .logo {
     font-family: "Manrope";
-    color:#45e876;
+    color: #45e876;
 }
-.shine{
-  position: relative;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  padding: 0px 0px;
-  color: #45e876;
-  background: linear-gradient(to right, #36543F 0%, #45e876 20%, #36543F 10%);
-  background-position: 0;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shine 2s infinite linear;
-  animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
-  font-weight: 450;
-  font-size: 2rem;
-  font-family: "Manrope";
-  text-decoration: none;
-  white-space: nowrap;
-  text-align: center;
+
+.shine {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0px 0px;
+    color: #45e876;
+    background: linear-gradient(to right, #36543F 0%, #45e876 20%, #36543F 10%);
+    background-position: 0;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 2s infinite linear;
+    animation-fill-mode: forwards;
+    -webkit-text-size-adjust: none;
+    font-weight: 450;
+    font-size: 2rem;
+    font-family: "Manrope";
+    text-decoration: none;
+    white-space: nowrap;
+    text-align: center;
 }
-@keyframes shine{
-  0%{
-    background-position: 0px;
-  }
-  60%{
-    background-position: 222px
-  }
-  100%{
-    background-position: 370px;
-  }
+
+@keyframes shine {
+    0% {
+        background-position: 0px;
+    }
+
+    60% {
+        background-position: 222px
+    }
+
+    100% {
+        background-position: 370px;
+    }
 }
 
 /* Header Styles */
 header {
-    background: #333333; /* BG_COLOR */
+    background: #333333;
+    /* BG_COLOR */
     padding: 1rem;
     text-align: center;
 }
@@ -65,7 +72,8 @@ header nav {
 }
 
 .tab-menu {
-    background-color: #333333; /* Dark background */
+    background-color: #333333;
+    /* Dark background */
     padding: 10px;
 }
 
@@ -80,22 +88,26 @@ header nav {
 }
 
 .nav-links a {
-    font-family: 'JetBrains Mono', monospace; /* Kleine Links */
-    color: #DCE4EE; /* WHITE */
+    font-family: 'JetBrains Mono', monospace;
+    /* Kleine Links */
+    color: #DCE4EE;
+    /* WHITE */
     text-decoration: none;
 }
 
 .nav-links a:hover {
-    color: #45e876; /* GREEN */
+    color: #45e876;
+    /* GREEN */
     text-decoration: underline;
     text-decoration-style: wavy;
 }
 
 .link {
     font-family: "JetBrains Mono", monospace;
-    color:#45e876;
+    color: #45e876;
     text-decoration: none;
 }
+
 .link:hover {
     text-decoration: underline;
     text-decoration-style: wavy;
@@ -107,33 +119,41 @@ header nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #DCE4EE; /* WHITE */
+    color: #DCE4EE;
+    /* WHITE */
     text-align: center;
-    background-color: #272727; /* BG_COLOR_D */
+    background-color: #272727;
+    /* BG_COLOR_D */
 }
+
 p {
     margin: 10px 0;
 }
 
 mark.green {
-    color:#45e876;
+    color: #45e876;
     background-color: transparent;
 }
 
 .hero-content h2 {
-    font-family: 'Manrope', sans-serif; /* Überschrift in Manrope */
+    font-family: 'Manrope', sans-serif;
+    /* Überschrift in Manrope */
     font-size: 2.5rem;
 }
 
 .hero-content p {
-    font-family: 'JetBrains Mono', monospace; /* Paragraph in JetBrains Mono */
+    font-family: 'JetBrains Mono', monospace;
+    /* Paragraph in JetBrains Mono */
     font-size: 1.25rem;
 }
 
 .btn {
-    font-family: 'Manrope', sans-serif; /* Button in Manrope */
-    background: #45e876; /* GREEN */
-    color: #272727; /* GREEN_B */
+    font-family: 'Manrope', sans-serif;
+    /* Button in Manrope */
+    background: #45e876;
+    /* GREEN */
+    color: #272727;
+    /* GREEN_B */
     padding: 5px 10px;
     display: inline-block;
     text-decoration: none;
@@ -145,12 +165,14 @@ mark.green {
     transition-duration: 250ms;
 }
 
-.btn:hover {
-    background: #3c8e55; /* GREEN_D */
-    color:#45e876;
-    box-shadow: 0px 0px 5px 0px #333333, 0px 0px 10px 0px #36543F,0px 0px 15px 0px #3c8e55, inset 0px 0px 1px 0px #45e876;
-    -webkit-box-shadow: 0px 0px 5px 0px #333333, 0px 0px 10px 0px #36543F,0px 0px 15px 0px #3c8e55, inset 0px 0px 1px 0px #45e876;
-    -moz-box-shadow: 0px 0px 5px 0px #333333, 0px 0px 10px 0px #36543F,0px 0px 15px 0px #3c8e55, inset 0px 0px 1px 0px #45e876;
+.btn:hover,
+.btn:active {
+    background: #3c8e55;
+    /* GREEN_D */
+    color: #45e876;
+    box-shadow: 0px 0px 5px 0px #333333, 0px 0px 10px 0px #36543F, 0px 0px 15px 0px #3c8e55, inset 0px 0px 1px 0px #45e876;
+    -webkit-box-shadow: 0px 0px 5px 0px #333333, 0px 0px 10px 0px #36543F, 0px 0px 15px 0px #3c8e55, inset 0px 0px 1px 0px #45e876;
+    -moz-box-shadow: 0px 0px 5px 0px #333333, 0px 0px 10px 0px #36543F, 0px 0px 15px 0px #3c8e55, inset 0px 0px 1px 0px #45e876;
 
 }
 
@@ -167,22 +189,27 @@ section {
 }
 
 .feature-item {
-    background: #272727; /* BG_COLOR_D */
+    background: #272727;
+    /* BG_COLOR_D */
     padding: 20px;
     border-radius: 8px;
-    color: #DCE4EE; /* WHITE */
-    border-color:#272727;
-    border-style:solid;
+    color: #DCE4EE;
+    /* WHITE */
+    border-color: #272727;
+    border-style: solid;
     border-width: 2px;
+    transition: all 0.5s ease;
 }
 
 /* Hover effect for feature items */
 .feature-item:hover {
+    transition: all 0.5s ease;
     border-color: #45e876;
-    border-style:solid;
+    border-style: solid;
     border-width: 2px;
-    color:#45e876
+    color: #45e876
 }
+
 .image-shadow {
     margin-top: 20px;
     box-shadow: 0px 0px 30px 0px #36543F;
@@ -190,6 +217,7 @@ section {
     -moz-box-shadow: 0px 0px 30px 0px #36543F;
     transition-duration: 300ms;
 }
+
 .image-shadow:hover {
     box-shadow: 0px 0px 50px 0px #45e876;
     -webkit-box-shadow: 0px 0px 50px 0px #45e876;
@@ -198,19 +226,122 @@ section {
 
 /* Footer Styles */
 footer {
-    background: #333333; /* BG_COLOR */
-    color: #DCE4EE; /* WHITE */
+    background: #333333;
+    /* BG_COLOR */
+    color: #DCE4EE;
+    /* WHITE */
     padding: 20px;
     text-align: center;
 }
 
 footer a {
-    font-family: 'JetBrains Mono', monospace; /* Footer Links in JetBrains Mono */
-    color: #e8c745; /* YELLOW */
+    font-family: 'JetBrains Mono', monospace;
+    /* Footer Links in JetBrains Mono */
+    color: #e8c745;
+    /* YELLOW */
     text-decoration: underline;
 }
 
 footer a:hover {
-    color: #e84555; /* RED */
-    text-decoration-style:wavy;
+    color: #e84555;
+    /* RED */
+    text-decoration-style: wavy;
+}
+
+/* Media Queries für Mobile Geräte */
+@media screen and (max-width: 768px) {
+
+    /* Header und Navigation für Mobile */
+    header {
+        padding: 0.5rem;
+        /* Etwas weniger Padding im Header auf Mobile */
+    }
+
+    header nav {
+        flex-direction: column;
+        /* Navigations-Elemente untereinander anordnen */
+        align-items: stretch;
+        /* Elemente auf voller Breite strecken */
+    }
+
+    .logo {
+        margin-bottom: 10px;
+        /* Abstand zwischen Logo und Nav-Links */
+        text-align: center;
+        /* Logo zentrieren */
+    }
+
+    .nav-links {
+        flex-direction: column;
+        /* Navigationslinks untereinander anordnen */
+        text-align: center;
+        /* Zentriere die Links */
+        margin-top: 10px;
+        /* Etwas Abstand zum Logo */
+    }
+
+    .nav-links li {
+        padding: 10px 0;
+        /* Vertikales Padding für bessere Touch-Bedienung */
+        border-top: 1px solid #444;
+        /* Trennlinien zwischen den Links */
+    }
+
+    .nav-links li:last-child {
+        border-bottom: 1px solid #444;
+        /* Untere Trennlinie für den letzten Link */
+    }
+
+    /* Hero Section für Mobile */
+    #hero {
+        height: auto;
+        /* Höhe automatisch anpassen */
+        padding: 80px 20px;
+        /* Mehr vertikales Padding, weniger horizontales */
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+        /* Kleinere Überschrift auf Mobile */
+    }
+
+    .hero-content p {
+        font-size: 1.1rem;
+        /* Kleinere Paragraph-Größe auf Mobile */
+    }
+
+    /* Sections für Mobile */
+    section {
+        padding: 30px 20px;
+        /* Weniger Padding in den Sections */
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+        /* Feature-Grid auf eine Spalte ändern */
+    }
+
+    .feature-item {
+        margin-bottom: 20px;
+        /* Abstand zwischen Feature-Items */
+    }
+
+    /* Footer für Mobile */
+    footer {
+        padding: 20px;
+        /* Padding im Footer beibehalten oder anpassen */
+    }
+
+    /* **Bildanpassung für Mobile (NEU hinzugefügt)** */
+    .image-shadow {
+        max-width: 100%;
+        /* Bildbreite auf maximal 100% des Containers setzen */
+        height: auto;
+        /* Höhe automatisch anpassen, um Seitenverhältnis zu erhalten */
+        display: block;
+        /* Bild als Block-Element behandeln */
+        margin-left: auto;
+        margin-right: auto;
+        /* Bild horizontal zentrieren */
+    }
 }
