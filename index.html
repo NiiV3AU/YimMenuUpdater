@@ -1,29 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="canonical" href="https://ymu.pages.dev/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YMU by NV3</title>
+    <title>YimMenuUpdater | NV3</title>
+    <meta name="google-site-verification" content="_f6dGnLNZBlwsL9BdFwl6TM5fzcSC5_ubno6fyX9SIg" />
+    <link rel="icon" href="assets/img/logo.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="path/to/logo-180x180.png">
     <meta
       name="description"
       content="YMU is a launchpad for YimMenu. Download the latest version of YimMenu and inject it afterwards, manage your luas and much more."
     />
     <script defer src="./script.js"></script>
+    <script>
+      (function () {
+        try {
+          const theme = localStorage.getItem("theme");
+          if (theme === "dark") {
+            document.documentElement.setAttribute("data-theme", "dark");
+          } else if (
+            theme === null &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            document.documentElement.setAttribute("data-theme", "dark");
+          }
+        } catch (e) {
+          console.error("Error applying initial theme:", e);
+        }
+      })();
+    </script>
+    <link rel="preload" href="./assets/fonts/manrope-v15-latin-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/manrope-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./assets/fonts/manrope-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <div class="background-blobs" aria-hidden="true">
-      <div class="blob blob-1"></div>
-      <div class="blob blob-2"></div>
-      <div class="blob blob-3"></div>
-      <div class="blob blob-4"></div>
-      <div class="blob blob-5"></div>
-      <div class="blob blob-6"></div>
-    </div>
     <header class="header-sticky">
       <div class="container header-container">
         <div class="logo">
-          <a href="#" class="logo-full">YimMenuUpdater</a>
+          <div class="logo-full">
+            <a href="https://niveau.pages.dev" target="_blank" rel="noopener" class="logo-svg-link" aria-label="NiiV3AU's Portfolio">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="2.6 26.400000000000002 93.8 49.6" class="logo-nv3-svg">
+                <path fill="url(#paint0_linear_1_7)" d="M4.48 74V27.92H12.288L33.664 60.4V27.92H41.472V74H33.664L12.288 41.52V74H4.48Z"/>
+                <g data-figma-skip-parse="true" clip-path="url(#paint1_diamond_1_7_clip_path)"><g transform="matrix(-0.0125 0.0165 -0.00573626 -0.00434565 69 31.5)"><rect shape-rendering="crispEdges" opacity="1" fill="url(#paint1_diamond_1_7)" height="8766.6" width="2645.86" y="0" x="0"/><rect shape-rendering="crispEdges" opacity="1" fill="url(#paint1_diamond_1_7)" transform="scale(1 -1)" height="8766.6" width="2645.86" y="0" x="0"/><rect shape-rendering="crispEdges" opacity="1" fill="url(#paint1_diamond_1_7)" transform="scale(-1 1)" height="8766.6" width="2645.86" y="0" x="0"/><rect shape-rendering="crispEdges" opacity="1" fill="url(#paint1_diamond_1_7)" transform="scale(-1)" height="8766.6" width="2645.86" y="0" x="0"/></g></g><path data-figma-gradient-fill="{&quot;type&quot;:&quot;GRADIENT_DIAMOND&quot;,&quot;stops&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:0.0},&quot;position&quot;:0.0},{&quot;color&quot;:{&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:1.0},&quot;position&quot;:1.0}],&quot;stopsVar&quot;:[{&quot;color&quot;:{&quot;r&quot;:0.0,&quot;g&quot;:0.0,&quot;b&quot;:0.0,&quot;a&quot;:0.0},&quot;position&quot;:0.0},{&quot;color&quot;:{&quot;r&quot;:1.0,&quot;g&quot;:1.0,&quot;b&quot;:1.0,&quot;a&quot;:1.0},&quot;position&quot;:1.0}],&quot;transform&quot;:{&quot;m00&quot;:-25.000001907348633,&quot;m01&quot;:-11.472516059875488,&quot;m02&quot;:87.236267089843750,&quot;m10&quot;:33.0,&quot;m11&quot;:-8.6912994384765625,&quot;m12&quot;:19.345647811889648},&quot;opacity&quot;:1.0,&quot;blendMode&quot;:&quot;NORMAL&quot;,&quot;visible&quot;:true}" d="M79.464 74.864C77.16 74.864 74.984 74.416 72.936 73.52C70.888 72.624 69.1067 71.3547 67.592 69.712C66.0987 68.0693 65.0213 66.128 64.36 63.888L71.816 61.872C72.3493 63.7067 73.32 65.1253 74.728 66.128C76.1573 67.1093 77.7253 67.5893 79.432 67.568C80.9467 67.568 82.3013 67.216 83.496 66.512C84.6907 65.808 85.6293 64.8587 86.312 63.664C86.9947 62.448 87.336 61.0933 87.336 59.6C87.336 57.3173 86.6 55.408 85.128 53.872C83.656 52.336 81.7573 51.568 79.432 51.568C78.728 51.568 78.0347 51.664 77.352 51.856C76.6907 52.048 76.0507 52.3147 75.432 52.656L71.912 46.576L87.4 33.328L88.072 35.184H66.152V27.92H94.408V35.216L81.96 47.184L81.896 44.912C84.6907 45.104 87.0693 45.8827 89.032 47.248C91.016 48.6133 92.5307 50.3733 93.576 52.528C94.6427 54.6827 95.176 57.04 95.176 59.6C95.176 62.5013 94.4613 65.104 93.032 67.408C91.624 69.712 89.7253 71.536 87.336 72.88C84.968 74.2027 82.344 74.864 79.464 74.864Z"/>
+                <path fill="currentColor" d="M48.198 74L33.67 27.92H41.606L53.766 66.512L66.086 27.92H74.022L59.494 74H48.198Z"/>
+                <defs>
+                <clipPath id="paint1_diamond_1_7_clip_path"><path d="M79.464 74.864C77.16 74.864 74.984 74.416 72.936 73.52C70.888 72.624 69.1067 71.3547 67.592 69.712C66.0987 68.0693 65.0213 66.128 64.36 63.888L71.816 61.872C72.3493 63.7067 73.32 65.1253 74.728 66.128C76.1573 67.1093 77.7253 67.5893 79.432 67.568C80.9467 67.568 82.3013 67.216 83.496 66.512C84.6907 65.808 85.6293 64.8587 86.312 63.664C86.9947 62.448 87.336 61.0933 87.336 59.6C87.336 57.3173 86.6 55.408 85.128 53.872C83.656 52.336 81.7573 51.568 79.432 51.568C78.728 51.568 78.0347 51.664 77.352 51.856C76.6907 52.048 76.0507 52.3147 75.432 52.656L71.912 46.576L87.4 33.328L88.072 35.184H66.152V27.92H94.408V35.216L81.96 47.184L81.896 44.912C84.6907 45.104 87.0693 45.8827 89.032 47.248C91.016 48.6133 92.5307 50.3733 93.576 52.528C94.6427 54.6827 95.176 57.04 95.176 59.6C95.176 62.5013 94.4613 65.104 93.032 67.408C91.624 69.712 89.7253 71.536 87.336 72.88C84.968 74.2027 82.344 74.864 79.464 74.864Z"/></clipPath><linearGradient gradientUnits="userSpaceOnUse" y2="36.5" x2="40" y1="38.5" x1="34" id="paint0_linear_1_7">
+                <stop stop-color="currentColor"/>
+                <stop stop-opacity="0" offset="1"/>
+                </linearGradient>
+                <linearGradient gradientUnits="userSpaceOnUse" y2="500" x2="500" y1="0" x1="0" id="paint1_diamond_1_7">
+                <stop stop-opacity="0"/>
+                <stop stop-color="currentColor" offset="1"/>
+                </linearGradient>
+                </defs>
+              </svg>
+            </a>
+            <span class="logo-separator">/</span>
+            <a href="#" class="logo-text-link">
+              <span class="logo-text-full">YimMenuUpdater</span>
+              <span class="logo-text-short">YMU</span>
+            </a>
+          </div>
+
           <a href="#" class="logo-short" aria-hidden="true">YMU</a>
         </div>
         <nav class="nav-main" id="main-navigation">
@@ -34,6 +75,7 @@
                 data-translate
                 data-lang-de="Features"
                 data-lang-en="Features"
+                data-lang-fr="Fonctionnalités"
                 >Features</a
               >
             </li>
@@ -43,7 +85,18 @@
                 data-translate
                 data-lang-de="Anleitung"
                 data-lang-en="How-To"
+                data-lang-fr="Guide"
                 >How-To</a
+              >
+            </li>
+            <li>
+              <a
+                href="#download"
+                data-translate
+                data-lang-de="Download"
+                data-lang-en="Download"
+                data-lang-fr="Télécharger"
+                >Download</a
               >
             </li>
             <li>
@@ -52,6 +105,7 @@
                 data-translate
                 data-lang-de="Updates"
                 data-lang-en="Updates"
+                data-lang-fr="Mises à jour"
                 >Updates</a
               >
             </li>
@@ -61,58 +115,32 @@
                 data-translate
                 data-lang-de="Community"
                 data-lang-en="Community"
+                data-lang-fr="Communauté"
                 >Community</a
-              >
-            </li>
-            <li>
-              <a
-                href="#download"
-                data-translate
-                data-lang-de="Download"
-                data-lang-en="Download"
-                >Download</a
               >
             </li>
           </ul>
         </nav>
-        <div
-          class="header-actions"
-          style="
-            display: flex;
-            align-items: center;
-            gap: calc(var(--spacing-unit) * 1.5);
-          "
-        >
+        <div class="header-actions">
           <div class="header-icons">
             <a
               href="https://github.com/NiiV3AU/YMU"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="GitHub Repository"
-              ><svg
-                width="24px"
-                height="24px"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                fill="none"
+              >
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
-                color="currentColor"
-                class="header-icon"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="main-grid-item-icon"
+                fill="none"
               >
                 <path
-                  d="M16 22.0268V19.1568C16.0375 18.68 15.9731 18.2006 15.811 17.7506C15.6489 17.3006 15.3929 16.8902 15.06 16.5468C18.2 16.1968 21.5 15.0068 21.5 9.54679C21.4997 8.15062 20.9627 6.80799 20 5.79679C20.4558 4.5753 20.4236 3.22514 19.91 2.02679C19.91 2.02679 18.73 1.67679 16 3.50679C13.708 2.88561 11.292 2.88561 8.99999 3.50679C6.26999 1.67679 5.08999 2.02679 5.08999 2.02679C4.57636 3.22514 4.54413 4.5753 4.99999 5.79679C4.03011 6.81549 3.49251 8.17026 3.49999 9.57679C3.49999 14.9968 6.79998 16.1868 9.93998 16.5768C9.61098 16.9168 9.35725 17.3222 9.19529 17.7667C9.03334 18.2112 8.96679 18.6849 8.99999 19.1568V22.0268"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M9 20.0267C6 20.9999 3.5 20.0267 2 17.0267"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  fill="currentColor"
+                />
               </svg>
             </a>
             <a
@@ -122,50 +150,17 @@
               aria-label="Discord Community"
             >
               <svg
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                fill="none"
                 xmlns="http://www.w3.org/2000/svg"
-                color="currentColor"
-                class="header-icon"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="main-grid-item-icon"
+                fill="none"
               >
                 <path
-                  d="M5.5 16C10.5 18.5 13.5 18.5 18.5 16"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M15.5 17.5L16.5 19.5C16.5 19.5 20.6713 18.1717 22 16C22 15 22.5301 7.85339 19 5.5C17.5 4.5 15 4 15 4L14 6H12"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M8.52832 17.5L7.52832 19.5C7.52832 19.5 3.35699 18.1717 2.02832 16C2.02832 15 1.49823 7.85339 5.02832 5.5C6.52832 4.5 9.02832 4 9.02832 4L10.0283 6H12.0283"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M8.5 14C7.67157 14 7 13.1046 7 12C7 10.8954 7.67157 10 8.5 10C9.32843 10 10 10.8954 10 12C10 13.1046 9.32843 14 8.5 14Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M15.5 14C14.6716 14 14 13.1046 14 12C14 10.8954 14.6716 10 15.5 10C16.3284 10 17 10.8954 17 12C17 13.1046 16.3284 14 15.5 14Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
+                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037c-1.687.29-3.33.8-4.885 1.515a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.083.083 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.227-1.994a.076.076 0 0 0-.042-.106 13.107 13.107 0 0 1-1.872-.892.078.078 0 0 1-.038-.062.077.077 0 0 1 .03-.066c.126-.094.252-.192.372-.292a.075.075 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.076.076 0 0 1 .03.065.078.078 0 0 1-.036.063c-.599.349-1.225.647-1.873.89a.076.076 0 0 0-.05.076c.001.012.004.022.009.032.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03ZM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"
+                  fill="currentColor"
+                />
               </svg>
             </a>
           </div>
@@ -180,19 +175,52 @@
             <span class="line line2"></span>
             <span class="line line3"></span>
           </button>
-          <button id="lang-toggle-btn" class="lang-toggle"></button>
+
+          
+          <div class="lang-dropdown" id="lang-dropdown">
+            <button
+              id="lang-toggle-btn"
+              class="lang-toggle"
+              aria-label="Change language"
+              aria-haspopup="true"
+              aria-expanded="false"
+            ></button>
+
+            <ul class="lang-options" id="lang-options" role="menu">
+              <li><button role="menuitem" data-lang="en"><span>English</span></button></li>
+              <li><button role="menuitem" data-lang="de"><span>Deutsch</span></button></li>
+              <li><button role="menuitem" data-lang="fr"><span>Français</span></button></li>
+            </ul>
+          </div>
+            <button
+            id="theme-toggle-btn"
+            class="theme-toggle"
+            aria-label="Toggle theme"
+          ></button>
+            <div class="tooltip-wrapper">
+              <button id="animation-toggle-btn" class="animation-toggle" aria-label="Toggle animations"></button>
+                <div id="animation-tooltip" class="header-tooltip">
+                  <span data-translate 
+                    data-lang-de="Animationen umschalten"
+                    data-lang-en="Toggle Animations"
+                    data-lang-fr="Activer/Désactiver les animations">
+                  Toggle Animations
+                  </span>
+                </div>
+          </div>
         </div>
       </div>
     </header>
 
-    <main>
-      <section id="hero" class="hero-section text-center">
-        <div class="container">
+    <main class="flow">
+      <section id="hero" class="hero-section text-center fade-in">
+        <div class="container flow">
           <h1
             class="hero-headline"
             data-translate
             data-lang-de="YMU: YimMenu. Einfach. Aktuell."
             data-lang-en="YMU: YimMenu. Simple. Up-To-Date."
+            data-lang-fr="YMU : YimMenu. Simple. À jour."
           >
             YMU: YimMenu. Simple. Up-To-Date.
           </h1>
@@ -201,23 +229,30 @@
             data-translate
             data-lang-de="Der smarte Launcher für YimMenu. Automatisches Updaten, einfaches Injizieren und Lua-Management – alles an einem Ort."
             data-lang-en="The smart launcher for YimMenu. Automatic updates, easy injection and Lua management – all in one place."
+            data-lang-fr="Le lanceur intelligent pour YimMenu. Mises à jour automatiques, injection facile et gestion des scripts Lua – tout en un seul endroit."
           >
             The smart launcher for YimMenu. Automatic updates, easy injection
             and Lua management – all in one place.
           </p>
-          <a href="#download" class="btn btn-primary btn-large hero-cta"
-            >Download YMU v1.1.4</a
+          <a href="#download" 
+            class="btn btn-primary btn-large"
+            data-translate
+            data-lang-de="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 herunterladen (.exe)"
+            data-lang-en="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5 (.exe)"
+            data-lang-fr="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5 (.exe)"
+            ><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5 (.exe)</a
           >
         </div>
       </section>
 
-      <section id="features" class="features-section section-padding">
+      <section id="features" class="features-section section-padding  fade-in">
         <div class="container">
           <h2
             class="section-title text-center"
             data-translate
             data-lang-de="Kernfunktionen"
             data-lang-en="Key Features"
+            data-lang-fr="Fonctionnalités clés"
           >
             Key Features
           </h2>
@@ -226,579 +261,298 @@
             data-translate
             data-lang-de="Alles, was du für YimMenu brauchst, in einem Tool."
             data-lang-en="Everything you need for YimMenu, in one tool."
+            data-lang-fr="Tout ce dont vous avez besoin pour YimMenu, dans un seul outil."
           >
             Everything you need for YimMenu, in one tool.
           </p>
-          <div class="features-grid">
-            <div class="feature-card">
-              <div class="feature-icon">
-                <span class="icon-placeholder">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    color="currentColor"
-                  >
-                    <path
-                      d="M12 13V22M12 22L15.5 18.5M12 22L8.5 18.5"
+          <div class="card">
+            <div class="features-grid">
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <span class="icon-placeholder">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
                       stroke="currentColor"
-                      stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M20 17.6073C21.4937 17.0221 23 15.6889 23 13C23 9 19.6667 8 18 8C18 6 18 2 12 2C6 2 6 6 6 8C4.33333 8 1 9 1 13C1 15.6889 2.50628 17.0221 4 17.6073"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </span>
+                      stroke-width="2"
+                    >
+                      <polyline points="23 4 23 10 17 10" />
+                      <polyline points="1 20 1 14 7 14" />
+                      <path
+                        d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <h3
+                  class="feature-title"
+                  data-translate
+                  data-lang-de="Immer aktuell"
+                  data-lang-en="Always Up-to-Date"
+                  data-lang-fr="Toujours à jour"
+                >
+                  Always Up-to-Date
+                </h3>
+                <p
+                  class="feature-description"
+                  data-translate
+                  data-lang-de="YMU prüft automatisch auf YimMenu-Updates und benachrichtigt dich. Ein Klick genügt zum Aktualisieren."
+                  data-lang-en="YMU automatically checks for YimMenu updates and notifies you. One click is enough to update."
+                  data-lang-fr="YMU vérifie automatiquement les mises à jour de YimMenu et vous notifie. Un clic suffit pour mettre à jour."
+                >
+                  YMU automatically checks for YimMenu updates and notifies you.
+                  One click is enough to update.
+                </p>
               </div>
-              <h3
-                class="feature-title"
-                data-translate
-                data-lang-de="Immer aktuell"
-                data-lang-en="Always Up-to-Date"
-              >
-                Always Up-to-Date
-              </h3>
-              <p
-                class="feature-description"
-                data-translate
-                data-lang-de="YMU prüft automatisch auf YimMenu-Updates und benachrichtigt dich. Ein Klick genügt zum Aktualisieren."
-                data-lang-en="YMU automatically checks for YimMenu updates and notifies you. One click is enough to update."
-              >
-                YMU automatically checks for YimMenu updates and notifies you.
-                One click is enough to update.
-              </p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <span class="icon-placeholder">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    color="currentColor"
-                  >
-                    <path
-                      d="M17.5 17.5C20 21 23.9486 18.4151 23 15C21.5753 9.87113 20.8001 7.01556 20.3969 5.50793C20.1597 4.62136 19.3562 4 18.4384 4L5.56155 4C4.64382 4 3.844 4.62481 3.62085 5.515C2.7815 8.86349 2.0326 11.8016 1.14415 15C0.195501 18.4151 4.14415 21 6.64415 17.5"
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <span class="icon-placeholder">
+                    
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
                       stroke="currentColor"
-                      stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M18 8.5L18.0111 8.51"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M16.49 7L16.5011 7.01"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M16.49 10L16.5011 10.01"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M15 8.5L15.0111 8.51"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M7 7V10"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M5.5 8.5H8.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 16C9.10457 16 10 15.1046 10 14C10 12.8954 9.10457 12 8 12C6.89543 12 6 12.8954 6 14C6 15.1046 6.89543 16 8 16Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M16 16C17.1046 16 18 15.1046 18 14C18 12.8954 17.1046 12 16 12C14.8954 12 14 12.8954 14 14C14 15.1046 14.8954 16 16 16Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </span>
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="22" x2="18" y1="12" y2="12" />
+                      <line x1="6" x2="2" y1="12" y2="12" />
+                      <line x1="12" x2="12" y1="6" y2="2" />
+                      <line x1="12" x2="12" y1="22" y2="18" />
+                    </svg>
+                  </span>
+                </div>
+                <h3
+                  class="feature-title"
+                  data-translate
+                  data-lang-de="Einfache Injektion"
+                  data-lang-en="Easy Injection"
+                  data-lang-fr="Injection facile"
+                >
+                  Easy Injection
+                </h3>
+                <p
+                  class="feature-description"
+                  data-translate
+                  data-lang-de="Kein separates Injection-Tool mehr nötig. Starte GTA V und injiziere YimMenu mit wenigen klicks."
+                  data-lang-en="No separate injection tool needed anymore. Start GTA V and inject YimMenu directly from YMU."
+                  data-lang-fr="Plus besoin d'un injecteur séparé. Lancez GTA V et injectez YimMenu directement depuis YMU."
+                >
+                  No separate injection tool needed anymore. Start GTA V and
+                  inject YimMenu directly from YMU.
+                </p>
               </div>
-              <h3
-                class="feature-title"
-                data-translate
-                data-lang-de="Einfache Injektion"
-                data-lang-en="Easy Injection"
-              >
-                Easy Injection
-              </h3>
-              <p
-                class="feature-description"
-                data-translate
-                data-lang-de="Kein separates Injection-Tool mehr nötig. Starte GTA V und injiziere YimMenu mit zwei klicks."
-                data-lang-en="No separate injection tool needed anymore. Start GTA V and inject YimMenu directly from YMU."
-              >
-                No separate injection tool needed anymore. Start GTA V and
-                inject YimMenu directly from YMU.
-              </p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <span class="icon-placeholder">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    color="currentColor"
-                  >
-                    <path
-                      d="M22 14V6C22 4.34315 20.6569 3 19 3H9C7.34315 3 6 4.34315 6 6V13"
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <span class="icon-placeholder">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
                       stroke="currentColor"
-                      stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M12 21H6C3.79086 21 2 19.2091 2 17C2 14.7909 3.79086 13 6 13H17H18C15.7909 13 14 14.7909 14 17C14 19.2091 15.7909 21 18 21C20.2091 21 22 19.2091 22 17V14"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </span>
-              </div>
-              <h3
-                class="feature-title"
-                data-translate
-                data-lang-de="Verwaltung von Lua-Skripten"
-                data-lang-en="Lua Script Management"
-              >
-                Lua Script Management
-              </h3>
-              <p
-                class="feature-description"
-                data-translate
-                data-lang-de="Verwalte deine Lua-Skripte, finde neue zum Ausprobieren und
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
+                      />
+                      <polyline points="13 2 13 9 20 9" />
+                    </svg>
+                  </span>
+                </div>
+                <h3
+                  class="feature-title"
+                  data-translate
+                  data-lang-de="Verwaltung von Lua-Skripten"
+                  data-lang-en="Lua Script Management"
+                  data-lang-fr="Gestion des scripts Lua"
+                >
+                  Lua Script Management
+                </h3>
+                <p
+                  class="feature-description"
+                  data-translate
+                  data-lang-de="Verwalte deine Lua-Skripte, finde neue zum Ausprobieren und
                 aktiviere / deaktiviere sie einfach in den Einstellungen."
-                data-lang-en="Manage your Lua scripts, find new ones to try out, and easily enable / disable them in the settings."
-              >
-                Manage your Lua scripts, find new ones to try out, and easily
-                enable / disable them in the settings.
-              </p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <span class="icon-placeholder">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    color="currentColor"
-                  >
-                    <path
-                      d="M2 19V5C2 3.89543 2.89543 3 4 3H20C21.1046 3 22 3.89543 22 5V19C22 20.1046 21.1046 21 20 21H4C2.89543 21 2 20.1046 2 19Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    ></path>
-                    <path
-                      d="M2 7L22 7"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M5 5.01L5.01 4.99889"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 5.01L8.01 4.99889"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M11 5.01L11.01 4.99889"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </span>
+                  data-lang-en="Manage your Lua scripts, find new ones to try out, and easily enable / disable them in the settings."
+                  data-lang-fr="Gérez vos scripts Lua, trouvez-en de nouveaux à essayer et activez/désactivez-les facilement dans les paramètres."
+                >
+                  Manage your Lua scripts, find new ones to try out, and easily
+                  enable / disable them in the settings.
+                </p>
               </div>
-              <h3
-                class="feature-title"
-                data-translate
-                data-lang-de="Moderne Oberfläche"
-                data-lang-en="Modern UI"
-              >
-                Modern UI
-              </h3>
-              <p
-                class="feature-description"
-                data-translate
-                data-lang-de="Eine ansprechende und intuitive Benutzeroberfläche (dank
-                CustomTkinter) mit Light & Dark Themes."
-                data-lang-en="An appealing and intuitive user interface (thanks to CustomTkinter) with Light & Dark Themes."
-              >
-                An appealing and intuitive user interface (thanks to
-                CustomTkinter) with Light & Dark Themes.
-              </p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <span class="icon-placeholder">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    color="currentColor"
-                  >
-                    <path
-                      d="M7.90039 8.07954C7.90039 3.30678 15.4004 3.30682 15.4004 8.07955C15.4004 11.4886 11.9913 10.8067 11.9913 14.8976"
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <span class="icon-placeholder">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
                       stroke="currentColor"
-                      stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M12 19.01L12.01 18.9989"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </span>
+                      stroke-width="2"
+                    >
+                      <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" />
+                      <path d="M13 13l6 6" />
+                    </svg>
+                  </span>
+                </div>
+                <h3
+                  class="feature-title"
+                  data-translate
+                  data-lang-de="Moderne Oberfläche"
+                  data-lang-en="Modern UI"
+                  data-lang-fr="Interface moderne"
+                >
+                  Modern UI
+                </h3>
+                <p
+                  class="feature-description"
+                  data-translate
+                  data-lang-de="Eine ansprechende und intuitive Benutzeroberfläche (dank
+                PySide6) mit Light & Dark Themes."
+                  data-lang-en="An appealing and intuitive user interface (thanks to PySide6) with Light & Dark Themes."
+                  data-lang-fr="Une interface utilisateur attrayante et intuitive (grâce à PySide6) avec des thèmes clair et sombre."
+                >
+                  An appealing and intuitive user interface (thanks to PySide6)
+                  with Light & Dark Themes.
+                </p>
               </div>
-              <h3
-                class="feature-title"
-                data-translate
-                data-lang-de="Integrierte Hilfe"
-                data-lang-en="Integrated Help"
-              >
-                Integrated Help
-              </h3>
-              <p
-                class="feature-description"
-                data-translate
-                data-lang-de='Fühlst du dich verloren? "Mehr Info"-Buttons in jedem Tab helfen
-                dir, das Tool optimal zu nutzen.'
-                data-lang-en="Feeling lost? 'More Info' buttons in every tab help you use the tool optimally."
-              >
-                Feeling lost? 'More Info' buttons in every tab help you use the
-                tool optimally.
-              </p>
-            </div>
-            <div class="feature-card">
-              <div class="feature-icon">
-                <span class="icon-placeholder">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    color="currentColor"
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <span class="icon-placeholder">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                      <line x1="12" x2="12.01" y1="17" y2="17" />
+                    </svg>
+                  </span>
+                </div>
+                <h3
+                  class="feature-title"
+                  data-translate
+                  data-lang-de="Integrierte Hilfe"
+                  data-lang-en="Integrated Help"
+                  data-lang-fr="Aide intégrée"
+                >
+                  Integrated Help
+                </h3>
+                <p
+                  class="feature-description"
+                  data-translate
+                  data-lang-de="Fühlst du dich verloren? <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span>-Buttons in jedem Tab helfen dir, das Tool optimal zu nutzen."
+                  data-lang-en="Feeling lost? <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> buttons in every tab help you use the tool optimally."
+                  data-lang-fr="Vous êtes perdu ? Les boutons <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> dans chaque onglet vous aident à utiliser l'outil de manière optimale."
                   >
-                    <path
-                      d="M14 21H4C2.89543 21 2 20.1046 2 19V5C2 3.89543 2.89543 3 4 3H20C21.1046 3 22 3.89543 22 5V14"
+                  Feeling lost?
+                  <span class="inline-icon"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
                       stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                    ></path>
-                    <path
-                      d="M2 7L22 7"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M5 5.01L5.01 4.99889"
-                      stroke="currentColor"
-                      stroke-width="1.5"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M8 5.01L8.01 4.99889"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M11 5.01L11.01 4.99889"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M19.5 16V22M19.5 22L17 19.5M19.5 22L22 19.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </span>
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                      <line x1="12" x2="12.01" y1="17" y2="17" /></svg
+                  ></span>
+                  buttons in every tab help you use the tool optimally.
+                </p>
               </div>
-              <h3
-                class="feature-title"
-                data-translate
-                data-lang-de="Selbst-Updater"
-                data-lang-en="Self-Updater"
-              >
-                Self-Updater
-              </h3>
-              <p
-                class="feature-description"
-                data-translate
-                data-lang-de="Auch YMU selbst hält sich auf Wunsch aktuell, damit du immer die
+              <div class="feature-card">
+                <div class="feature-icon">
+                  <span class="icon-placeholder">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <polyline points="8 17 12 21 16 17" />
+                      <line x1="12" x2="12" y1="12" y2="21" />
+                      <path
+                        d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"
+                      />
+                    </svg>
+                  </span>
+                </div>
+                <h3
+                  class="feature-title"
+                  data-translate
+                  data-lang-de="Selbst-Updater"
+                  data-lang-en="Self-Updater"
+                  data-lang-fr="Mise à jour automatique"
+                >
+                  Self-Updater
+                </h3>
+                <p
+                  class="feature-description"
+                  data-translate
+                  data-lang-de="Auch YMU selbst hält sich auf Wunsch aktuell, damit du immer die
                 neuesten Features hast."
-                data-lang-en="YMU itself also stays up-to-date if desired, so you always have the latest features."
-              >
-                YMU itself also stays up-to-date if desired, so you always have
-                the latest features.
-              </p>
+                  data-lang-en="YMU itself also stays up-to-date if desired, so you always have the latest features."
+                  data-lang-fr="YMU se maintient également à jour si vous le souhaitez, pour que vous ayez toujours les dernières fonctionnalités."
+                >
+                  YMU itself also stays up-to-date if desired, so you always
+                  have the latest features.
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section
-        id="how-to"
-        class="how-to-section section-padding alt-background"
-      >
-        <div class="container">
-          <h2
-            class="section-title text-center"
-            data-translate
-            data-lang-de="So funktioniert's"
-            data-lang-en="How it Works"
-          >
-            How it Works
-          </h2>
-          <p
-            class="section-subtitle text-center"
-            data-translate
-            data-lang-de="In wenigen Schritten startklar."
-            data-lang-en="Ready in just a few steps."
-          >
-            Ready in just a few steps.
-          </p>
-          <div class="how-to-steps">
-            <div class="how-to-step">
-              <div class="step-number-icon">
-                <span class="icon-placeholder">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    color="currentColor"
-                  >
-                    <path
-                      d="M6 20L18 20"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M12 4V16M12 16L15.5 12.5M12 16L8.5 12.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </span>
-              </div>
-              <h3
-                class="step-title"
-                data-translate
-                data-lang-de="Herunterladen & Starten"
-                data-lang-en="Download & Launch"
-              >
-                Download & Launch
-              </h3>
-              <p
-                class="step-description"
-                data-translate
-                data-lang-de="Lade die ymu.exe herunter und
-                starte sie. Am besten in einem eigenen Ordner."
-                data-lang-en="Download ymu.exe and launch it. Preferably in its own folder."
-              >
-                Download ymu.exe and launch it. Preferably in its own folder.
-              </p>
-            </div>
-            <div class="how-to-step">
-              <div class="step-number-icon">
-                <span class="icon-placeholder">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    color="currentColor"
-                  >
-                    <path
-                      d="M12 13V22M12 22L15.5 18.5M12 22L8.5 18.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M20 17.6073C21.4937 17.0221 23 15.6889 23 13C23 9 19.6667 8 18 8C18 6 18 2 12 2C6 2 6 6 6 8C4.33333 8 1 9 1 13C1 15.6889 2.50628 17.0221 4 17.6073"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </span>
-              </div>
-              <h3 class="step-title">YimMenu Download/Update</h3>
-              <p
-                class="step-description"
-                data-translate
-                data-lang-de='Im "Download/Update"-Tab kannst du YimMenu herunterladen oder
-                auf die neueste Version aktualisieren.'
-                data-lang-en="In the 'Download/Update' tab, you can download or update YimMenu to the latest version."
-              >
-                In the 'Download/Update' tab, you can download or update YimMenu
-                to the latest version.
-              </p>
-            </div>
-            <div class="how-to-step">
-              <div class="step-number-icon">
-                <span class="icon-placeholder">
-                  <svg
-                    width="24px"
-                    height="24px"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                    color="currentColor"
-                  >
-                    <path
-                      d="M7 22L17 22"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                    <path
-                      d="M2 17V4C2 2.89543 2.89543 2 4 2H20C21.1046 2 22 2.89543 22 4V17C22 18.1046 21.1046 19 20 19H4C2.89543 19 2 18.1046 2 17Z"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                    ></path>
-                    <path
-                      d="M9 10.5L11 12.5L15 8.5"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    ></path>
-                  </svg>
-                </span>
-              </div>
-              <h3
-                class="step-title"
-                data-translate
-                data-lang-de="GTA V Starten & Injizieren"
-                data-lang-en="Start GTA V & Inject"
-              >
-                Start GTA V & Inject
-              </h3>
-              <p
-                class="step-description"
-                data-translate
-                data-lang-de='Wechsle zum "Inject"-Tab, starte GTA V über den Button
-                (optional) und injiziere YimMenu.'
-                data-lang-en="Switch to the 'Inject' tab, start GTA V via the button (optional), and inject YimMenu."
-              >
-                Switch to the 'Inject' tab, start GTA V via the button
-                (optional), and inject YimMenu.
-              </p>
-            </div>
-          </div>
-          <p
-            class="text-center additional-info"
-            data-translate
-            data-lang-de='Detailliertere Informationen findest du über die "Mehr Info"-Buttons
-            direkt in der YMU-Anwendung.'
-            data-lang-en="You can find more detailed information via the 'More Info' buttons directly in the YMU application."
-          >
-            You can find more detailed information via the 'More Info' buttons
-            directly in the YMU application.
-          </p>
-        </div>
-      </section>
-
-      <section id="look-and-feel" class="look-feel-section section-padding">
+      <section id="look-and-feel" class="look-feel-section section-padding fade-in">
         <div class="container">
           <h2
             class="section-title text-center"
             data-translate
             data-lang-de="Ästhetik & Charme"
             data-lang-en="Look & Feel"
+            data-lang-fr="Apparence et ergonomie"
           >
             Look & Feel
           </h2>
@@ -807,67 +561,508 @@
             data-translate
             data-lang-de="Modern, clean und anpassbar."
             data-lang-en="Modern, clean, and customizable."
+            data-lang-fr="Moderne, épurée et personnalisable."
           >
             Modern, clean, and customizable.
           </p>
-          <div class="screenshot-gallery">
-            <div class="screenshot-item">
+          <div class="look-grid">
+            <figure class="look-card">
               <img
-                src="./assets/img/Download&Update.png"
-                alt="YMU Screenshot - Download Tab v1.1.4"
-                class="screenshot-image"
+                class="theme-img"
+                src="./assets/img/Inject.png"
+                alt="Inject"
+                width="652"
+                height="472"
                 loading="lazy"
+                data-dark="./assets/img/Inject.png"
+                data-light="./assets/img/Inject_Light.png"
               />
-              <p class="screenshot-caption">Download/Update Tab (v1.1.4)</p>
-            </div>
-            <div class="screenshot-item">
+              <figcaption>Inject</figcaption>
+            </figure>
+
+            <figure class="look-card">
               <img
-                src="./assets/img/inject.png"
-                alt="YMU Screenshot - Inject Tab v1.1.4"
-                class="screenshot-image"
-                loading="lazy"
-              />
-              <p class="screenshot-caption">Inject Tab (v1.1.4)</p>
-            </div>
-            <div class="screenshot-item">
-              <img
+                class="theme-img"
                 src="./assets/img/Settings.png"
-                alt="YMU Screenshot - Settings Tab v1.1.4"
-                class="screenshot-image"
+                alt="Settings"
+                width="652"
+                height="472"
                 loading="lazy"
+                data-dark="./assets/img/Settings.png"
+                data-light="./assets/img/Settings_Light.png"
               />
-              <p class="screenshot-caption">Settings Tab (v1.1.4)</p>
+              <figcaption>Settings</figcaption>
+            </figure>
+
+            <figure class="look-card">
+              <img
+                class="theme-img"
+                src="./assets/img/Download.png"
+                alt="Download"
+                width="652"
+                height="472"
+                loading="lazy"
+                data-dark="./assets/img/Download.png"
+                data-light="./assets/img/Download_Light.png"
+              />
+              <figcaption>Download</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="how-to" class="how-to-section section-padding fade-in">
+        <div class="container">
+          <h2
+            class="section-title text-center"
+            data-translate
+            data-lang-de="So funktioniert's"
+            data-lang-en="How it Works"
+            data-lang-fr="Comment ça marche"
+          >
+            How it Works
+          </h2>
+          <p
+            class="section-subtitle text-center"
+            data-translate
+            data-lang-de="In wenigen Schritten startklar."
+            data-lang-en="Ready in just a few steps."
+            data-lang-fr="Prêt en quelques étapes seulement."
+          >
+            Ready in just a few steps.
+          </p>
+          <div class="card">
+            <div class="how-to-steps">
+              <div class="how-to-step">
+                <div class="step-number-icon">
+                  <span class="icon-placeholder">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <line x1="16.5" x2="7.5" y1="9.4" y2="4.21" />
+                      <path
+                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
+                      />
+                      <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
+                      <line x1="12" x2="12" y1="22.08" y2="12" />
+                    </svg>
+                  </span>
+                </div>
+                <h3
+                  class="step-title"
+                  data-translate
+                  data-lang-de="Herunterladen & Starten"
+                  data-lang-en="Download & Launch"
+                  data-lang-fr="Télécharger & Lancer"
+                >
+                  Download & Launch
+                </h3>
+                <p
+                  class="step-description"
+                  data-translate
+                  data-lang-de="Lade die <mark class='code-font'>ymu.exe</mark>  herunter und
+                starte sie."
+                  data-lang-en="Download <mark class='code-font'>ymu.exe</mark>  and launch it."
+                  data-lang-fr="Téléchargez <mark class='code-font'>ymu.exe</mark> et lancez-le."
+                >
+                  Download <mark class="code-font">ymu.exe</mark> and launch it.
+                </p>
+              </div>
+              <div class="how-to-step">
+                <div class="step-number-icon">
+                  <span class="icon-placeholder">
+                    
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                      <polyline points="7 10 12 15 17 10" />
+                      <line x1="12" x2="12" y1="15" y2="3" />
+                    </svg>
+                  </span>
+                </div>
+                <h3 class="step-title">YimMenu Download</h3>
+                <p
+                  class="step-description"
+                  data-translate
+                  data-lang-de='Im "Download"-Tab kannst du YimMenu herunterladen oder
+                auf die neueste Version aktualisieren.'
+                  data-lang-en="In the 'Download' tab, you can download or update YimMenu to the latest version."
+                  data-lang-fr="Dans l'onglet 'Télécharger', vous pouvez télécharger ou mettre à jour YimMenu vers la dernière version."
+                >
+                  In the 'Download' tab, you can download or update YimMenu to
+                  the latest version.
+                </p>
+              </div>
+              <div class="how-to-step">
+                <div class="step-number-icon">
+                  <span class="icon-placeholder">
+                    
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      width="24"
+                      height="24"
+                      class="main-grid-item-icon"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                    >
+                      <circle cx="12" cy="12" r="10" />
+                      <line x1="22" x2="18" y1="12" y2="12" />
+                      <line x1="6" x2="2" y1="12" y2="12" />
+                      <line x1="12" x2="12" y1="6" y2="2" />
+                      <line x1="12" x2="12" y1="22" y2="18" />
+                    </svg>
+                  </span>
+                </div>
+                <h3
+                  class="step-title"
+                  data-translate
+                  data-lang-de="GTA V Starten & Injizieren"
+                  data-lang-en="Start GTA V & Inject"
+                  data-lang-fr="Lancer GTA V & Injecter"
+                >
+                  Start GTA V & Inject
+                </h3>
+                <p
+                  class="step-description"
+                  data-translate
+                  data-lang-de='Wechsle zum "Inject"-Tab, starte GTA V über den Button
+                (optional) und injiziere YimMenu.'
+                  data-lang-en="Switch to the 'Inject' tab, start GTA V via the button (optional), and inject YimMenu."
+                  data-lang-fr="Passez à l'onglet 'Injecter', lancez GTA V via le bouton (optionnel), et injectez YimMenu."
+                >
+                  Switch to the 'Inject' tab, start GTA V via the button
+                  (optional), and inject YimMenu.
+                </p>
+              </div>
             </div>
           </div>
           <p
             class="text-center additional-info"
             data-translate
-            data-lang-de="Die Animation des oberen Texts (Repo-Link, Autor, Version) ist hier
-            nicht sichtbar."
-            data-lang-en="The animation of the top text (repo link, author, version) is not visible here."
-          >
-            The animation of the top text (repo link, author, version) is not
-            visible here.
+            data-lang-de="Detailliertere Informationen findest du über die <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span>-Buttons direkt in der YMU-Anwendung."
+            data-lang-en="You can find more detailed information via the <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> buttons directly in the YMU application."
+            data-lang-fr="Vous trouverez des informations plus détaillées via les boutons <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> directement dans l'application YMU."
+            >
+            You can find more detailed information via the
+            <span class="inline-icon"
+              ><svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="main-grid-item-icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                <line x1="12" x2="12.01" y1="17" y2="17" /></svg
+            ></span>
+            buttons directly in the YMU application.
           </p>
         </div>
       </section>
 
-      <section
-        id="updates"
-        class="updates-section section-padding alt-background"
-      >
+      <section id="download" class="download-section section-padding fade-in">
+        <div class="container">
+          <h2
+            class="section-title text-center"
+            data-translate
+            data-lang-de="Herunterladen"
+            data-lang-en="Download"
+            data-lang-fr="Télécharger"
+          >
+            Download
+          </h2>
+          <div class="card card-compact flow">
+            <div class="text-center">
+              <div>
+                <a
+                  href="https://github.com/NiiV3AU/YMU/releases/latest/download/ymu.exe"
+                  rel="noopener noreferrer"
+                  class="btn btn-primary btn-large "
+                  data-translate
+                  data-lang-de="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 herunterladen (.exe)"
+                  data-lang-en="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5 (.exe)"
+                  data-lang-fr="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5 (.exe)"
+                  id="download-btn-main"
+                  ><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5 (.exe)
+                  </a>
+                <p class="download-count"">
+                  Downloads:
+                  <span
+                    id="github-downloads"
+                    style="display: inline"
+                    class="code-font"
+                    >Lädt...</span
+                  >
+                  <img
+                    id="github-downloads-badge"
+                    src=""
+                    alt="Download Count"
+                    style="display: none; vertical-align: middle"
+                  />
+                </p>
+                <p
+                  class="os-info"
+                  data-translate
+                  data-lang-de="Nur für Windows 10 & 11"
+                  data-lang-en="Only for Windows 10 & 11"
+                  data-lang-fr="Windows 10 ou Windows 11"
+                >
+                  Only for Windows 10 & 11
+                </p>
+              </div>
+              <div class="download-secondary">
+                <a
+                  href="https://github.com/NiiV3AU/YMU/archive/refs/tags/v1.1.5.zip"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary"
+                  data-translate
+                  data-lang-de="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Source Code herunterladen (.zip)"
+                  data-lang-en="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Download Source Code (.zip)"
+                  data-lang-fr="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Télécharger le code source (.zip)">
+                  <svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' />
+                  </svg>
+                  Download Source Code (.zip)
+                </a>
+              </div>
+            </div>
+
+            <div class="lua-download-link text-center">
+              <p
+                data-translate
+                data-lang-de="Auf der Suche nach Lua-Skripten?"
+                data-lang-en="Looking for Lua-scripts?"
+                data-lang-fr="À la recherche de scripts Lua ?"
+              >
+                Looking for Lua-scripts?
+              </p>
+              <a
+                href="https://github.com/orgs/YimMenu-Lua/repositories"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-secondary"
+                >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  height="24"
+                  class="main-grid-item-icon"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                  />
+                  <polyline points="14 2 14 8 20 8" />
+                  <line x1="12" x2="12" y1="18" y2="12" />
+                  <line x1="9" x2="15" y1="15" y2="15" />
+                </svg>
+
+                <span
+                  data-translate
+                  data-lang-de="Lua-Skripte für YimMenu finden"
+                  data-lang-en="Find Lua Scripts for YimMenu"
+                  data-lang-fr="Trouver des scripts Lua pour YimMenu"
+                  >Find Lua Scripts for YimMenu</span
+                ></a
+              >
+            </div>
+          </div>
+          <div class="download-warning">
+            <h4 class="warning-title">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="main-grid-item-icon"
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+              >
+                <path
+                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+                />
+                <line x1="12" x2="12" y1="9" y2="13" />
+                <line x1="12" x2="12.01" y1="17" y2="17" />
+              </svg>
+
+              <span
+                data-translate
+                data-lang-de="Wichtige Hinweise"
+                data-lang-en="Important Notes"
+                data-lang-fr="Remarques importantes"
+                >Important Notes</span
+              >
+            </h4>
+            <p>
+              <strong
+                data-translate
+                data-lang-de="Warnung:"
+                data-lang-en="Warning:"
+                data-lang-fr="Avertissement :"
+                >Warning:</strong
+              >
+              <span
+                data-translate
+                data-lang-de="Verwende YMU und YimMenu immer mit deaktiviertem BattlEye."
+                data-lang-en="Always use YMU and YimMenu with BattlEye DISABLED."
+                data-lang-fr="Utilisez toujours YMU et YimMenu avec BattlEye DÉSACTIVÉ."
+                >Always use YMU and YimMenu with BattlEye DISABLED.</span
+              >
+            </p>
+            <p>
+              <strong
+                data-translate
+                data-lang-de="Achtung:"
+                data-lang-en="Caution:"
+                data-lang-fr="Attention :"
+                >Caution:</strong
+              >
+              <span
+                data-translate
+                data-lang-de="Die Verwendung von Mods (Online) birgt das Risiko, gebannt zu werden."
+                data-lang-en="Using mods online carries a risk of being banned."
+                data-lang-fr="L'utilisation de mods en ligne comporte un risque de bannissement."
+                >Using mods online carries a risk of being banned.</span
+              >
+            </p>
+          </div>
+
+          <div class="space">
+            <h3
+              class="subsection-title text-center"
+              data-translate
+              data-lang-de="Anforderungen & Abhängigkeiten"
+              data-lang-en="Requirements & Dependencies"
+              data-lang-fr="Prérequis & Dépendances"
+            >
+              Requirements & Dependencies
+            </h3>
+            <div class="requirements-section">
+              <div class="requirements-columns">
+                <div>
+                  <h4>System</h4>
+                  <ul>
+                    <li
+                      data-translate
+                      data-lang-de="Windows 10 oder Windows 11"
+                      data-lang-en="Windows 10 or Windows 11"
+                      data-lang-fr="Windows 10 ou Windows 11"
+                    >
+                      Windows 10 or Windows 11
+                    </li>
+                  </ul>
+                  <h4
+                    data-translate
+                    data-lang-de="Programmiersprache"
+                    data-lang-en="Programming Language"
+                    data-lang-fr="Langage de programmation"
+                  >
+                    Programming Language
+                  </h4>
+                  <ul>
+                    <li
+                      data-translate
+                      data-lang-de="Python (Entwickelt mit v3.12.10)"
+                      data-lang-en="Python (Developed with v3.12.10)"
+                      data-lang-fr="Python (Développé avec v3.12.10)"
+                    >
+                      Python (Developed with v3.12.10)
+                    </li>
+                  </ul>
+                </div>
+                <div>
+                  <h4
+                    data-translate
+                    data-lang-de="Benötigte Libraries"
+                    data-lang-en="Required Libraries"
+                    data-lang-fr="Bibliothèques requises"
+                  >
+                    Required Libraries
+                  </h4>
+                  <ul>
+                    <li>PySide6</li>
+                    <li>pywin32</li>
+                    <li>psutil</li>
+                    <li>pyinjector</li>
+                    <li>requests</li>
+                    <li>packaging</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="updates" class="updates-section section-padding fade-in">
         <div class="container">
           <h2
             class="section-title text-center"
             data-translate
             data-lang-de="Neueste Updates"
             data-lang-en="Latest Updates"
+            data-lang-fr="Dernières mises à jour"
           >
             Latest Updates
           </h2>
           <div class="changelog-list">
             <div class="changelog-item">
-              <div class="changelog-summary" onclick="toggleAccordion(this)">
+              <div class="changelog-summary">
+                <span class="changelog-version">v1.1.5</span>
+                <span class="changelog-description"
+                  >- Redesign and GTA 5 Enhanced Support</span
+                >
+                <span class="changelog-date"
+                  ><mark class="code-font">Aug 28, 2025</mark></span
+                >
+              </div>
+              <div class="changelog-details">
+                <div class="details-content-wrapper">
+                  <p>
+                    Complete UI Overhaul and Code Refactoring (CustomTkinter ->
+                    PySide6). GTA 5 Enhanced is now Supported thanks to YimMenuV2.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="changelog-item">
+              <div class="changelog-summary">
                 <span class="changelog-version">v1.1.4</span>
                 <span class="changelog-description"
                   >- Buttons, "More Info" Updates</span
@@ -876,7 +1071,7 @@
                   ><mark class="code-font">Oct 12, 2024</mark></span
                 >
               </div>
-              <div class="changelog-details collapsed">
+              <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
                     Added Buttons (YimMenu GitHub Repo & FSL's UC-Thread) in
@@ -887,7 +1082,7 @@
               </div>
             </div>
             <div class="changelog-item">
-              <div class="changelog-summary" onclick="toggleAccordion(this)">
+              <div class="changelog-summary">
                 <span class="changelog-version">v1.1.3</span>
                 <span class="changelog-description"
                   >- New Lua list in Settings-Tab</span
@@ -896,7 +1091,7 @@
                   ><mark class="code-font">Sep 1, 2024</mark></span
                 >
               </div>
-              <div class="changelog-details collapsed">
+              <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
                     New Lua list in Settings-Tab - activate/deactivate scripts &
@@ -906,14 +1101,14 @@
               </div>
             </div>
             <div class="changelog-item">
-              <div class="changelog-summary" onclick="toggleAccordion(this)">
+              <div class="changelog-summary">
                 <span class="changelog-version">v1.1.2</span>
                 <span class="changelog-description">- Bugfix Progressbar</span>
                 <span class="changelog-date"
                   ><mark class="code-font">Aug 29, 2024</mark></span
                 >
               </div>
-              <div class="changelog-details collapsed">
+              <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>Fixed progressbar freezing.</p>
                 </div>
@@ -927,21 +1122,108 @@
               rel="noopener noreferrer"
               class="btn btn-secondary"
               data-translate
-              data-lang-de="Vollständiger Changelog auf GitHub"
-              data-lang-en="Complete Changelog on GitHub"
-              >Complete Changelog on GitHub</a
+              data-lang-de="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Vollständiger Changelog auf GitHub"
+              data-lang-en="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Complete Changelog on GitHub"
+              data-lang-fr="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg> Changelog complet sur GitHub"
+              ><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Complete Changelog on GitHub</a
             >
           </div>
         </div>
       </section>
 
-      <section id="community" class="community-section section-padding">
+      <section id="faq" class="faq-section section-padding fade-in">
+        <div class="container">
+          <h2
+            class="section-title text-center"
+            data-translate
+            data-lang-de="Häufig gestellte Fragen (FAQ)"
+            data-lang-en="Frequently Asked Questions (FAQ)"
+            data-lang-fr="Foire Aux Questions (FAQ)"
+          >
+            Frequently Asked Questions (FAQ)
+          </h2>
+          <div class="faq-list">
+            <div class="faq-item">
+              <div
+                class="faq-question"
+                data-translate
+                data-lang-de="Ist YMU sicher?"
+                data-lang-en="Is YMU safe?"
+                data-lang-fr="YMU est-il sûr ?"
+              >
+                Is YMU safe?
+              </div>
+              <div class="faq-answer">
+                <div class="details-content-wrapper">
+                  <p
+                    data-translate
+                    data-lang-de="YMU selbst enthält keine schädliche Software."
+                    data-lang-en="YMU itself does not contain malicious software."
+                    data-lang-fr="YMU lui-même ne contient aucun logiciel malveillant."
+                  >
+                    YMU itself does not contain malicious software.
+                  </p>
+                  <p
+                    data-translate
+                    data-lang-de="Die Nutzung von Mod-Menüs wie YimMenu erfolgt jedoch immer
+                    auf eigenes Risiko."
+                    data-lang-en="However, using mod menus like YimMenu is always at your own risk."
+                    data-lang-fr="Cependant, l'utilisation de menus de mod comme YimMenu se fait toujours à vos propres risques."
+                  >
+                    However, using mod menus like YimMenu is always at your own
+                    risk.
+                  </p>
+                  <p
+                    data-translate
+                    data-lang-de="Bitte beachte die Warnhinweise."
+                    data-lang-en="Please note the warnings."
+                    data-lang-fr="Veuillez prendre note des avertissements."
+                  >
+                    Please note the warnings.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <div
+                class="faq-question"
+                data-translate
+                data-lang-de="Wie installiere ich die Abhängigkeiten, wenn ich den Source Code
+                nutze?"
+                data-lang-en="How do I install the dependencies if I use the source code?"
+                data-lang-fr="Comment installer les dépendances si j'utilise le code source ?"
+              >
+                How do I install the dependencies if I use the source code?
+              </div>
+              <div class="faq-answer">
+                <div class="details-content-wrapper">
+                  <p
+                    data-translate
+                    data-lang-de="Du kannst die Abhängigkeiten mit pip installieren:"
+                    data-lang-en="You can install the dependencies using pip:"
+                    data-lang-fr="Vous pouvez installer les dépendances avec pip :"
+                  >
+                    You can install the dependencies using pip:
+                  </p>
+                  <div class="code-block">
+                      <pre><code id="pip-command">pip install PySide6 pywin32 psutil pyinjector requests packaging</code></pre>
+                      <button id="copy-pip-btn" class="copy-btn" aria-label="Copy to clipboard"></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="community" class="community-section section-padding fade-in">
         <div class="container text-center">
           <h2
             class="section-title"
             data-translate
             data-lang-de="Werde Teil der Community"
             data-lang-en="Join the Community"
+            data-lang-fr="Rejoignez la communauté"
           >
             Join the Community
           </h2>
@@ -950,6 +1232,7 @@
             data-translate
             data-lang-de="Hast du Ideen, Fehler gefunden oder möchtest einfach nur chatten?"
             data-lang-en="You have ideas, requests, found a bug or just want to chat?"
+            data-lang-fr="Vous avez des idées, des requêtes, trouvé un bug ou voulez simplement discuter ?"
           >
             You have ideas, requests, found a bug or just want to chat?
           </p>
@@ -960,65 +1243,36 @@
               rel="noopener noreferrer"
               class="btn btn-secondary"
               data-translate
-              data-lang-de="Bug melden / Feature anfragen"
-              data-lang-en="Report Bug / Request Feature"
-              >Report Bug / Request Feature</a
+              data-lang-de="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Bug melden / Feature anfragen"
+              data-lang-en="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Report Bug / Request Feature"
+              data-lang-fr="<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Signaler un bug / Demander une fonctionnalité"
+              ><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Report Bug / Request Feature</a
             >
             <a
               href="https://discord.gg/S4PKmKr22k"
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-secondary"
-              ><svg
-                width="24px"
-                height="24px"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                fill="none"
+              >
+              <svg
                 xmlns="http://www.w3.org/2000/svg"
-                color="currentColor"
-                class="btn-icon"
+                viewBox="0 0 24 24"
+                width="24"
+                height="24"
+                class="main-grid-item-icon"
+                fill="none"
               >
                 <path
-                  d="M5.5 16C10.5 18.5 13.5 18.5 18.5 16"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M15.5 17.5L16.5 19.5C16.5 19.5 20.6713 18.1717 22 16C22 15 22.5301 7.85339 19 5.5C17.5 4.5 15 4 15 4L14 6H12"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M8.52832 17.5L7.52832 19.5C7.52832 19.5 3.35699 18.1717 2.02832 16C2.02832 15 1.49823 7.85339 5.02832 5.5C6.52832 4.5 9.02832 4 9.02832 4L10.0283 6H12.0283"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M8.5 14C7.67157 14 7 13.1046 7 12C7 10.8954 7.67157 10 8.5 10C9.32843 10 10 10.8954 10 12C10 13.1046 9.32843 14 8.5 14Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M15.5 14C14.6716 14 14 13.1046 14 12C14 10.8954 14.6716 10 15.5 10C16.3284 10 17 10.8954 17 12C17 13.1046 16.3284 14 15.5 14Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
+                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037c-1.687.29-3.33.8-4.885 1.515a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.083.083 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.227-1.994a.076.076 0 0 0-.042-.106 13.107 13.107 0 0 1-1.872-.892.078.078 0 0 1-.038-.062.077.077 0 0 1 .03-.066c.126-.094.252-.192.372-.292a.075.075 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.076.076 0 0 1 .03.065.078.078 0 0 1-.036.063c-.599.349-1.225.647-1.873.89a.076.076 0 0 0-.05.076c.001.012.004.022.009.032.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03ZM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"
+                  fill="currentColor"
+                />
               </svg>
+
               <span
                 data-translate
                 data-lang-de="Discord beitreten"
                 data-lang-en="Join our Discord"
+                data-lang-fr="Rejoindre notre Discord"
                 >Join our Discord</span
               >
             </a>
@@ -1028,6 +1282,7 @@
             data-translate
             data-lang-de="Zeige deine Unterstützung und hilf dem Projekt zu wachsen:"
             data-lang-en="Show your support and help the project grow:"
+            data-lang-fr="Montrez votre soutien et aidez le projet à grandir :"
           >
             Show your support and help the project grow:
           </p>
@@ -1035,423 +1290,59 @@
             href="https://github.com/NiiV3AU/YMU"
             target="_blank"
             rel="noopener noreferrer"
-            class="btn btn-github-star"
+            class="btn btn-secondary btn-github"
           >
             <svg
-              width="24px"
-              height="24px"
-              stroke-width="1.5"
-              viewBox="0 0 24 24"
-              fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              color="currentColor"
-              class="btn-icon"
+              viewBox="0 0 24 24"
+              width="24"
+              height="24"
+              class="main-grid-item-icon"
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
             >
-              <path
-                d="M8.58737 8.23597L11.1849 3.00376C11.5183 2.33208 12.4817 2.33208 12.8151 3.00376L15.4126 8.23597L21.2215 9.08017C21.9668 9.18848 22.2638 10.0994 21.7243 10.6219L17.5217 14.6918L18.5135 20.4414C18.6409 21.1798 17.8614 21.7428 17.1945 21.3941L12 18.678L6.80547 21.3941C6.1386 21.7428 5.35909 21.1798 5.48645 20.4414L6.47825 14.6918L2.27575 10.6219C1.73617 10.0994 2.03322 9.18848 2.77852 9.08017L8.58737 8.23597Z"
-                stroke="currentColor"
-                stroke-width="1.5"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-              ></path>
+              <polygon
+                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              />
             </svg>
+
             <span
               data-translate
               data-lang-de="Gib uns einen Stern auf GitHub"
               data-lang-en="Give us a Star on GitHub"
+              data-lang-fr="Donnez-nous une étoile sur GitHub"
               >Give us a Star on GitHub</span
             >
           </a>
         </div>
       </section>
 
-      <section id="about" class="about-section section-padding alt-background">
+      <section id="about" class="about-section section-padding fade-in">
         <div class="container text-center">
           <h2
             class="section-title"
             data-translate
             data-lang-de="Über das Projekt"
             data-lang-en="About the Project"
+            data-lang-fr="À propos du projet"
           >
             About the Project
           </h2>
-          <p
-            class="about-text"
-            data-translate
-            data-lang-de='"Das Projekt hat mir neue Dinge beigebracht, wie Threading für eine
-            reaktionsfähigere GUI, das Herunterladen von Dateien in Python und
-            meine allgemeinen Python-Fähigkeiten verbessert. Ich habe das
-            Projekt auch auf GitHub hochgeladen, um Feedback zu meinem Code zu
-            erhalten. Ich würde mich freuen, wenn du dir die Zeit nimmst, meinen
-            Code auf Fehler etc. zu überprüfen."'
-            data-lang-en='"The Project taught me new things such as using threading for a more responsive GUI, downloading files with python and improved my overall python skills. I also uploaded the project on GitHub to get some feedback on my code, so I would appreciate it if you would take your time reviewing my code for flaws, etc."'
-          >
-            "The Project taught me new things such as using threading for a more
-            responsive GUI, downloading files with python and improved my
-            overall python skills. I also uploaded the project on GitHub to get
-            some feedback on my code, so I would appreciate it if you would take
-            your time reviewing my code for flaws, etc."
-          </p>
-          <p class="about-author">- NiiV3AU</p>
-        </div>
-      </section>
-
-      <section id="download" class="download-section section-padding">
-        <div class="container">
-          <h2
-            class="section-title text-center"
-            data-translate
-            data-lang-de="Herunterladen"
-            data-lang-en="Download"
-          >
-            Download
-          </h2>
-          <div class="download-options text-center">
-            <div class="download-primary">
-              <a
-                href="https://github.com/NiiV3AU/YMU/releases/latest/download/ymu.exe"
-                rel="noopener noreferrer"
-                class="btn btn-primary btn-large download-button"
-                data-translate
-                data-lang-de="YMU v1.1.4 herunterladen (.exe)"
-                data-lang-en="Download YMU v1.1.4 (.exe)"
-                style="margin-top: 1rem"
-                id="download-btn-main"
-                >Download YMU v1.1.4 (.exe)</a
-              >
-              <p>
-                Downloads:
-                <span
-                  id="github-downloads"
-                  style="display: inline"
-                  class="code-font"
-                  >Lädt...</span
-                >
-                <img
-                  id="github-downloads-badge"
-                  src=""
-                  alt="Download Count"
-                  style="display: none; vertical-align: middle"
-                />
-              </p>
-              <p
-                class="os-info"
-                data-translate
-                data-lang-de="Nur für Windows 10 & 11"
-                data-lang-en="Only for Windows 10 & 11"
-              >
-                Only for Windows 10 & 11
-              </p>
-            </div>
-            <div class="download-secondary">
-              <a
-                href="https://github.com/NiiV3AU/YMU/archive/refs/tags/v1.1.4.zip"
-                class="btn btn-secondary download-button"
-                data-translate
-                data-lang-de="Source Code herunterladen (.zip)"
-                data-lang-en="Download Source Code (.zip)"
-                >Download Source Code (.zip)</a
-              >
-            </div>
-          </div>
-
-          <div class="download-recommendation text-center">
-            <p>
-              <strong
-                data-translate
-                data-lang-de="Empfehlung:"
-                data-lang-en="Recommendation:"
-                >Recommendation:</strong
-              >
-              <span
-                data-translate
-                data-lang-de="Lege die"
-                data-lang-en="Place the"
-                >Place the</span
-              >
-              <mark class="code-font">ymu.exe</mark>
-              <span
-                data-translate
-                data-lang-de="in einen eigenen Ordner.
-              YMU erstellt automatisch Unterordner für die DLL, Log-Dateien und
-              Konfigurationen."
-                data-lang-en="in its own folder. YMU automatically creates subfolders for the DLL, log files, and configurations."
-                >in its own folder. YMU automatically creates subfolders for the
-                DLL, log files, and configurations.</span
-              >
-            </p>
-          </div>
-
-          <div class="lua-download-link text-center">
-            <p
-              data-translate
-              data-lang-de="Auf der Suche nach Lua-Skripten?"
-              data-lang-en="Looking for Lua-scripts?"
-            >
-              Looking for Lua-scripts?
-            </p>
-            <a
-              href="https://github.com/orgs/YimMenu-Lua/repositories"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary"
-              ><svg
-                width="24px"
-                height="24px"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                color="currentColor"
-              >
-                <path
-                  d="M22 14V8.5M6 13V6C6 4.34315 7.34315 3 9 3H14"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M16.9922 4H19.9922M22.9922 4L19.9922 4M19.9922 4V1M19.9922 4V7"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M12 21H6C3.79086 21 2 19.2091 2 17C2 14.7909 3.79086 13 6 13H17H18C15.7909 13 14 14.7909 14 17C14 19.2091 15.7909 21 18 21C20.2091 21 22 19.2091 22 17V14"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-              <span
-                data-translate
-                data-lang-de="Lua-Skripte für YimMenu finden"
-                data-lang-en="Find Lua Scripts for YimMenu"
-                >Find Lua Scripts for YimMenu</span
-              ></a
-            >
-          </div>
-
-          <div class="requirements-section">
-            <h3
-              class="subsection-title text-center"
-              data-translate
-              data-lang-de="Anforderungen & Abhängigkeiten"
-              data-lang-en="Requirements & Dependencies"
-            >
-              Requirements & Dependencies
-            </h3>
-            <div class="requirements-columns">
-              <div>
-                <h4>System</h4>
-                <ul>
-                  <li
-                    data-translate
-                    data-lang-de="Windows 10 oder Windows 11"
-                    data-lang-en="Windows 10 or Windows 11"
-                  >
-                    Windows 10 or Windows 11
-                  </li>
-                </ul>
-                <h4
-                  data-translate
-                  data-lang-de="Programmiersprache"
-                  data-lang-en="Programming Language"
-                >
-                  Programming Language
-                </h4>
-                <ul>
-                  <li
-                    data-translate
-                    data-lang-de="Python (Entwickelt mit v3.12.2)"
-                    data-lang-en="Python (Developed with v3.12.2)"
-                  >
-                    Python (Developed with v3.12.2)
-                  </li>
-                </ul>
-              </div>
-              <div>
-                <h4
-                  data-translate
-                  data-lang-de="Benötigte Libraries"
-                  data-lang-en="Required Libraries"
-                >
-                  Required Libraries
-                </h4>
-                <ul>
-                  <li>requests, requests-cache</li>
-                  <li>win10toast, customtkinter</li>
-                  <li>psutil, pyinjector</li>
-                  <li>BeautifulSoup4, Pillow</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="download-warning">
-            <h4 class="warning-title">
-              <svg
-                width="24px"
-                height="24px"
-                stroke-width="1.5"
-                viewBox="0 0 24 24"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                color="currentColor"
-              >
-                <path
-                  d="M20.0429 21H3.95705C2.41902 21 1.45658 19.3364 2.22324 18.0031L10.2662 4.01533C11.0352 2.67792 12.9648 2.67791 13.7338 4.01532L21.7768 18.0031C22.5434 19.3364 21.581 21 20.0429 21Z"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                ></path>
-                <path
-                  d="M12 9V13"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                ></path>
-                <path
-                  d="M12 17.01L12.01 16.9989"
-                  stroke="currentColor"
-                  stroke-width="1.5"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-              <span
-                data-translate
-                data-lang-de="Wichtige Hinweise"
-                data-lang-en="Important Notes"
-                >Important Notes</span
-              >
-            </h4>
-            <p>
-              <strong
-                data-translate
-                data-lang-de="Warnung:"
-                data-lang-en="Warning:"
-                >Warning:</strong
-              >
-              <span
-                data-translate
-                data-lang-de="Nutze dieses Projekt nur für
-              Bildungszwecke und auf eigenes Risiko."
-                data-lang-en="Use this project for educational purposes only and use it at your own risk."
-                >Use this project for educational purposes only and use it at
-                your own risk.</span
-              >
-            </p>
-            <p>
-              <strong
-                data-translate
-                data-lang-de="Achtung:"
-                data-lang-en="Caution:"
-                >Caution:</strong
-              >
-              <span
-                data-translate
-                data-lang-de="Ich bin nicht haftbar oder verantwortlich für direkte oder
-              indirekte Konsequenzen, die durch die Nutzung von YMU oder YimMenu
-              entstehen könnten."
-                data-lang-en="I am not liable or responsible for any direct or indirect consequences that may result from the use of YMU or YimMenu."
-                >I am not liable or responsible for any direct or indirect
-                consequences that may result from the use of YMU or
-                YimMenu.</span
-              >
-            </p>
-          </div>
-        </div>
-      </section>
-
-      <section id="faq" class="faq-section section-padding alt-background">
-        <div class="container">
-          <h2
-            class="section-title text-center"
-            data-translate
-            data-lang-de="Häufig gestellte Fragen (FAQ)"
-            data-lang-en="Frequently Asked Questions (FAQ)"
-          >
-            Frequently Asked Questions (FAQ)
-          </h2>
-          <div class="faq-list">
-            <div class="faq-item">
-              <div
-                class="faq-question"
-                onclick="toggleAccordion(this)"
-                data-translate
-                data-lang-de="Ist YMU sicher?"
-                data-lang-en="Is YMU safe?"
-              >
-                Is YMU safe?
-              </div>
-              <div class="faq-answer collapsed">
-                <div class="details-content-wrapper">
-                  <p
-                    data-translate
-                    data-lang-de="YMU selbst enthält keine schädliche Software."
-                    data-lang-en="YMU itself does not contain malicious software."
-                  >
-                    YMU itself does not contain malicious software.
-                  </p>
-                  <p
-                    data-translate
-                    data-lang-de="Die Nutzung von Mod-Menüs wie YimMenu erfolgt jedoch immer
-                    auf eigenes Risiko."
-                    data-lang-en="However, using mod menus like YimMenu is always at your own risk."
-                  >
-                    However, using mod menus like YimMenu is always at your own
-                    risk.
-                  </p>
-                  <p
-                    data-translate
-                    data-lang-de="Bitte beachte die Warnhinweise."
-                    data-lang-en="Please note the warnings."
-                  >
-                    Please note the warnings.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="faq-item">
-              <div
-                class="faq-question"
-                onclick="toggleAccordion(this)"
-                data-translate
-                data-lang-de="Wie installiere ich die Abhängigkeiten, wenn ich den Source Code
-                nutze?"
-                data-lang-en="How do I install the dependencies if I use the source code?"
-              >
-                How do I install the dependencies if I use the source code?
-              </div>
-              <div class="faq-answer collapsed">
-                <div class="details-content-wrapper">
-                  <p
-                    data-translate
-                    data-lang-de="Du kannst die Abhängigkeiten mit pip installieren:"
-                    data-lang-en="You can install the dependencies using pip:"
-                  >
-                    You can install the dependencies using pip:
-                  </p>
-                  <p>
-                    <mark class="code-font"
-                      >pip install requests requests-cache win10toast
-                      customtkinter psutil pyinjector BeautifulSoup4
-                      Pillow</mark
-                    >.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
+          <blockquote class="about-text" 
+            data-translate 
+            data-lang-de='"Was als kleines Skript begann, hat sich zu einem robusten Werkzeug für über tausend Anwender entwickelt. YMU wurde entwickelt, um wichtige Aufgaben zu optimieren: das Aktualisieren von YimMenu, das sichere Injizieren der DLL und das einfache Aktivieren oder Deaktivieren von Lua-Skripten. YMU konzentriert sich auf Zuverlässigkeit und eine positive Nutzererfahrung, angetrieben durch die aktive Beteiligung der Community."'
+            data-lang-en='"What began as a small script has grown into a robust tool for over a thousand users. YMU is designed to streamline the essential tasks: updating YimMenu, safely injecting the DLL, and easily enabling or disabling Lua scripts. YMU focuses on reliability and user experience, driven by the active involvement of its community."'
+            data-lang-fr="« Ce qui a commencé comme un petit script est devenu un outil robuste pour plus d'un millier d'utilisateurs. YMU est conçu pour simplifier les tâches essentielles : mettre à jour YimMenu, injecter la DLL en toute sécurité et activer ou désactiver facilement les scripts Lua. YMU se concentre sur la fiabilité et l'expérience utilisateur, animé par la participation active de sa communauté. »">
+          </blockquote>
+          <cite class="about-author">- NiiV3AU</cite>
         </div>
       </section>
     </main>
 
-    <footer class="footer-section text-center">
+    <footer class="footer-section text-center fade-in">
       <div class="container">
         <div class="footer-links">
           <a
@@ -1463,9 +1354,11 @@
           |
           <a
             href="mailto:ymu.overtake493@silomails.com"
+            rel="noopener noreferrer"
             data-translate
             data-lang-de="Kontakt"
             data-lang-en="Contact"
+            data-lang-fr="Contact"
             >Contact</a
           >
         </div>
@@ -1474,6 +1367,7 @@
             data-translate
             data-lang-de="Ein Open-Source-Projekt."
             data-lang-en="An Open-Source Project."
+            data-lang-fr="Un projet open-source."
           >
             An Open-Source Project.
           </p>
@@ -1483,14 +1377,23 @@
             &copy; 2024-2025 YMU - made with
             <span class="heart">&hearts;</span> by
             <a
-              href="https://niiv3au.github.io"
+              href="https://niveau.pages.dev/"
               target="_blank"
-              rel="noopener noreferrer"
+              rel="noopener"
               >NiiV3AU aka NV3</a
             >
           </p>
         </div>
       </div>
     </footer>
+    <div id="lightbox-overlay" class="lightbox-overlay">
+      <span id="lightbox-close" class="lightbox-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg></span>
+      <img
+        id="lightbox-image"
+        class="lightbox-image"
+        src=""
+        alt="Enlarged View"
+      />
+    </div>
   </body>
 </html>
