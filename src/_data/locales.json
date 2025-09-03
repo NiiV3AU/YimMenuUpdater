@@ -1,0 +1,297 @@
+{
+    "en": {
+        "meta_description": "YMU is a launchpad for YimMenu. Download the latest version of YimMenu and inject it afterwards, manage your luas and much more.",
+        "nav": {
+            "features": "Features",
+            "howto": "How-To",
+            "download": "Download",
+            "updates": "Updates",
+            "community": "Community"
+        },
+        "animation_tooltip_text": "Toggle Animations",
+        "lang_toggle_aria_label": "Change language",
+        "hero_headline": "YMU: YimMenu. Simple. Up-To-Date.",
+        "hero_subheadline": "The smart launcher for YimMenu. Automatic updates, easy injection and Lua management – all in one place.",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5 (.exe)",
+        "features_section": {
+            "title": "Key Features",
+            "subtitle": "Everything you need for YimMenu, in one tool.",
+            "card1_title": "Always Up-to-Date",
+            "card1_desc": "YMU automatically checks for YimMenu updates and notifies you. One click is enough to update.",
+            "card2_title": "Easy Injection",
+            "card2_desc": "No separate injection tool needed anymore. Start GTA V and inject YimMenu directly from YMU.",
+            "card3_title": "Lua Script Management",
+            "card3_desc": "Manage your Lua scripts, find new ones to try out, and easily enable / disable them in the settings.",
+            "card4_title": "Modern UI",
+            "card4_desc": "An appealing and intuitive user interface (thanks to PySide6) with Light & Dark Themes.",
+            "card5_title": "Integrated Help",
+            "card5_desc": "Feeling lost? <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> buttons in every tab help you use the tool optimally.",
+            "card6_title": "Self-Updater",
+            "card6_desc": "YMU itself also stays up-to-date if desired, so you always have the latest features."
+        },
+        "look_and_feel_section": {
+            "title": "Look & Feel",
+            "subtitle": "Modern, clean, and customizable."
+        },
+        "how_to_section": {
+            "title": "How it Works",
+            "subtitle": "Ready in just a few steps.",
+            "step1_title": "Download & Launch",
+            "step1_desc": "Download <mark class='code-font'>ymu.exe</mark> and launch it.",
+            "step2_desc": "In the 'Download' tab, you can download or update YimMenu to the latest version.",
+            "step3_title": "Start GTA V & Inject",
+            "step3_desc": "Switch to the 'Inject' tab, start GTA V via the button (optional), and inject YimMenu.",
+            "additional_info": "You can find more detailed information via the <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> buttons directly in the YMU application."
+        },
+        "download_section": {
+            "title": "Download",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5 (.exe)",
+            "os_info": "Only for Windows 10 & 11",
+            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Download Source Code (.zip)",
+            "lua_question": "Looking for Lua-scripts?",
+            "lua_button": "Find Lua Scripts for YimMenu",
+            "warning_title": "Important Notes",
+            "warning_term": "Warning:",
+            "warning_text": "Always use YMU and YimMenu with BattlEye DISABLED.",
+            "caution_term": "Caution:",
+            "caution_text": "Using mods online carries a risk of being banned.",
+            "requirements_title": "Requirements & Dependencies",
+            "requirements_os": "Windows 10 or Windows 11",
+            "requirements_language": "Programming Language",
+            "requirements_language_desc": "Python (Developed with v3.12.10)",
+            "requirements_libs": "Required Libraries"
+        },
+        "updates_section": {
+            "title": "Latest Updates",
+            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Complete Changelog on GitHub"
+        },
+        "faq_section": {
+            "title": "Frequently Asked Questions (FAQ)",
+            "q1_question": "How do I update YimMenu?",
+            "q1_answer": "The easiest way is by using YMU. Simply go to the 'Download' tab in the application and click the update button. YMU automatically downloads and installs the latest compatible version of YimMenu for you.",
+            "q2_question": "How to inject YimMenu?",
+            "q2_answer": "After downloading YimMenu with YMU, start GTA V. Then, switch to the 'Inject' tab in YMU and click the 'Inject' button. YMU handles the rest for you. No separate injector is needed.",
+            "q3_question": "Where can I find Lua scripts for YimMenu?",
+            "q3_answer": "You can find Lua scripts via the link in the download section of our website, which directs you to the official YimMenu-Lua GitHub organization. Additionally, you can manage your scripts directly within YMU in the settings tab.",
+            "q4_question": "Is YMU safe?",
+            "q4_answer_p1": "YMU itself does not contain malicious software.",
+            "q4_answer_p2": "However, using mod menus like YimMenu is always at your own risk.",
+            "q4_answer_p3": "Please note the warnings.",
+            "q5_question": "How do I install the dependencies if I use the source code?",
+            "q5_answer": "You can install the dependencies using pip:"
+        },
+        "community_section": {
+            "title": "Join the Community",
+            "subtitle": "You have ideas, requests, found a bug or just want to chat?",
+            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Report Bug / Request Feature",
+            "discord_button": "Join our Discord",
+            "support_text": "Show your support and help the project grow:",
+            "star_button": "Give us a Star on GitHub"
+        },
+        "about_section": {
+            "title": "About the Project",
+            "quote": "\"What began as a small script has grown into a robust tool for over a thousand users. YMU is designed to streamline the essential tasks: updating YimMenu, safely injecting the DLL, and easily enabling or disabling Lua scripts. YMU focuses on reliability and user experience, driven by the active involvement of its community.\""
+        },
+        "footer_section": {
+            "contact": "Contact",
+            "credits": "An Open-Source Project."
+        }
+    },
+    "de": {
+        "meta_description": "YMU ist ein Launchpad für YimMenu. Lade die neuste Version von YimMenu herunter und injiziere sie anschließend, verwalte deine Luas und vieles mehr.",
+        "nav": {
+            "features": "Features",
+            "howto": "Anleitung",
+            "download": "Download",
+            "updates": "Updates",
+            "community": "Community"
+        },
+        "lang_toggle_aria_label": "Sprache ändern",
+        "animation_tooltip_text": "Animationen umschalten",
+        "hero_headline": "YMU: YimMenu. Einfach. Aktuell.",
+        "hero_subheadline": "Der smarte Launcher für YimMenu. Automatisches Updaten, einfaches Injizieren und Lua-Management – alles an einem Ort.",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 herunterladen (.exe)",
+        "features_section": {
+            "title": "Kernfunktionen",
+            "subtitle": "Alles, was du für YimMenu brauchst, in einem Tool.",
+            "card1_title": "Immer aktuell",
+            "card1_desc": "YMU prüft automatisch auf YimMenu-Updates und benachrichtigt dich. Ein Klick genügt zum Aktualisieren.",
+            "card2_title": "Einfache Injektion",
+            "card2_desc": "Kein separates Injection-Tool mehr nötig. Starte GTA V und injiziere YimMenu mit wenigen klicks.",
+            "card3_title": "Verwaltung von Lua-Skripten",
+            "card3_desc": "Verwalte deine Lua-Skripte, finde neue zum Ausprobieren und aktiviere / deaktiviere sie einfach in den Einstellungen.",
+            "card4_title": "Moderne Oberfläche",
+            "card4_desc": "Eine ansprechende und intuitive Benutzeroberfläche (dank PySide6) mit Light & Dark Themes.",
+            "card5_title": "Integrierte Hilfe",
+            "card5_desc": "Fühlst du dich verloren? <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span>-Buttons in jedem Tab helfen dir, das Tool optimal zu nutzen.",
+            "card6_title": "Selbst-Updater",
+            "card6_desc": "Auch YMU selbst hält sich auf Wunsch aktuell, damit du immer die neuesten Features hast."
+        },
+        "look_and_feel_section": {
+            "title": "Ästhetik & Charme",
+            "subtitle": "Modern, clean und anpassbar."
+        },
+        "how_to_section": {
+            "title": "So funktioniert's",
+            "subtitle": "In wenigen Schritten startklar.",
+            "step1_title": "Herunterladen & Starten",
+            "step1_desc": "Lade die <mark class='code-font'>ymu.exe</mark> herunter und starte sie.",
+            "step2_desc": "Im \"Download\"-Tab kannst du YimMenu herunterladen oder auf die neueste Version aktualisieren.",
+            "step3_title": "GTA V Starten & Injizieren",
+            "step3_desc": "Wechsle zum \"Inject\"-Tab, starte GTA V über den Button (optional) und injiziere YimMenu.",
+            "additional_info": "Detailliertere Informationen findest du über die <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span>-Buttons direkt in der YMU-Anwendung."
+        },
+        "download_section": {
+            "title": "Herunterladen",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 herunterladen (.exe)",
+            "os_info": "Nur für Windows 10 & 11",
+            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Source Code herunterladen (.zip)",
+            "lua_question": "Auf der Suche nach Lua-Skripten?",
+            "lua_button": "Lua-Skripte für YimMenu finden",
+            "warning_title": "Wichtige Hinweise",
+            "warning_term": "Warnung:",
+            "warning_text": "Verwende YMU und YimMenu immer mit deaktiviertem BattlEye.",
+            "caution_term": "Achtung:",
+            "caution_text": "Die Verwendung von Mods (Online) birgt das Risiko, gebannt zu werden.",
+            "requirements_title": "Anforderungen & Abhängigkeiten",
+            "requirements_os": "Windows 10 oder Windows 11",
+            "requirements_language": "Programmiersprache",
+            "requirements_language_desc": "Python (Entwickelt mit v3.12.10)",
+            "requirements_libs": "Benötigte Libraries"
+        },
+        "updates_section": {
+            "title": "Neueste Updates",
+            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Vollständiger Changelog auf GitHub"
+        },
+        "faq_section": {
+            "title": "Häufig gestellte Fragen (FAQ)",
+            "q1_question": "Wie update ich YimMenu?",
+            "q1_answer": "Der einfachste Weg ist mit YMU. Gehe zum 'Download'-Tab in der Anwendung und klicke auf den Update-Button. YMU lädt und installiert automatisch die neueste, kompatible Version von YimMenu für dich.",
+            "q2_question": "Wie injiziere ich YimMenu?",
+            "q2_answer": "Nachdem du YimMenu mit YMU heruntergeladen hast, starte GTA V. Wechsle dann in YMU zum 'Inject'-Tab und klicke auf den 'Inject'-Button. YMU kümmert sich um den Rest. Du brauchst keinen separaten Injector mehr.",
+            "q3_question": "Wo finde ich Lua-Skripte für YimMenu?",
+            "q3_answer": "Du kannst Lua-Skripte direkt über den Link im Download-Bereich unserer Webseite finden, der dich zur offiziellen YimMenu-Lua GitHub-Organisation führt. Zusätzlich kannst du deine Skripte direkt in YMU im Einstellungs-Tab verwalten.",
+            "q4_question": "Ist YMU sicher?",
+            "q4_answer_p1": "YMU selbst enthält keine schädliche Software.",
+            "q4_answer_p2": "Die Nutzung von Mod-Menüs wie YimMenu erfolgt jedoch immer auf eigenes Risiko.",
+            "q4_answer_p3": "Bitte beachte die Warnhinweise.",
+            "q5_question": "Wie installiere ich die Abhängigkeiten, wenn ich den Source Code nutze?",
+            "q5_answer": "Du kannst die Abhängigkeiten mit pip installieren:"
+        },
+        "community_section": {
+            "title": "Werde Teil der Community",
+            "subtitle": "Hast du Ideen, Fehler gefunden oder möchtest einfach nur chatten?",
+            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Bug melden / Feature anfragen",
+            "discord_button": "Discord beitreten",
+            "support_text": "Zeige deine Unterstützung und hilf dem Projekt zu wachsen:",
+            "star_button": "Gib uns einen Stern auf GitHub"
+        },
+        "about_section": {
+            "title": "Über das Projekt",
+            "quote": "\"Was als kleines Skript begann, hat sich zu einem robusten Werkzeug für über tausend Anwender entwickelt. YMU wurde entwickelt, um wichtige Aufgaben zu optimieren: das Aktualisieren von YimMenu, das sichere Injizieren der DLL und das einfache Aktivieren oder Deaktivieren von Lua-Skripten. YMU konzentriert sich auf Zuverlässigkeit und eine positive Nutzererfahrung, angetrieben durch die aktive Beteiligung der Community.\""
+        },
+        "footer_section": {
+            "contact": "Kontakt",
+            "credits": "Ein Open-Source-Projekt."
+        }
+    },
+    "fr":
+        {
+        "meta_description": "YMU est une plateforme de lancement pour YimMenu. Téléchargez la dernière version de YimMenu, puis injectez-la, gérez vos luas et bien plus encore.",
+        "nav": {
+            "features": "Fonctionnalités",
+            "howto": "Guide",
+            "download": "Télécharger",
+            "updates": "Mises à jour",
+            "community": "Communauté"
+        },
+        "animation_tooltip_text": "Activer/Désactiver les animations",
+        "lang_toggle_aria_label": "Changer de langue",
+        "hero_headline": "YMU : YimMenu. Simple. À jour.",
+        "hero_subheadline": "Le lanceur intelligent pour YimMenu. Mises à jour automatiques, injection facile et gestion des scripts Lua – tout en un seul endroit.",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5 (.exe)",
+        "features_section": {
+            "title": "Fonctionnalités clés",
+            "subtitle": "Tout ce dont vous avez besoin pour YimMenu, dans un seul outil.",
+            "card1_title": "Toujours à jour",
+            "card1_desc": "YMU vérifie automatiquement les mises à jour de YimMenu et vous notifie. Un clic suffit pour mettre à jour.",
+            "card2_title": "Injection facile",
+            "card2_desc": "Plus besoin d'un injecteur séparé. Lancez GTA V et injectez YimMenu directement depuis YMU.",
+            "card3_title": "Gestion des scripts Lua",
+            "card3_desc": "Gérez vos scripts Lua, trouvez-en de nouveaux à essayer et activez/désactivez-les facilement dans les paramètres.",
+            "card4_title": "Interface moderne",
+            "card4_desc": "Une interface utilisateur attrayante et intuitive (grâce à PySide6) avec des thèmes clair et sombre.",
+            "card5_title": "Aide intégrée",
+            "card5_desc": "Vous êtes perdu ? Les boutons <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> dans chaque onglet vous aident à utiliser l'outil de manière optimale.",
+            "card6_title": "Mise à jour automatique",
+            "card6_desc": "YMU se maintient également à jour si vous le souhaitez, pour que vous ayez toujours les dernières fonctionnalités."
+        },
+        "look_and_feel_section": {
+            "title": "Apparence et ergonomie",
+            "subtitle": "Moderne, épurée et personnalisable."
+        },
+        "how_to_section": {
+            "title": "Comment ça marche",
+            "subtitle": "Prêt en quelques étapes seulement.",
+            "step1_title": "Télécharger & Lancer",
+            "step1_desc": "Téléchargez <mark class='code-font'>ymu.exe</mark> et lancez-le.",
+            "step2_desc": "Dans l'onglet 'Télécharger', vous pouvez télécharger ou mettre à jour YimMenu vers la dernière version.",
+            "step3_title": "Lancer GTA V & Injecter",
+            "step3_desc": "Passez à l'onglet 'Injecter', lancez GTA V via le bouton (optionnel), et injectez YimMenu.",
+            "additional_info": "Vous trouverez des informations plus détaillées via les boutons <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> directement dans l'application YMU."
+        },
+        "download_section": {
+            "title": "Télécharger",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5 (.exe)",
+            "os_info": "Windows 10 ou Windows 11",
+            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Télécharger le code source (.zip)",
+            "lua_question": "À la recherche de scripts Lua ?",
+            "lua_button": "Trouver des scripts Lua pour YimMenu",
+            "warning_title": "Remarques importantes",
+            "warning_term": "Avertissement :",
+            "warning_text": "Utilisez toujours YMU et YimMenu avec BattlEye DÉSACTIVÉ.",
+            "caution_term": "Attention :",
+            "caution_text": "L'utilisation de mods en ligne comporte un risque de bannissement.",
+            "requirements_title": "Prérequis & Dépendances",
+            "requirements_os": "Windows 10 ou Windows 11",
+            "requirements_language": "Langage de programmation",
+            "requirements_language_desc": "Python (Développé avec v3.12.10)",
+            "requirements_libs": "Bibliothèques requises"
+        },
+        "updates_section": {
+            "title": "Dernières mises à jour",
+            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg> Changelog complet sur GitHub"
+        },
+        "faq_section": {
+            "title": "Foire Aux Questions (FAQ)",
+            "q1_question": "Comment mettre à jour YimMenu ?",
+            "q1_answer": "La manière la plus simple est d'utiliser YMU. Allez simplement dans l'onglet 'Télécharger' de l'application et cliquez sur le bouton de mise à jour. YMU télécharge et installe automatiquement la dernière version compatible de YimMenu pour vous.",
+            "q2_question": "Comment injecter YimMenu ?",
+            "q2_answer": "Après avoir téléchargé YimMenu avec YMU, lancez GTA V. Ensuite, passez à l'onglet 'Injecter' dans YMU et cliquez sur le bouton 'Injecter'. YMU s'occupe du reste. Aucun injecteur séparé n'est nécessaire.",
+            "q3_question": "Où puis-je trouver des scripts Lua pour YimMenu ?",
+            "q3_answer": "Vous pouvez trouver des scripts Lua via le lien dans la section de téléchargement de notre site web, qui vous dirige vers l'organisation GitHub officielle de YimMenu-Lua. De plus, vous pouvez gérer vos scripts directement dans YMU dans l'onglet des paramètres.",
+            "q4_question": "YMU est-il sûr ?",
+            "q4_answer_p1": "YMU lui-même ne contient aucun logiciel malveillant.",
+            "q4_answer_p2": "Cependant, l'utilisation de menus de mod comme YimMenu se fait toujours à vos propres risques.",
+            "q4_answer_p3": "Veuillez prendre note des avertissements.",
+            "q5_question": "Comment installer les dépendances si j'utilise le code source ?",
+            "q5_answer": "Vous pouvez installer les dépendances avec pip :"
+        },
+        "community_section": {
+            "title": "Rejoignez la communauté",
+            "subtitle": "Vous avez des idées, des requêtes, trouvé un bug ou voulez simplement discuter ?",
+            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Signaler un bug / Demander une fonctionnalité",
+            "discord_button": "Rejoindre notre Discord",
+            "support_text": "Montrez votre soutien et aidez le projet à grandir :",
+            "star_button": "Donnez-nous une étoile sur GitHub"
+        },
+        "about_section": {
+            "title": "À propos du projet",
+            "quote": "« Ce qui a commencé comme un petit script est devenu un outil robuste pour plus d'un millier d'utilisateurs. YMU est conçu pour simplifier les tâches essentielles : mettre à jour YimMenu, injecter la DLL en toute sécurité et activer ou désactiver facilement les scripts Lua. YMU se concentre sur la fiabilité et l'expérience utilisateur, animé par la participation active de sa communauté. »"
+        },
+        "footer_section": {
+            "contact": "Contact",
+            "credits": "Un projet open-source."
+        }
+    }
+}

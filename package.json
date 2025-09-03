@@ -1,0 +1,22 @@
+{
+  "name": "ymu-website",
+  "version": "1.0.0",
+  "description": "The official website for the YimMenuUpdater (YMU) project, built with Eleventy.",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
+  },
+  "keywords": [
+    "eleventy",
+    "11ty",
+    "static-site",
+    "yimmenu",
+    "ymu",
+    "yimmenuupdater"
+  ],
+  "author": "NiiV3AU",
+  "license": "CC-BY-NC-SA-4.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.2"
+  }
+}

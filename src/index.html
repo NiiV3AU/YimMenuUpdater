@@ -1,0 +1,42 @@
+---
+permalink: /index.html
+eleventyExcludeFromCollections: true
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Redirecting...</title>
+
+    <link rel="canonical" href="{{ metadata.url }}/en/" />
+
+    <meta http-equiv="refresh" content="0; url=/en/" />
+
+    <script>
+      (function () {
+        const supportedLangs = ["de", "en", "fr"];
+        const defaultLang = "en";
+        const userLangs = navigator.languages || [navigator.language];
+
+        let bestMatch = defaultLang;
+        for (const lang of userLangs) {
+          const twoLetterCode = lang.slice(0, 2);
+          if (supportedLangs.includes(twoLetterCode)) {
+            bestMatch = twoLetterCode;
+            break;
+          }
+        }
+        window.location.replace("/" + bestMatch + "/");
+      })();
+    </script>
+  </head>
+  <body>
+    <p>If you are not redirected automatically, please select your language:</p>
+    <ul>
+      <li><a href="/en/">English</a></li>
+      <li><a href="/de/">Deutsch</a></li>
+      <li><a href="/fr/">Français</a></li>
+    </ul>
+  </body>
+</html>
