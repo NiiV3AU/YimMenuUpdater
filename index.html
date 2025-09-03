@@ -2,14 +2,36 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Page Moved</title>
+    <title>YMU has moved to ymu.pages.dev</title>
     <link rel="canonical" href="https://ymu.pages.dev/" />
+
+    <script>
+      (function() {
+        const darkModeBg = '#121212';
+        const lightTextColor = '#e0e0e0';
+        let theme = 'light';
+        try {
+          if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            theme = 'dark';
+          }
+        } catch (e) {}
+        
+        if (theme === 'dark') {
+          document.documentElement.style.backgroundColor = darkModeBg;
+          document.documentElement.style.color = lightTextColor;
+        }
+      })();
+    </script>
+    <script>
+      window.location.replace("https://ymu.pages.dev/");
+    </script>
     <meta http-equiv="refresh" content="0; url=https://ymu.pages.dev/" />
   </head>
   <body>
+    <h1>This page has moved permanently.</h1>
     <p>
-      This page has moved. You will be redirected immediately. If not,
-      <a href="https://ymu.pages.dev/">please click here</a>.
+      You are being redirected to the new official website. If the redirect does not work, please
+      <a href="https://ymu.pages.dev/">click here to continue</a>.
     </p>
   </body>
 </html>
