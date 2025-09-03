@@ -8,17 +8,33 @@ eleventyExcludeFromCollections: true
   <head>
     <meta charset="UTF-8" />
     <title>Redirecting...</title>
-
     <link rel="canonical" href="{{ metadata.url }}/en/" />
-
     <meta http-equiv="refresh" content="0; url=/en/" />
 
+    <script>
+      (function () {
+        const darkModeBg = "#121212";
+        let theme = "light";
+        try {
+          const storedTheme = localStorage.getItem("theme");
+          if (storedTheme) {
+            theme = storedTheme;
+          } else if (
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            theme = "dark";
+          }
+        } catch (e) {}
+        if (theme === "dark") {
+          document.documentElement.style.backgroundColor = darkModeBg;
+        }
+      })();
+    </script>
     <script>
       (function () {
         const supportedLangs = ["de", "en", "fr"];
         const defaultLang = "en";
         const userLangs = navigator.languages || [navigator.language];
-
         let bestMatch = defaultLang;
         for (const lang of userLangs) {
           const twoLetterCode = lang.slice(0, 2);
