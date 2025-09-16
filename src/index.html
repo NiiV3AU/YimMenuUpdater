@@ -9,20 +9,22 @@ eleventyExcludeFromCollections: true
     <meta charset="UTF-8" />
     <title>YMU - YimMenuUpdater</title>
     <script>
-      (function() {
-        const darkModeBg = '#121212';
-        const lightTextColor = '#e0e0e0';
-        let theme = 'light';
+      (function () {
+        const darkModeBg = "#121212";
+        const lightTextColor = "#e0e0e0";
+        let theme = "light";
         try {
-          const storedTheme = localStorage.getItem('theme');
+          const storedTheme = localStorage.getItem("theme");
           if (storedTheme) {
             theme = storedTheme;
-          } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-            theme = 'dark';
+          } else if (
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            theme = "dark";
           }
         } catch (e) {}
-        
-        if (theme === 'dark') {
+
+        if (theme === "dark") {
           document.documentElement.style.backgroundColor = darkModeBg;
           document.documentElement.style.color = lightTextColor;
         }
@@ -35,6 +37,9 @@ eleventyExcludeFromCollections: true
       <li><a href="/en/">English</a></li>
       <li><a href="/de/">Deutsch</a></li>
       <li><a href="/fr/">Français</a></li>
+      <li><a href="/nl/">Nederlands</a></li>
+      <li><a href="/zh/">中文</a></li>
+      <li><a href="/es/">Español</a></li>
     </ul>
   </body>
 </html>

@@ -11,6 +11,18 @@
     {
         "code": "fr",
         "label": "Français"
+    },
+    {
+        "code": "nl",
+        "label": "Nederlands"
+    },
+    {
+        "code": "zh",
+        "label": "中文"
+    },
+    {
+        "code": "es",
+        "label": "Español"
     }
     ]
 }

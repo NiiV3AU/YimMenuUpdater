@@ -528,6 +528,7 @@ permalink: "/{{ lang.code }}/"
                   />
                 </p>
                 <p class="os-info">{{ locales[lang.code].download_section.os_info }}</p>
+                <p class="language-notice">{{ locales[lang.code].download_section.software_language_notice }}</p>
               </div>
               <div class="download-secondary">
                 <a
@@ -840,7 +841,10 @@ permalink: "/{{ lang.code }}/"
 
     <footer class="footer-section text-center fade-in">
       <div class="container">
-        <div class="footer-links">
+        <div class="footer-project-status">
+          <p>{{ locales[lang.code].footer_section.project_status }}</p>
+        </div>
+        <div class="footer-links footer-privacy">
           <a
             href="https://github.com/NiiV3AU/YMU"
             target="_blank"
@@ -852,10 +856,18 @@ permalink: "/{{ lang.code }}/"
             href="mailto:ymu.overtake493@silomails.com"
             rel="noopener noreferrer"
             >{{ locales[lang.code].footer_section.contact }}</a>
+          |
+          <a href="https://polyformproject.org/licenses/shield/1.0.0/" target="_blank" rel="noopener noreferrer">
+            {{ locales[lang.code].privacy_section.software_license }}
+          </a>
+          |
+          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
+            {{ locales[lang.code].privacy_section.website_license }}
+          </a>
+          |
+          <a href="" id="privacy-policy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>
         </div>
-        <div class="footer-credits">
-          <p>{{ locales[lang.code].footer_section.credits }}</p>
-        </div>
+        <br>
         <div class="footer-copyright">
           <p>
             &copy; 2024-2025 YMU - made with
@@ -866,6 +878,19 @@ permalink: "/{{ lang.code }}/"
               rel="noopener"
               >NiiV3AU aka NV3</a
             >
+          </p>
+          <p>
+            Icons: 
+            <a href="https://feathericons.com/" target="_blank" rel="noopener noreferrer" class="links" aria-label="Feather Icons (icon source)">Feather Icons</a>&#185;
+            &nbsp;&nbsp;|&nbsp;&nbsp;
+            Fonts: 
+            <a href="https://fonts.google.com/specimen/Manrope" target="_blank" rel="noopener noreferrer" class="links" aria-label="Manrope (font source)">Manrope</a>&#178;
+            &amp;
+            <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener noreferrer" class="links" aria-label="JetBrains Mono (font source)">JetBrains Mono</a>&#178;
+            <br>
+            &#185;Licensed under the MIT License.
+            <br>
+            &#178;Licensed under the SIL Open Font License 1.1.
           </p>
         </div>
       </div>
@@ -880,6 +905,44 @@ permalink: "/{{ lang.code }}/"
       />
     </div>
     <script>document.body.style.visibility = 'visible';</script>
+    <div id="cookie-consent-banner" class="cookie-banner">
+        <p>{{ locales[lang.code].privacy_section.cookie_banner_text | safe}} <a href="" id="cookie-banner-privacy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>.</p>
+        <button id="cookie-accept-btn" class="btn btn-primary">{{ locales[lang.code].privacy_section.cookie_banner_button }}</button>
+      </div>
+      <div id="privacy-modal-overlay" class="lightbox-overlay">
+      <div class="privacy-modal-content card">
+        <div class="privacy-modal-header">
+          <h2>{{ locales[lang.code].privacy_section.privacy_modal_title }}</h2>
+          <button id="privacy-modal-close" class="modal-close-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg></button>
+        </div>
+        <div class="privacy-modal-body">
+          <p>{{ locales[lang.code].privacy_section.privacy_modal_intro }}</p>
+          
+          <h4>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_title }}</h4>
+          <p>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_desc }}</p>
+          <ul>
+            <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item1 | safe }}</li>
+            <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item2 | safe }}</li>
+            <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item3 | safe }}</li>
+          </ul>
+
+          <h4>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_title }}</h4>
+          <p>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_desc }}</p>
+          <ul>
+            <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item1 | safe }}</li>
+            <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item2 | safe }}</li>
+          </ul>
+
+          <h4>{{ locales[lang.code].privacy_section.privacy_modal_analytics_title }}</h4>
+          <p>{{ locales[lang.code].privacy_section.privacy_modal_analytics_desc }}</p>
+          <ul>
+            <li>{{ locales[lang.code].privacy_section.privacy_modal_analytics_item1 | safe }}</li>
+          </ul>
+
+          <p><strong>{{ locales[lang.code].privacy_section.privacy_modal_conclusion }}</strong></p>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
 
