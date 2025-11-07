@@ -1,9 +1,26 @@
+const { minify } = require("html-minifier-next");
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
-  eleventyConfig.addPassthroughCopy("src/sitemap.xml");
   eleventyConfig.addPassthroughCopy("src/_redirects");
   eleventyConfig.addPassthroughCopy("functions");
+  eleventyConfig.addTransform("htmlmin", function (content) {
+    if (this.page.outputPath && this.page.outputPath.endsWith(".html")) {
+      try {
+        return minify(content, {
+          useShortDoctype: true,
+          removeComments: true,
+          collapseWhitespace: true,
+          minifyCSS: true,
+          minifyJS: true,
+        });
+      } catch (e) {
+        console.error("Error during minification:", e);
+        return content;
+      }
+    }
+    return content;
+  });
   return {
     markdownTemplateEngine: "njk",
     dataTemplateEngine: "njk",

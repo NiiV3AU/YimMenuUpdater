@@ -34,12 +34,9 @@ eleventyExcludeFromCollections: true
   <body>
     <p>If you are not redirected automatically, please select your language:</p>
     <ul>
-      <li><a href="/en/">English</a></li>
-      <li><a href="/de/">Deutsch</a></li>
-      <li><a href="/fr/">Français</a></li>
-      <li><a href="/nl/">Nederlands</a></li>
-      <li><a href="/zh/">中文</a></li>
-      <li><a href="/es/">Español</a></li>
+      {%- for item in languages.items %}
+        <li><a href="/{{ item.code }}/">{{ item.label }}</a></li>
+      {%- endfor %}
     </ul>
   </body>
 </html>
