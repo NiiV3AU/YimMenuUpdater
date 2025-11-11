@@ -78,8 +78,12 @@
             "q4_answer_p1": "YMU is source-available and does not contain any malicious code.",
             "q4_answer_p2": "However, using any online game modifications, including YimMenu, always carries an inherent risk.",
             "q4_answer_p3": "Please be sure to read and understand the warnings provided.",
-            "q5_question": "How do I install dependencies from the source code?",
-            "q5_answer": "You can install the required dependencies using pip:"
+            "q5_question": "Why should I use YMU instead of downloading YimMenu from other sources?",
+            "q5_answer": "Navigating the world of game modifications can be risky. Downloads from unverified sources like YouTube, forums, or clone websites often contain malware, viruses, or outdated files. YMU is built to eliminate this risk entirely. We guarantee your safety by exclusively fetching the 'YimMenu.dll' from the official and open-source YimMenu GitHub repositories. With YMU, you always get the authentic, up-to-date, and unaltered file for a secure and worry-free experience. For full transparency, links to these repositories can be found in the footer of our site.",
+            "q6_question": "Do I need a separate DLL injector like Xenos to use YimMenu?",
+            "q6_answer": "No, YMU is designed as an all-in-one solution. It includes a reliable, built-in injector, removing the need to download and trust separate third-party tools like Xenos. After YMU downloads the latest 'YimMenu.dll', you can launch the game and inject the menu with a single click from our clean interface. This streamlines the entire process from update to injection, making it both simpler and more secure.",
+            "q7_question": "How do I install dependencies from the source code?",
+            "q7_answer": "You can install the required dependencies using pip:"
         },
         "community_section": {
             "title": "Join the Community",
@@ -95,7 +99,8 @@
         },
         "footer_section": {
             "contact": "Contact",
-            "project_status": "A Source-Available Project."
+            "project_status": "A Source-Available Project.",
+            "yimmenu_sources": "YimMenu Sources"
         },
         "privacy_section": {
             "software_license": "Software License",
@@ -199,8 +204,12 @@
             "q4_answer_p1": "YMU ist quelloffen (source-available) und enthält keinen schädlichen Code.",
             "q4_answer_p2": "Die Verwendung von Modifikationen für Online-Spiele, einschließlich YimMenu, birgt jedoch immer ein gewisses Risiko.",
             "q4_answer_p3": "Bitte lies und beachte die bereitgestellten Warnhinweise.",
-            "q5_question": "Wie installiere ich die Abhängigkeiten aus dem Quellcode?",
-            "q5_answer": "Du kannst die erforderlichen Abhängigkeiten mit pip installieren:"
+            "q5_question": "Warum sollte ich YMU anstelle von Downloads aus anderen Quellen verwenden?",
+            "q5_answer": "Die Welt der Spielmodifikationen kann riskant sein. Downloads von ungeprüften Quellen wie YouTube, Foren oder Klon-Websites enthalten oft Malware, Viren oder veraltete Dateien. YMU wurde entwickelt, um dieses Risiko vollständig zu beseitigen. Wir garantieren deine Sicherheit, indem wir die 'YimMenu.dll' ausschließlich von den offiziellen und quelloffenen (Open Source) YimMenu GitHub-Repositories beziehen. Mit YMU erhältst du immer die authentische, aktuelle und unveränderte DLL-Datei für ein sicheres Erlebnis. Für volle Transparenz sind die Links zu diesen Repositories im Footer unserer Seite zu finden.",
+            "q6_question": "Benötige ich einen separaten DLL-Injector wie Xenos, um YimMenu zu verwenden?",
+            "q6_answer": "Nein, YMU ist als Komplettlösung konzipiert. Es enthält einen zuverlässigen, eingebauten Injector, sodass du keine separaten Drittanbieter-Tools wie Xenos herunterladen musst. Nachdem YMU die neueste 'YimMenu.dll' heruntergeladen hat, kannst du das Spiel starten und das Menü mit einem Klick über unsere saubere Benutzeroberfläche injecten. Das optimiert den gesamten Prozess und macht ihn einfacher und sicherer.",
+            "q7_question": "Wie installiere ich die Abhängigkeiten aus dem Quellcode?",
+            "q7_answer": "Du kannst die erforderlichen Abhängigkeiten mit pip installieren:"
         },
         "community_section": {
             "title": "Werde Teil der Community",
@@ -216,7 +225,8 @@
         },
         "footer_section": {
             "contact": "Kontakt",
-            "project_status": "Ein Source-Available-Projekt."
+            "project_status": "Ein Source-Available-Projekt.",
+            "yimmenu_sources": "YimMenu Quellen"
         },
         "privacy_section": {
             "software_license": "Software-Lizenz",
@@ -239,127 +249,6 @@
             "privacy_modal_analytics_desc": "Um zu verstehen, wie unsere Seite genutzt wird, verwenden wir einen datenschutzfreundlichen Analysedienst:",
             "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics:</strong> Liefert uns anonyme, aggregierte Daten (z. B. Seitenaufrufe). Dieser Dienst verwendet keine Cookies, verfolgt dich nicht über Webseiten hinweg und sammelt keine personenbezogenen Daten.",
             "privacy_modal_conclusion": "Kurz gesagt: Wir verwenden nur Daten, die für die Funktionalität der Seite oder für anonyme Statistiken unerlässlich sind. Wir verfolgen dich niemals persönlich."
-        }
-    },
-    "fr": {
-        "meta_description": "YMU est le lanceur ultime pour YimMenu. Téléchargez la dernière version en toute simplicité, injectez-la en quelques clics, gérez vos scripts Lua et bien plus encore.",
-        "nav": {
-            "features": "Fonctionnalités",
-            "howto": "Guide",
-            "download": "Télécharger",
-            "updates": "Mises à jour",
-            "community": "Communauté"
-        },
-        "animation_tooltip_text": "Activer/Désactiver les animations",
-        "lang_toggle_aria_label": "Changer de langue",
-        "hero_headline": "YMU : YimMenu. Simple. À jour.",
-        "hero_subheadline": "Le lanceur intelligent pour YimMenu, avec vérification automatique des mises à jour, injection simplifiée et gestion fluide des scripts Lua — le tout au même endroit.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5 (.exe)",
-        "features_section": {
-            "title": "Fonctionnalités Clés",
-            "subtitle": "Tout ce dont tu as besoin pour YimMenu, dans un seul outil.",
-            "card1_title": "Toujours à jour",
-            "card1_desc": "YMU recherche automatiquement les nouvelles versions de YimMenu et t'en informe. Mets à jour vers la dernière version en toute simplicité.",
-            "card2_title": "Injection sans effort",
-            "card2_desc": "Oublie les injecteurs externes. Lance GTA V et injecte YimMenu directement depuis l'interface de YMU.",
-            "card3_title": "Gestion des scripts Lua",
-            "card3_desc": "Gère tes scripts Lua en toute fluidité. Découvres-en de nouveaux et active-les ou désactive-les directement depuis l'application.",
-            "card4_title": "Interface Moderne",
-            "card4_desc": "Une interface utilisateur épurée et intuitive, conçue avec PySide6, proposant des thèmes Clair et Sombre.",
-            "card5_title": "Aide intégrée",
-            "card5_desc": "Un peu perdu ? Les boutons <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> intégrés à chaque onglet te guident pour tirer le meilleur parti de YMU.",
-            "card6_title": "Mises à jour automatiques",
-            "card6_desc": "Maintiens YMU à jour grâce à son outil de mise à jour intégré pour bénéficier des dernières fonctionnalités et améliorations."
-        },
-        "look_and_feel_section": {
-            "title": "Apparence et Ergonomie",
-            "subtitle": "Moderne, épurée et personnalisable."
-        },
-        "how_to_section": {
-            "title": "Comment ça marche ?",
-            "subtitle": "Lance-toi en quelques étapes seulement.",
-            "step1_title": "Télécharger et Lancer",
-            "step1_desc": "Télécharge <mark class='code-font'>ymu.exe</mark> et exécute-le.",
-            "step2_desc": "Utilise l'onglet 'Téléchargement' pour récupérer la dernière version de YimMenu.",
-            "step3_title": "Lancer GTA V et Injecter",
-            "step3_desc": "Rends-toi dans l'onglet 'Injecter'. Tu peux lancer GTA V directement depuis YMU (optionnel), puis clique simplement pour injecter YimMenu.",
-            "additional_info": "Pour un guide plus détaillé, clique sur les boutons d'aide <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> intégrés dans l'application YMU."
-        },
-        "download_section": {
-            "title": "Téléchargement",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5 (.exe)",
-            "os_info": "Pour Windows 10 & 11",
-            "software_language_notice": "L'application est actuellement disponible uniquement en anglais.",
-            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Télécharger le code source (.zip)",
-            "lua_question": "À la recherche de scripts Lua ?",
-            "lua_button": "Trouver des scripts Lua pour YimMenu",
-            "warning_title": "Remarques importantes",
-            "warning_term": "Avertissement :",
-            "warning_text": "Utilise toujours YMU et YimMenu avec BattlEye DÉSACTIVÉ.",
-            "caution_term": "Attention :",
-            "caution_text": "L'utilisation de mods en ligne comporte un risque de bannissement.",
-            "requirements_title": "Prérequis et Dépendances",
-            "requirements_os": "Windows 10 ou Windows 11",
-            "requirements_language": "Langage de programmation",
-            "requirements_language_desc": "Python (Conçu avec v3.12.10)",
-            "requirements_libs": "Bibliothèques requises"
-        },
-        "updates_section": {
-            "title": "Dernières mises à jour",
-            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Changelog complet sur GitHub"
-        },
-        "faq_section": {
-            "title": "Foire Aux Questions (FAQ)",
-            "q1_question": "Comment mettre à jour YimMenu ?",
-            "q1_answer": "Le plus simple est d'utiliser YMU. Rends-toi dans l'onglet 'Téléchargement' de l'application et clique sur le bouton de mise à jour. YMU s'occupe du reste, en téléchargeant et installant automatiquement la dernière version compatible de YimMenu.",
-            "q2_question": "Comment injecter YimMenu ?",
-            "q2_answer": "Une fois YimMenu téléchargé via YMU, lance GTA V. Ensuite, va dans l'onglet 'Injecter' de YMU et clique simplement sur le bouton 'Injecter'. Aucun injecteur externe n'est nécessaire.",
-            "q3_question": "Où puis-je trouver des scripts Lua pour YimMenu ?",
-            "q3_answer": "Le lien dans notre section 'Téléchargement' te mènera à l'organisation GitHub officielle YimMenu-Lua, une excellente source de scripts. Tu peux également gérer tes scripts installés directement depuis l'onglet des paramètres dans YMU.",
-            "q4_question": "L'utilisation de YMU est-elle sûre ?",
-            "q4_answer_p1": "YMU est un projet 'source-available' (code source consultable) et ne contient aucun code malveillant.",
-            "q4_answer_p2": "Cependant, l'utilisation de toute modification de jeu en ligne, y compris YimMenu, comporte toujours un risque inhérent.",
-            "q4_answer_p3": "Assure-toi de lire et de comprendre les avertissements fournis.",
-            "q5_question": "Comment installer les dépendances à partir du code source ?",
-            "q5_answer": "Tu peux installer les dépendances requises en utilisant pip :"
-        },
-        "community_section": {
-            "title": "Rejoins la communauté",
-            "subtitle": "Une idée, une demande de fonctionnalité, ou un bug à signaler ? Participe à la conversation !",
-            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Signaler un bug ou proposer une fonctionnalité",
-            "discord_button": "Rejoins notre Discord",
-            "support_text": "Montre ton soutien et aide le projet à grandir :",
-            "star_button": "Mets-nous une étoile sur GitHub"
-        },
-        "about_section": {
-            "title": "À propos du projet",
-            "quote": "« Ce qui n'était au départ qu'un petit script est devenu un outil robuste pour plus d'un millier d'utilisateurs. YMU est conçu pour simplifier les tâches essentielles : mettre à jour YimMenu, injecter la DLL en toute sécurité et gérer facilement les scripts Lua. YMU met l'accent sur la fiabilité et l'expérience utilisateur, grâce à l'implication active de sa communauté. »"
-        },
-        "footer_section": {
-            "contact": "Contact",
-            "project_status": "Un projet Source-Available (code source consultable)."
-        },
-        "privacy_section": {
-            "software_license": "Licence du Logiciel",
-            "website_license": "Licence du Site Web",
-            "privacy_policy": "Politique de confidentialité",
-            "cookie_banner_text": "Ce site utilise des données techniques essentielles (comme ta préférence de thème) et des statistiques anonymes pour améliorer ton expérience. En continuant ta navigation, tu acceptes notre ",
-            "cookie_banner_button": "Accepter et continuer",
-            "privacy_modal_title": "Confidentialité et Transparence",
-            "privacy_modal_intro": "Ta vie privée nous est chère. Voici un aperçu transparent de la manière dont ce site utilise les données :",
-            "privacy_modal_local_storage_title": "Stockage Local (Persistant)",
-            "privacy_modal_local_storage_desc": "Pour sauvegarder tes préférences, nous stockons les données suivantes dans le stockage local de ton navigateur. Ces données persistent jusqu'à ce que tu vides le cache de ton navigateur :",
-            "privacy_modal_local_storage_item1": "<strong>Préférence de thème :</strong> Pour mémoriser ton choix de thème (clair ou sombre).",
-            "privacy_modal_local_storage_item2": "<strong>Préférence d'animation :</strong> Pour mémoriser tes réglages d'animation.",
-            "privacy_modal_local_storage_item3": "<strong>Consentement à la politique :</strong> Pour se souvenir que tu as accepté cette politique.",
-            "privacy_modal_session_storage_title": "Stockage de Session (Temporaire)",
-            "privacy_modal_session_storage_desc": "Pour les fonctionnalités de base du site, nous utilisons le stockage de session. Ces données sont automatiquement effacées lorsque tu fermes l'onglet de ton navigateur :",
-            "privacy_modal_session_storage_item1": "<strong>Position de défilement :</strong> Pour restaurer ta position lors du changement de langue.",
-            "privacy_modal_session_storage_item2": "<strong>Cache de l'API :</strong> Pour stocker temporairement le nombre de téléchargements depuis GitHub.",
-            "privacy_modal_analytics_title": "Statistiques",
-            "privacy_modal_analytics_desc": "Pour comprendre comment notre site est utilisé, nous faisons appel à un service d'analyse respectueux de la vie privée :",
-            "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics :</strong> Nous fournit des données agrégées et anonymes (comme les pages vues). Ce service n'utilise pas de cookies, ne te suit pas sur d'autres sites et ne collecte aucune donnée personnelle.",
-            "privacy_modal_conclusion": "En résumé : nous utilisons uniquement des données essentielles au fonctionnement du site ou à des fins de statistiques anonymes. Nous ne te suivons jamais personnellement."
         }
     },
     "nl": {
@@ -441,8 +330,12 @@
             "q4_answer_p1": "YMU is source-available en bevat geen schadelijke code.",
             "q4_answer_p2": "Het gebruik van online game-modificaties, inclusief YimMenu, brengt echter altijd een inherent risico met zich mee.",
             "q4_answer_p3": "Zorg ervoor dat je de waarschuwingen leest en begrijpt.",
-            "q5_question": "Hoe installeer ik de dependencies vanuit de broncode?",
-            "q5_answer": "Je kunt de vereiste dependencies installeren met pip:"
+            "q5_question": "Waarom zou ik YMU gebruiken in plaats van downloads van andere bronnen?",
+            "q5_answer": "De wereld van game-modificaties kan riskant zijn. Downloads van onbetrouwbare bronnen zoals YouTube, forums of gekloonde websites bevatten vaak malware, virussen of verouderde bestanden. YMU is ontworpen om dit risico uit te sluiten. Wij garanderen je veiligheid door de 'YimMenu.dll' uitsluitend van de officiële en open-source YimMenu GitHub-repositories te halen. Met YMU krijg je altijd het authentieke, actuele en ongewijzigde bestand. Voor volledige transparantie zijn de links naar deze repositories te vinden in de footer van onze site.",
+            "q6_question": "Heb ik een aparte DLL-injector zoals Xenos nodig om YimMenu te gebruiken?",
+            "q6_answer": "Nee, YMU is ontworpen als een alles-in-één oplossing. Het bevat een betrouwbare, ingebouwde injector, waardoor aparte tools zoals Xenos overbodig zijn. Nadat YMU de nieuwste 'YimMenu.dll' heeft gedownload, kun je de game starten en het menu met één klik injecteren. Dit stroomlijnt het hele proces en maakt het eenvoudiger en veiliger.",
+            "q7_question": "Hoe installeer ik de dependencies vanuit de broncode?",
+            "q7_answer": "Je kunt de vereiste dependencies installeren met pip:"
         },
         "community_section": {
             "title": "Word deel van de community",
@@ -458,7 +351,8 @@
         },
         "footer_section": {
             "contact": "Contact",
-            "project_status": "Een source-available project."
+            "project_status": "Een source-available project.",
+            "yimmenu_sources": "YimMenu Bronnen"
         },
         "privacy_section": {
             "software_license": "Softwarelicentie",
@@ -483,125 +377,130 @@
             "privacy_modal_conclusion": "Kortom: we gebruiken alleen gegevens die essentieel zijn voor de functionaliteit van de site of voor anonieme statistieken. We volgen je nooit persoonlijk."
         }
     },
-    "zh": {
-        "meta_description": "YMU 是 YimMenu 的终极启动器。无缝下载最新版本、轻松注入、管理您的 Lua 脚本，以及更多强大功能。",
+    "fr": {
+        "meta_description": "YMU est le lanceur ultime pour YimMenu. Téléchargez la dernière version en toute simplicité, injectez-la en quelques clics, gérez vos scripts Lua et bien plus encore.",
         "nav": {
-            "features": "功能",
-            "howto": "使用指南",
-            "download": "下载",
-            "updates": "更新",
-            "community": "社区"
+            "features": "Fonctionnalités",
+            "howto": "Guide",
+            "download": "Télécharger",
+            "updates": "Mises à jour",
+            "community": "Communauté"
         },
-        "animation_tooltip_text": "切换动画",
-        "lang_toggle_aria_label": "更改语言",
-        "hero_headline": "YMU：YimMenu。简约。最新。",
-        "hero_subheadline": "YimMenu 的智能启动器，集自动更新检查、一键注入和无缝 Lua 脚本管理于一体。",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.5 (.exe)",
+        "animation_tooltip_text": "Activer/Désactiver les animations",
+        "lang_toggle_aria_label": "Changer de langue",
+        "hero_headline": "YMU : YimMenu. Simple. À jour.",
+        "hero_subheadline": "Le lanceur intelligent pour YimMenu, avec vérification automatique des mises à jour, injection simplifiée et gestion fluide des scripts Lua — le tout au même endroit.",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5 (.exe)",
         "features_section": {
-            "title": "核心功能",
-            "subtitle": "您所需的一切，尽在此工具中。",
-            "card1_title": "始终最新",
-            "card1_desc": "YMU 自动检查 YimMenu 的新版本并通知您。轻松更新到最新版本。",
-            "card2_title": "轻松注入",
-            "card2_desc": "告别独立的注入器。直接从 YMU 界面启动 GTA V 并注入 YimMenu。",
-            "card3_title": "Lua 脚本管理",
-            "card3_desc": "无缝管理您的 Lua 脚本。发现新脚本，并直接在应用内启用或禁用它们。",
-            "card4_title": "现代用户界面",
-            "card4_desc": "基于 PySide6 构建的简洁直观用户界面，并提供浅色和深色两种主题。",
-            "card5_title": "集成帮助",
-            "card5_desc": "遇到困难？每个选项卡中的集成 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 按钮都会引导您，助您充分利用 YMU 的全部功能。",
-            "card6_title": "自动更新程序",
-            "card6_desc": "通过内置的自动更新程序，让 YMU 保持最新，以获取最新的功能和改进。"
+            "title": "Fonctionnalités Clés",
+            "subtitle": "Tout ce dont tu as besoin pour YimMenu, dans un seul outil.",
+            "card1_title": "Toujours à jour",
+            "card1_desc": "YMU recherche automatiquement les nouvelles versions de YimMenu et t'en informe. Mets à jour vers la dernière version en toute simplicité.",
+            "card2_title": "Injection sans effort",
+            "card2_desc": "Oublie les injecteurs externes. Lance GTA V et injecte YimMenu directement depuis l'interface de YMU.",
+            "card3_title": "Gestion des scripts Lua",
+            "card3_desc": "Gère tes scripts Lua en toute fluidité. Découvres-en de nouveaux et active-les ou désactive-les directement depuis l'application.",
+            "card4_title": "Interface Moderne",
+            "card4_desc": "Une interface utilisateur épurée et intuitive, conçue avec PySide6, proposant des thèmes Clair et Sombre.",
+            "card5_title": "Aide intégrée",
+            "card5_desc": "Un peu perdu ? Les boutons <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> intégrés à chaque onglet te guident pour tirer le meilleur parti de YMU.",
+            "card6_title": "Mises à jour automatiques",
+            "card6_desc": "Maintiens YMU à jour grâce à son outil de mise à jour intégré pour bénéficier des dernières fonctionnalités et améliorations."
         },
         "look_and_feel_section": {
-            "title": "外观与体验",
-            "subtitle": "现代、简洁、可定制。"
+            "title": "Apparence et Ergonomie",
+            "subtitle": "Moderne, épurée et personnalisable."
         },
         "how_to_section": {
-            "title": "工作原理",
-            "subtitle": "只需几步，即可开始。",
-            "step1_title": "下载并启动",
-            "step1_desc": "下载 <mark class='code-font'>ymu.exe</mark> 并运行它。",
-            "step2_desc": "使用“下载”选项卡来获取最新版本的 YimMenu。",
-            "step3_title": "启动 GTA V 并注入",
-            "step3_desc": "转到“注入”选项卡。您可以直接从 YMU 启动 GTA V（可选），然后只需单击一下即可注入 YimMenu。",
-            "additional_info": "如需更详细的指导，请单击 YMU 应用程序内的集成 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 帮助按钮。"
+            "title": "Comment ça marche ?",
+            "subtitle": "Lance-toi en quelques étapes seulement.",
+            "step1_title": "Télécharger et Lancer",
+            "step1_desc": "Télécharge <mark class='code-font'>ymu.exe</mark> et exécute-le.",
+            "step2_desc": "Utilise l'onglet 'Téléchargement' pour récupérer la dernière version de YimMenu.",
+            "step3_title": "Lancer GTA V et Injecter",
+            "step3_desc": "Rends-toi dans l'onglet 'Injecter'. Tu peux lancer GTA V directement depuis YMU (optionnel), puis clique simplement pour injecter YimMenu.",
+            "additional_info": "Pour un guide plus détaillé, clique sur les boutons d'aide <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> intégrés dans l'application YMU."
         },
         "download_section": {
-            "title": "下载",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.5 (.exe)",
-            "os_info": "适用于 Windows 10 和 11",
-            "software_language_notice": "该应用程序目前仅提供英文版本。",
-            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>下载源代码 (.zip)",
-            "lua_question": "正在寻找 Lua 脚本？",
-            "lua_button": "查找 YimMenu 的 Lua 脚本",
-            "warning_title": "重要提示",
-            "warning_term": "警告：",
-            "warning_text": "始终在禁用 BattlEye 的情况下使用 YMU 和 YimMenu。",
-            "caution_term": "注意：",
-            "caution_text": "在线使用模组存在被封禁的风险。",
-            "requirements_title": "要求与依赖",
-            "requirements_os": "Windows 10 或 Windows 11",
-            "requirements_language": "编程语言",
-            "requirements_language_desc": "Python (基于 v3.12.10 构建)",
-            "requirements_libs": "所需库"
+            "title": "Téléchargement",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5 (.exe)",
+            "os_info": "Pour Windows 10 & 11",
+            "software_language_notice": "L'application est actuellement disponible uniquement en anglais.",
+            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Télécharger le code source (.zip)",
+            "lua_question": "À la recherche de scripts Lua ?",
+            "lua_button": "Trouver des scripts Lua pour YimMenu",
+            "warning_title": "Remarques importantes",
+            "warning_term": "Avertissement :",
+            "warning_text": "Utilise toujours YMU et YimMenu avec BattlEye DÉSACTIVÉ.",
+            "caution_term": "Attention :",
+            "caution_text": "L'utilisation de mods en ligne comporte un risque de bannissement.",
+            "requirements_title": "Prérequis et Dépendances",
+            "requirements_os": "Windows 10 ou Windows 11",
+            "requirements_language": "Langage de programmation",
+            "requirements_language_desc": "Python (Conçu avec v3.12.10)",
+            "requirements_libs": "Bibliothèques requises"
         },
         "updates_section": {
-            "title": "最新更新",
-            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>在 GitHub 上查看完整更新日志"
+            "title": "Dernières mises à jour",
+            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Changelog complet sur GitHub"
         },
         "faq_section": {
-            "title": "常见问题解答 (FAQ)",
-            "q1_question": "如何更新 YimMenu？",
-            "q1_answer": "最简单的方法是使用 YMU。只需在应用中导航到“下载”选项卡，然后单击更新按钮。YMU 会处理剩下的一切，自动下载并安装最新的兼容版本。",
-            "q2_question": "如何注入 YimMenu？",
-            "q2_answer": "使用 YMU 下载 YimMenu 后，启动 GTA V。然后，只需在 YMU 中转到“注入”选项卡并单击“注入”按钮即可。无需使用独立的注入器。",
-            "q3_question": "在哪里可以找到 YimMenu 的 Lua 脚本？",
-            "q3_answer": "我们下载区域中的链接会将您带到官方的 YimMenu-Lua GitHub 组织，这是一个极佳的脚本来源。您也可以直接在 YMU 的设置选项卡中管理已安装的脚本。",
-            "q4_question": "使用 YMU 安全吗？",
-            "q4_answer_p1": "YMU 是源码可用的，不包含任何恶意代码。",
-            "q4_answer_p2": "然而，使用任何在线游戏修改（包括 YimMenu）都始终伴随着固有风险。",
-            "q4_answer_p3": "请务必阅读并理解所提供的警告信息。",
-            "q5_question": "如何从源代码安装依赖项？",
-            "q5_answer": "您可以使用 pip 安装所需的依赖项："
+            "title": "Foire Aux Questions (FAQ)",
+            "q1_question": "Comment mettre à jour YimMenu ?",
+            "q1_answer": "Le plus simple est d'utiliser YMU. Rends-toi dans l'onglet 'Téléchargement' de l'application et clique sur le bouton de mise à jour. YMU s'occupe du reste, en téléchargeant et installant automatiquement la dernière version compatible de YimMenu.",
+            "q2_question": "Comment injecter YimMenu ?",
+            "q2_answer": "Une fois YimMenu téléchargé via YMU, lance GTA V. Ensuite, va dans l'onglet 'Injecter' de YMU et clique simplement sur le bouton 'Injecter'. Aucun injecteur externe n'est nécessaire.",
+            "q3_question": "Où puis-je trouver des scripts Lua pour YimMenu ?",
+            "q3_answer": "Le lien dans notre section 'Téléchargement' te mènera à l'organisation GitHub officielle YimMenu-Lua, une excellente source de scripts. Tu peux également gérer tes scripts installés directement depuis l'onglet des paramètres dans YMU.",
+            "q4_question": "L'utilisation de YMU est-elle sûre ?",
+            "q4_answer_p1": "YMU est un projet 'source-available' (code source consultable) et ne contient aucun code malveillant.",
+            "q4_answer_p2": "Cependant, l'utilisation de toute modification de jeu en ligne, y compris YimMenu, comporte toujours un risque inhérent.",
+            "q4_answer_p3": "Assure-toi de lire et de comprendre les avertissements fournis.",
+            "q5_question": "Pourquoi devrais-je utiliser YMU plutôt que de télécharger depuis d'autres sources ?",
+            "q5_answer": "Le monde des modifications de jeux peut être risqué. Les téléchargements depuis des sources non vérifiées comme YouTube, les forums ou les sites miroirs contiennent souvent des malwares, des virus ou des fichiers obsolètes. YMU est conçu pour éliminer ce risque. Nous garantissons ta sécurité en récupérant 'YimMenu.dll' exclusivement depuis les dépôts GitHub officiels et open source de YimMenu. Avec YMU, tu obtiens toujours le fichier authentique, à jour et non altéré. Pour une transparence totale, les liens vers ces dépôts se trouvent dans le pied de page de notre site.",
+            "q6_question": "Ai-je besoin d'un injecteur de DLL séparé comme Xenos pour utiliser YimMenu ?",
+            "q6_answer": "Non, YMU est une solution tout-en-un. Il inclut un injecteur intégré fiable, éliminant le besoin de télécharger des outils tiers comme Xenos. Une fois que YMU a téléchargé la dernière 'YimMenu.dll', tu peux lancer le jeu et injecter le menu en un clic depuis notre interface. Cela simplifie tout le processus, le rendant plus simple et plus sûr.",
+            "q7_question": "Comment installer les dépendances à partir du code source ?",
+            "q7_answer": "Tu peux installer les dépendances requises en utilisant pip :"
         },
         "community_section": {
-            "title": "加入社区",
-            "subtitle": "有想法、功能请求，或者发现了错误？加入对话吧！",
-            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>报告错误或请求功能",
-            "discord_button": "加入我们的 Discord",
-            "support_text": "表达您的支持，帮助项目成长：",
-            "star_button": "在 GitHub 上为我们加星"
+            "title": "Rejoins la communauté",
+            "subtitle": "Une idée, une demande de fonctionnalité, ou un bug à signaler ? Participe à la conversation !",
+            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Signaler un bug ou proposer une fonctionnalité",
+            "discord_button": "Rejoins notre Discord",
+            "support_text": "Montre ton soutien et aide le projet à grandir :",
+            "star_button": "Mets-nous une étoile sur GitHub"
         },
         "about_section": {
-            "title": "关于项目",
-            "quote": "“最初只是一个小脚本，如今已成长为服务于上千名用户的强大工具。YMU 旨在简化核心任务：更新 YimMenu、安全注入 DLL，以及轻松启用或禁用 Lua 脚本。在活跃社区的推动下，YMU 专注于可靠性与用户体验。”"
+            "title": "À propos du projet",
+            "quote": "« Ce qui n'était au départ qu'un petit script est devenu un outil robuste pour plus d'un millier d'utilisateurs. YMU est conçu pour simplifier les tâches essentielles : mettre à jour YimMenu, injecter la DLL en toute sécurité et gérer facilement les scripts Lua. YMU met l'accent sur la fiabilité et l'expérience utilisateur, grâce à l'implication active de sa communauté. »"
         },
         "footer_section": {
-            "contact": "联系我们",
-            "project_status": "一个源码可用的项目。"
+            "contact": "Contact",
+            "project_status": "Un projet Source-Available (code source consultable).",
+            "yimmenu_sources": "Sources de YimMenu"
         },
         "privacy_section": {
-            "software_license": "软件许可证",
-            "website_license": "网站许可证",
-            "privacy_policy": "隐私政策",
-            "cookie_banner_text": "本网站使用必要的技术数据（如您的主题偏好）和匿名分析来改善您的体验。继续使用本网站，即表示您同意我们的",
-            "cookie_banner_button": "同意并继续",
-            "privacy_modal_title": "隐私与透明度",
-            "privacy_modal_intro": "我们非常重视您的隐私。以下是本网站如何使用数据的透明概述：",
-            "privacy_modal_local_storage_title": "本地存储 (持久)",
-            "privacy_modal_local_storage_desc": "为了保存您的偏好设置，我们会将以下数据存储在您浏览器的本地存储中。此数据将一直保留，直到您清除浏览器缓存：",
-            "privacy_modal_local_storage_item1": "<strong>主题偏好：</strong> 记录您对浅色或深色模式的选择。",
-            "privacy_modal_local_storage_item2": "<strong>动画偏好：</strong> 记录您的动画设置。",
-            "privacy_modal_local_storage_item3": "<strong>隐私同意：</strong> 记录您已接受此政策。",
-            "privacy_modal_session_storage_title": "会话存储 (临时)",
-            "privacy_modal_session_storage_desc": "为了实现网站的核心功能，我们使用会话存储。当您关闭浏览器选项卡时，此数据会自动清除：",
-            "privacy_modal_session_storage_item1": "<strong>滚动位置：</strong> 在切换语言时恢复您的滚动位置。",
-            "privacy_modal_session_storage_item2": "<strong>API 缓存：</strong> 临时存储来自 GitHub 的下载计数。",
-            "privacy_modal_analytics_title": "分析",
-            "privacy_modal_analytics_desc": "为了解我们网站的使用情况，我们使用注重隐私的分析服务：",
-            "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics：</strong> 为我们提供匿名的汇总数据（如页面浏览量）。它不使用 Cookie，不会跨网站跟踪您，也不收集任何个人数据。",
-            "privacy_modal_conclusion": "简而言之：我们只使用网站功能所必需的数据或用于匿名统计的数据。我们绝不会对您进行个人追踪。"
+            "software_license": "Licence du Logiciel",
+            "website_license": "Licence du Site Web",
+            "privacy_policy": "Politique de confidentialité",
+            "cookie_banner_text": "Ce site utilise des données techniques essentielles (comme ta préférence de thème) et des statistiques anonymes pour améliorer ton expérience. En continuant ta navigation, tu acceptes notre ",
+            "cookie_banner_button": "Accepter et continuer",
+            "privacy_modal_title": "Confidentialité et Transparence",
+            "privacy_modal_intro": "Ta vie privée nous est chère. Voici un aperçu transparent de la manière dont ce site utilise les données :",
+            "privacy_modal_local_storage_title": "Stockage Local (Persistant)",
+            "privacy_modal_local_storage_desc": "Pour sauvegarder tes préférences, nous stockons les données suivantes dans le stockage local de ton navigateur. Ces données persistent jusqu'à ce que tu vides le cache de ton navigateur :",
+            "privacy_modal_local_storage_item1": "<strong>Préférence de thème :</strong> Pour mémoriser ton choix de thème (clair ou sombre).",
+            "privacy_modal_local_storage_item2": "<strong>Préférence d'animation :</strong> Pour mémoriser tes réglages d'animation.",
+            "privacy_modal_local_storage_item3": "<strong>Consentement à la politique :</strong> Pour se souvenir que tu as accepté cette politique.",
+            "privacy_modal_session_storage_title": "Stockage de Session (Temporaire)",
+            "privacy_modal_session_storage_desc": "Pour les fonctionnalités de base du site, nous utilisons le stockage de session. Ces données sont automatiquement effacées lorsque tu fermes l'onglet de ton navigateur :",
+            "privacy_modal_session_storage_item1": "<strong>Position de défilement :</strong> Pour restaurer ta position lors du changement de langue.",
+            "privacy_modal_session_storage_item2": "<strong>Cache de l'API :</strong> Pour stocker temporairement le nombre de téléchargements depuis GitHub.",
+            "privacy_modal_analytics_title": "Statistiques",
+            "privacy_modal_analytics_desc": "Pour comprendre comment notre site est utilisé, nous faisons appel à un service d'analyse respectueux de la vie privée :",
+            "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics :</strong> Nous fournit des données agrégées et anonymes (comme les pages vues). Ce service n'utilise pas de cookies, ne te suit pas sur d'autres sites et ne collecte aucune donnée personnelle.",
+            "privacy_modal_conclusion": "En résumé : nous utilisons uniquement des données essentielles au fonctionnement du site ou à des fins de statistiques anonymes. Nous ne te suivons jamais personnellement."
         }
     },
     "es": {
@@ -683,8 +582,12 @@
             "q4_answer_p1": "YMU es de código fuente disponible y no contiene ningún código malicioso.",
             "q4_answer_p2": "Sin embargo, el uso de cualquier modificación en juegos online, incluido YimMenu, siempre conlleva un riesgo inherente.",
             "q4_answer_p3": "Asegúrate de leer y comprender las advertencias proporcionadas.",
-            "q5_question": "¿Cómo instalo las dependencias desde el código fuente?",
-            "q5_answer": "Puedes instalar las dependencias requeridas usando pip:"
+            "q5_question": "¿Por qué usar YMU en lugar de descargar de otras fuentes?",
+            "q5_answer": "El mundo de las modificaciones de juegos puede ser arriesgado. Las descargas de fuentes no verificadas como YouTube, foros o sitios web clonados a menudo contienen malware, virus o archivos desactualizados. YMU está diseñado para eliminar este riesgo. Garantizamos tu seguridad obteniendo 'YimMenu.dll' exclusivamente de los repositorios de GitHub oficiales y de código abierto (open source) de YimMenu. Con YMU, siempre obtienes el archivo auténtico, actualizado y sin alteraciones. Para total transparencia, los enlaces a estos repositorios se encuentran en el pie de página de nuestro sitio.",
+            "q6_question": "¿Necesito un inyector de DLL externo como Xenos?",
+            "q6_answer": "No, YMU es una solución todo en uno. Incluye un inyector fiable integrado, eliminando la necesidad de herramientas de terceros como Xenos. Después de que YMU descargue el último 'YimMenu.dll', puedes iniciar el juego e inyectar el menú con un solo clic. Esto agiliza todo el proceso, haciéndolo más simple y seguro.",
+            "q7_question": "¿Cómo instalo las dependencias desde el código fuente?",
+            "q7_answer": "Puedes instalar las dependencias requeridas usando pip:"
         },
         "community_section": {
             "title": "Únete a la comunidad",
@@ -700,7 +603,8 @@
         },
         "footer_section": {
             "contact": "Contacto",
-            "project_status": "Un proyecto de código fuente disponible."
+            "project_status": "Un proyecto de código fuente disponible.",
+            "yimmenu_sources": "Fuentes de YimMenu"
         },
         "privacy_section": {
             "software_license": "Licencia del software",
@@ -723,127 +627,6 @@
             "privacy_modal_analytics_desc": "Para comprender cómo se utiliza nuestro sitio, usamos un servicio de analíticas centrado en la privacidad:",
             "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics:</strong> Nos proporciona datos anónimos y agregados (como las vistas de página). No utiliza cookies, no te rastrea entre sitios web y no recopila ningún dato personal.",
             "privacy_modal_conclusion": "En resumen: solo usamos los datos esenciales para la funcionalidad del sitio o para estadísticas anónimas. Nunca te rastreamos personalmente."
-        }
-    },
-    "ja": {
-        "meta_description": "YMUはYimMenuのための究極のローンチパッド。最新版のシームレスなダウンロード、数クリックでのインジェクト、Luaスクリプト管理など、すべてを一つに。",
-        "nav": {
-            "features": "機能",
-            "howto": "使い方",
-            "download": "ダウンロード",
-            "updates": "アップデート",
-            "community": "コミュニティ"
-        },
-        "animation_tooltip_text": "アニメーションを切り替え",
-        "lang_toggle_aria_label": "言語を変更",
-        "hero_headline": "YMU: YimMenuを、シンプルに、最新の状態で。",
-        "hero_subheadline": "YimMenuのためのスマートランチャー。自動アップデートチェック、簡単なインジェクト、そしてシームレスなLuaスクリプト管理。そのすべてを、この一つで。",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 をダウンロード (.exe)",
-        "features_section": {
-            "title": "主な機能",
-            "subtitle": "YimMenuに必要なすべてが、このツール一つに。",
-            "card1_title": "常に最新の状態を維持",
-            "card1_desc": "YMUがYimMenuの新規リリースを自動でチェックしてお知らせ。いつでも簡単に最新バージョンへアップデートできます。",
-            "card2_title": "手軽なインジェクト",
-            "card2_desc": "別のインジェクターはもう不要。GTA Vを起動したら、YMUの画面から直接YimMenuをインジェクトできます。",
-            "card3_title": "Luaスクリプト管理",
-            "card3_desc": "Luaスクリプトをシームレスに管理。新しいスクリプトを見つけたり、アプリ内から直接オン・オフを切り替えたりできます。",
-            "card4_title": "モダンなUI",
-            "card4_desc": "PySide6で構築された、クリーンで直感的なユーザーインターフェース。ライトテーマとダークテーマの両方に対応しています。",
-            "card5_title": "統合されたヘルプ機能",
-            "card5_desc": "操作に迷ったら？各タブに統合された<span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span>ボタンが、YMUを最大限に活用するためのガイドです。",
-            "card6_title": "自動更新機能",
-            "card6_desc": "内蔵の自動更新機能でYMU自体も常に最新の状態に。いつでも最新の機能や改善点を享受できます。"
-        },
-        "look_and_feel_section": {
-            "title": "ルック＆フィール",
-            "subtitle": "モダン、クリーン、そしてカスタマイズ可能。"
-        },
-        "how_to_section": {
-            "title": "使い方",
-            "subtitle": "わずか数ステップで準備完了です。",
-            "step1_title": "ダウンロードして起動",
-            "step1_desc": "<mark class='code-font'>ymu.exe</mark> をダウンロードして実行します。",
-            "step2_desc": "「ダウンロード」タブを使い、YimMenuの最新バージョンを入手します。",
-            "step3_title": "GTA Vを起動してインジェクト",
-            "step3_desc": "「インジェクト」タブに移動します。YMUから直接GTA Vを起動し（任意）、あとはクリック一つでYimMenuをインジェクトできます。",
-            "additional_info": "より詳細なガイダンスについては、YMUアプリケーション内に統合された<span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span>ヘルプボタンをクリックしてください。"
-        },
-        "download_section": {
-            "title": "ダウンロード",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 をダウンロード (.exe)",
-            "os_info": "Windows 10 & 11 対応",
-            "software_language_notice": "このアプリケーションは現在、英語のみで利用可能です。",
-            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>ソースコードをダウンロード (.zip)",
-            "lua_question": "Luaスクリプトをお探しですか？",
-            "lua_button": "YimMenu用Luaスクリプトを探す",
-            "warning_title": "重要事項",
-            "warning_term": "警告:",
-            "warning_text": "YMUとYimMenuは必ずBattlEyeを無効にして使用してください。",
-            "caution_term": "注意:",
-            "caution_text": "オンラインでMODを使用すると、アカウントが停止されるリスクがあります。",
-            "requirements_title": "要件と依存関係",
-            "requirements_os": "Windows 10 または Windows 11",
-            "requirements_language": "プログラミング言語",
-            "requirements_language_desc": "Python (v3.12.10でビルド)",
-            "requirements_libs": "必要なライブラリ"
-        },
-        "updates_section": {
-            "title": "最新アップデート",
-            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>GitHubで完全な変更履歴を見る"
-        },
-        "faq_section": {
-            "title": "よくある質問 (FAQ)",
-            "q1_question": "YimMenuをアップデートするには？",
-            "q1_answer": "最も簡単な方法はYMUを使うことです。アプリの「ダウンロード」タブに移動し、アップデートボタンをクリックするだけ。YMUが自動的に最新の互換バージョンをダウンロードし、インストールします。",
-            "q2_question": "YimMenuをインジェクトするには？",
-            "q2_answer": "YMUでYimMenuをダウンロードしたら、GTA Vを起動してください。その後、YMUの「インジェクト」タブに移動して「インジェクト」ボタンをクリックするだけです。専用のインジェクターは必要ありません。",
-            "q3_question": "YimMenu用のLuaスクリプトはどこにありますか？",
-            "q3_answer": "ダウンロードセクションのリンクが、スクリプトの優れた供給源である公式YimMenu-Lua GitHubオーガニゼーションに繋がっています。インストール済みのスクリプトは、YMU内の設定タブから直接管理することもできます。",
-            "q4_question": "YMUは安全ですか？",
-            "q4_answer_p1": "YMUはソースアベイラブルであり、悪意のあるコードは一切含まれていません。",
-            "q4_answer_p2": "ただし、YimMenuを含むあらゆるオンラインゲームのMOD使用には、常に固有のリスクが伴います。",
-            "q4_answer_p3": "提供されている警告を必ずお読みになり、内容を理解してください。",
-            "q5_question": "ソースコードから依存関係をインストールするには？",
-            "q5_answer": "pipを使用して必要な依存関係をインストールできます："
-        },
-        "community_section": {
-            "title": "コミュニティに参加",
-            "subtitle": "アイデア、機能のリクエスト、バグの発見など、ぜひ会話にご参加ください！",
-            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>バグ報告または機能リクエスト",
-            "discord_button": "Discordに参加",
-            "support_text": "プロジェクトをサポートし、成長にご協力ください：",
-            "star_button": "GitHubでスターを付ける"
-        },
-        "about_section": {
-            "title": "プロジェクトについて",
-            "quote": "「小さなスクリプトとして始まったものが、今では1000人以上のユーザーのための堅牢なツールに成長しました。YMUは、YimMenuのアップデート、DLLの安全なインジェクト、Luaスクリプトの簡単な有効化/無効化といった本質的なタスクを効率化するために設計されています。YMUは、コミュニティの積極的な参加によって推進され、信頼性とユーザー体験に重点を置いています。」"
-        },
-        "footer_section": {
-            "contact": "連絡先",
-            "project_status": "ソースコードを公開しているプロジェクトです。"
-        },
-        "privacy_section": {
-            "software_license": "ソフトウェアライセンス",
-            "website_license": "ウェブサイトライセンス",
-            "privacy_policy": "プライバシーポリシー",
-            "cookie_banner_text": "当サイトは、ユーザー体験向上のため、テーマ設定などの必須技術データおよび匿名の分析データを使用します。サイトの利用を継続することで、当社の",
-            "cookie_banner_button": "同意して続ける",
-            "privacy_modal_title": "プライバシーと透明性",
-            "privacy_modal_intro": "あなたのプライバシーは私たちにとって重要です。このサイトがデータをどのように使用するか、透明性の高い概要を以下に示します：",
-            "privacy_modal_local_storage_title": "ローカルストレージ（永続的）",
-            "privacy_modal_local_storage_desc": "ユーザー設定を保存するため、以下のデータをブラウザのローカルストレージに保存します。このデータは、ブラウザのキャッシュを消去するまで保持されます：",
-            "privacy_modal_local_storage_item1": "<strong>テーマ設定：</strong>ライトモードまたはダークモードの選択を記憶します。",
-            "privacy_modal_local_storage_item2": "<strong>アニメーション設定：</strong>アニメーションに関する設定を記憶します。",
-            "privacy_modal_local_storage_item3": "<strong>プライバシー同意：</strong>あなたがこのポリシーに同意したことを記憶します。",
-            "privacy_modal_session_storage_title": "セッションストレージ（一時的）",
-            "privacy_modal_session_storage_desc": "サイトのコア機能のため、セッションストレージを使用します。このデータは、ブラウザのタブを閉じると自動的に消去されます：",
-            "privacy_modal_session_storage_item1": "<strong>スクロール位置：</strong>言語を切り替えた際にスクロール位置を復元します。",
-            "privacy_modal_session_storage_item2": "<strong>APIキャッシュ：</strong>GitHubのダウンロード数を一時的に保存します。",
-            "privacy_modal_analytics_title": "アクセス解析",
-            "privacy_modal_analytics_desc": "サイトの利用状況を理解するため、プライバシーに配慮した解析サービスを使用しています：",
-            "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics：</strong>匿名の集計データ（ページビューなど）を提供します。このサービスはCookieを使用せず、ウェブサイトを横断してあなたを追跡することはなく、個人データも収集しません。",
-            "privacy_modal_conclusion": "要するに、私たちはサイト機能や匿名の統計に不可欠なデータのみを使用します。あなた個人を追跡することは決してありません。"
         }
     },
     "pt": {
@@ -925,8 +708,12 @@
             "q4_answer_p1": "O YMU tem código-fonte disponível e não contém nenhum código malicioso.",
             "q4_answer_p2": "No entanto, o uso de qualquer modificação em jogos online, incluindo o YimMenu, sempre acarreta um risco inerente.",
             "q4_answer_p3": "Por favor, leia e entenda os avisos fornecidos.",
-            "q5_question": "Como instalo as dependências a partir do código-fonte?",
-            "q5_answer": "Você pode instalar as dependências necessárias usando o pip:"
+            "q5_question": "Por que usar o YMU em vez de baixar de outras fontes?",
+            "q5_answer": "O mundo de modificações de jogos pode ser arriscado. Downloads de fontes não verificadas como YouTube, fóruns ou sites clonados geralmente contêm malware, vírus ou arquivos desatualizados. O YMU foi projetado para eliminar esse risco. Garantimos sua segurança obtendo o 'YimMenu.dll' exclusivamente dos repositórios GitHub oficiais e de código aberto (open source) do YimMenu. Com o YMU, você sempre obtém o arquivo autêntico, atualizado e inalterado. Para total transparência, os links para esses repositórios podem ser encontrados no rodapé do nosso site.",
+            "q6_question": "Preciso de um injetor de DLL separado como o Xenos?",
+            "q6_answer": "Não, o YMU é uma solução completa. Ele inclui um injetor confiável e embutido, eliminando a necessidade de ferramentas de terceiros como o Xenos. Depois que o YMU baixa o 'YimMenu.dll' mais recente, você pode iniciar o jogo e injetar o menu com um clique. Isso otimiza todo o processo, tornando-o mais simples e seguro.",
+            "q7_question": "Como instalo as dependências a partir do código-fonte?",
+            "q7_answer": "Você pode instalar as dependências necessárias usando o pip:"
         },
         "community_section": {
             "title": "Junte-se à Comunidade",
@@ -942,7 +729,8 @@
         },
         "footer_section": {
             "contact": "Contato",
-            "project_status": "Um projeto com código-fonte disponível."
+            "project_status": "Um projeto com código-fonte disponível.",
+            "yimmenu_sources": "Fontes do YimMenu"
         },
         "privacy_section": {
             "software_license": "Licença do Software",
@@ -965,127 +753,6 @@
             "privacy_modal_analytics_desc": "Para entender como nosso site é usado, utilizamos um serviço de análise focado em privacidade:",
             "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics:</strong> Nos fornece dados anônimos e agregados (como visualizações de página). Não usa cookies, não rastreia você através de outros sites e não coleta dados pessoais.",
             "privacy_modal_conclusion": "Resumindo: usamos apenas dados essenciais para a funcionalidade do site ou para estatísticas anônimas. Nunca rastreamos você pessoalmente."
-        }
-    },
-    "tr": {
-        "meta_description": "YMU, YimMenu için en iyi başlatıcıdır. En son sürümü sorunsuzca indirin, birkaç tıkla inject edin, Lua script'lerinizi yönetin ve çok daha fazlasını yapın.",
-        "nav": {
-            "features": "Özellikler",
-            "howto": "Nasıl Kullanılır",
-            "download": "İndir",
-            "updates": "Güncellemeler",
-            "community": "Topluluk"
-        },
-        "animation_tooltip_text": "Animasyonları Aç/Kapat",
-        "lang_toggle_aria_label": "Dili değiştir",
-        "hero_headline": "YMU: YimMenu. Basit. Güncel.",
-        "hero_subheadline": "YimMenu için akıllı başlatıcı: Otomatik güncelleme kontrolü, zahmetsiz injection ve sorunsuz Lua script yönetimi—hepsi tek bir yerde.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 İndir (.exe)",
-        "features_section": {
-            "title": "Temel Özellikler",
-            "subtitle": "YimMenu için ihtiyacınız olan her şey, tek bir araçta.",
-            "card1_title": "Her Zaman Güncel",
-            "card1_desc": "YMU, yeni YimMenu sürümlerini otomatik olarak kontrol eder ve sizi bilgilendirir. En son sürüme kolayca güncelleyin.",
-            "card2_title": "Zahmetsiz Injection",
-            "card2_desc": "Ayrı injector'leri unutun. GTA V'i başlatın ve YimMenu'yü doğrudan YMU arayüzünden inject edin.",
-            "card3_title": "Lua Script Yönetimi",
-            "card3_desc": "Lua script'lerinizi sorunsuzca yönetin. Yenilerini keşfedin ve doğrudan uygulama içinden etkinleştirin veya devre dışı bırakın.",
-            "card4_title": "Modern Arayüz",
-            "card4_desc": "PySide6 ile geliştirilmiş, hem Açık hem de Koyu tema sunan temiz ve sezgisel bir kullanıcı arayüzü.",
-            "card5_title": "Dahili Yardım",
-            "card5_desc": "Yardıma mı ihtiyacınız var? Her sekmedeki dahili <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> yardım butonları, YMU'dan en iyi şekilde yararlanmanız için size yol gösterir.",
-            "card6_title": "Otomatik Güncelleyici",
-            "card6_desc": "En son özellikleri ve iyileştirmeleri almak için, dahili otomatik güncelleyici ile YMU'yu güncel tutun."
-        },
-        "look_and_feel_section": {
-            "title": "Görünüm ve Kullanım",
-            "subtitle": "Modern, sade ve özelleştirilebilir."
-        },
-        "how_to_section": {
-            "title": "Nasıl Çalışır?",
-            "subtitle": "Sadece birkaç adımda başlayın.",
-            "step1_title": "İndirin ve Çalıştırın",
-            "step1_desc": "<mark class='code-font'>ymu.exe</mark> dosyasını indirin ve çalıştırın.",
-            "step2_desc": "YimMenu'nün en son sürümünü indirmek için 'İndir' sekmesini kullanın.",
-            "step3_title": "GTA V'i Başlatın ve Inject Edin",
-            "step3_desc": "'Inject' sekmesine gidin. GTA V'i doğrudan YMU üzerinden başlatabilir (isteğe bağlı) ve ardından tek tıkla YimMenu'yü inject edebilirsiniz.",
-            "additional_info": "Daha ayrıntılı rehberlik için YMU uygulamasındaki dahili <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> yardım butonlarına tıklayın."
-        },
-        "download_section": {
-            "title": "İndir",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 İndir (.exe)",
-            "os_info": "Windows 10 & 11 için",
-            "software_language_notice": "Uygulama şu anda sadece İngilizce olarak mevcuttur.",
-            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Kaynak Kodunu İndir (.zip)",
-            "lua_question": "Lua script mi arıyorsunuz?",
-            "lua_button": "YimMenu için Lua Scriptleri Bulun",
-            "warning_title": "Önemli Notlar",
-            "warning_term": "Uyarı:",
-            "warning_text": "YMU ve YimMenu'yü her zaman BattlEye DEVRE DIŞI iken kullanın.",
-            "caution_term": "Dikkat:",
-            "caution_text": "Çevrimiçi mod kullanmak banlanma riski taşır.",
-            "requirements_title": "Gereksinimler ve Bağımlılıklar",
-            "requirements_os": "Windows 10 veya Windows 11",
-            "requirements_language": "Programlama Dili",
-            "requirements_language_desc": "Python (v3.12.10 ile geliştirildi)",
-            "requirements_libs": "Gerekli Kütüphaneler"
-        },
-        "updates_section": {
-            "title": "Son Güncellemeler",
-            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>GitHub'daki Tam Değişiklik Günlüğü"
-        },
-        "faq_section": {
-            "title": "Sıkça Sorulan Sorular (SSS)",
-            "q1_question": "YimMenu'yü nasıl güncellerim?",
-            "q1_answer": "En kolay yolu YMU kullanmaktır. Uygulamadaki 'İndir' sekmesine gidin ve güncelleme butonuna tıklayın. YMU, YimMenu'nün en son uyumlu sürümünü sizin için otomatik olarak indirir ve kurar.",
-            "q2_question": "YimMenu nasıl inject edilir?",
-            "q2_answer": "YMU ile YimMenu'yü indirdikten sonra GTA V'i başlatın. Ardından YMU'da 'Inject' sekmesine geçin ve 'Inject' butonuna tıklayın. Ayrı bir injector gerekli değildir.",
-            "q3_question": "YimMenu için Lua script'lerini nerede bulabilirim?",
-            "q3_answer": "İndirme bölümümüzdeki bağlantı sizi script'ler için harika bir kaynak olan resmi YimMenu-Lua GitHub organizasyonuna götürecektir. Yüklü script'lerinizi doğrudan YMU içindeki ayarlar sekmesinden de yönetebilirsiniz.",
-            "q4_question": "YMU'yu kullanmak güvenli mi?",
-            "q4_answer_p1": "YMU, kaynak kodu erişilebilir bir projedir ve herhangi bir kötü amaçlı kod içermez.",
-            "q4_answer_p2": "Ancak, YimMenu de dahil olmak üzere herhangi bir çevrimiçi oyun modifikasyonunu kullanmak her zaman doğal bir risk taşır.",
-            "q4_answer_p3": "Lütfen sağlanan uyarıları okuyup anladığınızdan emin olun.",
-            "q5_question": "Kaynak kodundaki bağımlılıkları nasıl kurabilirim?",
-            "q5_answer": "Gerekli bağımlılıkları pip kullanarak kurabilirsiniz:"
-        },
-        "community_section": {
-            "title": "Topluluğa Katılın",
-            "subtitle": "Bir fikriniz, özellik isteğiniz mi var veya bir hata mı buldunuz? Sohbete katılın!",
-            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Hata Bildirin veya Özellik Talep Edin",
-            "discord_button": "Discord Sunucumuza Katılın",
-            "support_text": "Desteğinizi gösterin ve projenin büyümesine yardımcı olun:",
-            "star_button": "GitHub'da projemizi yıldızlayın"
-        },
-        "about_section": {
-            "title": "Proje Hakkında",
-            "quote": "\"Küçük bir script olarak başlayan bu proje, binden fazla kullanıcı için sağlam bir araca dönüştü. YMU, temel görevleri kolaylaştırmak için tasarlandı: YimMenu'yü güncellemek, DLL'i güvenli bir şekilde inject etmek ve Lua script'lerini kolayca etkinleştirmek veya devre dışı bırakmak. YMU, topluluğunun aktif katılımıyla şekillenen güvenilirlik ve kullanıcı deneyimine odaklanır.\""
-        },
-        "footer_section": {
-            "contact": "İletişim",
-            "project_status": "Kaynak Kodu Erişilebilir Proje."
-        },
-        "privacy_section": {
-            "software_license": "Yazılım Lisansı",
-            "website_license": "Web Sitesi Lisansı",
-            "privacy_policy": "Gizlilik Politikası",
-            "cookie_banner_text": "Bu web sitesi, deneyiminizi iyileştirmek için temel teknik verileri (tema tercihiniz gibi) ve anonim analizleri kullanır. Siteyi kullanmaya devam ederek, ",
-            "cookie_banner_button": "Kabul Et ve Devam Et",
-            "privacy_modal_title": "Gizlilik ve Şeffaflık",
-            "privacy_modal_intro": "Gizliliğiniz bizim için önemlidir. İşte bu sitenin verileri nasıl kullandığına dair şeffaf bir genel bakış:",
-            "privacy_modal_local_storage_title": "Yerel Depolama (Kalıcı)",
-            "privacy_modal_local_storage_desc": "Tercihlerinizi kaydetmek için tarayıcınızın yerel depolama alanında aşağıdaki verileri saklarız. Bu veriler, siz tarayıcınızın önbelleğini temizleyene kadar kalır:",
-            "privacy_modal_local_storage_item1": "<strong>Tema Tercihi:</strong> Açık veya koyu mod seçiminizi hatırlamak için.",
-            "privacy_modal_local_storage_item2": "<strong>Animasyon Tercihi:</strong> Animasyon ayarlarınızı hatırlamak için.",
-            "privacy_modal_local_storage_item3": "<strong>Gizlilik Onayı:</strong> Bu politikayı kabul ettiğinizi hatırlamak için.",
-            "privacy_modal_session_storage_title": "Oturum Depolama (Geçici)",
-            "privacy_modal_session_storage_desc": "Sitenin temel işlevselliği için oturum depolamayı kullanırız. Bu veriler, tarayıcı sekmesini kapattığınızda otomatik olarak silinir:",
-            "privacy_modal_session_storage_item1": "<strong>Kaydırma Konumu:</strong> Dil değiştirirken kaydırma konumunuzu geri yüklemek için.",
-            "privacy_modal_session_storage_item2": "<strong>API Önbelleği:</strong> GitHub indirme sayısını geçici olarak saklamak için.",
-            "privacy_modal_analytics_title": "Analizler",
-            "privacy_modal_analytics_desc": "Sitemizin nasıl kullanıldığını anlamak için gizlilik odaklı bir analiz hizmeti kullanıyoruz:",
-            "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics:</strong> Bize anonim, toplu veriler (sayfa görüntülemeleri gibi) sağlar. Çerez kullanmaz, sizi web siteleri arasında takip etmez ve hiçbir kişisel veri toplamaz.",
-            "privacy_modal_conclusion": "Özetle: Yalnızca sitenin işlevselliği için veya anonim istatistikler için zorunlu olan verileri kullanıyoruz. Sizi asla kişisel olarak takip etmeyiz."
         }
     },
     "pl": {
@@ -1167,8 +834,12 @@
             "q4_answer_p1": "YMU ma dostępny kod źródłowy (source-available) i nie zawiera żadnego złośliwego kodu.",
             "q4_answer_p2": "Jednakże, używanie jakichkolwiek modyfikacji do gier online, w tym YimMenu, zawsze wiąże się z nieodłącznym ryzykiem.",
             "q4_answer_p3": "Pamiętaj, aby przeczytać i zrozumieć podane ostrzeżenia.",
-            "q5_question": "Jak zainstalować zależności z kodu źródłowego?",
-            "q5_answer": "Możesz zainstalować wymagane zależności za pomocą pip:"
+            "q5_question": "Dlaczego warto używać YMU zamiast pobierać z innych źródeł?",
+            "q5_answer": "Świat modyfikacji gier bywa ryzykowny. Pliki pobierane z niezweryfikowanych źródeł, jak YouTube, fora czy sklonowane strony, często zawierają złośliwe oprogramowanie, wirusy lub nieaktualne pliki. YMU zostało stworzone, aby wyeliminować to ryzyko. Gwarantujemy bezpieczeństwo, pobierając 'YimMenu.dll' wyłącznie z oficjalnych repozytoriów YimMenu na GitHub, które są oprogramowaniem open source. Z YMU zawsze otrzymujesz autentyczny, aktualny i niezmieniony plik. Dla pełnej przejrzystości, linki do tych repozytoriów znajdują się w stopce naszej strony.",
+            "q6_question": "Czy potrzebuję osobnego injectora DLL, jak Xenos?",
+            "q6_answer": "Nie, YMU to kompleksowe rozwiązanie. Zawiera niezawodny, wbudowany injector, eliminując potrzebę korzystania z narzędzi firm trzecich, jak Xenos. Gdy YMU pobierze najnowszy plik 'YimMenu.dll', możesz uruchomić grę i wstrzyknąć menu jednym kliknięciem. To upraszcza cały proces, czyniąc go łatwiejszym i bezpieczniejszym.",
+            "q7_question": "Jak zainstalować zależności z kodu źródłowego?",
+            "q7_answer": "Możesz zainstalować wymagane zależności za pomocą pip:"
         },
         "community_section": {
             "title": "Dołącz do społeczności",
@@ -1184,7 +855,8 @@
         },
         "footer_section": {
             "contact": "Kontakt",
-            "project_status": "Projekt typu Source-Available."
+            "project_status": "Projekt typu Source-Available.",
+            "yimmenu_sources": "Źródła YimMenu"
         },
         "privacy_section": {
             "software_license": "Licencja oprogramowania",
@@ -1288,8 +960,12 @@
             "q4_answer_p1": "YMU — проект с доступным исходным кодом, он не содержит вредоносного кода.",
             "q4_answer_p2": "Однако использование любых модификаций для онлайн-игр, включая YimMenu, всегда несёт в себе определённый риск.",
             "q4_answer_p3": "Пожалуйста, обязательно прочтите и поймите предоставленные предупреждения.",
-            "q5_question": "Как установить зависимости из исходного кода?",
-            "q5_answer": "Вы можете установить необходимые зависимости с помощью pip:"
+            "q5_question": "Почему стоит использовать YMU, а не скачивать из других источников?",
+            "q5_answer": "Мир игровых модификаций может быть опасен. Файлы из непроверенных источников, таких как YouTube, форумы или сайты-клоны, часто содержат вредоносное ПО, вирусы или устаревшие файлы. YMU создан, чтобы исключить этот риск. Мы гарантируем вашу безопасность, получая 'YimMenu.dll' исключительно из официальных репозиториев YimMenu на GitHub с открытым исходным кодом (open source). С YMU вы всегда получаете подлинный, актуальный и неизмененный файл. Для полной прозрачности, ссылки на эти репозитории можно найти в подвале нашего сайта.",
+            "q6_question": "Нужен ли мне отдельный инжектор DLL, например Xenos?",
+            "q6_answer": "Нет, YMU — это комплексное решение. Он включает надежный встроенный инжектор, что избавляет от необходимости в сторонних инструментах, таких как Xenos. После загрузки последней версии 'YimMenu.dll' с помощью YMU, вы можете запустить игру и инжектировать меню одним кликом. Это упрощает весь процесс, делая его более простым и безопасным.",
+            "q7_question": "Как установить зависимости из исходного кода?",
+            "q7_answer": "Вы можете установить необходимые зависимости с помощью pip:"
         },
         "community_section": {
             "title": "Присоединяйтесь к сообществу",
@@ -1305,7 +981,8 @@
         },
         "footer_section": {
             "contact": "Контакты",
-            "project_status": "Проект с доступным исходным кодом."
+            "project_status": "Проект с доступным исходным кодом.",
+            "yimmenu_sources": "Источники YimMenu"
         },
         "privacy_section": {
             "software_license": "Лицензия ПО",
@@ -1409,8 +1086,12 @@
             "q4_answer_p1": "YMU має відкритий вихідний код і не містить шкідливого коду.",
             "q4_answer_p2": "Однак, використання будь-яких модифікацій для онлайн-ігор, включно з YimMenu, завжди несе в собі певний ризик.",
             "q4_answer_p3": "Будь ласка, обов'язково прочитайте та зрозумійте надані попередження.",
-            "q5_question": "Як встановити залежності з вихідного коду?",
-            "q5_answer": "Ви можете встановити необхідні залежності за допомогою pip:"
+            "q5_question": "Чому варто використовувати YMU, а не завантажувати з інших джерел?",
+            "q5_answer": "Світ ігрових модифікацій може бути ризикованим. Файли з неперевірених джерел, як-от YouTube, форуми чи сайти-клони, часто містять шкідливе ПЗ, віруси або застарілі файли. YMU створено, щоб усунути цей ризик. Ми гарантуємо вашу безпеку, отримуючи 'YimMenu.dll' виключно з офіційних репозиторіїв YimMenu на GitHub з відкритим вихідним кодом (open source). З YMU ви завжди отримуєте автентичний, актуальний та незмінений файл. Для повної прозорості, посилання на ці репозиторії можна знайти у футері нашого сайту.",
+            "q6_question": "Чи потрібен мені окремий інжектор DLL, наприклад Xenos?",
+            "q6_answer": "Ні, YMU — це комплексне рішення. Він містить надійний вбудований інжектор, що позбавляє потреби в сторонніх інструментах, як-от Xenos. Після завантаження останньої версії 'YimMenu.dll' за допомогою YMU, ви можете запустити гру та інжектувати меню одним кліком. Це спрощує весь процес, роблячи його легшим та безпечнішим.",
+            "q7_question": "Як встановити залежності з вихідного коду?",
+            "q7_answer": "Ви можете встановити необхідні залежності за допомогою pip:"
         },
         "community_section": {
             "title": "Приєднуйтесь до спільноти",
@@ -1426,7 +1107,8 @@
         },
         "footer_section": {
             "contact": "Контакти",
-            "project_status": "Проєкт з відкритим вихідним кодом."
+            "project_status": "Проєкт з відкритим вихідним кодом.",
+            "yimmenu_sources": "Джерела YimMenu"
         },
         "privacy_section": {
             "software_license": "Ліцензія на ПЗ",
@@ -1449,6 +1131,384 @@
             "privacy_modal_analytics_desc": "Щоб розуміти, як використовується наш сайт, ми застосовуємо аналітичний сервіс, орієнтований на конфіденційність:",
             "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics:</strong> Надає нам анонімні, агреговані дані (наприклад, перегляди сторінок). Він не використовує файли cookie, не відстежує вас на інших сайтах і не збирає персональні дані.",
             "privacy_modal_conclusion": "Одним словом: ми використовуємо лише ті дані, що є важливими для функціональності сайту або для анонімної статистики. Ми ніколи не відстежуємо вас особисто."
+        }
+    },
+    "tr": {
+        "meta_description": "YMU, YimMenu için en iyi başlatıcıdır. En son sürümü sorunsuzca indirin, birkaç tıkla inject edin, Lua script'lerinizi yönetin ve çok daha fazlasını yapın.",
+        "nav": {
+            "features": "Özellikler",
+            "howto": "Nasıl Kullanılır",
+            "download": "İndir",
+            "updates": "Güncellemeler",
+            "community": "Topluluk"
+        },
+        "animation_tooltip_text": "Animasyonları Aç/Kapat",
+        "lang_toggle_aria_label": "Dili değiştir",
+        "hero_headline": "YMU: YimMenu. Basit. Güncel.",
+        "hero_subheadline": "YimMenu için akıllı başlatıcı: Otomatik güncelleme kontrolü, zahmetsiz injection ve sorunsuz Lua script yönetimi—hepsi tek bir yerde.",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 İndir (.exe)",
+        "features_section": {
+            "title": "Temel Özellikler",
+            "subtitle": "YimMenu için ihtiyacınız olan her şey, tek bir araçta.",
+            "card1_title": "Her Zaman Güncel",
+            "card1_desc": "YMU, yeni YimMenu sürümlerini otomatik olarak kontrol eder ve sizi bilgilendirir. En son sürüme kolayca güncelleyin.",
+            "card2_title": "Zahmetsiz Injection",
+            "card2_desc": "Ayrı injector'leri unutun. GTA V'i başlatın ve YimMenu'yü doğrudan YMU arayüzünden inject edin.",
+            "card3_title": "Lua Script Yönetimi",
+            "card3_desc": "Lua script'lerinizi sorunsuzca yönetin. Yenilerini keşfedin ve doğrudan uygulama içinden etkinleştirin veya devre dışı bırakın.",
+            "card4_title": "Modern Arayüz",
+            "card4_desc": "PySide6 ile geliştirilmiş, hem Açık hem de Koyu tema sunan temiz ve sezgisel bir kullanıcı arayüzü.",
+            "card5_title": "Dahili Yardım",
+            "card5_desc": "Yardıma mı ihtiyacınız var? Her sekmedeki dahili <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> yardım butonları, YMU'dan en iyi şekilde yararlanmanız için size yol gösterir.",
+            "card6_title": "Otomatik Güncelleyici",
+            "card6_desc": "En son özellikleri ve iyileştirmeleri almak için, dahili otomatik güncelleyici ile YMU'yu güncel tutun."
+        },
+        "look_and_feel_section": {
+            "title": "Görünüm ve Kullanım",
+            "subtitle": "Modern, sade ve özelleştirilebilir."
+        },
+        "how_to_section": {
+            "title": "Nasıl Çalışır?",
+            "subtitle": "Sadece birkaç adımda başlayın.",
+            "step1_title": "İndirin ve Çalıştırın",
+            "step1_desc": "<mark class='code-font'>ymu.exe</mark> dosyasını indirin ve çalıştırın.",
+            "step2_desc": "YimMenu'nün en son sürümünü indirmek için 'İndir' sekmesini kullanın.",
+            "step3_title": "GTA V'i Başlatın ve Inject Edin",
+            "step3_desc": "'Inject' sekmesine gidin. GTA V'i doğrudan YMU üzerinden başlatabilir (isteğe bağlı) ve ardından tek tıkla YimMenu'yü inject edebilirsiniz.",
+            "additional_info": "Daha ayrıntılı rehberlik için YMU uygulamasındaki dahili <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> yardım butonlarına tıklayın."
+        },
+        "download_section": {
+            "title": "İndir",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 İndir (.exe)",
+            "os_info": "Windows 10 & 11 için",
+            "software_language_notice": "Uygulama şu anda sadece İngilizce olarak mevcuttur.",
+            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Kaynak Kodunu İndir (.zip)",
+            "lua_question": "Lua script mi arıyorsunuz?",
+            "lua_button": "YimMenu için Lua Scriptleri Bulun",
+            "warning_title": "Önemli Notlar",
+            "warning_term": "Uyarı:",
+            "warning_text": "YMU ve YimMenu'yü her zaman BattlEye DEVRE DIŞI iken kullanın.",
+            "caution_term": "Dikkat:",
+            "caution_text": "Çevrimiçi mod kullanmak banlanma riski taşır.",
+            "requirements_title": "Gereksinimler ve Bağımlılıklar",
+            "requirements_os": "Windows 10 veya Windows 11",
+            "requirements_language": "Programlama Dili",
+            "requirements_language_desc": "Python (v3.12.10 ile geliştirildi)",
+            "requirements_libs": "Gerekli Kütüphaneler"
+        },
+        "updates_section": {
+            "title": "Son Güncellemeler",
+            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>GitHub'daki Tam Değişiklik Günlüğü"
+        },
+        "faq_section": {
+            "title": "Sıkça Sorulan Sorular (SSS)",
+            "q1_question": "YimMenu'yü nasıl güncellerim?",
+            "q1_answer": "En kolay yolu YMU kullanmaktır. Uygulamadaki 'İndir' sekmesine gidin ve güncelleme butonuna tıklayın. YMU, YimMenu'nün en son uyumlu sürümünü sizin için otomatik olarak indirir ve kurar.",
+            "q2_question": "YimMenu nasıl inject edilir?",
+            "q2_answer": "YMU ile YimMenu'yü indirdikten sonra GTA V'i başlatın. Ardından YMU'da 'Inject' sekmesine geçin ve 'Inject' butonuna tıklayın. Ayrı bir injector gerekli değildir.",
+            "q3_question": "YimMenu için Lua script'lerini nerede bulabilirim?",
+            "q3_answer": "İndirme bölümümüzdeki bağlantı sizi script'ler için harika bir kaynak olan resmi YimMenu-Lua GitHub organizasyonuna götürecektir. Yüklü script'lerinizi doğrudan YMU içindeki ayarlar sekmesinden de yönetebilirsiniz.",
+            "q4_question": "YMU'yu kullanmak güvenli mi?",
+            "q4_answer_p1": "YMU, kaynak kodu erişilebilir bir projedir ve herhangi bir kötü amaçlı kod içermez.",
+            "q4_answer_p2": "Ancak, YimMenu de dahil olmak üzere herhangi bir çevrimiçi oyun modifikasyonunu kullanmak her zaman doğal bir risk taşır.",
+            "q4_answer_p3": "Lütfen sağlanan uyarıları okuyup anladığınızdan emin olun.",
+            "q5_question": "Neden başka kaynaklardan indirmek yerine YMU kullanmalıyım?",
+            "q5_answer": "Oyun modifikasyonları dünyası riskli olabilir. YouTube, forumlar veya klon siteler gibi doğrulanmamış kaynaklardan yapılan indirmeler genellikle kötü amaçlı yazılımlar, virüsler veya güncel olmayan dosyalar içerir. YMU, bu riski ortadan kaldırmak için tasarlanmıştır. Güvenliğinizi, 'YimMenu.dll' dosyasını yalnızca resmi ve açık kaynaklı (open source) YimMenu GitHub depolarından alarak garanti ediyoruz. YMU ile her zaman orijinal, güncel ve değiştirilmemiş dosyayı elde edersiniz. Tam şeffaflık için bu depoların bağlantılarını sitemizin altbilgisinde bulabilirsiniz.",
+            "q6_question": "Xenos gibi ayrı bir DLL enjektörüne ihtiyacım var mı?",
+            "q6_answer": "Hayır, YMU hepsi bir arada bir çözümdür. Güvenilir, dahili bir enjektör içerir, bu da Xenos gibi üçüncü taraf araçlara olan ihtiyacı ortadan kaldırır. YMU en son 'YimMenu.dll' dosyasını indirdikten sonra, oyunu başlatabilir ve tek tıkla menüyü enjekte edebilirsiniz. Bu, tüm süreci basitleştirerek daha kolay ve güvenli hale getirir.",
+            "q7_question": "Kaynak kodundaki bağımlılıkları nasıl kurabilirim?",
+            "q7_answer": "Gerekli bağımlılıkları pip kullanarak kurabilirsiniz:"
+        },
+        "community_section": {
+            "title": "Topluluğa Katılın",
+            "subtitle": "Bir fikriniz, özellik isteğiniz mi var veya bir hata mı buldunuz? Sohbete katılın!",
+            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Hata Bildirin veya Özellik Talep Edin",
+            "discord_button": "Discord Sunucumuza Katılın",
+            "support_text": "Desteğinizi gösterin ve projenin büyümesine yardımcı olun:",
+            "star_button": "GitHub'da projemizi yıldızlayın"
+        },
+        "about_section": {
+            "title": "Proje Hakkında",
+            "quote": "\"Küçük bir script olarak başlayan bu proje, binden fazla kullanıcı için sağlam bir araca dönüştü. YMU, temel görevleri kolaylaştırmak için tasarlandı: YimMenu'yü güncellemek, DLL'i güvenli bir şekilde inject etmek ve Lua script'lerini kolayca etkinleştirmek veya devre dışı bırakmak. YMU, topluluğunun aktif katılımıyla şekillenen güvenilirlik ve kullanıcı deneyimine odaklanır.\""
+        },
+        "footer_section": {
+            "contact": "İletişim",
+            "project_status": "Kaynak Kodu Erişilebilir Proje.",
+            "yimmenu_sources": "YimMenu Kaynakları"
+        },
+        "privacy_section": {
+            "software_license": "Yazılım Lisansı",
+            "website_license": "Web Sitesi Lisansı",
+            "privacy_policy": "Gizlilik Politikası",
+            "cookie_banner_text": "Bu web sitesi, deneyiminizi iyileştirmek için temel teknik verileri (tema tercihiniz gibi) ve anonim analizleri kullanır. Siteyi kullanmaya devam ederek, ",
+            "cookie_banner_button": "Kabul Et ve Devam Et",
+            "privacy_modal_title": "Gizlilik ve Şeffaflık",
+            "privacy_modal_intro": "Gizliliğiniz bizim için önemlidir. İşte bu sitenin verileri nasıl kullandığına dair şeffaf bir genel bakış:",
+            "privacy_modal_local_storage_title": "Yerel Depolama (Kalıcı)",
+            "privacy_modal_local_storage_desc": "Tercihlerinizi kaydetmek için tarayıcınızın yerel depolama alanında aşağıdaki verileri saklarız. Bu veriler, siz tarayıcınızın önbelleğini temizleyene kadar kalır:",
+            "privacy_modal_local_storage_item1": "<strong>Tema Tercihi:</strong> Açık veya koyu mod seçiminizi hatırlamak için.",
+            "privacy_modal_local_storage_item2": "<strong>Animasyon Tercihi:</strong> Animasyon ayarlarınızı hatırlamak için.",
+            "privacy_modal_local_storage_item3": "<strong>Gizlilik Onayı:</strong> Bu politikayı kabul ettiğinizi hatırlamak için.",
+            "privacy_modal_session_storage_title": "Oturum Depolama (Geçici)",
+            "privacy_modal_session_storage_desc": "Sitenin temel işlevselliği için oturum depolamayı kullanırız. Bu veriler, tarayıcı sekmesini kapattığınızda otomatik olarak silinir:",
+            "privacy_modal_session_storage_item1": "<strong>Kaydırma Konumu:</strong> Dil değiştirirken kaydırma konumunuzu geri yüklemek için.",
+            "privacy_modal_session_storage_item2": "<strong>API Önbelleği:</strong> GitHub indirme sayısını geçici olarak saklamak için.",
+            "privacy_modal_analytics_title": "Analizler",
+            "privacy_modal_analytics_desc": "Sitemizin nasıl kullanıldığını anlamak için gizlilik odaklı bir analiz hizmeti kullanıyoruz:",
+            "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics:</strong> Bize anonim, toplu veriler (sayfa görüntülemeleri gibi) sağlar. Çerez kullanmaz, sizi web siteleri arasında takip etmez ve hiçbir kişisel veri toplamaz.",
+            "privacy_modal_conclusion": "Özetle: Yalnızca sitenin işlevselliği için veya anonim istatistikler için zorunlu olan verileri kullanıyoruz. Sizi asla kişisel olarak takip etmeyiz."
+        }
+    },
+    "zh": {
+        "meta_description": "YMU 是 YimMenu 的终极启动器。无缝下载最新版本、轻松注入、管理您的 Lua 脚本，以及更多强大功能。",
+        "nav": {
+            "features": "功能",
+            "howto": "使用指南",
+            "download": "下载",
+            "updates": "更新",
+            "community": "社区"
+        },
+        "animation_tooltip_text": "切换动画",
+        "lang_toggle_aria_label": "更改语言",
+        "hero_headline": "YMU：YimMenu。简约。最新。",
+        "hero_subheadline": "YimMenu 的智能启动器，集自动更新检查、一键注入和无缝 Lua 脚本管理于一体。",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.5 (.exe)",
+        "features_section": {
+            "title": "核心功能",
+            "subtitle": "您所需的一切，尽在此工具中。",
+            "card1_title": "始终最新",
+            "card1_desc": "YMU 自动检查 YimMenu 的新版本并通知您。轻松更新到最新版本。",
+            "card2_title": "轻松注入",
+            "card2_desc": "告别独立的注入器。直接从 YMU 界面启动 GTA V 并注入 YimMenu。",
+            "card3_title": "Lua 脚本管理",
+            "card3_desc": "无缝管理您的 Lua 脚本。发现新脚本，并直接在应用内启用或禁用它们。",
+            "card4_title": "现代用户界面",
+            "card4_desc": "基于 PySide6 构建的简洁直观用户界面，并提供浅色和深色两种主题。",
+            "card5_title": "集成帮助",
+            "card5_desc": "遇到困难？每个选项卡中的集成 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 按钮都会引导您，助您充分利用 YMU 的全部功能。",
+            "card6_title": "自动更新程序",
+            "card6_desc": "通过内置的自动更新程序，让 YMU 保持最新，以获取最新的功能和改进。"
+        },
+        "look_and_feel_section": {
+            "title": "外观与体验",
+            "subtitle": "现代、简洁、可定制。"
+        },
+        "how_to_section": {
+            "title": "工作原理",
+            "subtitle": "只需几步，即可开始。",
+            "step1_title": "下载并启动",
+            "step1_desc": "下载 <mark class='code-font'>ymu.exe</mark> 并运行它。",
+            "step2_desc": "使用“下载”选项卡来获取最新版本的 YimMenu。",
+            "step3_title": "启动 GTA V 并注入",
+            "step3_desc": "转到“注入”选项卡。您可以直接从 YMU 启动 GTA V（可选），然后只需单击一下即可注入 YimMenu。",
+            "additional_info": "如需更详细的指导，请单击 YMU 应用程序内的集成 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 帮助按钮。"
+        },
+        "download_section": {
+            "title": "下载",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.5 (.exe)",
+            "os_info": "适用于 Windows 10 和 11",
+            "software_language_notice": "该应用程序目前仅提供英文版本。",
+            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>下载源代码 (.zip)",
+            "lua_question": "正在寻找 Lua 脚本？",
+            "lua_button": "查找 YimMenu 的 Lua 脚本",
+            "warning_title": "重要提示",
+            "warning_term": "警告：",
+            "warning_text": "始终在禁用 BattlEye 的情况下使用 YMU 和 YimMenu。",
+            "caution_term": "注意：",
+            "caution_text": "在线使用模组存在被封禁的风险。",
+            "requirements_title": "要求与依赖",
+            "requirements_os": "Windows 10 或 Windows 11",
+            "requirements_language": "编程语言",
+            "requirements_language_desc": "Python (基于 v3.12.10 构建)",
+            "requirements_libs": "所需库"
+        },
+        "updates_section": {
+            "title": "最新更新",
+            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>在 GitHub 上查看完整更新日志"
+        },
+        "faq_section": {
+            "title": "常见问题解答 (FAQ)",
+            "q1_question": "如何更新 YimMenu？",
+            "q1_answer": "最简单的方法是使用 YMU。只需在应用中导航到“下载”选项卡，然后单击更新按钮。YMU 会处理剩下的一切，自动下载并安装最新的兼容版本。",
+            "q2_question": "如何注入 YimMenu？",
+            "q2_answer": "使用 YMU 下载 YimMenu 后，启动 GTA V。然后，只需在 YMU 中转到“注入”选项卡并单击“注入”按钮即可。无需使用独立的注入器。",
+            "q3_question": "在哪里可以找到 YimMenu 的 Lua 脚本？",
+            "q3_answer": "我们下载区域中的链接会将您带到官方的 YimMenu-Lua GitHub 组织，这是一个极佳的脚本来源。您也可以直接在 YMU 的设置选项卡中管理已安装的脚本。",
+            "q4_question": "使用 YMU 安全吗？",
+            "q4_answer_p1": "YMU 是源码可用的，不包含任何恶意代码。",
+            "q4_answer_p2": "然而，使用任何在线游戏修改（包括 YimMenu）都始终伴随着固有风险。",
+            "q4_answer_p3": "请务必阅读并理解所提供的警告信息。",
+            "q5_question": "为什么我应该使用 YMU 而不是从其他来源下载？",
+            "q5_answer": "游戏修改的世界可能充满风险。从 YouTube、论坛或克隆网站等未经验证的来源下载的文件通常包含恶意软件、病毒或过时的文件。YMU 旨在完全消除这种风险。我们通过仅从官方的开源 YimMenu GitHub 仓库获取“YimMenu.dll”来保证您的安全。使用 YMU，您总能获得真实、最新且未经修改的文件，享受安全无忧的体验。为了完全透明，这些仓库的链接可以在我们网站的页脚找到。",
+            "q6_question": "我需要像 Xenos 这样的独立 DLL 注入器吗？",
+            "q6_answer": "不需要，YMU 是一体化解决方案。它包含一个可靠的内置注入器，无需下载和信任像 Xenos 这样的第三方工具。在 YMU 下载最新的“YimMenu.dll”后，您可以启动游戏并一键注入菜单。这简化了整个过程，使其更简单、更安全。",
+            "q7_question": "如何从源代码安装依赖项？",
+            "q7_answer": "您可以使用 pip 安装所需的依赖项："
+        },
+        "community_section": {
+            "title": "加入社区",
+            "subtitle": "有想法、功能请求，或者发现了错误？加入对话吧！",
+            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>报告错误或请求功能",
+            "discord_button": "加入我们的 Discord",
+            "support_text": "表达您的支持，帮助项目成长：",
+            "star_button": "在 GitHub 上为我们加星"
+        },
+        "about_section": {
+            "title": "关于项目",
+            "quote": "“最初只是一个小脚本，如今已成长为服务于上千名用户的强大工具。YMU 旨在简化核心任务：更新 YimMenu、安全注入 DLL，以及轻松启用或禁用 Lua 脚本。在活跃社区的推动下，YMU 专注于可靠性与用户体验。”"
+        },
+        "footer_section": {
+            "contact": "联系我们",
+            "project_status": "一个源码可用的项目。",
+            "yimmenu_sources": "YimMenu 源代码"
+        },
+        "privacy_section": {
+            "software_license": "软件许可证",
+            "website_license": "网站许可证",
+            "privacy_policy": "隐私政策",
+            "cookie_banner_text": "本网站使用必要的技术数据（如您的主题偏好）和匿名分析来改善您的体验。继续使用本网站，即表示您同意我们的",
+            "cookie_banner_button": "同意并继续",
+            "privacy_modal_title": "隐私与透明度",
+            "privacy_modal_intro": "我们非常重视您的隐私。以下是本网站如何使用数据的透明概述：",
+            "privacy_modal_local_storage_title": "本地存储 (持久)",
+            "privacy_modal_local_storage_desc": "为了保存您的偏好设置，我们会将以下数据存储在您浏览器的本地存储中。此数据将一直保留，直到您清除浏览器缓存：",
+            "privacy_modal_local_storage_item1": "<strong>主题偏好：</strong> 记录您对浅色或深色模式的选择。",
+            "privacy_modal_local_storage_item2": "<strong>动画偏好：</strong> 记录您的动画设置。",
+            "privacy_modal_local_storage_item3": "<strong>隐私同意：</strong> 记录您已接受此政策。",
+            "privacy_modal_session_storage_title": "会话存储 (临时)",
+            "privacy_modal_session_storage_desc": "为了实现网站的核心功能，我们使用会话存储。当您关闭浏览器选项卡时，此数据会自动清除：",
+            "privacy_modal_session_storage_item1": "<strong>滚动位置：</strong> 在切换语言时恢复您的滚动位置。",
+            "privacy_modal_session_storage_item2": "<strong>API 缓存：</strong> 临时存储来自 GitHub 的下载计数。",
+            "privacy_modal_analytics_title": "分析",
+            "privacy_modal_analytics_desc": "为了解我们网站的使用情况，我们使用注重隐私的分析服务：",
+            "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics：</strong> 为我们提供匿名的汇总数据（如页面浏览量）。它不使用 Cookie，不会跨网站跟踪您，也不收集任何个人数据。",
+            "privacy_modal_conclusion": "简而言之：我们只使用网站功能所必需的数据或用于匿名统计的数据。我们绝不会对您进行个人追踪。"
+        }
+    },
+    "ja": {
+        "meta_description": "YMUはYimMenuのための究極のローンチパッド。最新版のシームレスなダウンロード、数クリックでのインジェクト、Luaスクリプト管理など、すべてを一つに。",
+        "nav": {
+            "features": "機能",
+            "howto": "使い方",
+            "download": "ダウンロード",
+            "updates": "アップデート",
+            "community": "コミュニティ"
+        },
+        "animation_tooltip_text": "アニメーションを切り替え",
+        "lang_toggle_aria_label": "言語を変更",
+        "hero_headline": "YMU: YimMenuを、シンプルに、最新の状態で。",
+        "hero_subheadline": "YimMenuのためのスマートランチャー。自動アップデートチェック、簡単なインジェクト、そしてシームレスなLuaスクリプト管理。そのすべてを、この一つで。",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 をダウンロード (.exe)",
+        "features_section": {
+            "title": "主な機能",
+            "subtitle": "YimMenuに必要なすべてが、このツール一つに。",
+            "card1_title": "常に最新の状態を維持",
+            "card1_desc": "YMUがYimMenuの新規リリースを自動でチェックしてお知らせ。いつでも簡単に最新バージョンへアップデートできます。",
+            "card2_title": "手軽なインジェクト",
+            "card2_desc": "別のインジェクターはもう不要。GTA Vを起動したら、YMUの画面から直接YimMenuをインジェクトできます。",
+            "card3_title": "Luaスクリプト管理",
+            "card3_desc": "Luaスクリプトをシームレスに管理。新しいスクリプトを見つけたり、アプリ内から直接オン・オフを切り替えたりできます。",
+            "card4_title": "モダンなUI",
+            "card4_desc": "PySide6で構築された、クリーンで直感的なユーザーインターフェース。ライトテーマとダークテーマの両方に対応しています。",
+            "card5_title": "統合されたヘルプ機能",
+            "card5_desc": "操作に迷ったら？各タブに統合された<span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span>ボタンが、YMUを最大限に活用するためのガイドです。",
+            "card6_title": "自動更新機能",
+            "card6_desc": "内蔵の自動更新機能でYMU自体も常に最新の状態に。いつでも最新の機能や改善点を享受できます。"
+        },
+        "look_and_feel_section": {
+            "title": "ルック＆フィール",
+            "subtitle": "モダン、クリーン、そしてカスタマイズ可能。"
+        },
+        "how_to_section": {
+            "title": "使い方",
+            "subtitle": "わずか数ステップで準備完了です。",
+            "step1_title": "ダウンロードして起動",
+            "step1_desc": "<mark class='code-font'>ymu.exe</mark> をダウンロードして実行します。",
+            "step2_desc": "「ダウンロード」タブを使い、YimMenuの最新バージョンを入手します。",
+            "step3_title": "GTA Vを起動してインジェクト",
+            "step3_desc": "「インジェクト」タブに移動します。YMUから直接GTA Vを起動し（任意）、あとはクリック一つでYimMenuをインジェクトできます。",
+            "additional_info": "より詳細なガイダンスについては、YMUアプリケーション内に統合された<span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span>ヘルプボタンをクリックしてください。"
+        },
+        "download_section": {
+            "title": "ダウンロード",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 をダウンロード (.exe)",
+            "os_info": "Windows 10 & 11 対応",
+            "software_language_notice": "このアプリケーションは現在、英語のみで利用可能です。",
+            "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>ソースコードをダウンロード (.zip)",
+            "lua_question": "Luaスクリプトをお探しですか？",
+            "lua_button": "YimMenu用Luaスクリプトを探す",
+            "warning_title": "重要事項",
+            "warning_term": "警告:",
+            "warning_text": "YMUとYimMenuは必ずBattlEyeを無効にして使用してください。",
+            "caution_term": "注意:",
+            "caution_text": "オンラインでMODを使用すると、アカウントが停止されるリスクがあります。",
+            "requirements_title": "要件と依存関係",
+            "requirements_os": "Windows 10 または Windows 11",
+            "requirements_language": "プログラミング言語",
+            "requirements_language_desc": "Python (v3.12.10でビルド)",
+            "requirements_libs": "必要なライブラリ"
+        },
+        "updates_section": {
+            "title": "最新アップデート",
+            "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>GitHubで完全な変更履歴を見る"
+        },
+        "faq_section": {
+            "title": "よくある質問 (FAQ)",
+            "q1_question": "YimMenuをアップデートするには？",
+            "q1_answer": "最も簡単な方法はYMUを使うことです。アプリの「ダウンロード」タブに移動し、アップデートボタンをクリックするだけ。YMUが自動的に最新の互換バージョンをダウンロードし、インストールします。",
+            "q2_question": "YimMenuをインジェクトするには？",
+            "q2_answer": "YMUでYimMenuをダウンロードしたら、GTA Vを起動してください。その後、YMUの「インジェクト」タブに移動して「インジェクト」ボタンをクリックするだけです。専用のインジェクターは必要ありません。",
+            "q3_question": "YimMenu用のLuaスクリプトはどこにありますか？",
+            "q3_answer": "ダウンロードセクションのリンクが、スクリプトの優れた供給源である公式YimMenu-Lua GitHubオーガニゼーションに繋がっています。インストール済みのスクリプトは、YMU内の設定タブから直接管理することもできます。",
+            "q4_question": "YMUは安全ですか？",
+            "q4_answer_p1": "YMUはソースアベイラブルであり、悪意のあるコードは一切含まれていません。",
+            "q4_answer_p2": "ただし、YimMenuを含むあらゆるオンラインゲームのMOD使用には、常に固有のリスクが伴います。",
+            "q4_answer_p3": "提供されている警告を必ずお読みになり、内容を理解してください。",
+            "q5_question": "なぜ他のソースからダウンロードする代わりにYMUを使うべきなのですか？",
+            "q5_answer": "ゲーム改造の世界は危険が伴います。YouTube、フォーラム、クローンサイトなどの未検証のソースからのダウンロードには、マルウェア、ウイルス、古いファイルが含まれていることがよくあります。YMUはこのリスクを完全に取り除くために作られました。私たちは、公式でオープンソースのYimMenu GitHubリポジトリからのみ「YimMenu.dll」を取得することで、あなたの安全を保証します。YMUを使えば、常に本物の、最新で、改ざんされていないファイルを安全に手に入れることができます。完全な透明性のために、これらのリポジトリへのリンクはサイトのフッターにあります。",
+            "q6_question": "Xenosのような別のDLLインジェクターが必要ですか？",
+            "q6_answer": "いいえ、YMUはオールインワンのソリューションです。信頼性の高い内蔵インジェクターが含まれており、Xenosのようなサードパーティ製ツールは不要です。YMUが最新の「YimMenu.dll」をダウンロードした後、ゲームを起動し、ワンクリックでメニューをインジェクトできます。これにより、プロセス全体が簡素化され、より簡単で安全になります。",
+            "q7_question": "ソースコードから依存関係をインストールするには？",
+            "q7_answer": "pipを使用して必要な依存関係をインストールできます："
+        },
+        "community_section": {
+            "title": "コミュニティに参加",
+            "subtitle": "アイデア、機能のリクエスト、バグの発見など、ぜひ会話にご参加ください！",
+            "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>バグ報告または機能リクエスト",
+            "discord_button": "Discordに参加",
+            "support_text": "プロジェクトをサポートし、成長にご協力ください：",
+            "star_button": "GitHubでスターを付ける"
+        },
+        "about_section": {
+            "title": "プロジェクトについて",
+            "quote": "「小さなスクリプトとして始まったものが、今では1000人以上のユーザーのための堅牢なツールに成長しました。YMUは、YimMenuのアップデート、DLLの安全なインジェクト、Luaスクリプトの簡単な有効化/無効化といった本質的なタスクを効率化するために設計されています。YMUは、コミュニティの積極的な参加によって推進され、信頼性とユーザー体験に重点を置いています。」"
+        },
+        "footer_section": {
+            "contact": "連絡先",
+            "project_status": "ソースコードを公開しているプロジェクトです。",
+            "yimmenu_sources": "YimMenu ソース"
+        },
+        "privacy_section": {
+            "software_license": "ソフトウェアライセンス",
+            "website_license": "ウェブサイトライセンス",
+            "privacy_policy": "プライバシーポリシー",
+            "cookie_banner_text": "当サイトは、ユーザー体験向上のため、テーマ設定などの必須技術データおよび匿名の分析データを使用します。サイトの利用を継続することで、当社の",
+            "cookie_banner_button": "同意して続ける",
+            "privacy_modal_title": "プライバシーと透明性",
+            "privacy_modal_intro": "あなたのプライバシーは私たちにとって重要です。このサイトがデータをどのように使用するか、透明性の高い概要を以下に示します：",
+            "privacy_modal_local_storage_title": "ローカルストレージ（永続的）",
+            "privacy_modal_local_storage_desc": "ユーザー設定を保存するため、以下のデータをブラウザのローカルストレージに保存します。このデータは、ブラウザのキャッシュを消去するまで保持されます：",
+            "privacy_modal_local_storage_item1": "<strong>テーマ設定：</strong>ライトモードまたはダークモードの選択を記憶します。",
+            "privacy_modal_local_storage_item2": "<strong>アニメーション設定：</strong>アニメーションに関する設定を記憶します。",
+            "privacy_modal_local_storage_item3": "<strong>プライバシー同意：</strong>あなたがこのポリシーに同意したことを記憶します。",
+            "privacy_modal_session_storage_title": "セッションストレージ（一時的）",
+            "privacy_modal_session_storage_desc": "サイトのコア機能のため、セッションストレージを使用します。このデータは、ブラウザのタブを閉じると自動的に消去されます：",
+            "privacy_modal_session_storage_item1": "<strong>スクロール位置：</strong>言語を切り替えた際にスクロール位置を復元します。",
+            "privacy_modal_session_storage_item2": "<strong>APIキャッシュ：</strong>GitHubのダウンロード数を一時的に保存します。",
+            "privacy_modal_analytics_title": "アクセス解析",
+            "privacy_modal_analytics_desc": "サイトの利用状況を理解するため、プライバシーに配慮した解析サービスを使用しています：",
+            "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics：</strong>匿名の集計データ（ページビューなど）を提供します。このサービスはCookieを使用せず、ウェブサイトを横断してあなたを追跡することはなく、個人データも収集しません。",
+            "privacy_modal_conclusion": "要するに、私たちはサイト機能や匿名の統計に不可欠なデータのみを使用します。あなた個人を追跡することは決してありません。"
         }
     }
 }
