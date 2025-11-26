@@ -1,0 +1,11 @@
+{
+  "module": true,
+  "compress": {
+    "drop_console": true,
+    "drop_debugger": true
+  },
+  "mangle": false,
+  "output": {
+    "comments": false
+  }
+}

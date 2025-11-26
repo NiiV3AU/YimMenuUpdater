@@ -2,41 +2,184 @@
 permalink: /index.html
 eleventyExcludeFromCollections: true
 ---
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>YMU - YimMenuUpdater</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex" />
+    <title>YMU - Select Language</title>
+    <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
+    <style>
+      :root {
+        /* LIGHT MODE DEFAULT */
+        --bg: #f5f5f5;
+        --card: #ffffff;
+        --text-main: #121212;
+        --text-sub: #555555;
+        --primary: #28a745;
+        --primary-fg: #ffffff;
+        --border: #e0e0e0;
+        --hover-bg: #eeeeee;
+        --font: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          /* DARK MODE OVERRIDE */
+          --bg: #121212;
+          --card: #1e1e1e;
+          --text-main: #e0e0e0;
+          --text-sub: #8b8b8b;
+          --border: #333333;
+          --hover-bg: #2c2c2c;
+        }
+      }
+      body {
+        background-color: var(--bg);
+        color: var(--text-main);
+        font-family: var(--font);
+        margin: 0;
+        display: grid;
+        place-items: center;
+        min-height: 100vh;
+        text-align: center;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .fallback-card {
+        background: var(--card);
+        padding: 2.5rem;
+        border-radius: 10px;
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08); 
+        max-width: 420px;
+        width: 90%;
+        animation: fadeIn 0.5s ease-out;
+      }
+      h1 { 
+        font-size: 1.5rem; 
+        margin: 0 0 0.5rem; 
+        color: var(--text-main); 
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+      p { 
+        color: var(--text-sub); 
+        margin-bottom: 2rem; 
+        font-size: 1rem; 
+        line-height: 1.5;
+      }
+      .lang-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+      }
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 12px;
+        background: transparent;
+        color: var(--text-sub);
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 700;
+        transition: all 0.2s ease;
+        border: 1px solid var(--border);
+      }
+      a:hover, a:focus-visible {
+        background: var(--hover-bg);
+        color: var(--text-main);
+        border-color: var(--text-main);
+        outline: none;
+      }
+      a.recommended {
+        border-color: var(--primary);
+        color: var(--primary);
+      }
+      a.recommended:hover {
+        background: var(--primary);
+        color: var(--primary-fg);
+      }
+      .icon {
+        color: var(--primary);
+        margin-bottom: 1rem;
+        width: 48px;
+        height: 48px;
+      }
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      .loader {
+        height: 3px;
+        width: 100%;
+        background: linear-gradient(90deg, transparent, var(--primary), transparent);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        display: none;
+        background-size: 50% 100%;
+        animation: loading 1.5s infinite linear;
+      }
+      @keyframes loading {
+        0% { background-position: 150% 0; }
+        100% { background-position: -50% 0; }
+      }
+      .js-redirecting .loader { display: block; }
+    </style>
+  </head>
+  <body>
+    <div class="loader" id="loading-bar"></div>
+    <main class="fallback-card">
+      <!-- Feather Icon: Globe -->
+      <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="2" y1="12" x2="22" y2="12"></line>
+        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+      </svg>
+      <h1>Welcome to YMU</h1>
+      <p>Select your language to continue:</p>
+      <nav class="lang-grid" aria-label="Language Selection">
+        {%- for item in languages.items %}
+          <a href="/{{ item.code }}/" lang="{{ item.code }}" data-lang-code="{{ item.code }}">
+            {{ item.label }}
+          </a>
+        {%- endfor %}
+      </nav>
+    </main>
     <script>
-      (function () {
-        const darkModeBg = "#121212";
-        const lightTextColor = "#e0e0e0";
-        let theme = "light";
+      (function() {
+        var availableLangs = [
+          {%- for item in languages.items -%}
+            "{{ item.code }}"{% if not loop.last %},{% endif %}
+          {%- endfor -%}
+        ];
         try {
-          const storedTheme = localStorage.getItem("theme");
-          if (storedTheme) {
-            theme = storedTheme;
-          } else if (
-            window.matchMedia("(prefers-color-scheme: dark)").matches
-          ) {
-            theme = "dark";
+          var dest = null;
+          var saved = localStorage.getItem("user_lang_preference"); 
+          if (saved && availableLangs.includes(saved)) {
+            dest = saved;
+          } else {
+            var browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+            for (var i = 0; i < browserLangs.length; i++) {
+              var code = browserLangs[i].substring(0, 2).toLowerCase();
+              if (availableLangs.includes(code)) {
+                dest = code;
+                break;
+              }
+            }
           }
-        } catch (e) {}
-
-        if (theme === "dark") {
-          document.documentElement.style.backgroundColor = darkModeBg;
-          document.documentElement.style.color = lightTextColor;
+          if (dest) {
+            document.body.classList.add("js-redirecting");
+            var link = document.querySelector('a[data-lang-code="' + dest + '"]');
+            if(link) link.classList.add("recommended");
+            window.location.replace("/" + dest + "/");
+          }
+        } catch (e) {
+          console.error("Redirect check failed", e);
         }
       })();
     </script>
-  </head>
-  <body>
-    <p>If you are not redirected automatically, please select your language:</p>
-    <ul>
-      {%- for item in languages.items %}
-        <li><a href="/{{ item.code }}/">{{ item.label }}</a></li>
-      {%- endfor %}
-    </ul>
   </body>
 </html>

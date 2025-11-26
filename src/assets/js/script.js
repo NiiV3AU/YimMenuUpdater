@@ -1,1 +1,338 @@
-document.addEventListener("DOMContentLoaded",()=>{const accordionHeaders=document.querySelectorAll(".changelog-summary, .faq-question");const toggleAccordion=(header)=>{const parentItem=header.parentElement;const isExpanded=parentItem.classList.toggle("is-open");header.setAttribute("aria-expanded",isExpanded)};accordionHeaders.forEach((header)=>{header.addEventListener("click",()=>toggleAccordion(header));header.addEventListener("keydown",(event)=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();toggleAccordion(header)}})});const galleryCards=document.querySelectorAll(".look-card");const lightboxOverlay=document.getElementById("lightbox-overlay");const lightboxImage=document.getElementById("lightbox-image");const lightboxClose=document.getElementById("lightbox-close");const openLightbox=(card)=>{const imageElement=card.querySelector("img");if(imageElement&&lightboxOverlay&&lightboxImage){lightboxImage.src=imageElement.src;lightboxOverlay.classList.add("is-visible");lightboxClose.focus();}};const closeLightbox=()=>{if(lightboxOverlay){lightboxOverlay.classList.remove("is-visible")}};if(galleryCards.length>0&&lightboxOverlay){galleryCards.forEach((card)=>{card.addEventListener("click",()=>openLightbox(card));card.addEventListener("keydown",(event)=>{if(event.key==="Enter"||event.key===" "){event.preventDefault();openLightbox(card)}})});lightboxClose.addEventListener("click",closeLightbox);lightboxOverlay.addEventListener("click",(event)=>{if(event.target===lightboxOverlay){closeLightbox()}});document.addEventListener("keydown",(event)=>{if(event.key==="Escape"&&lightboxOverlay.classList.contains("is-visible")){closeLightbox()}})}const savedPosition=sessionStorage.getItem("scrollPosition");if(savedPosition){document.documentElement.style.scrollBehavior="auto";window.scrollTo(0,parseInt(savedPosition,10));setTimeout(()=>{document.documentElement.style.scrollBehavior=""},0);sessionStorage.removeItem("scrollPosition")}const langLinks=document.querySelectorAll(".lang-options a");langLinks.forEach((link)=>{link.addEventListener("click",()=>{sessionStorage.setItem("scrollPosition",window.scrollY)})});const langDropdown=document.getElementById("lang-dropdown");const langToggleButton=document.getElementById("lang-toggle-btn");const langOptions=document.getElementById("lang-options");if(langDropdown&&langToggleButton&&langOptions){langToggleButton.addEventListener("click",()=>{const isVisible=langOptions.classList.toggle("is-visible");langToggleButton.setAttribute("aria-expanded",isVisible)})}window.addEventListener("click",(event)=>{if(langDropdown&&!langDropdown.contains(event.target)){langOptions.classList.remove("is-visible");langToggleButton.setAttribute("aria-expanded","false")}});const menuToggle=document.querySelector(".mobile-menu-toggle");const mainNav=document.querySelector("#main-navigation");if(menuToggle&&mainNav){menuToggle.addEventListener("click",()=>{mainNav.classList.toggle("is-open");menuToggle.classList.toggle("is-active");const isExpanded=menuToggle.getAttribute("aria-expanded")==="true";menuToggle.setAttribute("aria-expanded",!isExpanded)});mainNav.addEventListener("click",(event)=>{if(event.target.tagName==="A"&&mainNav.classList.contains("is-open")){mainNav.classList.remove("is-open");menuToggle.classList.remove("is-active");menuToggle.setAttribute("aria-expanded","false")}})}else{console.warn("Mobile menu toggle button or main navigation not found.")}displayGitHubDownloads();const downloadButton=document.getElementById("download-btn-main");const downloadCountDisplay=document.getElementById("github-downloads");let visualIncrementDone=false;if(downloadButton&&downloadCountDisplay){downloadButton.addEventListener("click",(event)=>{if(!visualIncrementDone){const currentText=downloadCountDisplay.textContent;const currentCount=parseInt(currentText.replace(/[,.]/g,""),10);if(!isNaN(currentCount)){const newCount=currentCount+1;downloadCountDisplay.textContent=newCount.toLocaleString();visualIncrementDone=true;if(downloadCountDisplay){downloadCountDisplay.classList.add("count-updated");downloadCountDisplay.addEventListener("animationend",()=>{downloadCountDisplay.classList.remove("count-updated")},{once:true})}}else{console.log("Current download counter is not a number ('"+currentText+"'), visual increment skipped.")}}else{console.log("Visual increase already carried out.")}})}else{console.warn("Download button (#download-btn-main) or counter display (#github-downloads) not found for visual increase.")}document.querySelectorAll(".logo-text-link, .logo-text-short, .logo-separator").forEach((el)=>el.classList.add("logo-shimmer"));document.querySelectorAll(".logo-shimmer").forEach((el)=>{el.setAttribute("data-shimmer",(el.textContent||"").trim())});const fadeInElements=document.querySelectorAll(".fade-in");if(fadeInElements.length>0){const observer=new IntersectionObserver((entries)=>{entries.forEach((entry)=>{entry.target.classList.toggle("is-visible",entry.isIntersecting)})},{threshold:0.1});fadeInElements.forEach((element)=>observer.observe(element))}document.querySelectorAll('a[href^="#"]').forEach((anchor)=>{anchor.addEventListener("click",function(e){e.preventDefault();const href=this.getAttribute("href");if(href==="#"){window.scrollTo({top:0,behavior:"smooth"});return}const targetElement=document.querySelector(href);if(targetElement){const navbarHeight=document.querySelector(".header-sticky").offsetHeight;const targetPosition=targetElement.offsetTop-navbarHeight;window.scrollTo({top:targetPosition,behavior:"smooth"})}})});const animationToggleButton=document.getElementById("animation-toggle-btn");const animationTooltip=document.getElementById("animation-tooltip");if(animationToggleButton&&animationTooltip){animationToggleButton.addEventListener("mouseenter",()=>animationTooltip.classList.add("is-visible"));animationToggleButton.addEventListener("mouseleave",()=>animationTooltip.classList.remove("is-visible"))}const buttons=Array.from(document.querySelectorAll(".btn"));buttons.forEach(setupShimmerFor);if("ResizeObserver"in window){const ro=new ResizeObserver((entries)=>{for(const{target}of entries){setupShimmerFor(target)}});buttons.forEach((b)=>ro.observe(b))}else{window.addEventListener("resize",()=>buttons.forEach(setupShimmerFor))}const copyPipBtn=document.getElementById("copy-pip-btn");const pipCommand=document.getElementById("pip-command");if(copyPipBtn&&pipCommand){const copyIcon=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><rect height="13" rx="2" ry="2" width="13" x="9" y="9" /><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1" /></svg>`;const checkIcon=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="20 6 9 17 4 12" /></svg>`;copyPipBtn.innerHTML=copyIcon;copyPipBtn.addEventListener("click",()=>{const commandText=pipCommand.textContent;navigator.clipboard.writeText(commandText).then(()=>{copyPipBtn.innerHTML=checkIcon;setTimeout(()=>{copyPipBtn.innerHTML=copyIcon},2000)}).catch((err)=>{console.error("Failed to copy text: ",err)})})}const consentBanner=document.getElementById("cookie-consent-banner");const acceptButton=document.getElementById("cookie-accept-btn");const privacyModalOverlay=document.getElementById("privacy-modal-overlay");const openPrivacyLinks=document.querySelectorAll("#privacy-policy-link, #cookie-banner-privacy-link");const closePrivacyModal=document.getElementById("privacy-modal-close");const CONSENT_KEY="ymu_privacy_consent";const showPrivacyModal=()=>{if(privacyModalOverlay){privacyModalOverlay.classList.add("is-visible")}};const hidePrivacyModal=()=>{if(privacyModalOverlay){privacyModalOverlay.classList.remove("is-visible")}};if(consentBanner&&!localStorage.getItem(CONSENT_KEY)){consentBanner.classList.add("is-visible")}if(acceptButton){acceptButton.addEventListener("click",()=>{localStorage.setItem(CONSENT_KEY,"true");consentBanner.classList.remove("is-visible")})}openPrivacyLinks.forEach((link)=>{link.addEventListener("click",(e)=>{e.preventDefault();e.stopPropagation();showPrivacyModal()})});if(closePrivacyModal){closePrivacyModal.addEventListener("click",hidePrivacyModal)}if(privacyModalOverlay){privacyModalOverlay.addEventListener("click",(event)=>{if(event.target===privacyModalOverlay){hidePrivacyModal()}})}});async function displayGitHubDownloads(){const githubUser="NiiV3AU";const githubRepo="YMU";const textElementId="github-downloads";const badgeElementId="github-downloads-badge";const cacheKey=`github_downloads_${ githubUser }_${ githubRepo }_all`;const cacheDurationMinutes=5;const textElement=document.getElementById(textElementId);const badgeElement=document.getElementById(badgeElementId);if(!textElement||!badgeElement){return}const showFallbackBadge=()=>{console.warn("Fallback to Badge activated.");textElement.style.display="none";badgeElement.src=`https://badgen.net/github/assets-dl/${ githubUser }/${ githubRepo }?label=&labelColor=black&color=black&cache=300`;badgeElement.style.display="inline"};const cachedData=sessionStorage.getItem(cacheKey);if(cachedData){try{const{count,timestamp}=JSON.parse(cachedData);const ageMinutes=(Date.now()-timestamp)/(1000*60);if(ageMinutes<cacheDurationMinutes){console.log("Using cached download count:",count);textElement.textContent=count.toLocaleString();textElement.style.display="inline";badgeElement.style.display="none";return}}catch(e){console.error("Error parsing cached data:",e)}}console.log("Fetching download count from GitHub API...");textElement.textContent="...";textElement.style.display="inline";badgeElement.style.display="none";try{const response=await fetch(`https://api.github.com/repos/${ githubUser }/${ githubRepo }/releases`);if(!response.ok){showFallbackBadge();return}const allReleases=await response.json();let currentTotal=0;if(Array.isArray(allReleases)&&allReleases.length>0){allReleases.forEach((release)=>{if(release.assets&&release.assets.length>0){release.assets.forEach((asset)=>{currentTotal+=asset.download_count})}});sessionStorage.setItem(cacheKey,JSON.stringify({count:currentTotal,timestamp:Date.now()}))}textElement.textContent=currentTotal.toLocaleString()}catch(error){console.error("Network or other error fetching downloads:",error);showFallbackBadge()}}const themeToggleButton=document.getElementById("theme-toggle-btn");const sunIcon=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="theme-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="5" /><line x1="12" x2="12" y1="1" y2="3" /><line x1="12" x2="12" y1="21" y2="23" /><line x1="4.22" x2="5.64" y1="4.22" y2="5.64" /><line x1="18.36" x2="19.78" y1="18.36" y2="19.78" /><line x1="1" x2="3" y1="12" y2="12" /><line x1="21" x2="23" y1="12" y2="12" /><line x1="4.22" x2="5.64" y1="19.78" y2="18.36" /><line x1="18.36" x2="19.78" y1="5.64" y2="4.22" /></svg>`;const moonIcon=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="theme-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>`;function updateThemeImages(theme){document.querySelectorAll("img.theme-img").forEach((img)=>{const target=theme==="light"?img.dataset.light||"":img.dataset.dark||"";if(!target||(img.src&&img.src.endsWith(target))){return}img.classList.add("is-swap");const pre=new Image();pre.onload=()=>{img.src=target;img.classList.remove("is-swap")};pre.src=target})}function applyTheme(theme){if(theme==="dark"){document.documentElement.setAttribute("data-theme","dark");if(themeToggleButton){themeToggleButton.innerHTML=sunIcon}}else{document.documentElement.removeAttribute("data-theme");if(themeToggleButton){themeToggleButton.innerHTML=moonIcon}}updateThemeImages(theme)}document.querySelectorAll("img.theme-img[data-light]").forEach((img)=>{new Image().src=img.dataset.light});const savedTheme=localStorage.getItem("theme");const prefersDark=window.matchMedia("(prefers-color-scheme: dark)").matches;applyTheme(savedTheme||(prefersDark?"dark":"light"));if(themeToggleButton){themeToggleButton.addEventListener("click",()=>{const currentTheme=document.documentElement.getAttribute("data-theme")?"dark":"light";const newTheme=currentTheme==="dark"?"light":"dark";localStorage.setItem("theme",newTheme);applyTheme(newTheme)})}const animationToggleButton=document.getElementById("animation-toggle-btn");const motionIcon=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="animation-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>`;const noMotionIcon=`<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="animation-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg>`;function applyAnimationPreference(preference){if(!animationToggleButton){return}if(preference==="disabled"){document.body.classList.add("animations-disabled");animationToggleButton.innerHTML=motionIcon}else{document.body.classList.remove("animations-disabled");animationToggleButton.innerHTML=noMotionIcon}}const savedAnimationPref=localStorage.getItem("animations");const prefersReducedMotion=window.matchMedia("(prefers-reduced-motion: reduce)").matches;applyAnimationPreference(savedAnimationPref||(prefersReducedMotion?"disabled":"enabled"));if(animationToggleButton){animationToggleButton.addEventListener("click",()=>{const isDisabled=document.body.classList.contains("animations-disabled");const newPreference=isDisabled?"enabled":"disabled";localStorage.setItem("animations",newPreference);applyAnimationPreference(newPreference)})}function setupShimmerFor(btn){const cs=getComputedStyle(btn);const stripe=parseFloat(cs.getPropertyValue("--shim-width"))||120;const overshoot=parseFloat(cs.getPropertyValue("--shim-overshoot"))||60;const w=btn.getBoundingClientRect().width;const distance=w+stripe+2*overshoot;const endX=w+overshoot;btn.style.setProperty("--shim-end-x",`${ endX }px`);btn.style.setProperty("--shim-dur",`${(distance/420).toFixed(3)}s`);btn.addEventListener("pointerenter",()=>{btn.classList.add("reboot");requestAnimationFrame(()=>btn.classList.remove("reboot"))})}
+!(function () {
+  const $ = (selector) => document.querySelector(selector),
+    $$ = (selector) => document.querySelectorAll(selector),
+    CONFIG_KEYS = {
+      THEME: "theme",
+      ANIMATION: "animations",
+      CONSENT: "ymu_privacy_consent",
+      DL_CACHE: "ymu_github_dl_data",
+      SCROLL: "ymu_scroll_pos_restore",
+    },
+    CONFIG_GITHUB = { USER: "NiiV3AU", REPO: "YMU", CACHE_MINUTES: 5 },
+    CONFIG_SELECTORS = {
+      THEME_BTN: "#theme-toggle-btn",
+      ANIM_BTN: "#animation-toggle-btn",
+      LANG_BTN: "#lang-toggle-btn",
+      LANG_OPTS: "#lang-options",
+      LANG_LINKS: ".lang-options a",
+      DL_TEXT: "#github-downloads",
+      DL_BADGE: "#github-downloads-badge",
+      DL_BTN: "#download-btn-main",
+    },
+    ICONS = {
+      sun: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="theme-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="5" /><line x1="12" x2="12" y1="1" y2="3" /><line x1="12" x2="12" y1="21" y2="23" /><line x1="4.22" x2="5.64" y1="4.22" y2="5.64" /><line x1="18.36" x2="19.78" y1="18.36" y2="19.78" /><line x1="1" x2="3" y1="12" y2="12" /><line x1="21" x2="23" y1="12" y2="12" /><line x1="4.22" x2="5.64" y1="19.78" y2="18.36" /><line x1="18.36" x2="19.78" y1="5.64" y2="4.22" /></svg>',
+      moon: '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="theme-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" /></svg>',
+      motion:
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="animation-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12" /></svg>',
+      noMotion:
+        '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="animation-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg>',
+    };
+  document.addEventListener("DOMContentLoaded", () => {
+    !(function () {
+      const savedPos = sessionStorage.getItem(CONFIG_KEYS.SCROLL);
+      savedPos &&
+        ((document.documentElement.style.scrollBehavior = "auto"),
+        window.scrollTo(0, parseInt(savedPos, 10)),
+        sessionStorage.removeItem(CONFIG_KEYS.SCROLL),
+        setTimeout(() => {
+          document.documentElement.style.scrollBehavior = "";
+        }, 0));
+    })(),
+      (function () {
+        const btn = $(CONFIG_SELECTORS.THEME_BTN),
+          applyTheme = (theme) => {
+            document.documentElement.setAttribute("data-theme", theme),
+              btn &&
+                (btn.innerHTML = "dark" === theme ? ICONS.sun : ICONS.moon),
+              localStorage.setItem(CONFIG_KEYS.THEME, theme),
+              (function (theme) {
+                $$("img.theme-img").forEach((img) => {
+                  const targetSrc =
+                    "light" === theme ? img.dataset.light : img.dataset.dark;
+                  if (targetSrc && !img.src.endsWith(targetSrc)) {
+                    img.classList.add("is-swap");
+                    const loader = new Image();
+                    (loader.onload = () => {
+                      (img.src = targetSrc), img.classList.remove("is-swap");
+                    }),
+                      (loader.src = targetSrc);
+                  }
+                });
+              })(theme);
+          },
+          saved = localStorage.getItem(CONFIG_KEYS.THEME),
+          systemDark = window.matchMedia(
+            "(prefers-color-scheme: dark)"
+          ).matches;
+        applyTheme(saved || (systemDark ? "dark" : "light")),
+          btn &&
+            btn.addEventListener("click", () => {
+              const isDark =
+                "dark" === document.documentElement.getAttribute("data-theme");
+              applyTheme(isDark ? "light" : "dark");
+            });
+      })(),
+      (function () {
+        const btn = $(CONFIG_SELECTORS.ANIM_BTN),
+          tooltip = $("#animation-tooltip"),
+          applyAnim = (state) => {
+            "disabled" === state
+              ? (document.body.classList.add("animations-disabled"),
+                btn && (btn.innerHTML = ICONS.motion))
+              : (document.body.classList.remove("animations-disabled"),
+                btn && (btn.innerHTML = ICONS.noMotion)),
+              localStorage.setItem(CONFIG_KEYS.ANIMATION, state);
+          },
+          saved = localStorage.getItem(CONFIG_KEYS.ANIMATION),
+          prefersReduced = window.matchMedia(
+            "(prefers-reduced-motion: reduce)"
+          ).matches;
+        applyAnim(saved || (prefersReduced ? "disabled" : "enabled")),
+          btn &&
+            (btn.addEventListener("click", () => {
+              const isDisabled = document.body.classList.contains(
+                "animations-disabled"
+              );
+              applyAnim(isDisabled ? "enabled" : "disabled");
+            }),
+            tooltip &&
+              (btn.addEventListener("mouseenter", () =>
+                tooltip.classList.add("is-visible")
+              ),
+              btn.addEventListener("mouseleave", () =>
+                tooltip.classList.remove("is-visible")
+              ),
+              btn.addEventListener("focus", () =>
+                tooltip.classList.add("is-visible")
+              ),
+              btn.addEventListener("blur", () =>
+                tooltip.classList.remove("is-visible")
+              )));
+      })(),
+      (function () {
+        const langBtn = $(CONFIG_SELECTORS.LANG_BTN),
+          langOpts = $(CONFIG_SELECTORS.LANG_OPTS);
+        langBtn &&
+          langOpts &&
+          document.addEventListener("click", (e) => {
+            const isInside =
+              langBtn.contains(e.target) || langOpts.contains(e.target);
+            if (langBtn.contains(e.target)) {
+              const isVisible = langOpts.classList.toggle("is-visible");
+              langBtn.setAttribute("aria-expanded", isVisible);
+            } else
+              isInside ||
+                (langOpts.classList.remove("is-visible"),
+                langBtn.setAttribute("aria-expanded", "false"));
+          });
+        $$(CONFIG_SELECTORS.LANG_LINKS).forEach((link) => {
+          link.addEventListener("click", () => {
+            sessionStorage.setItem(CONFIG_KEYS.SCROLL, window.scrollY);
+          });
+        });
+        const menuToggle = $(".mobile-menu-toggle"),
+          mainNav = $("#main-navigation");
+        menuToggle &&
+          mainNav &&
+          (menuToggle.addEventListener("click", () => {
+            const isOpen = mainNav.classList.toggle("is-open");
+            menuToggle.classList.toggle("is-active"),
+              menuToggle.setAttribute("aria-expanded", isOpen);
+          }),
+          mainNav.addEventListener("click", (e) => {
+            "A" === e.target.tagName &&
+              (mainNav.classList.remove("is-open"),
+              menuToggle.classList.remove("is-active"),
+              menuToggle.setAttribute("aria-expanded", "false"));
+          }));
+      })(),
+      $$(".changelog-summary, .faq-question").forEach((header) => {
+        header.addEventListener("click", () => {
+          const isOpen = header.parentElement.classList.toggle("is-open");
+          header.setAttribute("aria-expanded", isOpen);
+        }),
+          header.addEventListener("keydown", (e) => {
+            ("Enter" !== e.key && " " !== e.key) ||
+              (e.preventDefault(), header.click());
+          });
+      }),
+      (function () {
+        const overlay = $("#lightbox-overlay"),
+          img = $("#lightbox-image"),
+          closeBtn = $("#lightbox-close"),
+          cards = $$(".look-card");
+        if (!overlay || !img || !cards.length) return;
+        const open = (src) => {
+            (img.src = src),
+              overlay.classList.add("is-visible"),
+              closeBtn.focus();
+          },
+          close = () => overlay.classList.remove("is-visible");
+        cards.forEach((card) => {
+          card.addEventListener("click", () => {
+            const targetImg = card.querySelector("img");
+            targetImg && open(targetImg.src);
+          }),
+            card.addEventListener("keydown", (e) => {
+              if ("Enter" === e.key || " " === e.key) {
+                e.preventDefault();
+                const targetImg = card.querySelector("img");
+                targetImg && open(targetImg.src);
+              }
+            });
+        }),
+          closeBtn.addEventListener("click", close),
+          overlay.addEventListener("click", (e) => {
+            e.target === overlay && close();
+          }),
+          document.addEventListener("keydown", (e) => {
+            "Escape" === e.key &&
+              overlay.classList.contains("is-visible") &&
+              close();
+          });
+      })(),
+      (function () {
+        const banner = $("#cookie-consent-banner"),
+          acceptBtn = $("#cookie-accept-btn"),
+          modalOverlay = $("#privacy-modal-overlay"),
+          closeBtn = $("#privacy-modal-close"),
+          triggerLinks = $$(
+            "#privacy-policy-link, #cookie-banner-privacy-link"
+          );
+        banner &&
+          !localStorage.getItem(CONFIG_KEYS.CONSENT) &&
+          setTimeout(() => banner.classList.add("is-visible"), 500);
+        acceptBtn &&
+          acceptBtn.addEventListener("click", () => {
+            localStorage.setItem(CONFIG_KEYS.CONSENT, "true"),
+              banner.classList.remove("is-visible");
+          });
+        const toggleModal = (show) => {
+          modalOverlay && modalOverlay.classList.toggle("is-visible", show);
+        };
+        triggerLinks.forEach((link) =>
+          link.addEventListener("click", (e) => {
+            e.preventDefault(), toggleModal(!0);
+          })
+        ),
+          closeBtn && closeBtn.addEventListener("click", () => toggleModal(!1));
+        modalOverlay &&
+          modalOverlay.addEventListener("click", (e) => {
+            e.target === modalOverlay && toggleModal(!1);
+          });
+      })(),
+      (function () {
+        const buttons = $$(".btn");
+        if (!buttons.length) return;
+        const calculateShimmer = (btn) => {
+          const w = btn.offsetWidth,
+            overshoot = 60,
+            endX = w + overshoot,
+            duration = ((w + 120 + 2 * overshoot) / 420).toFixed(3);
+          btn.style.setProperty("--shim-end-x", `${endX}px`),
+            btn.style.setProperty("--shim-dur", `${duration}s`);
+        };
+        if ("ResizeObserver" in window) {
+          const ro = new ResizeObserver((entries) => {
+            entries.forEach((entry) => calculateShimmer(entry.target));
+          });
+          buttons.forEach((btn) => ro.observe(btn));
+        } else
+          window.addEventListener("resize", () =>
+            buttons.forEach(calculateShimmer)
+          ),
+            buttons.forEach(calculateShimmer);
+      })(),
+      $$(".logo-text-link, .logo-text-short, .logo-separator").forEach((el) => {
+        el.classList.add("logo-shimmer"),
+          el.setAttribute("data-shimmer", (el.textContent || "").trim());
+      }),
+      (async function () {
+        const textEl = $(CONFIG_SELECTORS.DL_TEXT),
+          badgeEl = $(CONFIG_SELECTORS.DL_BADGE),
+          dlBtn = $(CONFIG_SELECTORS.DL_BTN);
+        if (!textEl) return;
+        let hasIncremented = !1;
+        dlBtn &&
+          dlBtn.addEventListener("click", () => {
+            if (!hasIncremented) {
+              const current = parseInt(
+                textEl.textContent.replace(/[,.]/g, ""),
+                10
+              );
+              isNaN(current) ||
+                ((textEl.textContent = (current + 1).toLocaleString()),
+                (hasIncremented = !0),
+                textEl.classList.add("count-updated"));
+            }
+          });
+        const showFallback = () => {
+            textEl && (textEl.style.display = "none"),
+              badgeEl &&
+                ((badgeEl.src = `https://badgen.net/github/assets-dl/${CONFIG_GITHUB.USER}/${CONFIG_GITHUB.REPO}?label=&labelColor=black&color=black&cache=300`),
+                (badgeEl.style.display = "inline"));
+          },
+          cached = sessionStorage.getItem(CONFIG_KEYS.DL_CACHE);
+        if (cached)
+          try {
+            const data = JSON.parse(cached);
+            if (
+              (Date.now() - data.timestamp) / 6e4 <
+              CONFIG_GITHUB.CACHE_MINUTES
+            )
+              return void (textEl.textContent = data.count.toLocaleString());
+          } catch (e) {}
+        try {
+          const res = await fetch(
+            `https://api.github.com/repos/${CONFIG_GITHUB.USER}/${CONFIG_GITHUB.REPO}/releases`
+          );
+          if (!res.ok) throw new Error("API Error");
+          const releases = await res.json();
+          let total = 0;
+          Array.isArray(releases) &&
+            (releases.forEach((r) => {
+              r.assets && r.assets.forEach((a) => (total += a.download_count));
+            }),
+            (textEl.textContent = total.toLocaleString()),
+            (textEl.style.display = "inline"),
+            badgeEl && (badgeEl.style.display = "none"),
+            sessionStorage.setItem(
+              CONFIG_KEYS.DL_CACHE,
+              JSON.stringify({ count: total, timestamp: Date.now() })
+            ));
+        } catch (e) {
+          showFallback();
+        }
+      })(),
+      (function () {
+        const elements = $$(".fade-in"),
+          observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                entry.target.classList.toggle(
+                  "is-visible",
+                  entry.isIntersecting
+                );
+              });
+            },
+            { threshold: 0.1 }
+          );
+        elements.forEach((el) => observer.observe(el));
+      })(),
+      $$('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          const href = this.getAttribute("href");
+          if ("#" === href) return;
+          const target = $(href);
+          if (target) {
+            e.preventDefault();
+            const header = $(".header-sticky"),
+              offset = header ? header.offsetHeight : 0,
+              targetPos =
+                target.getBoundingClientRect().top + window.scrollY - offset;
+            window.scrollTo({ top: targetPos, behavior: "smooth" });
+          }
+        });
+      });
+  });
+})();

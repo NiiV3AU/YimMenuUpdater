@@ -45,6 +45,28 @@ permalink: "/{{ lang.code }}/"
         }
       })();
     </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "YimMenuUpdater",
+        "operatingSystem": "Windows 10, Windows 11",
+        "applicationCategory": "GameApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "EUR"
+        },
+        "description": "{{ locales[lang.code].meta_description }}",
+        "softwareVersion": "1.1.5",
+        "author": {
+            "@type": "Person",
+            "name": "NiiV3AU"
+        },
+        "downloadUrl": "https://github.com/NiiV3AU/YMU/releases",
+        "featureList": "Auto-Update, Mod-Management, UI-Customization"
+      }
+    </script>
   </head>
   <body>
     <header class="header-sticky">
@@ -135,8 +157,6 @@ permalink: "/{{ lang.code }}/"
             <span class="line line2"></span>
             <span class="line line3"></span>
           </button>
-
-          
           <div class="lang-dropdown" id="lang-dropdown">
             <button
               id="lang-toggle-btn"
@@ -175,7 +195,6 @@ permalink: "/{{ lang.code }}/"
         </div>
       </div>
     </header>
-
     <main class="flow">
       <section id="hero" class="hero-section text-center fade-in">
         <div class="container flow">
@@ -184,7 +203,6 @@ permalink: "/{{ lang.code }}/"
           <a href="#download" class="btn btn-primary btn-large">{{ locales[lang.code].hero_download_button | safe }}</a>
         </div>
       </section>
-
       <section id="features" class="features-section section-padding  fade-in">
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].features_section.title }}</h2>
@@ -199,6 +217,8 @@ permalink: "/{{ lang.code }}/"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
+                      aria-hidden="true"
+                      focusable="false" 
                       class="main-grid-item-icon"
                       fill="none"
                       stroke="currentColor"
@@ -226,6 +246,8 @@ permalink: "/{{ lang.code }}/"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
+                      aria-hidden="true"
+                      focusable="false"
                       class="main-grid-item-icon"
                       fill="none"
                       stroke="currentColor"
@@ -252,6 +274,8 @@ permalink: "/{{ lang.code }}/"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
+                      aria-hidden="true"
+                      focusable="false"
                       class="main-grid-item-icon"
                       fill="none"
                       stroke="currentColor"
@@ -277,6 +301,8 @@ permalink: "/{{ lang.code }}/"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
+                      aria-hidden="true"
+                      focusable="false"
                       class="main-grid-item-icon"
                       fill="none"
                       stroke="currentColor"
@@ -300,6 +326,8 @@ permalink: "/{{ lang.code }}/"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
+                      aria-hidden="true"
+                      focusable="false"
                       class="main-grid-item-icon"
                       fill="none"
                       stroke="currentColor"
@@ -324,6 +352,8 @@ permalink: "/{{ lang.code }}/"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
+                      aria-hidden="true"
+                      focusable="false"
                       class="main-grid-item-icon"
                       fill="none"
                       stroke="currentColor"
@@ -346,7 +376,6 @@ permalink: "/{{ lang.code }}/"
           </div>
         </div>
       </section>
-
       <section id="look-and-feel" class="look-feel-section section-padding fade-in">
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].look_and_feel_section.title }}</h2>
@@ -365,7 +394,6 @@ permalink: "/{{ lang.code }}/"
               />
               <figcaption>Inject</figcaption>
             </figure>
-
             <figure class="look-card" tabindex="0" role="button" aria-label="View enlarged image of Settings screen">
               <img
                 class="theme-img"
@@ -379,7 +407,6 @@ permalink: "/{{ lang.code }}/"
               />
               <figcaption>Settings</figcaption>
             </figure>
-
             <figure class="look-card" tabindex="0" role="button" aria-label="View enlarged image of Download screen">
               <img
                 class="theme-img"
@@ -396,7 +423,6 @@ permalink: "/{{ lang.code }}/"
           </div>
         </div>
       </section>
-
       <section id="how-to" class="how-to-section section-padding fade-in">
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].how_to_section.title }}</h2>
@@ -411,6 +437,8 @@ permalink: "/{{ lang.code }}/"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
+                      aria-hidden="true"
+                      focusable="false"
                       class="main-grid-item-icon"
                       fill="none"
                       stroke="currentColor"
@@ -438,6 +466,8 @@ permalink: "/{{ lang.code }}/"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
+                      aria-hidden="true"
+                      focusable="false"
                       class="main-grid-item-icon"
                       fill="none"
                       stroke="currentColor"
@@ -457,12 +487,13 @@ permalink: "/{{ lang.code }}/"
               <div class="how-to-step">
                 <div class="step-number-icon">
                   <span class="icon-placeholder">
-                    
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       viewBox="0 0 24 24"
                       width="24"
                       height="24"
+                      aria-hidden="true"
+                      focusable="false"
                       class="main-grid-item-icon"
                       fill="none"
                       stroke="currentColor"
@@ -486,132 +517,88 @@ permalink: "/{{ lang.code }}/"
           <p class="text-center additional-info">{{ locales[lang.code].how_to_section.additional_info | safe }}</p>
         </div>
       </section>
-
       <section id="download" class="download-section section-padding fade-in">
         <div class="container">
-          <h2 class="section-title text-center">{{ locales[lang.code].download_section.title }}</h2>
-          <div class="card card-compact flow">
-            <div class="text-center">
-              <div>
-                <a
-                  href="https://github.com/NiiV3AU/YMU/releases/latest/download/ymu.exe"
-                  rel="noopener noreferrer"
-                  class="btn btn-primary btn-large "
-                  id="download-btn-main">{{ locales[lang.code].download_section.main_button | safe }}</a>
-                <p class="download-count"">
-                  Downloads:
-                  <span
-                    id="github-downloads"
-                    style="display: inline"
-                    class="code-font"
-                    >...</span
-                  >
-                  <img
-                    id="github-downloads-badge"
-                    src=""
-                    alt="Download Count"
-                    style="display: none; vertical-align: middle"
-                  />
-                </p>
-                <p class="os-info">{{ locales[lang.code].download_section.os_info }}</p>
-                <p class="language-notice">{{ locales[lang.code].download_section.software_language_notice }}</p>
+        <h2 class="section-title text-center">{{ locales[lang.code].download_section.title }}</h2>
+        <div class="download-grid-layout">
+          <div class="card download-card main-card">
+            <div class="card-header-row">
+              <div class="icon-wrapper icon-placement">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
               </div>
-              <div class="download-secondary">
-                <a
-                  href="https://github.com/NiiV3AU/YMU/archive/refs/tags/v1.1.5.zip"
-                  rel="noopener noreferrer"
-                  class="btn btn-secondary">{{ locales[lang.code].download_section.source_code_button | safe }}</a>
+              <h3 class="card-headline">{{ locales[lang.code].download_section.card_headline }}</h3>
+            </div>
+            <div class="inner-card">
+              <div class="inner-row">
+                <span class="inner-label">{{ locales[lang.code].download_section.os_header }}</span>
+                <span class="inner-value">{{ locales[lang.code].download_section.os_info }}</span>
+              </div>
+              <div class="inner-row">
+                <span class="inner-label">{{ locales[lang.code].download_section.download_header }}</span>
+                <span class="inner-value code-font-clean">
+                  <span id="github-downloads">...</span>
+                  <img id="github-downloads-badge" src="" alt="Download Count" style="display: none; vertical-align: middle; height: 20px;" />
+                </span>
               </div>
             </div>
-
-            <div class="lua-download-link text-center">
-              <p>{{ locales[lang.code].download_section.lua_question }}</p>
-              <a
-                href="https://github.com/orgs/YimMenu-Lua/repositories"
-                target="_blank"
+            <div class="action-wrapper">
+              <a href="https://github.com/NiiV3AU/YMU/releases/latest/"
                 rel="noopener noreferrer"
-                class="btn btn-secondary"
-                >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 24 24"
-                  width="24"
-                  height="24"
-                  class="main-grid-item-icon"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                >
-                  <path
-                    d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
-                  />
-                  <polyline points="14 2 14 8 20 8" />
-                  <line x1="12" x2="12" y1="18" y2="12" />
-                  <line x1="9" x2="15" y1="15" y2="15" />
-                </svg>
-                <span>{{ locales[lang.code].download_section.lua_button }}</span>
+                class="btn btn-primary btn-large btn-block"
+                id="download-btn-main">
+                {{ locales[lang.code].download_section.main_button | safe }}
               </a>
+              <p class="language-notice text-small mt-2">{{ locales[lang.code].download_section.software_language_notice }}</p>
             </div>
           </div>
-          <div class="download-warning">
-            <h4 class="warning-title">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                class="main-grid-item-icon"
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-              >
-                <path
-                  d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
-                />
-                <line x1="12" x2="12" y1="9" y2="13" />
-                <line x1="12" x2="12.01" y1="17" y2="17" />
-              </svg>
-              <span>{{ locales[lang.code].download_section.warning_title }}</span>
-            </h4>
-            <p><strong>{{ locales[lang.code].download_section.warning_term }}</strong> <span>{{ locales[lang.code].download_section.warning_text }}</span></p>
-            <p><strong>{{ locales[lang.code].download_section.caution_term }}</strong> <span>{{ locales[lang.code].download_section.caution_text }}</span></p>
+          <div class="card download-card source-card">
+            <div class="card-header-row">
+              <div class="icon-wrapper icon-placement">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              </div>
+              <h3 class="card-headline">{{ locales[lang.code].download_section.source_header }}</h3>
+            </div>
+            <div class="inner-card">
+              <div class="inner-row">
+                <span class="inner-label">{{ locales[lang.code].download_section.source_stack }}</span>
+                <span class="inner-value">Python 3.12 / PySide6</span>
+              </div>
+              <div class="inner-row">
+                <span class="inner-label">{{ locales[lang.code].download_section.source_version }}</span>
+                <span class="inner-value">v1.1.5</span>
+              </div>
+            </div>
+            <div class="action-wrapper">
+              <a href="https://github.com/NiiV3AU/YMU/releases/latest/"
+                rel="noopener noreferrer"
+                class="btn btn-secondary btn-block">
+                {{ locales[lang.code].download_section.source_code_button | safe }}
+              </a>
+              <p class="text-small mt-2 text-center">
+                <a href="https://github.com/NiiV3AU/YMU" target="_blank">{{ locales[lang.code].download_section.source_code_link}}</a>
+              </p>
+            </div>
           </div>
-
-          <div class="space">
-            <h3 class="subsection-title text-center">{{ locales[lang.code].download_section.requirements_title }}</h3>
-            <div class="requirements-section">
-              <div class="requirements-columns">
-                <div>
-                  <h4>System</h4>
-                  <ul>
-                    <li>{{ locales[lang.code].download_section.requirements_os }}</li>
-                  </ul>
-                  <h4>{{ locales[lang.code].download_section.requirements_language }}</h4>
-                  <ul>
-                    <li>{{ locales[lang.code].download_section.requirements_language_desc }}</li>
-                  </ul>
-                </div>
-                <div>
-                  <h4>{{ locales[lang.code].download_section.requirements_libs }}</h4>
-                  <ul>
-                    <li>PySide6</li>
-                    <li>pywin32</li>
-                    <li>psutil</li>
-                    <li>pyinjector</li>
-                    <li>requests</li>
-                    <li>packaging</li>
-                  </ul>
-                </div>
+          <div class="card download-card lua-card">
+            <div class="card-header-row">
+              <div class="icon-wrapper icon-placement">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+              </div>
+              <div class="lua-text-group">
+                  <h3 class="card-headline" style="font-size: 1.2rem;">{{ locales[lang.code].download_section.lua_question }}</h3>
+                  <p class="text-small mb-0" style="opacity: 0.7;">{{ locales[lang.code].download_section.lua_subheader }}</p>
+              </div>
+              <div class="lua-action-right">
+                  <a href="https://github.com/orgs/YimMenu-Lua/repositories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-secondary">
+                  {{ locales[lang.code].download_section.lua_button | safe }}
+                </a>
               </div>
             </div>
           </div>
-        </div>
       </section>
-
       <section id="updates" class="updates-section section-padding fade-in">
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].updates_section.title }}</h2>
@@ -623,14 +610,14 @@ permalink: "/{{ lang.code }}/"
                   >- Redesign and GTA 5 Enhanced Support</span
                 >
                 <span class="changelog-date"
-                  ><mark class="code-font">Aug 30, 2025</mark></span
+                  ><mark class="code-font">Aug 31, 2025</mark></span
                 >
               </div>
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
                     Complete UI Overhaul and Code Refactoring (CustomTkinter ->
-                    PySide6). GTA 5 Enhanced is now Supported thanks to YimMenuV2.
+                    PySide6). GTA 5 Enhanced is now supported thanks to YimMenuV2.
                   </p>
                 </div>
               </div>
@@ -648,9 +635,8 @@ permalink: "/{{ lang.code }}/"
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
-                    Added Buttons (YimMenu GitHub Repo & FSL's UC-Thread) in
-                    Download Tab + updated "more info"-Windows in Download- &
-                    Inject-Tab.
+                    Added Buttons (YimMenu GitHub Repo & FSL) in
+                    Download Tab + updated "more info"-windows in various tabs.
                   </p>
                 </div>
               </div>
@@ -669,7 +655,7 @@ permalink: "/{{ lang.code }}/"
                 <div class="details-content-wrapper">
                   <p>
                     New Lua list in Settings-Tab - activate/deactivate scripts &
-                    discover more luas.
+                    discover more extensions.
                   </p>
                 </div>
               </div>
@@ -691,7 +677,7 @@ permalink: "/{{ lang.code }}/"
           </div>
           <div class="text-center">
             <a
-              href="https://github.com/NiiV3AU/YMU/blob/main/README.md#screenshots--changelog"
+              href="https://github.com/NiiV3AU/YMU?tab=readme-ov-file#full-changelog"
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-secondary">{{ locales[lang.code].updates_section.changelog_button | safe }}
@@ -703,7 +689,6 @@ permalink: "/{{ lang.code }}/"
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].faq_section.title }}</h2>
           <div class="faq-list">
-            
             <div class="faq-item">
               <div class="faq-question" tabindex="0" role="button" aria-expanded="false">{{ locales[lang.code].faq_section.q1_question }}</div>
               <div class="faq-answer">
@@ -758,18 +743,13 @@ permalink: "/{{ lang.code }}/"
               <div class="faq-question" tabindex="0" role="button" aria-expanded="false">{{ locales[lang.code].faq_section.q7_question }}</div>
               <div class="faq-answer">
                 <div class="details-content-wrapper">
-                  <p>{{ locales[lang.code].faq_section.q7_answer }}</p>
-                  <div class="code-block">
-                      <pre><code id="pip-command">pip install PySide6 pywin32 psutil pyinjector requests packaging</code></pre>
-                      <button id="copy-pip-btn" class="copy-btn" aria-label="Copy to clipboard"></button>
-                  </div>
+                  <p>{{ locales[lang.code].faq_section.q7_answer | safe }}</p>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-
       <section id="community" class="community-section section-padding fade-in">
         <div class="container text-center">
           <h2 class="section-title">{{ locales[lang.code].community_section.title }}</h2>
@@ -791,6 +771,8 @@ permalink: "/{{ lang.code }}/"
                 viewBox="0 0 24 24"
                 width="24"
                 height="24"
+                aria-hidden="true"
+                      focusable="false"
                 class="main-grid-item-icon"
                 fill="none"
               >
@@ -814,6 +796,8 @@ permalink: "/{{ lang.code }}/"
               viewBox="0 0 24 24"
               width="24"
               height="24"
+              aria-hidden="true"
+              focusable="false"
               class="main-grid-item-icon"
               fill="none"
               stroke="currentColor"
@@ -829,7 +813,6 @@ permalink: "/{{ lang.code }}/"
           </a>
         </div>
       </section>
-
       <section id="about" class="about-section section-padding fade-in">
         <div class="container text-center">
           <h2 class="section-title">{{ locales[lang.code].about_section.title }}</h2>
@@ -838,7 +821,6 @@ permalink: "/{{ lang.code }}/"
         </div>
       </section>
     </main>
-
     <footer class="footer-section text-center fade-in">
       <div class="container">
         <div class="footer-project-status">
@@ -902,9 +884,9 @@ permalink: "/{{ lang.code }}/"
             <a href="https://feathericons.com/" target="_blank" rel="noopener noreferrer" class="links" aria-label="Feather Icons (icon source)">Feather Icons</a>&#185;
             &nbsp;&nbsp;|&nbsp;&nbsp;
             Fonts: 
-            <a href="https://fonts.google.com/specimen/Manrope" target="_blank" rel="noopener noreferrer" class="links" aria-label="Manrope (font source)">Manrope</a>&#178;
+            <a href="https://fonts.google.com/specimen/Manrope" target="_blank" rel="noopener noreferrer" class="links" aria-label="Manrope (font source)">Manrope</a> <span style="opacity: 0.8; font-size: 0.9em;">(Web/App)</span>&#178;
             &amp;
-            <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener noreferrer" class="links" aria-label="JetBrains Mono (font source)">JetBrains Mono</a>&#178;
+            <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener noreferrer" class="links" aria-label="JetBrains Mono (font source)">JetBrains Mono</a> <span style="opacity: 0.8; font-size: 0.9em;">(App)</span>&#178;
             <br>
             &#185;Licensed under the MIT License.
             <br>
@@ -915,7 +897,7 @@ permalink: "/{{ lang.code }}/"
     </footer>
     <div id="lightbox-overlay" class="lightbox-overlay">
       <button id="lightbox-close" class="lightbox-close" aria-label="Close enlarged image view">
-        <svg xmlns="http://www.w.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg>
+        <svg xmlns="http://www.w.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg>
       </button>
       <img
         id="lightbox-image"
@@ -936,7 +918,6 @@ permalink: "/{{ lang.code }}/"
         </div>
         <div class="privacy-modal-body">
           <p>{{ locales[lang.code].privacy_section.privacy_modal_intro }}</p>
-          
           <h4>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_title }}</h4>
           <p>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_desc }}</p>
           <ul>
@@ -944,24 +925,20 @@ permalink: "/{{ lang.code }}/"
             <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item2 | safe }}</li>
             <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item3 | safe }}</li>
           </ul>
-
           <h4>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_title }}</h4>
           <p>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_desc }}</p>
           <ul>
             <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item1 | safe }}</li>
             <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item2 | safe }}</li>
           </ul>
-
           <h4>{{ locales[lang.code].privacy_section.privacy_modal_analytics_title }}</h4>
           <p>{{ locales[lang.code].privacy_section.privacy_modal_analytics_desc }}</p>
           <ul>
             <li>{{ locales[lang.code].privacy_section.privacy_modal_analytics_item1 | safe }}</li>
           </ul>
-
           <p><strong>{{ locales[lang.code].privacy_section.privacy_modal_conclusion }}</strong></p>
         </div>
       </div>
     </div>
   </body>
 </html>
-
