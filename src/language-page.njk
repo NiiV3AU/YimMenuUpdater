@@ -15,7 +15,7 @@ permalink: "/{{ lang.code }}/"
     <link rel="alternate" hreflang="x-default" href="{{ metadata.url }}/en/" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>YimMenuUpdater | NV3</title>
+    <title>{{ locales[lang.code].page_title }}</title>
     <meta name="google-site-verification" content="_f6dGnLNZBlwsL9BdFwl6TM5fzcSC5_ubno6fyX9SIg" />
     <link rel="icon" href="{{ '/assets/img/logo.svg' | url }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ '/assets/img/logo-180x180.png' | url }}">
@@ -27,6 +27,19 @@ permalink: "/{{ lang.code }}/"
       name="description"
       content="{{ locales[lang.code].meta_description }}"
     />
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ymu.pages.dev/{{ lang.code }}/">
+    <meta property="og:title" content="{{ locales[lang.code].page_title }}">
+    <meta property="og:description" content="{{ locales[lang.code].meta_description }}">
+    <meta property="og:image" content="https://ymu.pages.dev/assets/img/og-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@NiiV3AU">
+    <meta property="twitter:url" content="https://ymu.pages.dev/{{ lang.code }}/">
+    <meta property="twitter:title" content="{{ locales[lang.code].page_title }}">
+    <meta property="twitter:description" content="{{ locales[lang.code].meta_description }}">
+    <meta property="twitter:image" content="https://ymu.pages.dev/assets/img/og-preview.jpg">
     <script defer src="{{ '/assets/js/script.js' | url }}"></script>
     <script>
       (function () {
@@ -51,24 +64,72 @@ permalink: "/{{ lang.code }}/"
         "@type": "SoftwareApplication",
         "name": "YimMenuUpdater",
         "operatingSystem": "Windows 10, Windows 11",
-        "applicationCategory": "GameApplication",
+        "applicationCategory": "UtilitiesApplication",
         "offers": {
           "@type": "Offer",
           "price": "0",
           "priceCurrency": "EUR"
         },
-        "description": "{{ locales[lang.code].meta_description }}",
+        "description": "{{ locales[lang.code].json_ld.description }}",
         "softwareVersion": "1.1.5",
         "author": {
-            "@type": "Person",
-            "name": "NiiV3AU"
+          "@type": "Person",
+          "name": "NiiV3AU",
+          "url": "https://github.com/NiiV3AU"
         },
         "downloadUrl": "https://github.com/NiiV3AU/YMU/releases",
-        "featureList": "Auto-Update, Mod-Management, UI-Customization"
+        "featureList": "{{ locales[lang.code].json_ld.feature_list }}",
+        "keywords": "{{ locales[lang.code].json_ld.keywords }}",
+        "isBasedOn": [
+          {
+            "@type": "SoftwareApplication",
+            "name": "Grand Theft Auto V",
+            "applicationCategory": "GameApplication",
+            "operatingSystem": "Windows"
+          },
+          {
+            "@type": "SoftwareApplication",
+            "name": "YimMenu",
+            "applicationCategory": "UtilitiesApplication",
+            "description": "{{ locales[lang.code].json_ld.yimmenu_desc }}"
+          }
+        ]
       }
     </script>
   </head>
   <body>
+  <div id="alert-banner" class="alert-banner" role="alert" style="display: none;">
+      <div class="container alert-container">
+        <div class="alert-content">
+          <!-- Warn-Icon (Triangle with exclamation) ist meist besser für "Known Issues" als ein Info-Circle -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="alert-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+          <span class="alert-text">{{ locales[lang.code].alert_banner.text }}</span>
+        </div>
+        <button id="alert-close-btn" class="alert-close" aria-label="Close alert">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        </button>
+      </div>
+      <script>
+        (function() {
+            // Skript prüft, ob der Banner mit dieser spezifischen ID schon weggeklickt wurde
+            const alertBanner = document.getElementById('alert-banner');
+            const closeBtn = document.getElementById('alert-close-btn');
+            // ID geändert, damit Nutzer, die alte Banner weggeklickt haben, diesen neuen sehen
+            const bannerId = 'ymu-alert-enhanced-path-issue'; 
+
+            if (!localStorage.getItem(bannerId)) {
+                alertBanner.style.display = 'block';
+            }
+
+            if(closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    alertBanner.style.display = 'none';
+                    localStorage.setItem(bannerId, 'dismissed');
+                });
+            }
+        })();
+      </script>
+    </div>
     <header class="header-sticky">
       <div class="container header-container">
         <div class="logo">
