@@ -108,7 +108,14 @@
         "footer_section": {
             "contact": "Contact",
             "project_status": "A Source-Available Project.",
-            "yimmenu_sources": "YimMenu Sources"
+            "yimmenu_sources": "YimMenu Sources",
+            "disclaimer": "YMU is an independent source-available project and is not affiliated with, endorsed by, or connected to Rockstar Games or Take-Two Interactive. All trademarks belong to their respective owners. This software is provided for educational purposes only and is distributed \"as is\" without warranty. We are not liable for any direct or indirect consequences resulting from the use of YMU or YimMenu.",
+            "made_with": "made with",
+            "by": "by",
+            "icons": "Icons",
+            "fonts": "Fonts",
+            "license_mit": "Licensed under the MIT License.",
+            "license_sil": "Licensed under the SIL Open Font License 1.1."
         },
         "privacy_section": {
             "software_license": "Software License",
@@ -241,8 +248,15 @@
         },
         "footer_section": {
             "contact": "Kontakt",
-            "project_status": "Ein Source-Available Projekt.",
-            "yimmenu_sources": "YimMenu Quellen"
+            "project_status": "Ein Source-Available-Projekt.",
+            "yimmenu_sources": "YimMenu Quellen",
+            "disclaimer": "YMU ist ein unabhängiges Source-Available-Projekt und ist weder mit Rockstar Games oder Take-Two Interactive verbunden, noch von diesen unterstützt oder gesponsert. Alle Marken gehören ihren jeweiligen Eigentümern. Diese Software dient ausschließlich Bildungszwecken und wird „wie besehen“ (as-is) ohne Gewährleistung bereitgestellt. Wir haften nicht für direkte oder indirekte Folgen, die aus der Nutzung von YMU oder YimMenu resultieren.",
+            "made_with": "gemacht mit",
+            "by": "von",
+            "icons": "Icons",
+            "fonts": "Schriftarten",
+            "license_mit": "Lizenziert unter der MIT-Lizenz.",
+            "license_sil": "Lizenziert unter der SIL Open Font License 1.1."
         },
         "privacy_section": {
             "software_license": "Software-Lizenz",
@@ -376,7 +390,14 @@
         "footer_section": {
             "contact": "Contact",
             "project_status": "Een Source-Available Project.",
-            "yimmenu_sources": "YimMenu Bronnen"
+            "yimmenu_sources": "YimMenu Bronnen",
+            "disclaimer": "YMU is een onafhankelijk source-available project en is niet verbonden met, onderschreven door of gelieerd aan Rockstar Games of Take-Two Interactive. Alle handelsmerken zijn eigendom van hun respectievelijke eigenaren. Deze software is uitsluitend bedoeld voor educatieve doeleinden en wordt gedistribueerd \"as is\" zonder garantie. Wij zijn niet aansprakelijk voor directe of indirecte gevolgen die voortvloeien uit het gebruik van YMU of YimMenu.",
+            "made_with": "gemaakt met",
+            "by": "door",
+            "icons": "Iconen",
+            "fonts": "Lettertypen",
+            "license_mit": "Gelicentieerd onder de MIT-licentie.",
+            "license_sil": "Gelicentieerd onder de SIL Open Font License 1.1."
         },
         "privacy_section": {
             "software_license": "Softwarelicentie",
@@ -509,8 +530,15 @@
         },
         "footer_section": {
             "contact": "Contact",
-            "project_status": "Un projet au code source disponible.",
-            "yimmenu_sources": "Sources YimMenu"
+            "project_status": "Un projet Source-Available.",
+            "yimmenu_sources": "Sources YimMenu",
+            "disclaimer": "YMU est un projet indépendant à code source disponible et n'est ni affilié, ni approuvé, ni lié à Rockstar Games ou Take-Two Interactive. Toutes les marques appartiennent à leurs propriétaires respectifs. Ce logiciel est fourni à des fins éducatives uniquement et est distribué \"tel quel\" sans garantie. Nous ne sommes pas responsables des conséquences directes ou indirectes résultant de l'utilisation de YMU ou YimMenu.",
+            "made_with": "fait avec",
+            "by": "par",
+            "icons": "Icônes",
+            "fonts": "Polices",
+            "license_mit": "Sous licence MIT.",
+            "license_sil": "Sous licence SIL Open Font License 1.1."
         },
         "privacy_section": {
             "software_license": "Licence Logicielle",
@@ -644,7 +672,14 @@
         "footer_section": {
             "contact": "Contacto",
             "project_status": "Un proyecto de código disponible.",
-            "yimmenu_sources": "Fuentes de YimMenu"
+            "yimmenu_sources": "Fuentes de YimMenu",
+            "disclaimer": "YMU es un proyecto independiente de código disponible y no está afiliado, respaldado ni conectado con Rockstar Games o Take-Two Interactive. Todas las marcas comerciales pertenecen a sus respectivos dueños. Este software se proporciona solo con fines educativos y se distribuye \"tal cual\" sin garantía. No somos responsables de ninguna consecuencia directa o indirecta derivada del uso de YMU o YimMenu.",
+            "made_with": "hecho con",
+            "by": "por",
+            "icons": "Iconos",
+            "fonts": "Fuentes",
+            "license_mit": "Licenciado bajo la licencia MIT.",
+            "license_sil": "Licenciado bajo la SIL Open Font License 1.1."
         },
         "privacy_section": {
             "software_license": "Licencia del software",
@@ -777,8 +812,15 @@
         },
         "footer_section": {
             "contact": "Contato",
-            "project_status": "Um Projeto com Código Disponível.",
-            "yimmenu_sources": "Fontes do YimMenu"
+            "project_status": "Um projeto de código disponível.",
+            "yimmenu_sources": "Fontes do YimMenu",
+            "disclaimer": "YMU é um projeto independente de código disponível e não é afiliado, endossado ou ligado à Rockstar Games ou Take-Two Interactive. Todas as marcas pertencem aos seus respectivos proprietários. Este software é fornecido apenas para fins educacionais e é distribuído \"como está\" sem garantia. Não nos responsabilizamos por quaisquer consequências diretas ou indiretas resultantes do uso do YMU ou YimMenu.",
+            "made_with": "feito com",
+            "by": "por",
+            "icons": "Ícones",
+            "fonts": "Fontes",
+            "license_mit": "Licenciado sob a licença MIT.",
+            "license_sil": "Licenciado sob a SIL Open Font License 1.1."
         },
         "privacy_section": {
             "software_license": "Licença do Software",
@@ -911,8 +953,15 @@
         },
         "footer_section": {
             "contact": "Kontakt",
-            "project_status": "Projekt Open Source.",
-            "yimmenu_sources": "Źródła YimMenu"
+            "project_status": "Projekt typu Source-Available.",
+            "yimmenu_sources": "Źródła YimMenu",
+            "disclaimer": "YMU to niezależny projekt typu source-available, niepowiązany, niepopierany ani niepołączony z Rockstar Games lub Take-Two Interactive. Wszystkie znaki towarowe należą do ich właścicieli. Oprogramowanie to służy wyłącznie celom edukacyjnym i jest rozpowszechniane w stanie \"takim, jakie jest\" bez gwarancji. Nie ponosimy odpowiedzialności za jakiekolwiek bezpośrednie lub pośrednie konsekwencje wynikające z używania YMU lub YimMenu.",
+            "made_with": "stworzone z",
+            "by": "przez",
+            "icons": "Ikony",
+            "fonts": "Czcionki",
+            "license_mit": "Na licencji MIT.",
+            "license_sil": "Na licencji SIL Open Font License 1.1."
         },
         "privacy_section": {
             "software_license": "Licencja oprogramowania",
@@ -1046,7 +1095,14 @@
         "footer_section": {
             "contact": "Контакты",
             "project_status": "Проект с доступным исходным кодом.",
-            "yimmenu_sources": "Источники YimMenu"
+            "yimmenu_sources": "Источники YimMenu",
+            "disclaimer": "YMU — это независимый проект с доступным исходным кодом, не связанный, не одобренный и не имеющий отношения к Rockstar Games или Take-Two Interactive. Все торговые марки принадлежат их владельцам. Это ПО предоставляется только в образовательных целях и распространяется «как есть» без гарантий. Мы не несем ответственности за любые прямые или косвенные последствия использования YMU или YimMenu.",
+            "made_with": "сделано с",
+            "by": "от",
+            "icons": "Иконки",
+            "fonts": "Шрифты",
+            "license_mit": "Лицензия MIT.",
+            "license_sil": "Лицензия SIL Open Font License 1.1."
         },
         "privacy_section": {
             "software_license": "Лицензия ПО",
@@ -1179,8 +1235,15 @@
         },
         "footer_section": {
             "contact": "Контакти",
-            "project_status": "Проєкт із доступним вихідним кодом.",
-            "yimmenu_sources": "Джерела YimMenu"
+            "project_status": "Проєкт із доступним кодом.",
+            "yimmenu_sources": "Джерела YimMenu",
+            "disclaimer": "YMU — це незалежний проєкт із доступним вихідним кодом, не пов'язаний, не схвалений і не сполучений з Rockstar Games або Take-Two Interactive. Усі торгові марки належать їхнім власникам. Це ПЗ надається лише в освітніх цілях і розповсюджується «як є» без гарантій. Ми не несемо відповідальності за будь-які прямі чи непрямі наслідки, що виникли внаслідок використання YMU або YimMenu.",
+            "made_with": "зроблено з",
+            "by": "від",
+            "icons": "Іконки",
+            "fonts": "Шрифти",
+            "license_mit": "Ліцензія MIT.",
+            "license_sil": "Ліцензія SIL Open Font License 1.1."
         },
         "privacy_section": {
             "software_license": "Ліцензія на ПЗ",
@@ -1313,8 +1376,15 @@
         },
         "footer_section": {
             "contact": "İletişim",
-            "project_status": "Kaynağı Açık Bir Proje.",
-            "yimmenu_sources": "YimMenu Kaynakları"
+            "project_status": "Kaynağı Görüntülenebilir Bir Proje.",
+            "yimmenu_sources": "YimMenu Kaynakları",
+            "disclaimer": "YMU bağımsız bir kaynağı görüntülenebilir projedir; Rockstar Games veya Take-Two Interactive ile bağlantılı değildir, desteklenmemektedir veya ilişkili değildir. Tüm ticari markalar ilgili sahiplerine aittir. Bu yazılım yalnızca eğitim amaçlıdır ve herhangi bir garanti olmaksızın \"olduğu gibi\" dağıtılmaktadır. YMU veya YimMenu kullanımından kaynaklanan doğrudan veya dolaylı sonuçlardan sorumlu değiliz.",
+            "made_with": "sevgiyle",
+            "by": "yapan:",
+            "icons": "İkonlar",
+            "fonts": "Yazı Tipleri",
+            "license_mit": "MIT Lisansı altındadır.",
+            "license_sil": "SIL Open Font License 1.1 altındadır."
         },
         "privacy_section": {
             "software_license": "Yazılım Lisansı",
@@ -1447,8 +1517,15 @@
         },
         "footer_section": {
             "contact": "联系方式",
-            "project_status": "一个源码可见的项目。",
-            "yimmenu_sources": "YimMenu 来源"
+            "project_status": "源代码可见项目。",
+            "yimmenu_sources": "YimMenu 来源",
+            "disclaimer": "YMU 是一个独立的源代码可见项目，与 Rockstar Games 或 Take-Two Interactive 无关联、未获其认可或连接。所有商标均属于其各自所有者。本软件仅用于教育目的，并“按原样”分发，不提供任何保证。对于因使用 YMU 或 YimMenu 而导致的任何直接或间接后果，我们概不负责。",
+            "made_with": "用心制作",
+            "by": "作者",
+            "icons": "图标",
+            "fonts": "字体",
+            "license_mit": "基于 MIT 许可。",
+            "license_sil": "基于 SIL Open Font License 1.1。"
         },
         "privacy_section": {
             "software_license": "软件许可",
@@ -1581,8 +1658,15 @@
         },
         "footer_section": {
             "contact": "お問い合わせ",
-            "project_status": "ソース公開プロジェクト",
-            "yimmenu_sources": "YimMenu ソース"
+            "project_status": "ソース利用可能プロジェクト。",
+            "yimmenu_sources": "YimMenu ソース",
+            "disclaimer": "YMUは独立したソース利用可能なプロジェクトであり、Rockstar GamesやTake-Two Interactiveとは提携、推奨、または関連していません。すべての商標はそれぞれの所有者に帰属します。本ソフトウェアは教育目的のみで、保証なしの「現状有姿」で提供されます。YMUまたはYimMenuの使用に起因する直接的または間接的な結果について、私たちは一切の責任を負いません。",
+            "made_with": "愛を込めて",
+            "by": "作成者",
+            "icons": "アイコン",
+            "fonts": "フォント",
+            "license_mit": "MITライセンス。",
+            "license_sil": "SIL Open Font License 1.1。"
         },
         "privacy_section": {
             "software_license": "ソフトウェアライセンス",

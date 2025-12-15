@@ -882,8 +882,9 @@ permalink: "/{{ lang.code }}/"
         </div>
       </section>
     </main>
-    <footer class="footer-section text-center fade-in">
-      <div class="container">
+        
+<footer class="footer-section text-center fade-in">
+      <div class="container footer-content-wrapper">
         <div class="footer-project-status">
           <p>{{ locales[lang.code].footer_section.project_status }}</p>
         </div>
@@ -928,11 +929,10 @@ permalink: "/{{ lang.code }}/"
           &nbsp;&nbsp;|&nbsp;&nbsp;
           <a href="" id="privacy-policy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>
         </div>
-        <br>
         <div class="footer-copyright">
           <p>
-            &copy; 2024-2025 YMU - made with
-            <span class="heart">&hearts;</span> by
+            &copy; 2024-2025 YMU - {{ locales[lang.code].footer_section.made_with }}
+            <span class="heart">&hearts;</span> {{ locales[lang.code].footer_section.by }}
             <a
               href="https://niveau.pages.dev/"
               target="_blank"
@@ -941,18 +941,21 @@ permalink: "/{{ lang.code }}/"
             >
           </p>
           <p>
-            Icons: 
+            {{ locales[lang.code].footer_section.icons }}: 
             <a href="https://feathericons.com/" target="_blank" rel="noopener noreferrer" class="links" aria-label="Feather Icons (icon source)">Feather Icons</a>&#185;
             &nbsp;&nbsp;|&nbsp;&nbsp;
-            Fonts: 
+            {{ locales[lang.code].footer_section.fonts }}: 
             <a href="https://fonts.google.com/specimen/Manrope" target="_blank" rel="noopener noreferrer" class="links" aria-label="Manrope (font source)">Manrope</a> <span style="opacity: 0.8; font-size: 0.9em;">(Web/App)</span>&#178;
             &amp;
             <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener noreferrer" class="links" aria-label="JetBrains Mono (font source)">JetBrains Mono</a> <span style="opacity: 0.8; font-size: 0.9em;">(App)</span>&#178;
             <br>
-            &#185;Licensed under the MIT License.
+            &#185;{{ locales[lang.code].footer_section.license_mit }}
             <br>
-            &#178;Licensed under the SIL Open Font License 1.1.
+            &#178;{{ locales[lang.code].footer_section.license_sil }}
           </p>
+        </div>
+        <div class="footer-disclaimer">
+          <p>{{ locales[lang.code].footer_section.disclaimer }}</p>
         </div>
       </div>
     </footer>

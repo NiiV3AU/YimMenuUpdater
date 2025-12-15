@@ -806,14 +806,26 @@ a {
   padding-top: 1rem;
 }
 .footer-section {
-  padding: 2rem 0;
+  /* 1. Symmetrie wiederhergestellt: Oben und Unten exakt gleich viel Platz */
+  padding: 3rem 0;
   margin-top: 4rem;
   border-top: 1px solid var(--border-color);
   font-size: 0.9rem;
   color: var(--text-secondary);
 }
+
+.footer-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem; /* Der Standard-Abstand zwischen den Blöcken */
+}
+
 .footer-links a {
   color: var(--text-secondary);
+  /* Verhindert, dass Links auf dem Handy zu eng kleben */
+  display: inline-block;
+  line-height: 1.6;
 }
 .footer-links a:hover {
   color: var(--text-primary);
@@ -822,9 +834,26 @@ a {
   color: var(--text-primary);
   font-weight: 700;
 }
-.footer-copyright p:last-child {
-  margin-bottom: 0;
+
+/* Reset der Paragraph-Margins innerhalb der Blöcke, 
+   damit das 'gap' die Kontrolle übernimmt. 
+   Nur beim Copyright lassen wir den Abstand zwischen den zwei Zeilen. */
+.footer-project-status p,
+.footer-sources p,
+.footer-disclaimer p {
+  margin: 0;
 }
+
+.footer-disclaimer p {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  opacity: 0.75;
+  max-width: 800px;
+  margin: 0 auto 0 auto;
+
+  line-height: 1.4;
+}
+
 .heart {
   color: var(--danger);
 }
