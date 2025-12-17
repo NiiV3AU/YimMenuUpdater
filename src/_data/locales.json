@@ -8,7 +8,7 @@
             "yimmenu_desc": "Open Source Modding Tool"
         },
         "alert_banner": {
-            "text": "Known Issue: \"GTA V Enhanced\" is currently not detected or launching correctly. We are working on a fix for the next update."
+            "text": "Update v1.1.6: 'GTA V Enhanced' detection issue fixed."
         },
         "meta_description": "YMU is the ultimate launchpad for YimMenu. Seamlessly download the latest version, load it into GTA V with a few clicks, manage your Lua scripts, and much more.",
         "nav": {
@@ -22,7 +22,7 @@
         "lang_toggle_aria_label": "Change language",
         "hero_headline": "YMU: YimMenu. Simple. Up-To-Date.",
         "hero_subheadline": "The smart launcher for YimMenu, featuring automatic update checks, streamlined integration, and seamless Lua script management—all in one place.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.6",
         "features_section": {
             "title": "Key Features",
             "subtitle": "Everything you need for YimMenu, in one utility.",
@@ -56,11 +56,10 @@
         "download_section": {
             "title": "Download",
             "card_headline":"Prebuilt Executable",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.6",
             "os_header": "OS:",
             "os_info": "For Windows 10 & 11",
             "download_header": "Downloads:",
-            "software_language_notice": "The application is currently available only in English.",
             "source_header": "Source",
             "source_stack": "Stack:",
             "source_version": "Version:",
@@ -149,7 +148,7 @@
             "yimmenu_desc": "Open Source Modding Tool"
         },
         "alert_banner": {
-            "text": "Bekanntes Problem: \"GTA V Enhanced\" wird aktuell nicht erkannt oder gestartet. Wir arbeiten an einer Lösung für das nächste Update."
+            "text": "Update v1.1.6: Erkennungsproblem bei 'GTA V Enhanced' behoben."
         },
         "meta_description": "YMU ist der ultimative Launcher für YimMenu. Lade die aktuellste Version herunter, starte sie in GTA V mit wenigen Klicks, verwalte deine Lua-Skripte und vieles mehr.",
         "nav": {
@@ -163,7 +162,7 @@
         "lang_toggle_aria_label": "Sprache ändern",
         "hero_headline": "YMU: YimMenu. Einfach. Aktuell.",
         "hero_subheadline": "Der smarte Launcher für YimMenu mit automatischen Update-Checks, optimierter Integration und nahtloser Lua-Skript-Verwaltung – alles an einem Ort.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 herunterladen",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.6 herunterladen",
         "features_section": {
             "title": "Hauptfunktionen",
             "subtitle": "Alles, was du für YimMenu brauchst, in einem Tool.",
@@ -197,11 +196,10 @@
         "download_section": {
             "title": "Download",
             "card_headline": "Vorgefertigte Anwendung",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5 herunterladen",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.6 herunterladen",
             "os_header": "OS:",
             "os_info": "Für Windows 10 & 11",
             "download_header": "Downloads:",
-            "software_language_notice": "Die Anwendung ist derzeit nur auf Englisch verfügbar.",
             "source_header": "Quellcode",
             "source_stack": "Stack:",
             "source_version": "Version:",
@@ -290,7 +288,7 @@
             "yimmenu_desc": "Open Source Modding Tool"
         },
         "alert_banner": {
-            "text": "Bekend probleem: \"GTA V Enhanced\" wordt momenteel niet herkend of gestart. We werken aan een oplossing voor de volgende update."
+            "text": "Update v1.1.6: Detectieprobleem 'GTA V Enhanced' opgelost."
         },
         "meta_description": "YMU is dé ultieme launcher voor YimMenu. Download eenvoudig de nieuwste versie, start deze in GTA V met een paar klikken, beheer je Lua-scripts en nog veel meer.",
         "nav": {
@@ -304,7 +302,7 @@
         "lang_toggle_aria_label": "Taal wijzigen",
         "hero_headline": "YMU: YimMenu. Simpel. Up-to-date.",
         "hero_subheadline": "De slimme launcher voor YimMenu met automatische update-checks, gestroomlijnde integratie en naadloos beheer van Lua-scripts — alles op één plek.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.6",
         "features_section": {
             "title": "Belangrijkste Functies",
             "subtitle": "Alles wat je nodig hebt voor YimMenu, in één tool.",
@@ -338,11 +336,10 @@
         "download_section": {
             "title": "Download",
             "card_headline": "Kant-en-klare applicatie",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.5",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.6",
             "os_header": "OS:",
             "os_info": "Voor Windows 10 & 11",
             "download_header": "Downloads:",
-            "software_language_notice": "De applicatie is momenteel alleen beschikbaar in het Engels.",
             "source_header": "Broncode",
             "source_stack": "Stack:",
             "source_version": "Versie:",
@@ -431,7 +428,7 @@
             "yimmenu_desc": "Outil de Modding Open Source"
         },
         "alert_banner": {
-            "text": "Problème connu : \"GTA V Enhanced\" n'est pas détecté ou ne se lance pas correctement. Un correctif arrivera dans la prochaine mise à jour."
+            "text": "Mise à jour v1.1.6 : Problème de détection de 'GTA V Enhanced' corrigé."
         },
         "meta_description": "YMU est le lanceur ultime pour YimMenu. Télécharge sans effort la dernière version, charge-la dans GTA V en quelques clics, gère tes scripts Lua et bien plus encore.",
         "nav": {
@@ -445,7 +442,7 @@
         "lang_toggle_aria_label": "Changer de langue",
         "hero_headline": "YMU : YimMenu. Simple. À jour.",
         "hero_subheadline": "Le lanceur intelligent pour YimMenu, avec vérification automatique des mises à jour, intégration simplifiée et gestion fluide des scripts Lua—tout ça au même endroit.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.6",
         "features_section": {
             "title": "Fonctionnalités Clés",
             "subtitle": "Tout ce dont tu as besoin pour YimMenu, dans un seul outil.",
@@ -479,11 +476,10 @@
         "download_section": {
             "title": "Télécharger",
             "card_headline": "Exécutable pré-compilé",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.5",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.6",
             "os_header": "OS :",
             "os_info": "Pour Windows 10 & 11",
             "download_header": "Téléchargements :",
-            "software_language_notice": "L'application est actuellement disponible uniquement en anglais.",
             "source_header": "Source",
             "source_stack": "Stack :",
             "source_version": "Version :",
@@ -572,7 +568,7 @@
             "yimmenu_desc": "Herramienta de Modding Open Source"
         },
         "alert_banner": {
-            "text": "Problema conocido: Actualmente, \"GTA V Enhanced\" no se detecta ni se inicia correctamente. Estamos trabajando en una solución."
+            "text": "Actualización v1.1.6: Solucionado el problema de detección de 'GTA V Enhanced'."
         },
         "meta_description": "YMU es la plataforma de lanzamiento definitiva para YimMenu. Descarga la última versión, cárgala en GTA V con unos pocos clics, gestiona tus scripts Lua y mucho más.",
         "nav": {
@@ -586,7 +582,7 @@
         "lang_toggle_aria_label": "Cambiar idioma",
         "hero_headline": "YMU: YimMenu. Simple. Actualizado.",
         "hero_subheadline": "El lanzador inteligente para YimMenu: comprobación automática de actualizaciones, integración fluida y gestión de scripts Lua. Todo en un solo lugar.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.5",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.6",
         "features_section": {
             "title": "Funciones principales",
             "subtitle": "Todo lo que necesitas para YimMenu en una sola herramienta.",
@@ -620,11 +616,10 @@
         "download_section": {
             "title": "Descarga",
             "card_headline": "Ejecutable precompilado",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.5",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.6",
             "os_header": "SO:",
             "os_info": "Para Windows 10 y 11",
             "download_header": "Descargas:",
-            "software_language_notice": "La aplicación solo está disponible en inglés por el momento.",
             "source_header": "Fuente",
             "source_stack": "Stack:",
             "source_version": "Versión:",
@@ -713,7 +708,7 @@
             "yimmenu_desc": "Ferramenta de Modding Open Source"
         },
         "alert_banner": {
-            "text": "Problema Conhecido: O \"GTA V Enhanced\" não está sendo detectado ou iniciado corretamente no momento. Estamos trabalhando em uma correção."
+            "text": "Atualização v1.1.6: Problema de detecção do 'GTA V Enhanced' resolvido."
         },
         "meta_description": "O YMU é o launcher definitivo para o YimMenu. Baixe a versão mais recente, carregue-a no GTA V com poucos cliques, gerencie seus scripts Lua e muito mais.",
         "nav": {
@@ -727,7 +722,7 @@
         "lang_toggle_aria_label": "Alterar idioma",
         "hero_headline": "YMU: YimMenu. Simples. Atualizado.",
         "hero_subheadline": "O launcher inteligente para o YimMenu, com verificação automática de atualizações, integração simplificada e gerenciamento fácil de scripts Lua — tudo em um só lugar.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.5",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.6",
         "features_section": {
             "title": "Principais Recursos",
             "subtitle": "Tudo o que você precisa para o YimMenu em uma única ferramenta.",
@@ -761,11 +756,10 @@
         "download_section": {
             "title": "Download",
             "card_headline": "Executável pré-compilado",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.5",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.6",
             "os_header": "SO:",
             "os_info": "Para Windows 10 e 11",
             "download_header": "Downloads:",
-            "software_language_notice": "O aplicativo está disponível apenas em inglês no momento.",
             "source_header": "Código-fonte",
             "source_stack": "Stack:",
             "source_version": "Versão:",
@@ -854,7 +848,7 @@
             "yimmenu_desc": "Narzędzie Moddingowe Open Source"
         },
         "alert_banner": {
-            "text": "Znany problem: Wersja \"GTA V Enhanced\" nie jest obecnie wykrywana ani uruchamiana poprawnie. Pracujemy nad poprawką."
+            "text": "Aktualizacja v1.1.6: Naprawiono problem z wykrywaniem 'GTA V Enhanced'."
         },
         "meta_description": "YMU to najlepszy launcher dla YimMenu. Pobieraj najnowszą wersję, ładuj ją do GTA V kilkoma kliknięciami, zarządzaj skryptami Lua i wiele więcej.",
         "nav": {
@@ -868,7 +862,7 @@
         "lang_toggle_aria_label": "Zmień język",
         "hero_headline": "YMU: YimMenu. Prosto. Aktualnie.",
         "hero_subheadline": "Inteligentny launcher dla YimMenu: automatyczne aktualizacje, łatwa integracja i zarządzanie skryptami Lua – wszystko w jednym miejscu.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.5",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.6",
         "features_section": {
             "title": "Kluczowe funkcje",
             "subtitle": "Wszystko, czego potrzebujesz do YimMenu w jednym narzędziu.",
@@ -902,11 +896,10 @@
         "download_section": {
             "title": "Pobierz",
             "card_headline": "Gotowa aplikacja",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.5",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.6",
             "os_header": "System:",
             "os_info": "Dla Windows 10 i 11",
             "download_header": "Pliki:",
-            "software_language_notice": "Aplikacja jest obecnie dostępna tylko w języku angielskim.",
             "source_header": "Kod",
             "source_stack": "Tech:",
             "source_version": "Wersja:",
@@ -995,7 +988,7 @@
             "yimmenu_desc": "Инструмент для моддинга с открытым кодом"
         },
         "alert_banner": {
-            "text": "Известная проблема: «GTA V Enhanced» сейчас не обнаруживается и не запускается. Мы работаем над исправлением в следующем обновлении."
+            "text": "Обновление v1.1.6: Исправлена проблема обнаружения 'GTA V Enhanced'."
         },
         "meta_description": "YMU — это идеальный лаунчер для YimMenu. Скачивай последнюю версию, загружай её в GTA V парой кликов, управляй скриптами Lua и многое другое.",
         "nav": {
@@ -1009,7 +1002,7 @@
         "lang_toggle_aria_label": "Сменить язык",
         "hero_headline": "YMU: YimMenu. Просто. Актуально.",
         "hero_subheadline": "Умный лаунчер для YimMenu с автоматической проверкой обновлений, удобной интеграцией и простым управлением Lua-скриптами — всё в одном месте.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.5",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.6",
         "features_section": {
             "title": "Основные функции",
             "subtitle": "Всё, что нужно для YimMenu, в одной утилите.",
@@ -1043,11 +1036,10 @@
         "download_section": {
             "title": "Скачать",
             "card_headline": "Готовый исполняемый файл",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.5",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.6",
             "os_header": "ОС:",
             "os_info": "Для Windows 10 и 11",
             "download_header": "Загрузки:",
-            "software_language_notice": "Приложение доступно пока только на английском языке.",
             "source_header": "Исходный код",
             "source_stack": "Стек:",
             "source_version": "Версия:",
@@ -1136,7 +1128,7 @@
             "yimmenu_desc": "Інструмент для моддингу з відкритим кодом"
         },
         "alert_banner": {
-            "text": "Відома проблема: «GTA V Enhanced» наразі не виявляється та не запускається коректно. Ми працюємо над виправленням."
+            "text": "Оновлення v1.1.6: Виправлено проблему виявлення 'GTA V Enhanced'."
         },
         "meta_description": "YMU — це ідеальний лаунчер для YimMenu. Легко завантажуй останню версію, запускай її в GTA V у кілька кліків, керуй Lua-скриптами та багато іншого.",
         "nav": {
@@ -1150,7 +1142,7 @@
         "lang_toggle_aria_label": "Змінити мову",
         "hero_headline": "YMU: YimMenu. Простий. Актуальний.",
         "hero_subheadline": "Розумний лаунчер для YimMenu: автоматична перевірка оновлень, проста інтеграція та зручне керування Lua-скриптами — все в одному місці.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.5",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.6",
         "features_section": {
             "title": "Ключові функції",
             "subtitle": "Усе, що потрібно для YimMenu, в одній утиліті.",
@@ -1184,11 +1176,10 @@
         "download_section": {
             "title": "Завантажити",
             "card_headline": "Готовий виконуваний файл",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.5",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.6",
             "os_header": "ОС:",
             "os_info": "Для Windows 10 та 11",
             "download_header": "Завантаження:",
-            "software_language_notice": "Застосунок наразі доступний лише англійською мовою.",
             "source_header": "Джерело",
             "source_stack": "Стек:",
             "source_version": "Версія:",
@@ -1277,7 +1268,7 @@
             "yimmenu_desc": "Açık Kaynak Modlama Aracı"
         },
         "alert_banner": {
-            "text": "Bilinen Sorun: \"GTA V Enhanced\" şu anda algılanmıyor veya başlatılamıyor. Bir sonraki güncelleme için çözüm üzerinde çalışıyoruz."
+            "text": "Güncelleme v1.1.6: 'GTA V Enhanced' algılama sorunu giderildi."
         },
         "meta_description": "YMU, YimMenu için nihai başlatıcısıdır. En son sürümü sorunsuz indir, GTA V'e birkaç tıkla yükle, Lua scriptlerini yönet ve çok daha fazlasını yap.",
         "nav": {
@@ -1291,7 +1282,7 @@
         "lang_toggle_aria_label": "Dili değiştir",
         "hero_headline": "YMU: YimMenu. Basit. Güncel.",
         "hero_subheadline": "YimMenu için akıllı başlatıcı; otomatik güncelleme kontrolleri, akıcı entegrasyon ve sorunsuz Lua script yönetimi sunar—hepsi tek bir yerde.",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5'i İndir",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.6'i İndir",
         "features_section": {
             "title": "Temel Özellikler",
             "subtitle": "YimMenu için ihtiyacın olan her şey, tek bir araçta.",
@@ -1325,11 +1316,10 @@
         "download_section": {
             "title": "İndir",
             "card_headline": "Hazır Uygulama",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5'i İndir",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.6'i İndir",
             "os_header": "İşletim Sistemi:",
             "os_info": "Windows 10 & 11 için",
             "download_header": "İndirmeler:",
-            "software_language_notice": "Uygulama şu anda sadece İngilizce dilinde mevcuttur.",
             "source_header": "Kaynak",
             "source_stack": "Yığın:",
             "source_version": "Sürüm:",
@@ -1418,7 +1408,7 @@
             "yimmenu_desc": "开源模组工具"
         },
         "alert_banner": {
-        "text": "已知问题：目前无法检测或启动“GTA V Enhanced”。我们正在为下一次更新开发修复程序。"
+            "text": "更新 v1.1.6：已修复“GTA V Enhanced”检测问题。"
         },
         "meta_description": "YMU 是 YimMenu 的终极启动器。一键下载最新版本，轻松加载至 GTA V，并便捷管理 Lua 脚本。",
         "nav": {
@@ -1432,7 +1422,7 @@
         "lang_toggle_aria_label": "切换语言",
         "hero_headline": "YMU：YimMenu。简单。最新。",
         "hero_subheadline": "YimMenu 的智能启动器，集成了自动更新检测、简化集成和 Lua 脚本管理——所有功能，一站搞定。",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.5",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.6",
         "features_section": {
             "title": "核心功能",
             "subtitle": "YimMenu 所需的一切，尽在此工具中。",
@@ -1466,11 +1456,10 @@
         "download_section": {
             "title": "下载",
             "card_headline": "预构建可执行文件",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.5",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.6",
             "os_header": "系统：",
             "os_info": "适用于 Windows 10 & 11",
             "download_header": "下载量：",
-            "software_language_notice": "该应用程序目前仅支持英语。",
             "source_header": "源码",
             "source_stack": "技术栈：",
             "source_version": "版本：",
@@ -1559,7 +1548,7 @@
             "yimmenu_desc": "オープンソースModツール"
         },
         "alert_banner": {
-            "text": "既知の問題：現在「GTA V Enhanced」が認識されない、または起動しない不具合があります。次回アップデートで修正予定です。"
+            "text": "アップデート v1.1.6：「GTA V Enhanced」の検出問題を修正しました。"
         },
         "meta_description": "YMUはYimMenuのための究極のランチャーです。最新版をスムーズにダウンロードし、数クリックでGTA Vにロード、Luaスクリプトの管理などが可能です。",
         "nav": {
@@ -1573,7 +1562,7 @@
         "lang_toggle_aria_label": "言語を変更",
         "hero_headline": "YMU: YimMenu。シンプル。常に最新。",
         "hero_subheadline": "YimMenuのためのスマートなランチャー。自動更新チェック、スムーズな統合、Luaスクリプト管理をこれ一つで。",
-        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5をダウンロード",
+        "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.6をダウンロード",
         "features_section": {
             "title": "主な機能",
             "subtitle": "YimMenuに必要なすべてを、このツールひとつで。",
@@ -1607,11 +1596,10 @@
         "download_section": {
             "title": "ダウンロード",
             "card_headline": "ビルド済み実行ファイル",
-            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.5をダウンロード",
+            "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.6をダウンロード",
             "os_header": "対応OS:",
             "os_info": "Windows 10 & 11 用",
             "download_header": "ダウンロード数:",
-            "software_language_notice": "このアプリケーションは現在、英語のみ利用可能です。",
             "source_header": "ソース",
             "source_stack": "スタック:",
             "source_version": "バージョン:",

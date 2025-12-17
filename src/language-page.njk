@@ -71,7 +71,7 @@ permalink: "/{{ lang.code }}/"
           "priceCurrency": "EUR"
         },
         "description": "{{ locales[lang.code].json_ld.description }}",
-        "softwareVersion": "1.1.5",
+        "softwareVersion": "1.1.6",
         "author": {
           "@type": "Person",
           "name": "NiiV3AU",
@@ -98,38 +98,37 @@ permalink: "/{{ lang.code }}/"
     </script>
   </head>
   <body>
-  <div id="alert-banner" class="alert-banner" role="alert" style="display: none;">
-      <div class="container alert-container">
-        <div class="alert-content">
-          <!-- Warn-Icon (Triangle with exclamation) ist meist besser für "Known Issues" als ein Info-Circle -->
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="alert-icon"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
-          <span class="alert-text">{{ locales[lang.code].alert_banner.text }}</span>
-        </div>
-        <button id="alert-close-btn" class="alert-close" aria-label="Close alert">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
-        </button>
+  <div id="alert-banner" class="alert-banner info-mode" role="alert" style="display: none;">
+    <div class="container alert-container">
+      <div class="alert-content">
+        <!-- Icon geändert: Check-Circle für "Problem behoben" -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="alert-icon">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+        </svg>
+        <span class="alert-text">{{ locales[lang.code].alert_banner.text }}</span>
       </div>
-      <script>
-        (function() {
-            // Skript prüft, ob der Banner mit dieser spezifischen ID schon weggeklickt wurde
-            const alertBanner = document.getElementById('alert-banner');
-            const closeBtn = document.getElementById('alert-close-btn');
-            // ID geändert, damit Nutzer, die alte Banner weggeklickt haben, diesen neuen sehen
-            const bannerId = 'ymu-alert-enhanced-path-issue'; 
-
-            if (!localStorage.getItem(bannerId)) {
-                alertBanner.style.display = 'block';
-            }
-
-            if(closeBtn) {
-                closeBtn.addEventListener('click', function() {
-                    alertBanner.style.display = 'none';
-                    localStorage.setItem(bannerId, 'dismissed');
-                });
-            }
-        })();
-      </script>
+      <button id="alert-close-btn" class="alert-close" aria-label="Close alert">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+      </button>
     </div>
+    <script>
+      (function() {
+          const alertBanner = document.getElementById('alert-banner');
+          const closeBtn = document.getElementById('alert-close-btn');
+          const bannerId = 'ymu-alert-v1-1-6-fix'; 
+          if (!localStorage.getItem(bannerId)) {
+              alertBanner.style.display = 'block';
+          }
+          if(closeBtn) {
+              closeBtn.addEventListener('click', function() {
+                  alertBanner.style.display = 'none';
+                  localStorage.setItem(bannerId, 'dismissed');
+              });
+          }
+      })();
+    </script>
+  </div>
     <header class="header-sticky">
       <div class="container header-container">
         <div class="logo">
@@ -609,7 +608,6 @@ permalink: "/{{ lang.code }}/"
                 id="download-btn-main">
                 {{ locales[lang.code].download_section.main_button | safe }}
               </a>
-              <p class="language-notice text-small mt-2">{{ locales[lang.code].download_section.software_language_notice }}</p>
             </div>
           </div>
           <div class="card download-card source-card">
@@ -626,7 +624,7 @@ permalink: "/{{ lang.code }}/"
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_version }}</span>
-                <span class="inner-value">v1.1.5</span>
+                <span class="inner-value">v1.1.6</span>
               </div>
             </div>
             <div class="action-wrapper">
@@ -666,6 +664,24 @@ permalink: "/{{ lang.code }}/"
           <div class="changelog-list">
             <div class="changelog-item">
               <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
+                <span class="changelog-version">v1.1.6</span>
+                <span class="changelog-description"
+                  >- Localization, Performance &amp; Bugfixes</span
+                >
+                <span class="changelog-date"
+                  ><mark class="code-font">Dec 17, 2025</mark></span
+                >
+              </div>
+              <div class="changelog-details">
+                <div class="details-content-wrapper">
+                  <p>
+                    Added full support for GTA V Enhanced Edition, support for 12 languages, and migrated to Nuitka for a significantly smaller and faster executable.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="changelog-item">
+              <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
                 <span class="changelog-version">v1.1.5</span>
                 <span class="changelog-description"
                   >- Redesign and GTA 5 Enhanced Support</span
@@ -696,7 +712,7 @@ permalink: "/{{ lang.code }}/"
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
-                    Added Buttons (YimMenu GitHub Repo & FSL) in
+                    Added Buttons (YimMenu GitHub Repo &amp; FSL) in
                     Download Tab + updated "more info"-windows in various tabs.
                   </p>
                 </div>
@@ -715,7 +731,7 @@ permalink: "/{{ lang.code }}/"
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
-                    New Lua list in Settings-Tab - activate/deactivate scripts &
+                    New Lua list in Settings-Tab - activate/deactivate scripts &amp;
                     discover more extensions.
                   </p>
                 </div>
@@ -902,8 +918,8 @@ permalink: "/{{ lang.code }}/"
               href="https://github.com/YimMenu/YimMenuV2" 
               target="_blank" 
               rel="noopener noreferrer"
-              aria-label="YimMenuV2.dll (E&E) Source Code on GitHub"
-              >YimMenuV2.dll (E&E)</a>
+              aria-label="YimMenuV2.dll (E&amp;E) Source Code on GitHub"
+              >YimMenuV2.dll (E&amp;E)</a>
           </p>
         </div>
         <div class="footer-links footer-privacy">
