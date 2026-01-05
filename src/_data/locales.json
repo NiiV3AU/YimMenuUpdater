@@ -8,7 +8,7 @@
             "yimmenu_desc": "Open Source Modding Tool"
         },
         "alert_banner": {
-            "text": "Update v1.1.6: 'GTA V Enhanced' detection issue fixed."
+            "text": "Known Issue (Steam): Enhanced Version does currently not launch via YMU. Please start the game manually via Steam. Thanks for your understanding."
         },
         "meta_description": "YMU is the ultimate launchpad for YimMenu. Seamlessly download the latest version, load it into GTA V with a few clicks, manage your Lua scripts, and much more.",
         "nav": {
@@ -148,7 +148,7 @@
             "yimmenu_desc": "Open Source Modding Tool"
         },
         "alert_banner": {
-            "text": "Update v1.1.6: Erkennungsproblem bei 'GTA V Enhanced' behoben."
+            "text": "Bekanntes Problem (Steam): Die Enhanced Version startet derzeit nicht über YMU. Bitte starte das Spiel manuell über Steam. Danke für dein Verständnis."
         },
         "meta_description": "YMU ist der ultimative Launcher für YimMenu. Lade die aktuellste Version herunter, starte sie in GTA V mit wenigen Klicks, verwalte deine Lua-Skripte und vieles mehr.",
         "nav": {
@@ -288,7 +288,7 @@
             "yimmenu_desc": "Open Source Modding Tool"
         },
         "alert_banner": {
-            "text": "Update v1.1.6: Detectieprobleem 'GTA V Enhanced' opgelost."
+            "text": "Bekend probleem (Steam): Enhanced Version start momenteel niet via YMU. Start het spel handmatig via Steam. Bedankt voor je begrip."
         },
         "meta_description": "YMU is dé ultieme launcher voor YimMenu. Download eenvoudig de nieuwste versie, start deze in GTA V met een paar klikken, beheer je Lua-scripts en nog veel meer.",
         "nav": {
@@ -428,7 +428,7 @@
             "yimmenu_desc": "Outil de Modding Open Source"
         },
         "alert_banner": {
-            "text": "Mise à jour v1.1.6 : Problème de détection de 'GTA V Enhanced' corrigé."
+            "text": "Problème connu (Steam) : La version Enhanced ne se lance pas actuellement via YMU. Veuillez lancer le jeu manuellement via Steam. Merci de votre compréhension."
         },
         "meta_description": "YMU est le lanceur ultime pour YimMenu. Télécharge sans effort la dernière version, charge-la dans GTA V en quelques clics, gère tes scripts Lua et bien plus encore.",
         "nav": {
@@ -568,7 +568,7 @@
             "yimmenu_desc": "Herramienta de Modding Open Source"
         },
         "alert_banner": {
-            "text": "Actualización v1.1.6: Solucionado el problema de detección de 'GTA V Enhanced'."
+            "text": "Problema conocido (Steam): La versión Enhanced no se inicia actualmente a través de YMU. Por favor, inicia el juego manualmente en Steam. Gracias por tu comprensión."
         },
         "meta_description": "YMU es la plataforma de lanzamiento definitiva para YimMenu. Descarga la última versión, cárgala en GTA V con unos pocos clics, gestiona tus scripts Lua y mucho más.",
         "nav": {
@@ -708,7 +708,7 @@
             "yimmenu_desc": "Ferramenta de Modding Open Source"
         },
         "alert_banner": {
-            "text": "Atualização v1.1.6: Problema de detecção do 'GTA V Enhanced' resolvido."
+            "text": "Problema Conhecido (Steam): A versão Enhanced não inicia pelo YMU no momento. Por favor, inicie o jogo manualmente pelo Steam. Obrigado pela compreensão."
         },
         "meta_description": "O YMU é o launcher definitivo para o YimMenu. Baixe a versão mais recente, carregue-a no GTA V com poucos cliques, gerencie seus scripts Lua e muito mais.",
         "nav": {
@@ -848,7 +848,7 @@
             "yimmenu_desc": "Narzędzie Moddingowe Open Source"
         },
         "alert_banner": {
-            "text": "Aktualizacja v1.1.6: Naprawiono problem z wykrywaniem 'GTA V Enhanced'."
+            "text": "Znany problem (Steam): Wersja Enhanced nie uruchamia się obecnie przez YMU. Proszę uruchomić grę ręcznie przez Steam. Dziękujemy za wyrozumiałość."
         },
         "meta_description": "YMU to najlepszy launcher dla YimMenu. Pobieraj najnowszą wersję, ładuj ją do GTA V kilkoma kliknięciami, zarządzaj skryptami Lua i wiele więcej.",
         "nav": {
@@ -988,7 +988,7 @@
             "yimmenu_desc": "Инструмент для моддинга с открытым кодом"
         },
         "alert_banner": {
-            "text": "Обновление v1.1.6: Исправлена проблема обнаружения 'GTA V Enhanced'."
+            "text": "Problema (Steam): Enhanced версия сейчас не запускается через YMU. Пожалуйста, запускайте игру вручную через Steam. Спасибо за понимание."
         },
         "meta_description": "YMU — это идеальный лаунчер для YimMenu. Скачивай последнюю версию, загружай её в GTA V парой кликов, управляй скриптами Lua и многое другое.",
         "nav": {
@@ -1128,7 +1128,7 @@
             "yimmenu_desc": "Інструмент для моддингу з відкритим кодом"
         },
         "alert_banner": {
-            "text": "Оновлення v1.1.6: Виправлено проблему виявлення 'GTA V Enhanced'."
+            "text": "Проблема (Steam): Enhanced версія наразі не запускається через YMU. Будь ласка, запускайте гру вручну через Steam. Дякуємо за розуміння."
         },
         "meta_description": "YMU — це ідеальний лаунчер для YimMenu. Легко завантажуй останню версію, запускай її в GTA V у кілька кліків, керуй Lua-скриптами та багато іншого.",
         "nav": {
@@ -1268,7 +1268,7 @@
             "yimmenu_desc": "Açık Kaynak Modlama Aracı"
         },
         "alert_banner": {
-            "text": "Güncelleme v1.1.6: 'GTA V Enhanced' algılama sorunu giderildi."
+            "text": "Bilinen Sorun (Steam): Enhanced sürümü şu anda YMU üzerinden açılmıyor. Lütfen oyunu Steam üzerinden manuel başlatın. Anlayışınız için teşekkürler."
         },
         "meta_description": "YMU, YimMenu için nihai başlatıcısıdır. En son sürümü sorunsuz indir, GTA V'e birkaç tıkla yükle, Lua scriptlerini yönet ve çok daha fazlasını yap.",
         "nav": {
@@ -1408,7 +1408,7 @@
             "yimmenu_desc": "开源模组工具"
         },
         "alert_banner": {
-            "text": "更新 v1.1.6：已修复“GTA V Enhanced”检测问题。"
+            "text": "已知问题 (Steam)：增强版目前无法通过 YMU 启动。请通过 Steam 手动启动游戏。感谢您的理解。"
         },
         "meta_description": "YMU 是 YimMenu 的终极启动器。一键下载最新版本，轻松加载至 GTA V，并便捷管理 Lua 脚本。",
         "nav": {
@@ -1548,7 +1548,7 @@
             "yimmenu_desc": "オープンソースModツール"
         },
         "alert_banner": {
-            "text": "アップデート v1.1.6：「GTA V Enhanced」の検出問題を修正しました。"
+            "text": "既知の問題 (Steam)：現在、YMU経由でEnhanced版が起動しません。Steamから手動で起動してください。ご理解ありがとうございます。"
         },
         "meta_description": "YMUはYimMenuのための究極のランチャーです。最新版をスムーズにダウンロードし、数クリックでGTA Vにロード、Luaスクリプトの管理などが可能です。",
         "nav": {

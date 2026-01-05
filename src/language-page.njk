@@ -98,13 +98,13 @@ permalink: "/{{ lang.code }}/"
     </script>
   </head>
   <body>
-  <div id="alert-banner" class="alert-banner info-mode" role="alert" style="display: none;">
+  <div id="alert-banner" class="alert-banner" role="alert" style="display: none;">
     <div class="container alert-container">
       <div class="alert-content">
-        <!-- Icon geändert: Check-Circle für "Problem behoben" -->
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="alert-icon">
-          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
-          <polyline points="22 4 12 14.01 9 11.01"></polyline>
+          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
+          <line x1="12" y1="9" x2="12" y2="13"></line>
+          <line x1="12" y1="17" x2="12.01" y2="17"></line>
         </svg>
         <span class="alert-text">{{ locales[lang.code].alert_banner.text }}</span>
       </div>
@@ -116,7 +116,7 @@ permalink: "/{{ lang.code }}/"
       (function() {
           const alertBanner = document.getElementById('alert-banner');
           const closeBtn = document.getElementById('alert-close-btn');
-          const bannerId = 'ymu-alert-v1-1-6-fix'; 
+          const bannerId = 'ymu-alert-steam-launch-bug'; 
           if (!localStorage.getItem(bannerId)) {
               alertBanner.style.display = 'block';
           }
