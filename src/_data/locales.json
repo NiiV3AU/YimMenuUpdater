@@ -67,7 +67,6 @@
       "source_license": "License:",
       "source_version": "Version:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Download Source Code",
-      "source_code_link": "View Repository",
       "lua_question": "Looking for Lua Scripts?",
       "lua_subheader": "Browse official community scripts.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Find Lua Extensions for YimMenu"
@@ -210,7 +209,6 @@
       "source_license": "Lizenz:",
       "source_version": "Version:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Quellcode herunterladen",
-      "source_code_link": "Repository ansehen",
       "lua_question": "Suchst du Lua-Skripte?",
       "lua_subheader": "Durchstöbere offizielle Community-Skripte.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Lua-Erweiterungen für YimMenu finden"
@@ -353,7 +351,6 @@
       "source_license": "Licentie:",
       "source_version": "Versie:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Download Broncode",
-      "source_code_link": "Bekijk Repository",
       "lua_question": "Op zoek naar Lua-scripts?",
       "lua_subheader": "Bekijk officiële community-scripts.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Vind Lua-extensies voor YimMenu"
@@ -496,7 +493,6 @@
       "source_license": "Licence :",
       "source_version": "Version :",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Télécharger le Code Source",
-      "source_code_link": "Voir le dépôt",
       "lua_question": "Tu cherches des scripts Lua ?",
       "lua_subheader": "Parcours les scripts officiels de la communauté.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Trouver des extensions Lua pour YimMenu"
@@ -639,7 +635,6 @@
       "source_license": "Licencia:",
       "source_version": "Versión:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Descargar código fuente",
-      "source_code_link": "Ver repositorio",
       "lua_question": "¿Buscas scripts Lua?",
       "lua_subheader": "Explora scripts oficiales de la comunidad.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Buscar extensiones Lua para YimMenu"
@@ -782,7 +777,6 @@
       "source_license": "Licença:",
       "source_version": "Versão:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Baixar Código-Fonte",
-      "source_code_link": "Ver Repositório",
       "lua_question": "Procurando Scripts Lua?",
       "lua_subheader": "Navegue pelos scripts oficiais da comunidade.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Encontrar Extensões Lua para YimMenu"
@@ -925,7 +919,6 @@
       "source_license": "Licencja:",
       "source_version": "Wersja:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Pobierz kod źródłowy",
-      "source_code_link": "Zobacz repozytorium",
       "lua_question": "Szukasz skryptów Lua?",
       "lua_subheader": "Przeglądaj oficjalne skrypty społeczności.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Znajdź rozszerzenia Lua dla YimMenu"
@@ -1068,7 +1061,6 @@
       "source_license": "Лицензия:",
       "source_version": "Версия:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Скачать исходный код",
-      "source_code_link": "Перейти в репозиторий",
       "lua_question": "Ищешь Lua-скрипты?",
       "lua_subheader": "Официальные скрипты от сообщества.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Найти Lua-расширения для YimMenu"
@@ -1211,7 +1203,6 @@
       "source_license": "Ліцензія:",
       "source_version": "Версія:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Завантажити вихідний код",
-      "source_code_link": "Переглянути репозиторій",
       "lua_question": "Шукаєш Lua-скрипти?",
       "lua_subheader": "Переглянь офіційні скрипти від спільноти.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Знайти Lua-розширення для YimMenu"
@@ -1354,7 +1345,6 @@
       "source_license": "Lisans:",
       "source_version": "Sürüm:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Kaynak Kodunu İndir",
-      "source_code_link": "Depoyu Görüntüle",
       "lua_question": "Lua Scriptleri mi Arıyorsun?",
       "lua_subheader": "Resmi topluluk scriptlerine göz at.",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>YimMenu için Lua Eklentileri Bul"
@@ -1497,7 +1487,6 @@
       "source_license": "许可证：",
       "source_version": "版本：",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>下载源代码",
-      "source_code_link": "查看仓库",
       "lua_question": "正在寻找 Lua 脚本？",
       "lua_subheader": "浏览官方社区脚本。",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>查找 YimMenu 的 Lua 扩展"
@@ -1640,7 +1629,6 @@
       "source_license": "ライセンス：",
       "source_version": "バージョン:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>ソースコードをダウンロード",
-      "source_code_link": "リポジトリを表示",
       "lua_question": "Luaスクリプトをお探しですか？",
       "lua_subheader": "公式コミュニティスクリプトを閲覧。",
       "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>YimMenu用Lua拡張機能を探す"
