@@ -53,7 +53,7 @@
   --shim-soft-end: 80%;
   --shim-center-alpha: 0.15;
   --shim-edge-alpha: 0.08;
-  --card-shimmer: rgba(0, 0, 0, 0.05);
+  --card-shimmer: rgba(0, 0, 0, 0.025);
   --warning-bg: #ff9800;
   --warning-text: #121212;
   --info-bg: #2196f3;
@@ -81,7 +81,7 @@
   --shim-edge-alpha: 0.05;
   --shim-center-alpha: 0.1;
   --shimmer-center-rgb: 255, 255, 255;
-  --card-shimmer: rgba(255, 255, 255, 0.04);
+  --card-shimmer: rgba(255, 255, 255, 0.02);
   --warning-bg: #e65100;
   --warning-text: #ffffff;
   --info-bg: #1565c0;
