@@ -594,19 +594,42 @@ permalink: "/{{ lang.code }}/"
                 <span class="inner-value">{{ locales[lang.code].download_section.os_info }}</span>
               </div>
               <div class="inner-row">
+                <span class="inner-label">{{ locales[lang.code].download_section.arch_header }}</span>
+                <span class="inner-value">x64</span>
+              </div>
+              <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.download_header }}</span>
                 <span class="inner-value code-font-clean">
                   <span id="github-downloads">...</span>
                   <img id="github-downloads-badge" src="" alt="Download Count" style="display: none; vertical-align: middle; height: 20px;" />
                 </span>
               </div>
+              <div class="inner-row sha-row">
+                <span class="inner-label">SHA-256</span>
+                <span class="sha256-wrap">
+                  <span class="sha256-value code-font-clean" id="ymu-sha256" role="button" tabindex="0" aria-label="Copy the SHA-256 of YMU.exe">…</span>
+                  <span class="sha-tooltip" aria-hidden="true">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                    <span class="sha-tooltip-text">Copy</span>
+                  </span>
+                </span>
+              </div>
             </div>
-            <div class="action-wrapper">
+            <div class="action-wrapper action-row">
               <a href="https://github.com/NiiV3AU/YMU/releases/latest/"
                 rel="noopener noreferrer"
-                class="btn btn-primary btn-large btn-block"
+                class="btn btn-primary btn-large btn-download-main"
                 id="download-btn-main">
                 {{ locales[lang.code].download_section.main_button | safe }}
+              </a>
+              <a href="https://www.virustotal.com/gui/file/7925f2d9faddaa72d54005bdff507522c1b1214760847629abbd5444eb39d548"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="vt-badge"
+                id="vt-btn-main"
+                aria-label="View the VirusTotal scan report for YMU.exe">
+                <svg class="vt-logo" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.87 12L0 22.68h24V1.32H0zm10.73 8.52H5.28l8.637-8.448L5.28 3.48H21.6z"></path></svg>
+                <span>VirusTotal</span>
               </a>
             </div>
           </div>
@@ -620,7 +643,15 @@ permalink: "/{{ lang.code }}/"
             <div class="inner-card">
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_stack }}</span>
-                <span class="inner-value">Python 3.12 / PySide6</span>
+                <span class="inner-value">Python 3.12 · PySide6</span>
+              </div>
+              <div class="inner-row">
+                <span class="inner-label">{{ locales[lang.code].download_section.source_tooling }}</span>
+                <span class="inner-value">uv · Nuitka</span>
+              </div>
+              <div class="inner-row">
+                <span class="inner-label">{{ locales[lang.code].download_section.source_license }}</span>
+                <span class="inner-value">PolyForm Shield 1.0</span>
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_version }}</span>
@@ -633,9 +664,20 @@ permalink: "/{{ lang.code }}/"
                 class="btn btn-secondary btn-block">
                 {{ locales[lang.code].download_section.source_code_button | safe }}
               </a>
-              <p class="text-small mt-2 text-center">
-                <a href="https://github.com/NiiV3AU/YMU" target="_blank">{{ locales[lang.code].download_section.source_code_link}}</a>
-              </p>
+              <div class="source-links text-small">
+                <a href="https://github.com/NiiV3AU/YMU" target="_blank" rel="noopener noreferrer">
+                  {{ locales[lang.code].download_section.source_code_link }}
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="https://github.com/NiiV3AU/YMU#readme" target="_blank" rel="noopener noreferrer">
+                  README
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+                <a href="https://github.com/NiiV3AU/YMU/issues" target="_blank" rel="noopener noreferrer">
+                  ISSUES
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                </a>
+              </div>
             </div>
           </div>
           <div class="card download-card lua-card">
@@ -962,7 +1004,7 @@ permalink: "/{{ lang.code }}/"
             rel="noopener noreferrer"
             >{{ locales[lang.code].footer_section.contact }}</a>
           &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="https://polyformproject.org/licenses/shield/1.0.0/" target="_blank" rel="noopener noreferrer">
+          <a href="https://polyformproject.org/licenses/shield/1.0.0" target="_blank" rel="noopener noreferrer">
             {{ locales[lang.code].privacy_section.software_license }}
           </a>
           &nbsp;&nbsp;|&nbsp;&nbsp;
@@ -1047,5 +1089,57 @@ permalink: "/{{ lang.code }}/"
         </div>
       </div>
     </div>
+    <script>
+      /* Fill the prebuilt card's SHA-256 from the latest YMU release and point
+         the VirusTotal button at that exact file report. Click-to-copy. */
+      (function () {
+        var shaEl = document.getElementById("ymu-sha256");
+        var vtBtn = document.getElementById("vt-btn-main");
+        if (!shaEl) return;
+        var wrap = shaEl.closest(".sha256-wrap");
+        var ttText = wrap ? wrap.querySelector(".sha-tooltip-text") : null;
+        function copy() {
+          var t = shaEl.getAttribute("data-sha");
+          if (!t || !navigator.clipboard) return;
+          navigator.clipboard.writeText(t).then(function () {
+            shaEl.classList.add("copied");
+            if (ttText) ttText.textContent = "Copied!";
+            setTimeout(function () {
+              shaEl.classList.remove("copied");
+              if (ttText) ttText.textContent = "Copy";
+            }, 1200);
+          });
+        }
+        shaEl.addEventListener("click", copy);
+        shaEl.addEventListener("keydown", function (e) {
+          if (e.key === "Enter" || e.key === " ") {
+            e.preventDefault();
+            copy();
+          }
+        });
+        var tip = wrap ? wrap.querySelector(".sha-tooltip") : null;
+        shaEl.addEventListener("mousemove", function (e) {
+          if (!tip) return;
+          var r = wrap.getBoundingClientRect();
+          var half = tip.offsetWidth / 2;
+          var x = e.clientX - r.left;
+          tip.style.left = Math.max(half, Math.min(x, r.width - half)) + "px";
+        });
+        fetch("https://api.github.com/repos/NiiV3AU/YMU/releases/latest")
+          .then(function (r) {
+            if (!r.ok) throw new Error("bad status");
+            return r.json();
+          })
+          .then(function (d) {
+            var m = (d.body || "").match(/\b[a-fA-F0-9]{64}\b/);
+            if (!m) return;
+            var sha = m[0].toLowerCase();
+            shaEl.textContent = sha;
+            shaEl.setAttribute("data-sha", sha);
+            if (vtBtn) vtBtn.href = "https://www.virustotal.com/gui/file/" + sha;
+          })
+          .catch(function () {});
+      })();
+    </script>
   </body>
 </html>

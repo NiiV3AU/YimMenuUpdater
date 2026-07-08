@@ -1528,6 +1528,163 @@ section[id] {
 .action-wrapper {
   margin-top: auto;
 }
+.action-row {
+  display: flex;
+  gap: 0.75rem;
+  align-items: stretch;
+}
+.action-row .btn-download-main {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+/* VirusTotal: a calm badge/link (no button jelly/shimmer), themed like the
+   rest of the UI, with only VirusTotal's brand blue borrowed as the accent. */
+.vt-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex: 0 0 auto;
+  padding: 0 1.1rem;
+  border-radius: var(--radius);
+  background-color: var(--panel);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-decoration: none;
+  white-space: nowrap;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    background-color 0.2s ease;
+}
+.vt-badge .vt-logo {
+  color: #394eff;
+  flex-shrink: 0;
+}
+.vt-badge:hover {
+  border-color: #394eff;
+  color: var(--text-primary);
+  background-color: var(--surface);
+}
+
+/* SHA-256: muted by default, shows as much as fits (more on desktop), reveals
+   on hover, and copies on click. */
+/* Full-width divider above the SHA row: negative side margins cancel the
+   inner-card padding so the line meets the card's borders edge to edge, in the
+   same colour/weight as the border it mimics. */
+.sha-row {
+  border-top: 1px solid var(--border-color);
+  margin-top: 0.25rem;
+  margin-left: -1rem;
+  margin-right: -1rem;
+  padding-top: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.sha-row .inner-label {
+  flex-shrink: 0;
+}
+.sha256-wrap {
+  position: relative;
+  flex: 1 1 auto;
+  min-width: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+.sha256-value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  min-width: 0;
+  cursor: pointer;
+  color: var(--text-secondary);
+  font-weight: 700;
+  transition: color 0.2s ease;
+}
+.sha256-value:hover,
+.sha256-value:focus-visible {
+  color: var(--text-primary);
+  outline: none;
+}
+.sha256-value.copied {
+  color: var(--primary);
+}
+.sha-tooltip {
+  position: absolute;
+  bottom: calc(100% + 8px);
+  left: 50%;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: var(--radius-small);
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid var(--border-color);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.18);
+  font-family: var(--font-main);
+  font-size: 0.75rem;
+  font-weight: 700;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, 4px);
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease,
+    visibility 0.15s;
+  pointer-events: none;
+  z-index: 50;
+}
+.sha-tooltip svg {
+  color: var(--text-secondary);
+  flex-shrink: 0;
+}
+.sha256-value:hover ~ .sha-tooltip,
+.sha256-value:focus-visible ~ .sha-tooltip {
+  opacity: 1;
+  visibility: visible;
+  transform: translate(-50%, 0);
+}
+/* Source card: the two lower links sit in one row spread across the button's
+   width, reducing the horizontal gap to the card edges. */
+.source-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.source-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+.source-links a:hover {
+  color: var(--text-primary);
+}
+.source-links a svg {
+  flex-shrink: 0;
+  transition: transform 0.2s ease;
+}
+/* → rotates to ↗ (up-right) on hover to signal "opens externally". */
+.source-links a:hover svg {
+  transform: rotate(-45deg);
+}
+@media (max-width: 480px) {
+  .action-row {
+    flex-direction: column;
+  }
+  .vt-badge {
+    padding: 12px 1.1rem;
+  }
+}
 .main-card .icon-wrapper svg {
   color: var(--primary);
 }

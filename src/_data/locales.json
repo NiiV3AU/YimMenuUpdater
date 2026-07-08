@@ -36,8 +36,8 @@
       "card4_desc": "A clean and intuitive user interface, built with PySide6, featuring both Light and Dark themes.",
       "card5_title": "Integrated Help",
       "card5_desc": "Need assistance? Integrated <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> buttons on every tab guide you to maximize your YMU experience.",
-      "card6_title": "Self-Updater",
-      "card6_desc": "Keep YMU current with the built-in self-updater for the latest features and performance improvements."
+      "card6_title": "Update Notifications",
+      "card6_desc": "Check for YMU updates right inside the app. One click tells you whether you're running the latest version."
     },
     "look_and_feel_section": {
       "title": "Look & Feel",
@@ -59,9 +59,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.7",
       "os_header": "OS:",
       "os_info": "For Windows 10 & 11",
+      "arch_header": "Architecture:",
       "download_header": "Downloads:",
       "source_header": "Source",
       "source_stack": "Stack:",
+      "source_tooling": "Tooling:",
+      "source_license": "License:",
       "source_version": "Version:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Download Source Code",
       "source_code_link": "View Repository",
@@ -176,8 +179,8 @@
       "card4_desc": "Eine saubere und intuitive Benutzeroberfläche auf Basis von PySide6, mit Light- und Dark-Mode.",
       "card5_title": "Integrierte Hilfe",
       "card5_desc": "Brauchst du Hilfe? Integrierte <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> Buttons in jedem Tab zeigen dir, wie du YMU optimal nutzt.",
-      "card6_title": "Selbst-Update-Funktion",
-      "card6_desc": "Halte YMU mit der eingebauten Selbst-Update-Funktion aktuell, um neueste Features und Performance-Verbesserungen zu erhalten."
+      "card6_title": "Update-Benachrichtigungen",
+      "card6_desc": "Prüfe direkt in der App auf YMU-Updates. Ein Klick zeigt dir, ob du die neueste Version nutzt."
     },
     "look_and_feel_section": {
       "title": "Look & Feel",
@@ -199,9 +202,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.7 herunterladen",
       "os_header": "OS:",
       "os_info": "Für Windows 10 & 11",
+      "arch_header": "Architektur:",
       "download_header": "Downloads:",
       "source_header": "Quellcode",
       "source_stack": "Stack:",
+      "source_tooling": "Tools:",
+      "source_license": "Lizenz:",
       "source_version": "Version:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Quellcode herunterladen",
       "source_code_link": "Repository ansehen",
@@ -316,8 +322,8 @@
       "card4_desc": "Een strakke en intuïtieve interface, gebouwd met PySide6, met zowel Light- als Dark-thema's.",
       "card5_title": "Geïntegreerde Hulp",
       "card5_desc": "Hulp nodig? De geïntegreerde <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> knoppen op elk tabblad helpen je om alles uit YMU te halen.",
-      "card6_title": "Zelf-update Functie",
-      "card6_desc": "Houd YMU actueel met de ingebouwde zelf-updater voor de nieuwste functies en prestatieverbeteringen."
+      "card6_title": "Updatemeldingen",
+      "card6_desc": "Controleer direct in de app op YMU-updates. Eén klik laat zien of je de nieuwste versie gebruikt."
     },
     "look_and_feel_section": {
       "title": "Look & Feel",
@@ -339,9 +345,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.7",
       "os_header": "OS:",
       "os_info": "Voor Windows 10 & 11",
+      "arch_header": "Architectuur:",
       "download_header": "Downloads:",
       "source_header": "Broncode",
       "source_stack": "Stack:",
+      "source_tooling": "Tools:",
+      "source_license": "Licentie:",
       "source_version": "Versie:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Download Broncode",
       "source_code_link": "Bekijk Repository",
@@ -456,8 +465,8 @@
       "card4_desc": "Une interface utilisateur propre et intuitive, construite avec PySide6, proposant des thèmes Clair et Sombre.",
       "card5_title": "Aide Intégrée",
       "card5_desc": "Besoin d'aide ? Des boutons <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> intégrés à chaque onglet te guident pour maximiser ton expérience YMU.",
-      "card6_title": "Mise à jour autonome",
-      "card6_desc": "Garde YMU à jour grâce au système de mise à jour autonome intégré pour profiter des dernières fonctionnalités."
+      "card6_title": "Notifications de mise à jour",
+      "card6_desc": "Vérifie les mises à jour de YMU directement dans l'appli. Un clic te dit si tu utilises la dernière version."
     },
     "look_and_feel_section": {
       "title": "Apparence",
@@ -479,9 +488,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.7",
       "os_header": "OS :",
       "os_info": "Pour Windows 10 & 11",
+      "arch_header": "Architecture :",
       "download_header": "Téléchargements :",
       "source_header": "Source",
       "source_stack": "Stack :",
+      "source_tooling": "Outils :",
+      "source_license": "Licence :",
       "source_version": "Version :",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Télécharger le Code Source",
       "source_code_link": "Voir le dépôt",
@@ -596,8 +608,8 @@
       "card4_desc": "Una interfaz limpia e intuitiva, creada con PySide6, que incluye temas claro y oscuro.",
       "card5_title": "Ayuda integrada",
       "card5_desc": "¿Necesitas asistencia? Los botones integrados <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> en cada pestaña te guían para aprovechar YMU al máximo.",
-      "card6_title": "Auto-actualizador",
-      "card6_desc": "Mantén YMU al día con la función de auto-actualización integrada para obtener las últimas mejoras."
+      "card6_title": "Notificaciones de actualización",
+      "card6_desc": "Comprueba las actualizaciones de YMU directamente en la app. Un clic te dice si tienes la última versión."
     },
     "look_and_feel_section": {
       "title": "Aspecto y diseño",
@@ -619,9 +631,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.7",
       "os_header": "SO:",
       "os_info": "Para Windows 10 y 11",
+      "arch_header": "Arquitectura:",
       "download_header": "Descargas:",
       "source_header": "Fuente",
       "source_stack": "Stack:",
+      "source_tooling": "Herramientas:",
+      "source_license": "Licencia:",
       "source_version": "Versión:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Descargar código fuente",
       "source_code_link": "Ver repositorio",
@@ -736,8 +751,8 @@
       "card4_desc": "Uma interface limpa e intuitiva, feita com PySide6, com temas Claro e Escuro.",
       "card5_title": "Ajuda Integrada",
       "card5_desc": "Precisa de ajuda? Botões de ajuda <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> integrados em cada guia orientam você para aproveitar ao máximo o YMU.",
-      "card6_title": "Auto-atualizador",
-      "card6_desc": "Mantenha o YMU em dia com o atualizador integrado para ter os recursos e melhorias mais recentes."
+      "card6_title": "Notificações de atualização",
+      "card6_desc": "Verifique atualizações do YMU direto no app. Um clique mostra se você está na versão mais recente."
     },
     "look_and_feel_section": {
       "title": "Visual",
@@ -759,9 +774,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.7",
       "os_header": "SO:",
       "os_info": "Para Windows 10 e 11",
+      "arch_header": "Arquitetura:",
       "download_header": "Downloads:",
       "source_header": "Código-fonte",
       "source_stack": "Stack:",
+      "source_tooling": "Ferramentas:",
+      "source_license": "Licença:",
       "source_version": "Versão:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Baixar Código-Fonte",
       "source_code_link": "Ver Repositório",
@@ -876,8 +894,8 @@
       "card4_desc": "Czysty i intuicyjny interfejs oparty na PySide6, dostępny w motywie jasnym i ciemnym.",
       "card5_title": "Wbudowana pomoc",
       "card5_desc": "Potrzebujesz wsparcia? Zintegrowane przyciski <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> w każdej zakładce pomogą Ci wycisnąć z YMU maksimum.",
-      "card6_title": "Funkcja samoaktualizacji",
-      "card6_desc": "YMU aktualizuje się samo, zapewniając Ci natychmiastowy dostęp do najnowszych funkcji i poprawek."
+      "card6_title": "Powiadomienia o aktualizacjach",
+      "card6_desc": "Sprawdź aktualizacje YMU bezpośrednio w aplikacji. Jedno kliknięcie pokazuje, czy masz najnowszą wersję."
     },
     "look_and_feel_section": {
       "title": "Wygląd",
@@ -899,9 +917,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.7",
       "os_header": "System:",
       "os_info": "Dla Windows 10 i 11",
+      "arch_header": "Architektura:",
       "download_header": "Pliki:",
       "source_header": "Kod",
       "source_stack": "Tech:",
+      "source_tooling": "Narzędzia:",
+      "source_license": "Licencja:",
       "source_version": "Wersja:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Pobierz kod źródłowy",
       "source_code_link": "Zobacz repozytorium",
@@ -1016,8 +1037,8 @@
       "card4_desc": "Чистый и интуитивный интерфейс на PySide6 с поддержкой светлой и тёмной тем.",
       "card5_title": "Встроенная помощь",
       "card5_desc": "Нужна помощь? Кнопки <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> на каждой вкладке помогут тебе разобраться с YMU.",
-      "card6_title": "Самообновление",
-      "card6_desc": "YMU обновляется самостоятельно, обеспечивая доступ к новым функциям и улучшениям производительности."
+      "card6_title": "Уведомления об обновлениях",
+      "card6_desc": "Проверяй обновления YMU прямо в приложении. Один клик покажет, установлена ли у тебя последняя версия."
     },
     "look_and_feel_section": {
       "title": "Внешний вид",
@@ -1039,9 +1060,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.7",
       "os_header": "ОС:",
       "os_info": "Для Windows 10 и 11",
+      "arch_header": "Архитектура:",
       "download_header": "Загрузки:",
       "source_header": "Исходный код",
       "source_stack": "Стек:",
+      "source_tooling": "Инструменты:",
+      "source_license": "Лицензия:",
       "source_version": "Версия:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Скачать исходный код",
       "source_code_link": "Перейти в репозиторий",
@@ -1156,8 +1180,8 @@
       "card4_desc": "Чистий та інтуїтивний інтерфейс на PySide6, з підтримкою світлої та темної тем.",
       "card5_title": "Вбудована довідка",
       "card5_desc": "Потрібна допомога? Інтегровані кнопки <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> на кожній вкладці допоможуть тобі максимально ефективно використовувати YMU.",
-      "card6_title": "Самооновлення",
-      "card6_desc": "Тримай YMU в актуальному стані завдяки вбудованій функції самооновлення для отримання нових функцій."
+      "card6_title": "Сповіщення про оновлення",
+      "card6_desc": "Перевіряй оновлення YMU прямо в застосунку. Один клік покаже, чи маєш ти найновішу версію."
     },
     "look_and_feel_section": {
       "title": "Вигляд та стиль",
@@ -1179,9 +1203,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.7",
       "os_header": "ОС:",
       "os_info": "Для Windows 10 та 11",
+      "arch_header": "Архітектура:",
       "download_header": "Завантаження:",
       "source_header": "Джерело",
       "source_stack": "Стек:",
+      "source_tooling": "Інструменти:",
+      "source_license": "Ліцензія:",
       "source_version": "Версія:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Завантажити вихідний код",
       "source_code_link": "Переглянути репозиторій",
@@ -1296,8 +1323,8 @@
       "card4_desc": "PySide6 ile oluşturulmuş, hem Açık hem de Koyu tema içeren temiz ve sezgisel bir kullanıcı arayüzü.",
       "card5_title": "Entegre Yardım",
       "card5_desc": "Yardıma mı ihtiyacın var? Her sekmedeki entegre <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> düğmeleri, YMU deneyimini en üst düzeye çıkarman için sana rehberlik eder.",
-      "card6_title": "Kendi Kendine Güncelleme",
-      "card6_desc": "En son özellikler ve performans iyileştirmeleri için yerleşik kendi kendine güncelleme sistemi ile YMU'yu güncel tut."
+      "card6_title": "Güncelleme Bildirimleri",
+      "card6_desc": "YMU güncellemelerini doğrudan uygulamada kontrol et. Tek tıkla en son sürümü kullanıp kullanmadığını gör."
     },
     "look_and_feel_section": {
       "title": "Görünüm & His",
@@ -1319,9 +1346,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.7'i İndir",
       "os_header": "İşletim Sistemi:",
       "os_info": "Windows 10 & 11 için",
+      "arch_header": "Mimari:",
       "download_header": "İndirmeler:",
       "source_header": "Kaynak",
       "source_stack": "Yığın:",
+      "source_tooling": "Araçlar:",
+      "source_license": "Lisans:",
       "source_version": "Sürüm:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Kaynak Kodunu İndir",
       "source_code_link": "Depoyu Görüntüle",
@@ -1436,8 +1466,8 @@
       "card4_desc": "基于 PySide6 构建的简洁直观用户界面，支持明亮和暗黑主题。",
       "card5_title": "内置帮助",
       "card5_desc": "需要帮助？每个标签页上的内置 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 按钮将指导你充分利用 YMU。",
-      "card6_title": "自更新功能",
-      "card6_desc": "通过内置的自更新功能保持 YMU 最新，第一时间享受最新功能和性能提升。"
+      "card6_title": "更新提醒",
+      "card6_desc": "在应用内直接检查 YMU 更新。一键即可知道你是否使用的是最新版本。"
     },
     "look_and_feel_section": {
       "title": "外观与体验",
@@ -1459,9 +1489,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.7",
       "os_header": "系统：",
       "os_info": "适用于 Windows 10 & 11",
+      "arch_header": "架构：",
       "download_header": "下载量：",
       "source_header": "源码",
       "source_stack": "技术栈：",
+      "source_tooling": "工具链：",
+      "source_license": "许可证：",
       "source_version": "版本：",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>下载源代码",
       "source_code_link": "查看仓库",
@@ -1576,8 +1609,8 @@
       "card4_desc": "PySide6で構築された、クリーンで直感的なUI。ライトテーマとダークテーマに対応しています。",
       "card5_title": "統合ヘルプ",
       "card5_desc": "サポートが必要ですか？各タブにある統合された <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> ボタンが、YMUの活用方法をご案内します。",
-      "card6_title": "自己更新機能",
-      "card6_desc": "内蔵の自己更新機能により、YMUを常に最新の状態に保ち、最新機能やパフォーマンス改善を利用できます。"
+      "card6_title": "更新通知",
+      "card6_desc": "アプリ内で直接 YMU の更新を確認。ワンクリックで最新バージョンかどうかが分かります。"
     },
     "look_and_feel_section": {
       "title": "外観と操作感",
@@ -1599,9 +1632,12 @@
       "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.7をダウンロード",
       "os_header": "対応OS:",
       "os_info": "Windows 10 & 11 用",
+      "arch_header": "アーキテクチャ：",
       "download_header": "ダウンロード数:",
       "source_header": "ソース",
       "source_stack": "スタック:",
+      "source_tooling": "ツール：",
+      "source_license": "ライセンス：",
       "source_version": "バージョン:",
       "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>ソースコードをダウンロード",
       "source_code_link": "リポジトリを表示",
