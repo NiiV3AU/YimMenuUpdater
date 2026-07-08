@@ -93,7 +93,9 @@ body {
   line-height: 1.6;
   color: var(--text-primary);
   background-color: var(--background);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 *::-moz-selection,
 *::selection {
@@ -174,7 +176,9 @@ a {
   display: inline-block;
   line-height: 1.2;
   border-bottom: 1px dotted var(--text-secondary);
-  transition: color 0.2s ease, border-bottom-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-bottom-color 0.2s ease;
 }
 .flow p a,
 .footer-links a {
@@ -197,7 +201,9 @@ a {
   background-color: var(--primary);
   opacity: 0;
   transform: translateY(4px);
-  transition: opacity 0.25s ease, transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+  transition:
+    opacity 0.25s ease,
+    transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
   pointer-events: none;
 }
 .cookie-banner a:hover,
@@ -266,7 +272,7 @@ a {
 
 .alert-icon {
   flex-shrink: 0;
-  margin-top: 2px;
+  /* margin-top: 2px; */
 }
 
 .alert-close {
@@ -313,7 +319,9 @@ a {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border-color);
   padding: 1rem 0;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 .header-container {
   display: flex;
@@ -436,7 +444,9 @@ a {
   color: var(--text-secondary);
   text-decoration: none;
   filter: drop-shadow(0 0 0px rgba(var(--glow-color-rgb), 0));
-  transition: color 0.2s ease, filter 0.2s ease;
+  transition:
+    color 0.2s ease,
+    filter 0.2s ease;
 }
 .header-icons a:hover {
   color: var(--text-primary);
@@ -470,8 +480,11 @@ a {
   overflow: hidden;
   gap: 1rem;
   will-change: transform;
-  transition: color 0.2s ease, background-color 0.2s ease,
-    border-color 0.2s ease, transform 0.01s linear;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.01s linear;
 }
 @keyframes ymu-jelly {
   0% {
@@ -554,7 +567,9 @@ a {
   border-radius: var(--radius);
   padding: 2.5rem;
   margin-top: 2rem;
-  transition: background-color 0.3s ease, border-color 0.3s ease;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease;
 }
 .card-compact {
   padding: 1.5rem;
@@ -627,7 +642,9 @@ a {
   gap: 2px;
   line-height: 1;
   padding: 6px;
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
   font-weight: 700;
   font-size: 14px;
 }
@@ -664,7 +681,9 @@ a {
   white-space: nowrap;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0.2s;
+  transition:
+    opacity 0.2s ease,
+    visibility 0.2s;
   pointer-events: none;
 }
 .header-tooltip.is-visible {
@@ -682,7 +701,10 @@ a {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0s 0s;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0s 0s;
 }
 .lang-dropdown {
   position: relative;
@@ -728,7 +750,10 @@ a {
   opacity: 0;
   visibility: hidden;
   transform: translateY(-10px);
-  transition: opacity 0.2s ease, transform 0.2s ease, visibility 0.2s;
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    visibility 0.2s;
 }
 .lang-options.is-visible {
   opacity: 1;
@@ -758,7 +783,9 @@ a {
   text-decoration: none;
   color: var(--text-primary);
   font-size: 14px;
-  transition: color 0.1s ease, background-color 0.1s ease;
+  transition:
+    color 0.1s ease,
+    background-color 0.1s ease;
 }
 .lang-options li a:hover {
   background-color: var(--panel);
@@ -992,7 +1019,10 @@ a {
   overflow: hidden;
   max-height: 0;
   opacity: 0;
-  transition: max-height 0.2s ease, opacity 0.2s ease, padding 0.2s ease;
+  transition:
+    max-height 0.2s ease,
+    opacity 0.2s ease,
+    padding 0.2s ease;
   padding: 0 1.5rem;
 }
 .changelog-item.is-open .changelog-details,
@@ -1081,7 +1111,9 @@ a {
     height: 2px;
     background-color: var(--text-secondary);
     margin: 5px 0;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition:
+      transform 0.3s ease,
+      opacity 0.3s ease;
   }
   .mobile-menu-toggle.is-active .line1 {
     transform: translateY(7px) rotate(45deg);
@@ -1161,13 +1193,17 @@ a {
   align-items: center;
   opacity: 0;
   visibility: hidden;
-  transition: opacity 0.2s ease, visibility 0s 0.2s;
+  transition:
+    opacity 0.2s ease,
+    visibility 0s 0.2s;
   padding: 1rem;
 }
 .lightbox-overlay.is-visible {
   opacity: 1;
   visibility: visible;
-  transition: opacity 0.2s ease, visibility 0s 0s;
+  transition:
+    opacity 0.2s ease,
+    visibility 0s 0s;
 }
 .lightbox-image {
   max-width: 90vw;
@@ -1244,7 +1280,10 @@ a {
   opacity: 0;
   visibility: hidden;
   transform: translateY(100%);
-  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0.4s;
 }
 .cookie-banner.is-visible {
   opacity: 1;
@@ -1276,7 +1315,10 @@ a {
   justify-content: center;
   align-items: center;
   padding: 0;
-  transition: color 0.2s ease, border-color 0.2s ease, transform 0.1s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.1s ease;
 }
 .modal-close-btn:hover {
   color: var(--text-primary);
@@ -1298,7 +1340,9 @@ a {
 .fade-in {
   opacity: 0;
   filter: grayscale(100%);
-  transition: opacity 0.6s ease-out, filter 1.2s ease-out;
+  transition:
+    opacity 0.6s ease-out,
+    filter 1.2s ease-out;
 }
 .fade-in.is-visible {
   opacity: 1;
@@ -1380,7 +1424,9 @@ section[id] {
   color: var(--text-secondary);
   text-decoration: none;
   border-bottom: 1px dotted var(--text-secondary);
-  transition: color 0.2s ease, border-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 .link-subtle:hover {
   color: var(--text-primary);

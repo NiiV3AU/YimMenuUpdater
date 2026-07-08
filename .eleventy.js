@@ -1,5 +1,5 @@
-const { minify } = require("html-minifier-next");
-module.exports = function (eleventyConfig) {
+module.exports = async function (eleventyConfig) {
+  const { minify } = await import("html-minifier-next");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
   eleventyConfig.addPassthroughCopy("src/_redirects");

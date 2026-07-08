@@ -71,7 +71,7 @@ permalink: "/{{ lang.code }}/"
           "priceCurrency": "EUR"
         },
         "description": "{{ locales[lang.code].json_ld.description }}",
-        "softwareVersion": "1.1.6",
+        "softwareVersion": "1.1.7",
         "author": {
           "@type": "Person",
           "name": "NiiV3AU",
@@ -98,13 +98,13 @@ permalink: "/{{ lang.code }}/"
     </script>
   </head>
   <body>
-  <div id="alert-banner" class="alert-banner" role="alert" style="display: none;">
+  <div id="alert-banner" class="alert-banner info-mode" role="alert" style="display: none;">
     <div class="container alert-container">
       <div class="alert-content">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="alert-icon">
-          <path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path>
-          <line x1="12" y1="9" x2="12" y2="13"></line>
-          <line x1="12" y1="17" x2="12.01" y2="17"></line>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" class="alert-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+          <circle cx="12" cy="12" r="10" />
+          <line x1="12" x2="12" y1="16" y2="12" />
+          <line x1="12" x2="12.01" y1="8" y2="8" />
         </svg>
         <span class="alert-text">{{ locales[lang.code].alert_banner.text }}</span>
       </div>
@@ -457,26 +457,26 @@ permalink: "/{{ lang.code }}/"
             <figure class="look-card" tabindex="0" role="button" aria-label="View enlarged image of Settings screen">
               <img
                 class="theme-img"
-                src="/assets/img/Settings.png"
+                src="/assets/img/Settings.webp"
                 alt="Settings"
                 width="652"
                 height="472"
                 loading="lazy"
-                data-dark="/assets/img/Settings.png"
-                data-light="/assets/img/Settings_Light.png"
+                data-dark="/assets/img/Settings.webp"
+                data-light="/assets/img/Settings_Light.webp"
               />
               <figcaption>Settings</figcaption>
             </figure>
             <figure class="look-card" tabindex="0" role="button" aria-label="View enlarged image of Download screen">
               <img
                 class="theme-img"
-                src="/assets/img/Download.png"
+                src="/assets/img/Download.webp"
                 alt="Download"
                 width="652"
                 height="472"
                 loading="lazy"
-                data-dark="/assets/img/Download.png"
-                data-light="/assets/img/Download_Light.png"
+                data-dark="/assets/img/Download.webp"
+                data-light="/assets/img/Download_Light.webp"
               />
               <figcaption>Download</figcaption>
             </figure>
@@ -624,7 +624,7 @@ permalink: "/{{ lang.code }}/"
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_version }}</span>
-                <span class="inner-value">v1.1.6</span>
+                <span class="inner-value">v1.1.7</span>
               </div>
             </div>
             <div class="action-wrapper">
@@ -662,6 +662,24 @@ permalink: "/{{ lang.code }}/"
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].updates_section.title }}</h2>
           <div class="changelog-list">
+          <div class="changelog-item">
+              <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
+                <span class="changelog-version">v1.1.7</span>
+                <span class="changelog-description"
+                  >- Compatibility, Customizability &amp; Bugfixes</span
+                >
+                <span class="changelog-date"
+                  ><mark class="code-font">XX YY, 2026</mark></span
+                >
+              </div>
+              <div class="changelog-details">
+                <div class="details-content-wrapper">
+                  <p>
+                    Coming soon™.
+                  </p>
+                </div>
+              </div>
+            </div>
             <div class="changelog-item">
               <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
                 <span class="changelog-version">v1.1.6</span>
@@ -947,7 +965,7 @@ permalink: "/{{ lang.code }}/"
         </div>
         <div class="footer-copyright">
           <p>
-            &copy; 2024-2025 YMU - {{ locales[lang.code].footer_section.made_with }}
+            &copy; 2024-2026 YMU - {{ locales[lang.code].footer_section.made_with }}
             <span class="heart">&hearts;</span> {{ locales[lang.code].footer_section.by }}
             <a
               href="https://niveau.pages.dev/"
