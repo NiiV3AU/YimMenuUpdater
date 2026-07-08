@@ -1,0 +1,20 @@
+# YMU — YimMenuUpdater
+
+> YMU is a modern, source-available Windows launcher for YimMenu, a mod menu for Grand Theft Auto V. It downloads and SHA-256-verifies the latest YimMenu (Legacy) and YimMenuV2 (Enhanced) DLLs, injects them into GTA V, and manages Lua scripts from a clean desktop app.
+
+YMU is free and open source. It supports both GTA V editions (Legacy and Enhanced), custom install paths and custom DLLs, automatic update checks, a Lua script manager, 12 UI languages, and light/dark themes. The website (ymu.pages.dev) is a localized landing page; the app itself and its releases live on GitHub.
+
+## Site
+
+- [Home / language selection](https://ymu.pages.dev/): choose a language.
+- [Main site (English)](https://ymu.pages.dev/en/): features, how-to, download, changelog, and FAQ.
+
+## Project
+
+- [GitHub repository](https://github.com/NiiV3AU/YMU): full source code, issues, and documentation.
+- [Latest release](https://github.com/NiiV3AU/YMU/releases/latest): download the newest YMU.exe.
+
+## Related projects
+
+- [YimMenu (Legacy)](https://github.com/Mr-X-GTA/YimMenu): the GTA V Legacy mod menu that YMU installs and updates.
+- [YimMenuV2 (Enhanced)](https://github.com/YimMenu/YimMenuV2): the GTA V Enhanced mod menu that YMU installs and updates.

@@ -1,0 +1,156 @@
+---
+permalink: /404.html
+eleventyExcludeFromCollections: true
+---
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="description" content="The page you were looking for could not be found on the official site of YMU." />
+    <title>404 - Page Not Found | YMU</title>
+    <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml" />
+    <script>
+      /* Honour the theme chosen on the main site (localStorage); otherwise follow the OS.
+         Runs before paint so there is no flash of the wrong theme. */
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          document.documentElement.setAttribute(
+            "data-theme",
+            t ||
+              (window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light")
+          );
+        } catch (e) {}
+      })();
+    </script>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      :root {
+        --bg: #f2f3f5;
+        --card: #ffffff;
+        --text-main: #1a1d21;
+        --text-sub: #5b6169;
+        --primary: #28a745;
+        --primary-fg: #ffffff;
+        --border: #e3e6ea;
+        --hover-bg: #eceef1;
+        --font: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+          Helvetica, Arial, sans-serif;
+      }
+      :root[data-theme="dark"] {
+        --bg: #121212;
+        --card: #1e1e1e;
+        --text-main: #e0e0e0;
+        --text-sub: #8b8b8b;
+        --border: #333333;
+        --hover-bg: #2c2c2c;
+      }
+      body {
+        background-color: var(--bg);
+        color: var(--text-main);
+        font-family: var(--font);
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        min-height: 100dvh;
+        padding: 1rem;
+        text-align: center;
+        transition:
+          background-color 0.3s ease,
+          color 0.3s ease;
+      }
+      .card {
+        background: var(--card);
+        padding: 2.5rem;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 24px rgba(60, 70, 90, 0.16);
+        width: 100%;
+        max-width: 460px;
+        animation: fadeIn 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+      }
+      :root[data-theme="dark"] .card {
+        box-shadow: none;
+      }
+      .code {
+        font-size: 4rem;
+        font-weight: 800;
+        line-height: 1;
+        letter-spacing: -0.03em;
+        color: var(--primary);
+        margin: 0;
+      }
+      h1 {
+        font-size: 1.35rem;
+        margin: 0.75rem 0 0.5rem;
+        font-weight: 800;
+        letter-spacing: -0.02em;
+      }
+      p {
+        color: var(--text-sub);
+        margin: 0 0 2rem;
+        font-size: 1rem;
+        line-height: 1.5;
+      }
+      .home-btn {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 12px 24px;
+        background: var(--primary);
+        color: var(--primary-fg);
+        text-decoration: none;
+        border-radius: 8px;
+        font-weight: 700;
+        border: 1px solid transparent;
+        transition:
+          filter 0.2s ease,
+          transform 0.1s ease;
+        user-select: none;
+        -webkit-tap-highlight-color: transparent;
+      }
+      @media (hover: hover) {
+        .home-btn:hover {
+          filter: brightness(1.08);
+          transform: translateY(-2px);
+        }
+      }
+      .home-btn:active {
+        transform: scale(0.96);
+      }
+      .home-btn:focus-visible {
+        outline: 2px solid var(--primary);
+        outline-offset: 3px;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(15px) scale(0.98);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0) scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <p class="code">404</p>
+      <h1>Page not found</h1>
+      <p>The page you were looking for doesn't exist or has moved.</p>
+      <a class="home-btn" href="/">Back to YMU</a>
+    </main>
+  </body>
+</html>

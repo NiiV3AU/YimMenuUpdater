@@ -12,31 +12,45 @@ eleventyExcludeFromCollections: true
     <title>YMU - Select Language</title>
     <meta name="google-site-verification" content="_f6dGnLNZBlwsL9BdFwl6TM5fzcSC5_ubno6fyX9SIg" />
     <link rel="icon" href="/assets/img/logo.svg" type="image/svg+xml">
+    <script>
+      /* Honour the theme chosen on the main site (localStorage); otherwise follow the OS.
+         Runs before paint so there is no flash of the wrong theme. */
+      (function () {
+        try {
+          var t = localStorage.getItem("theme");
+          document.documentElement.setAttribute(
+            "data-theme",
+            t ||
+              (window.matchMedia("(prefers-color-scheme: dark)").matches
+                ? "dark"
+                : "light")
+          );
+        } catch (e) {}
+      })();
+    </script>
     <style>
       /* Reset & Base Variables */
       *, *::before, *::after {
         box-sizing: border-box;
       }
       :root {
-        --bg: #f5f5f5;
+        --bg: #f2f3f5;
         --card: #ffffff;
-        --text-main: #121212;
-        --text-sub: #555555;
+        --text-main: #1a1d21;
+        --text-sub: #5b6169;
         --primary: #28a745;
         --primary-fg: #ffffff;
-        --border: #e0e0e0;
-        --hover-bg: #eeeeee;
+        --border: #e3e6ea;
+        --hover-bg: #eceef1;
         --font: "Manrope", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
       }
-      @media (prefers-color-scheme: dark) {
-        :root {
-          --bg: #121212;
-          --card: #1e1e1e;
-          --text-main: #e0e0e0;
-          --text-sub: #8b8b8b;
-          --border: #333333;
-          --hover-bg: #2c2c2c;
-        }
+      :root[data-theme="dark"] {
+        --bg: #121212;
+        --card: #1e1e1e;
+        --text-main: #e0e0e0;
+        --text-sub: #8b8b8b;
+        --border: #333333;
+        --hover-bg: #2c2c2c;
       }
       
       body {

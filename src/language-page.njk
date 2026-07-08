@@ -116,7 +116,7 @@ permalink: "/{{ lang.code }}/"
       (function() {
           const alertBanner = document.getElementById('alert-banner');
           const closeBtn = document.getElementById('alert-close-btn');
-          const bannerId = 'ymu-alert-steam-launch-bug'; 
+          const bannerId = 'ymu-alert-v1-1-7-release';
           if (!localStorage.getItem(bannerId)) {
               alertBanner.style.display = 'block';
           }
@@ -142,7 +142,7 @@ permalink: "/{{ lang.code }}/"
               <span class="logo-text-short">YMU</span>
             </a>
           </div>
-          <a href="#" class="logo-short" aria-hidden="true">YMU</a>
+          <a href="#" class="logo-short">YMU</a>
         </div>
         <nav class="nav-main" id="main-navigation">
           <ul class="nav-links">
@@ -444,13 +444,13 @@ permalink: "/{{ lang.code }}/"
             <figure class="look-card" tabindex="0" role="button" aria-label="View enlarged image of Launch screen">
               <img
                 class="theme-img"
-                src="/assets/img/Launch.png" 
+                src="/assets/img/Launch.webp" 
                 alt="Launch"
                 width="652"
                 height="472"
                 loading="lazy"
-                data-dark="/assets/img/Launch.png"
-                data-light="/assets/img/Launch_Light.png"
+                data-dark="/assets/img/Launch.webp"
+                data-light="/assets/img/Launch_Light.webp"
               />
               <figcaption>Launch</figcaption>
             </figure>
@@ -669,13 +669,22 @@ permalink: "/{{ lang.code }}/"
                   >- Compatibility, Customizability &amp; Bugfixes</span
                 >
                 <span class="changelog-date"
-                  ><mark class="code-font">XX YY, 2026</mark></span
+                  ><mark class="code-font">Jul 08, 2026</mark></span
                 >
               </div>
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
-                    Coming soon™.
+                    The headline fix: GTA V <strong>Enhanced</strong> is
+                    reliably detected again and launches through YMU. On top of
+                    that, v1.1.7 adds a Legacy/Enhanced switch, custom GTA&nbsp;V
+                    install-path and custom-DLL support, and remembers your
+                    launcher and DLL choices between sessions. The light theme
+                    was reworked too, with an elevated palette and soft card
+                    shadows to match the dark theme's polish. Under the hood it
+                    brings a thread-safe settings store with atomic writes,
+                    background threading for a smoother UI, and a passive update
+                    check that points you to the latest release.
                   </p>
                 </div>
               </div>
@@ -1009,7 +1018,7 @@ permalink: "/{{ lang.code }}/"
         <button id="cookie-accept-btn" class="btn btn-primary">{{ locales[lang.code].privacy_section.cookie_banner_button }}</button>
       </div>
       <div id="privacy-modal-overlay" class="lightbox-overlay">
-      <div class="privacy-modal-content card">
+      <div class="privacy-modal-content">
         <div class="privacy-modal-header">
           <h2>{{ locales[lang.code].privacy_section.privacy_modal_title }}</h2>
           <button id="privacy-modal-close" class="modal-close-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg></button>

@@ -2,6 +2,7 @@ module.exports = async function (eleventyConfig) {
   const { minify } = await import("html-minifier-next");
   eleventyConfig.addPassthroughCopy("src/assets");
   eleventyConfig.addPassthroughCopy("src/robots.txt");
+  eleventyConfig.addPassthroughCopy("src/llms.txt");
   eleventyConfig.addPassthroughCopy("src/_redirects");
   eleventyConfig.addPassthroughCopy("src/0ed7ff33829e408995319533cc1ef53e.txt");
   eleventyConfig.addPassthroughCopy("functions");

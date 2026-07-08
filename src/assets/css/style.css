@@ -23,15 +23,19 @@
     format("woff2");
 }
 :root {
-  --background: #f5f5f5;
+  --background: #f2f3f5;
   --surface: #ffffff;
-  --panel: #eeeeee;
-  --border-color: #e0e0e0;
+  --panel: #eceef1;
+  --panel-2: #e2e5ea;
+  --border-color: #e3e6ea;
+  --border-2: #c4c9d0;
   --primary: #28a745;
   --primary-hover: #2ebf4f;
   --primary-text: #ffffff;
-  --text-primary: #121212;
-  --text-secondary: #555555;
+  --text-primary: #1a1d21;
+  --text-secondary: #5b6169;
+  --text-muted: #a6acb4;
+  --card-shadow: 0 4px 24px rgba(60, 70, 90, 0.16);
   --glow-color-rgb: 152, 152, 152;
   --danger: #d32f2f;
   --surface-rgb: 255, 255, 255;
@@ -60,9 +64,15 @@
   --background: #121212;
   --surface: #1e1e1e;
   --panel: #2c2c2c;
+  --panel-2: #333333;
   --border-color: #333333;
+  --border-2: #555555;
   --text-primary: #e0e0e0;
   --text-secondary: #8b8b8b;
+  --text-muted: #777777;
+  /* A drop shadow on a near-black surface is invisible, so cards stay flat in
+     dark (mirrors the app's light-only card elevation). */
+  --card-shadow: none;
   --glow-color-rgb: 93, 93, 93;
   --danger: #e84555;
   --surface-rgb: 30, 30, 30;
@@ -360,7 +370,7 @@ a {
 .logo-text-link {
   font-weight: 800;
   font-size: 1.5rem;
-  color: rgba(224, 224, 224, 0.5);
+  color: var(--text-secondary);
   text-decoration: none;
   position: relative;
 }
@@ -567,9 +577,11 @@ a {
   border-radius: var(--radius);
   padding: 2.5rem;
   margin-top: 2rem;
+  box-shadow: var(--card-shadow);
   transition:
     background-color 0.3s ease,
-    border-color 0.3s ease;
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .card-compact {
   padding: 1.5rem;
@@ -591,7 +603,10 @@ a {
   height: 100%;
   display: flex;
   flex-direction: column;
-  transition: border-color 0.2s ease;
+  box-shadow: var(--card-shadow);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .feature-card:hover {
   border-color: var(--primary);
@@ -964,7 +979,10 @@ a {
   border: 1px solid var(--border-color);
   border-radius: var(--radius-small);
   margin-bottom: 0.5rem;
-  transition: border-color 0.2s ease;
+  box-shadow: var(--card-shadow);
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 .changelog-summary,
 .faq-question {
@@ -1228,7 +1246,7 @@ a {
   outline-offset: 2px;
 }
 .privacy-modal-content {
-  background-color: rgba(var(--surface-rgb), 0.85);
+  background-color: rgba(var(--surface-rgb), 0.94);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   max-width: 750px;
@@ -1238,15 +1256,16 @@ a {
   flex-direction: column;
   overflow: hidden;
   padding: 0;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-2);
   border-radius: var(--radius);
+  box-shadow: 0 16px 50px rgba(0, 0, 0, 0.35);
 }
 .privacy-modal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1.25rem;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-2);
 }
 .privacy-modal-header h2 {
   margin: 0;
@@ -1269,7 +1288,7 @@ a {
   background-color: rgba(var(--surface-rgb), 0.85);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-2);
   border-radius: var(--radius);
   padding: 1rem 1.5rem;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
@@ -1306,7 +1325,7 @@ a {
 }
 .modal-close-btn {
   background: none;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--border-2);
   color: var(--text-secondary);
   border-radius: 50%;
   width: 36px;
@@ -1453,7 +1472,10 @@ section[id] {
   background-color: var(--surface);
   border: 1px solid var(--border-color);
   border-radius: var(--radius);
-  transition: border-color 0.3s ease;
+  box-shadow: var(--card-shadow);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
   position: relative;
   overflow: hidden;
 }
