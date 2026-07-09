@@ -353,8 +353,8 @@ a {
 }
 .logo-svg-link .logo-nv3-svg {
   display: block;
-  height: 1.33rem;
-  margin-top: 0.1rem;
+  height: 1.5rem;
+  margin-top: 0.12rem;
   width: auto;
   color: var(--text-secondary);
   transition: color 0.2s ease;
