@@ -20,8 +20,6 @@ permalink: "/{{ lang.code }}/"
     <link rel="icon" href="{{ '/assets/img/logo.svg' | url }}" type="image/svg+xml">
     <link rel="apple-touch-icon" href="{{ '/assets/img/logo-180x180.png' | url }}">
     <link rel="preload" href="/assets/fonts/manrope-v20-cyrillic_cyrillic-ext_latin_latin-ext-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/assets/fonts/manrope-v20-cyrillic_cyrillic-ext_latin_latin-ext-regular.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" href="/assets/fonts/manrope-v20-cyrillic_cyrillic-ext_latin_latin-ext-700.woff2" as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
     <meta
       name="description"
@@ -44,6 +42,7 @@ permalink: "/{{ lang.code }}/"
     <script>
       (function () {
         try {
+          document.documentElement.classList.add("js");
           const theme = localStorage.getItem("theme");
           if (theme === "dark") {
             document.documentElement.setAttribute("data-theme", "dark");
@@ -290,7 +289,7 @@ permalink: "/{{ lang.code }}/"
       </div>
     </header>
     <main class="flow">
-      <section id="hero" class="hero-section text-center fade-in">
+      <section id="hero" class="hero-section text-center">
         <div class="container flow">
           <h1 class="hero-headline">{{ locales[lang.code].hero_headline }}</h1>
           <p class="hero-subheadline">{{ locales[lang.code].hero_subheadline }}</p>
@@ -475,43 +474,49 @@ permalink: "/{{ lang.code }}/"
           <h2 class="section-title text-center">{{ locales[lang.code].look_and_feel_section.title }}</h2>
           <p class="section-subtitle text-center">{{ locales[lang.code].look_and_feel_section.subtitle }}</p>
           <div class="look-grid">
-            <figure class="look-card" tabindex="0" role="button" aria-label="View enlarged image of Launch screen">
-              <img
-                class="theme-img"
-                src="/assets/img/Launch.webp" 
-                alt="Launch"
-                width="652"
-                height="472"
-                loading="lazy"
-                data-dark="/assets/img/Launch.webp"
-                data-light="/assets/img/Launch_Light.webp"
-              />
+            <figure class="look-card">
+              <a class="look-card-link" href="#lightbox-launch" aria-label="View enlarged image of Launch screen">
+                <img
+                  class="theme-img"
+                  src="/assets/img/Launch.webp"
+                  alt="Launch"
+                  width="652"
+                  height="472"
+                  loading="lazy"
+                  data-dark="/assets/img/Launch.webp"
+                  data-light="/assets/img/Launch_Light.webp"
+                />
+              </a>
               <figcaption>Launch</figcaption>
             </figure>
-            <figure class="look-card" tabindex="0" role="button" aria-label="View enlarged image of Settings screen">
-              <img
-                class="theme-img"
-                src="/assets/img/Settings.webp"
-                alt="Settings"
-                width="652"
-                height="472"
-                loading="lazy"
-                data-dark="/assets/img/Settings.webp"
-                data-light="/assets/img/Settings_Light.webp"
-              />
+            <figure class="look-card">
+              <a class="look-card-link" href="#lightbox-settings" aria-label="View enlarged image of Settings screen">
+                <img
+                  class="theme-img"
+                  src="/assets/img/Settings.webp"
+                  alt="Settings"
+                  width="652"
+                  height="472"
+                  loading="lazy"
+                  data-dark="/assets/img/Settings.webp"
+                  data-light="/assets/img/Settings_Light.webp"
+                />
+              </a>
               <figcaption>Settings</figcaption>
             </figure>
-            <figure class="look-card" tabindex="0" role="button" aria-label="View enlarged image of Download screen">
-              <img
-                class="theme-img"
-                src="/assets/img/Download.webp"
-                alt="Download"
-                width="652"
-                height="472"
-                loading="lazy"
-                data-dark="/assets/img/Download.webp"
-                data-light="/assets/img/Download_Light.webp"
-              />
+            <figure class="look-card">
+              <a class="look-card-link" href="#lightbox-download" aria-label="View enlarged image of Download screen">
+                <img
+                  class="theme-img"
+                  src="/assets/img/Download.webp"
+                  alt="Download"
+                  width="652"
+                  height="472"
+                  loading="lazy"
+                  data-dark="/assets/img/Download.webp"
+                  data-light="/assets/img/Download_Light.webp"
+                />
+              </a>
               <figcaption>Download</figcaption>
             </figure>
           </div>
@@ -738,8 +743,8 @@ permalink: "/{{ lang.code }}/"
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].updates_section.title }}</h2>
           <div class="changelog-list">
-          <div class="changelog-item">
-              <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
+          <details class="changelog-item">
+              <summary class="changelog-summary">
                 <span class="changelog-version">v1.1.7</span>
                 <span class="changelog-description"
                   >- Compatibility, Customizability &amp; Bugfixes</span
@@ -747,7 +752,7 @@ permalink: "/{{ lang.code }}/"
                 <span class="changelog-date"
                   ><mark class="code-font">Jul 08, 2026</mark></span
                 >
-              </div>
+              </summary>
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
@@ -764,9 +769,9 @@ permalink: "/{{ lang.code }}/"
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="changelog-item">
-              <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
+            </details>
+            <details class="changelog-item">
+              <summary class="changelog-summary">
                 <span class="changelog-version">v1.1.6</span>
                 <span class="changelog-description"
                   >- Localization, Performance &amp; Bugfixes</span
@@ -774,7 +779,7 @@ permalink: "/{{ lang.code }}/"
                 <span class="changelog-date"
                   ><mark class="code-font">Dec 17, 2025</mark></span
                 >
-              </div>
+              </summary>
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
@@ -782,9 +787,9 @@ permalink: "/{{ lang.code }}/"
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="changelog-item">
-              <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
+            </details>
+            <details class="changelog-item">
+              <summary class="changelog-summary">
                 <span class="changelog-version">v1.1.5</span>
                 <span class="changelog-description"
                   >- Redesign and GTA 5 Enhanced Support</span
@@ -792,7 +797,7 @@ permalink: "/{{ lang.code }}/"
                 <span class="changelog-date"
                   ><mark class="code-font">Aug 31, 2025</mark></span
                 >
-              </div>
+              </summary>
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
@@ -801,9 +806,9 @@ permalink: "/{{ lang.code }}/"
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="changelog-item">
-              <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
+            </details>
+            <details class="changelog-item">
+              <summary class="changelog-summary">
                 <span class="changelog-version">v1.1.4</span>
                 <span class="changelog-description"
                   >- Buttons, "More Info" Updates</span
@@ -811,7 +816,7 @@ permalink: "/{{ lang.code }}/"
                 <span class="changelog-date"
                   ><mark class="code-font">Oct 12, 2024</mark></span
                 >
-              </div>
+              </summary>
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
@@ -820,9 +825,9 @@ permalink: "/{{ lang.code }}/"
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="changelog-item">
-              <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
+            </details>
+            <details class="changelog-item">
+              <summary class="changelog-summary">
                 <span class="changelog-version">v1.1.3</span>
                 <span class="changelog-description"
                   >- New Lua list in Settings-Tab</span
@@ -830,7 +835,7 @@ permalink: "/{{ lang.code }}/"
                 <span class="changelog-date"
                   ><mark class="code-font">Sep 1, 2024</mark></span
                 >
-              </div>
+              </summary>
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
@@ -839,21 +844,21 @@ permalink: "/{{ lang.code }}/"
                   </p>
                 </div>
               </div>
-            </div>
-            <div class="changelog-item">
-              <div class="changelog-summary" tabindex="0" role="button" aria-expanded="false">
+            </details>
+            <details class="changelog-item">
+              <summary class="changelog-summary">
                 <span class="changelog-version">v1.1.2</span>
                 <span class="changelog-description">- Bugfix Progressbar</span>
                 <span class="changelog-date"
                   ><mark class="code-font">Aug 29, 2024</mark></span
                 >
-              </div>
+              </summary>
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>Fixed progressbar freezing.</p>
                 </div>
               </div>
-            </div>
+            </details>
           </div>
           <div class="text-center">
             <a
@@ -869,32 +874,32 @@ permalink: "/{{ lang.code }}/"
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].faq_section.title }}</h2>
           <div class="faq-list">
-            <div class="faq-item">
-              <div class="faq-question" tabindex="0" role="button" aria-expanded="false">{{ locales[lang.code].faq_section.q1_question }}</div>
+            <details class="faq-item">
+              <summary class="faq-question">{{ locales[lang.code].faq_section.q1_question }}</summary>
               <div class="faq-answer">
                 <div class="details-content-wrapper">
                   <p>{{ locales[lang.code].faq_section.q1_answer }}</p>
                 </div>
               </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question" tabindex="0" role="button" aria-expanded="false">{{ locales[lang.code].faq_section.q2_question }}</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">{{ locales[lang.code].faq_section.q2_question }}</summary>
               <div class="faq-answer">
                 <div class="details-content-wrapper">
                   <p>{{ locales[lang.code].faq_section.q2_answer }}</p>
                 </div>
               </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question" tabindex="0" role="button" aria-expanded="false">{{ locales[lang.code].faq_section.q3_question }}</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">{{ locales[lang.code].faq_section.q3_question }}</summary>
               <div class="faq-answer">
                 <div class="details-content-wrapper">
                   <p>{{ locales[lang.code].faq_section.q3_answer }}</p>
                 </div>
               </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question" tabindex="0" role="button" aria-expanded="false">{{ locales[lang.code].faq_section.q4_question }}</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">{{ locales[lang.code].faq_section.q4_question }}</summary>
               <div class="faq-answer">
                 <div class="details-content-wrapper">
                   <p>{{ locales[lang.code].faq_section.q4_answer_p1 }}</p>
@@ -902,31 +907,31 @@ permalink: "/{{ lang.code }}/"
                   <p>{{ locales[lang.code].faq_section.q4_answer_p3 }}</p>
                 </div>
               </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question" tabindex="0" role="button" aria-expanded="false">{{ locales[lang.code].faq_section.q5_question }}</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">{{ locales[lang.code].faq_section.q5_question }}</summary>
               <div class="faq-answer">
                 <div class="details-content-wrapper">
                   <p>{{ locales[lang.code].faq_section.q5_answer }}</p>
                 </div>
               </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question" tabindex="0" role="button" aria-expanded="false">{{ locales[lang.code].faq_section.q6_question }}</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">{{ locales[lang.code].faq_section.q6_question }}</summary>
               <div class="faq-answer">
                 <div class="details-content-wrapper">
                   <p>{{ locales[lang.code].faq_section.q6_answer }}</p>
                 </div>
               </div>
-            </div>
-            <div class="faq-item">
-              <div class="faq-question" tabindex="0" role="button" aria-expanded="false">{{ locales[lang.code].faq_section.q7_question }}</div>
+            </details>
+            <details class="faq-item">
+              <summary class="faq-question">{{ locales[lang.code].faq_section.q7_question }}</summary>
               <div class="faq-answer">
                 <div class="details-content-wrapper">
                   <p>{{ locales[lang.code].faq_section.q7_answer | safe }}</p>
                 </div>
               </div>
-            </div>
+            </details>
           </div>
         </div>
       </section>
@@ -1046,7 +1051,7 @@ permalink: "/{{ lang.code }}/"
             {{ locales[lang.code].privacy_section.website_license }}
           </a>
           &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="" id="privacy-policy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>
+          <a href="#privacy-modal" id="privacy-policy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>
         </div>
         <div class="footer-copyright">
           <p>
@@ -1078,26 +1083,37 @@ permalink: "/{{ lang.code }}/"
         </div>
       </div>
     </footer>
-    <div id="lightbox-overlay" class="lightbox-overlay">
-      <button id="lightbox-close" class="lightbox-close" aria-label="Close enlarged image view">
-        <svg xmlns="http://www.w.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg>
-      </button>
-      <img
-        id="lightbox-image"
-        class="lightbox-image"
-        src=""
-        alt="Enlarged View"
-      />
+    <div id="lightbox-launch" class="lightbox-overlay">
+      <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
+      <img class="theme-img lightbox-image" src="/assets/img/Launch.webp" alt="Launch (enlarged)" width="652" height="472" loading="lazy" data-dark="/assets/img/Launch.webp" data-light="/assets/img/Launch_Light.webp" />
+      <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg>
+      </a>
+    </div>
+    <div id="lightbox-settings" class="lightbox-overlay">
+      <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
+      <img class="theme-img lightbox-image" src="/assets/img/Settings.webp" alt="Settings (enlarged)" width="652" height="472" loading="lazy" data-dark="/assets/img/Settings.webp" data-light="/assets/img/Settings_Light.webp" />
+      <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg>
+      </a>
+    </div>
+    <div id="lightbox-download" class="lightbox-overlay">
+      <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
+      <img class="theme-img lightbox-image" src="/assets/img/Download.webp" alt="Download (enlarged)" width="652" height="472" loading="lazy" data-dark="/assets/img/Download.webp" data-light="/assets/img/Download_Light.webp" />
+      <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg>
+      </a>
     </div>
     <div id="cookie-consent-banner" class="cookie-banner">
-        <p>{{ locales[lang.code].privacy_section.cookie_banner_text | safe}} <a href="" id="cookie-banner-privacy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>.</p>
+        <p>{{ locales[lang.code].privacy_section.cookie_banner_text | safe}} <a href="#privacy-modal" id="cookie-banner-privacy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>.</p>
         <button id="cookie-accept-btn" class="btn btn-primary">{{ locales[lang.code].privacy_section.cookie_banner_button }}</button>
       </div>
-      <div id="privacy-modal-overlay" class="lightbox-overlay">
+      <div id="privacy-modal" class="lightbox-overlay">
+      <a class="lightbox-backdrop" href="#_" aria-label="Close privacy information"></a>
       <div class="privacy-modal-content">
         <div class="privacy-modal-header">
           <h2>{{ locales[lang.code].privacy_section.privacy_modal_title }}</h2>
-          <button id="privacy-modal-close" class="modal-close-btn"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg></button>
+          <a class="modal-close-btn" href="#_" aria-label="Close privacy information"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg></a>
         </div>
         <div class="privacy-modal-body">
           <p>{{ locales[lang.code].privacy_section.privacy_modal_intro }}</p>

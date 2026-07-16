@@ -146,59 +146,9 @@
               menuToggle.setAttribute("aria-expanded", "false"));
           }));
       })(),
-      $$(".changelog-summary, .faq-question").forEach((header) => {
-        header.addEventListener("click", () => {
-          const isOpen = header.parentElement.classList.toggle("is-open");
-          header.setAttribute("aria-expanded", isOpen);
-        }),
-          header.addEventListener("keydown", (e) => {
-            ("Enter" !== e.key && " " !== e.key) ||
-              (e.preventDefault(), header.click());
-          });
-      }),
-      (function () {
-        const overlay = $("#lightbox-overlay"),
-          img = $("#lightbox-image"),
-          closeBtn = $("#lightbox-close"),
-          cards = $$(".look-card");
-        if (!overlay || !img || !cards.length) return;
-        const open = (src) => {
-            (img.src = src),
-              overlay.classList.add("is-visible"),
-              closeBtn.focus();
-          },
-          close = () => overlay.classList.remove("is-visible");
-        cards.forEach((card) => {
-          card.addEventListener("click", () => {
-            const targetImg = card.querySelector("img");
-            targetImg && open(targetImg.src);
-          }),
-            card.addEventListener("keydown", (e) => {
-              if ("Enter" === e.key || " " === e.key) {
-                e.preventDefault();
-                const targetImg = card.querySelector("img");
-                targetImg && open(targetImg.src);
-              }
-            });
-        }),
-          closeBtn.addEventListener("click", close),
-          overlay.addEventListener("click", (e) => {
-            e.target === overlay && close();
-          }),
-          document.addEventListener("keydown", (e) => {
-            "Escape" === e.key &&
-              overlay.classList.contains("is-visible") &&
-              close();
-          });
-      })(),
       (function () {
         const banner = $("#cookie-consent-banner"),
-          acceptBtn = $("#cookie-accept-btn"),
-          modalOverlay = $("#privacy-modal-overlay"),
-          closeBtn = $("#privacy-modal-close"),
-          triggerLinks = $$(
-            "#privacy-policy-link, #cookie-banner-privacy-link"
-          );
+          acceptBtn = $("#cookie-accept-btn");
         banner &&
           !localStorage.getItem(CONFIG_KEYS.CONSENT) &&
           setTimeout(() => banner.classList.add("is-visible"), 500);
@@ -207,41 +157,31 @@
             localStorage.setItem(CONFIG_KEYS.CONSENT, "true"),
               banner.classList.remove("is-visible");
           });
-        const toggleModal = (show) => {
-          modalOverlay && modalOverlay.classList.toggle("is-visible", show);
-        };
-        triggerLinks.forEach((link) =>
-          link.addEventListener("click", (e) => {
-            e.preventDefault(), toggleModal(!0);
-          })
-        ),
-          closeBtn && closeBtn.addEventListener("click", () => toggleModal(!1));
-        modalOverlay &&
-          modalOverlay.addEventListener("click", (e) => {
-            e.target === modalOverlay && toggleModal(!1);
-          });
       })(),
       (function () {
         const buttons = $$(".btn");
         if (!buttons.length) return;
-        const calculateShimmer = (btn) => {
-          const w = btn.offsetWidth,
-            overshoot = 60,
-            endX = w + overshoot,
-            duration = ((w + 120 + 2 * overshoot) / 420).toFixed(3);
-          btn.style.setProperty("--shim-end-x", `${endX}px`),
-            btn.style.setProperty("--shim-dur", `${duration}s`);
-        };
+        const overshoot = 60,
+          applyShimmer = (btn, w) => {
+            const endX = w + overshoot,
+              duration = ((w + 120 + 2 * overshoot) / 420).toFixed(3);
+            btn.style.setProperty("--shim-end-x", `${endX}px`),
+              btn.style.setProperty("--shim-dur", `${duration}s`);
+          },
+          measureAndApply = (els) => {
+            const widths = els.map((el) => el.offsetWidth);
+            els.forEach((el, i) => applyShimmer(el, widths[i]));
+          };
         if ("ResizeObserver" in window) {
           const ro = new ResizeObserver((entries) => {
-            entries.forEach((entry) => calculateShimmer(entry.target));
+            measureAndApply(entries.map((entry) => entry.target));
           });
           buttons.forEach((btn) => ro.observe(btn));
-        } else
-          window.addEventListener("resize", () =>
-            buttons.forEach(calculateShimmer)
-          ),
-            buttons.forEach(calculateShimmer);
+        } else {
+          const all = Array.from(buttons);
+          window.addEventListener("resize", () => measureAndApply(all)),
+            measureAndApply(all);
+        }
       })(),
       $$(".logo-text-link, .logo-text-short, .logo-separator").forEach((el) => {
         el.classList.add("logo-shimmer"),
@@ -319,20 +259,30 @@
           );
         elements.forEach((el) => observer.observe(el));
       })(),
-      $$('a[href^="#"]').forEach((anchor) => {
-        anchor.addEventListener("click", function (e) {
-          const href = this.getAttribute("href");
-          if ("#" === href) return;
-          const target = $(href);
-          if (target) {
-            e.preventDefault();
-            const header = $(".header-sticky"),
-              offset = header ? header.offsetHeight : 0,
-              targetPos =
-                target.getBoundingClientRect().top + window.scrollY - offset;
-            window.scrollTo({ top: targetPos, behavior: "smooth" });
-          }
+      (function () {
+        const clean = () =>
+            history.replaceState(null, "", location.pathname + location.search),
+          onOverlay = () => {
+            const el =
+              location.hash.length > 1
+                ? document.getElementById(location.hash.slice(1))
+                : null;
+            return el && el.classList.contains("lightbox-overlay");
+          };
+        document.addEventListener("click", (e) => {
+          const link = e.target.closest('a[href^="#"]');
+          if (!link || link.closest(".lightbox-overlay")) return;
+          const href = link.getAttribute("href"),
+            target =
+              href.length > 1 ? document.getElementById(href.slice(1)) : null;
+          if (target && target.classList.contains("lightbox-overlay")) return;
+          e.preventDefault();
+          target ? target.scrollIntoView() : window.scrollTo({ top: 0 });
+          clean();
         });
-      });
+        window.addEventListener("hashchange", () => {
+          onOverlay() || clean();
+        });
+      })();
   });
 })();

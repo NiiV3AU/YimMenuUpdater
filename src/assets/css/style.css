@@ -946,7 +946,11 @@ a {
 .look-card:hover {
   transform: scale(1.05);
 }
-.look-card:focus-visible {
+.look-card-link {
+  display: block;
+  border-radius: 5px;
+}
+.look-card-link:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
@@ -994,6 +998,12 @@ a {
   align-items: center;
   gap: 1rem;
   border-radius: var(--radius-small);
+  cursor: pointer;
+  list-style: none;
+}
+.changelog-summary::-webkit-details-marker,
+.faq-question::-webkit-details-marker {
+  display: none;
 }
 .changelog-summary:hover,
 .faq-question:hover {
@@ -1024,30 +1034,52 @@ a {
   transition: transform 0.3s ease;
   margin-left: auto;
 }
-.changelog-item.is-open,
-.faq-item.is-open {
+.changelog-item[open],
+.faq-item[open] {
   border-color: var(--primary);
 }
-.changelog-item.is-open .changelog-summary::after,
-.faq-item.is-open .faq-question::after {
+.changelog-item[open] .changelog-summary::after,
+.faq-item[open] .faq-question::after {
   transform: rotate(45deg);
 }
 .changelog-details,
 .faq-answer {
-  overflow: hidden;
-  max-height: 0;
-  opacity: 0;
-  transition:
-    max-height 0.2s ease,
-    opacity 0.2s ease,
-    padding 0.2s ease;
-  padding: 0 1.5rem;
-}
-.changelog-item.is-open .changelog-details,
-.faq-item.is-open .faq-answer {
-  max-height: 500px;
-  opacity: 1;
   padding: 0 1.5rem 1rem;
+}
+/* Fallback (Firefox/Safari without ::details-content): the content box appears
+   instantly, only the inner text slides/fades in. */
+details[open] > .changelog-details,
+details[open] > .faq-answer {
+  animation: ymu-details-open 0.35s cubic-bezier(0.25, 1, 0.5, 1);
+}
+@keyframes ymu-details-open {
+  from {
+    opacity: 0;
+    transform: translateY(-6px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Progressive enhancement (Chromium 131+): animate the real content height, so
+   tall entries reveal smoothly instead of popping in. Duration is fixed, but the
+   ease-out curve keeps long bodies from snapping open at the end. */
+:root {
+  interpolate-size: allow-keywords;
+}
+.changelog-item::details-content,
+.faq-item::details-content {
+  block-size: 0;
+  overflow: hidden;
+  transition:
+    block-size 0.4s cubic-bezier(0.25, 1, 0.5, 1),
+    content-visibility 0.4s allow-discrete;
+  transition-behavior: allow-discrete;
+}
+.changelog-item[open]::details-content,
+.faq-item[open]::details-content {
+  block-size: auto;
 }
 .details-content-wrapper > p {
   margin-bottom: 0;
@@ -1216,16 +1248,24 @@ a {
     visibility 0s 0.2s;
   padding: 1rem;
 }
-.lightbox-overlay.is-visible {
+.lightbox-overlay:target {
   opacity: 1;
   visibility: visible;
   transition:
     opacity 0.2s ease,
     visibility 0s 0s;
 }
+.lightbox-backdrop {
+  position: absolute;
+  inset: 0;
+  cursor: default;
+}
 .lightbox-image {
+  position: relative;
   max-width: 90vw;
   max-height: 85vh;
+  width: auto;
+  height: auto;
   border-radius: var(--radius);
   box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
 }
@@ -1246,6 +1286,7 @@ a {
   outline-offset: 2px;
 }
 .privacy-modal-content {
+  position: relative;
   background-color: rgba(var(--surface-rgb), 0.94);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -1302,12 +1343,16 @@ a {
   transition:
     opacity 0.4s ease,
     transform 0.4s ease,
-    visibility 0.4s;
+    visibility 0s 0.4s;
 }
 .cookie-banner.is-visible {
   opacity: 1;
   visibility: visible;
   transform: translateY(0);
+  transition:
+    opacity 0.4s ease,
+    transform 0.4s ease,
+    visibility 0s 0s;
 }
 .cookie-banner p {
   margin: 0;
@@ -1357,15 +1402,17 @@ a {
   margin-right: auto;
 }
 .fade-in {
-  opacity: 0;
-  filter: grayscale(100%);
-  transition:
-    opacity 0.6s ease-out,
-    filter 1.2s ease-out;
-}
-.fade-in.is-visible {
   opacity: 1;
-  filter: grayscale(0%);
+}
+.js .fade-in {
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+}
+.js .fade-in.is-visible {
+  opacity: 1;
+}
+html {
+  scroll-behavior: smooth;
 }
 section[id] {
   scroll-margin-top: 5rem;
@@ -1389,7 +1436,6 @@ section[id] {
   }
   .fade-in {
     opacity: 1;
-    filter: grayscale(0%);
     transition: none;
   }
 }
@@ -1412,7 +1458,6 @@ section[id] {
   }
   .fade-in {
     opacity: 1;
-    filter: grayscale(0%);
     transition: none;
   }
 }
