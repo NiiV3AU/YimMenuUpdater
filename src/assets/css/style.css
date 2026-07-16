@@ -462,6 +462,25 @@ a {
   color: var(--text-primary);
   filter: drop-shadow(0 0 10px rgba(var(--glow-color-rgb), 1));
 }
+/* Social icons inside mobile nav dropdown */
+.nav-icons {
+  display: none;
+}
+.nav-icons a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 700;
+  border-radius: 6px;
+  transition: color 0.2s ease, background-color 0.2s ease;
+}
+.nav-icons a:hover {
+  color: var(--text-primary);
+  background-color: var(--panel);
+}
 .hero-section {
   padding: 5rem 0 3rem;
 }
@@ -679,6 +698,14 @@ a {
   transform: scale(0.9);
   transition: transform 0.1s ease;
 }
+/* Allow lang-toggle to accommodate longer codes (ZH-HANS, ZH-HANT) */
+.lang-toggle {
+  width: auto;
+  min-width: 40px;
+  padding: 6px 10px;
+  flex-direction: row;
+  gap: 4px;
+}
 .tooltip-wrapper {
   position: relative;
 }
@@ -701,7 +728,8 @@ a {
     visibility 0.2s;
   pointer-events: none;
 }
-.header-tooltip.is-visible {
+.tooltip-wrapper:hover .header-tooltip,
+.animation-toggle:focus-visible ~ .header-tooltip {
   opacity: 1;
   visibility: visible;
 }
@@ -711,24 +739,6 @@ a {
     right: 0;
     transform: none;
   }
-}
-.lang-options.is-visible {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease,
-    visibility 0s 0s;
-}
-.lang-dropdown {
-  position: relative;
-  display: inline-block;
-}
-.lang-flag {
-  display: block;
-  font-size: 20px;
-  line-height: 1;
 }
 .lang-toggle::after {
   content: "";
@@ -746,101 +756,97 @@ a {
 .lang-toggle:hover::after {
   background-color: var(--text-primary);
 }
-.lang-options {
+
+/* Native focus ring: :focus-visible on a real <button> shows the ring only for
+   keyboard focus, not pointer clicks — no JS modality tracking needed. */
+.lang-toggle:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 2px;
+}
+/* ===== Language Bar (slide-in under nav) ===== */
+.lang-bar {
   position: absolute;
-  top: calc(100% + 8px);
+  left: 0;
   right: 0;
-  background-color: var(--surface);
-  border: 1px solid var(--border-color);
-  border-radius: var(--radius-small);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  padding: 0.5rem;
-  margin: 0;
-  z-index: 1100;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 0.25rem 0.5rem;
-  width: 360px;
-  opacity: 0;
+  top: 100%;
+  z-index: 999;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-height: 0;
+  overflow: hidden;
   visibility: hidden;
-  transform: translateY(-10px);
   transition:
-    opacity 0.2s ease,
-    transform 0.2s ease,
-    visibility 0.2s;
+    max-height 0.25s cubic-bezier(0.25, 1, 0.5, 1),
+    visibility 0s 0.25s;
 }
-.lang-options.is-visible {
-  opacity: 1;
+.header-sticky:has(.lang-toggle[aria-expanded="true"]) .lang-bar {
+  max-height: 250px;
   visibility: visible;
-  transform: translateY(0);
-}
-@media (max-width: 420px) {
-  .lang-options {
-    width: 290px;
-    right: auto;
-    left: 50%;
-    transform: translateX(-50%) translateY(-10px);
-    grid-template-columns: 1fr;
-  }
-  .lang-options.is-visible {
-    transform: translateX(-50%) translateY(0);
-  }
-}
-.lang-options li a {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5rem 0.75rem;
-  width: 100%;
-  border-radius: 4px;
-  white-space: nowrap;
-  text-decoration: none;
-  color: var(--text-primary);
-  font-size: 14px;
   transition:
-    color 0.1s ease,
-    background-color 0.1s ease;
+    max-height 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    visibility 0s 0s;
 }
-.lang-options li a:hover {
-  background-color: var(--panel);
-}
-.lang-options li a:hover .lang-code-dropdown {
+/* Toggle active state when bar is open */
+.header-sticky:has(.lang-toggle[aria-expanded="true"]) .lang-toggle {
   color: var(--text-primary);
+  border-color: var(--text-primary);
 }
-.lang-options li a.is-active {
-  font-weight: 700;
-  color: var(--primary);
-  cursor: default;
-}
-.lang-options li a.is-active .lang-code-dropdown {
-  color: var(--primary);
-  opacity: 1;
-}
-.lang-options li a.is-active:hover {
-  background-color: transparent;
-}
-.lang-item-label {
+.lang-bar-inner {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
-  gap: 0.6rem;
+  gap: 0.25rem 0.75rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
 }
-.lang-code-dropdown {
-  background: none;
-  border: none;
-  padding: 0;
+.lang-bar-item {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 14px;
+  padding: 0.35rem 0.6rem;
+  border-radius: 4px;
+  transition:
+    color 0.15s ease,
+    background-color 0.15s ease;
+  white-space: nowrap;
+}
+.lang-bar-item:hover {
+  color: var(--text-primary);
+  background-color: var(--hover-bg);
+}
+.lang-bar-item.is-active {
+  color: var(--primary);
+  font-weight: 700;
+}
+.lang-bar-code {
+  font-family: var(--font-mono);
   font-size: 12px;
   font-weight: 600;
-  color: var(--text-secondary);
   opacity: 0.6;
-  transition: color 0.1s ease;
 }
-.lang-options .check-icon {
-  width: 16px;
-  height: 16px;
-  stroke-width: 3;
-  color: var(--primary);
+.lang-bar-item.is-active .lang-bar-code {
+  opacity: 1;
 }
+@media (max-width: 768px) {
+  .lang-bar-label {
+    display: none;
+  }
+  .lang-bar-inner {
+    gap: 0.15rem 0.4rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .lang-bar-item {
+    font-size: 12px;
+    padding: 0.25rem 0.4rem;
+  }
+}
+
 .code-font {
   font-family: var(--font-mono);
   font-size: 14px;
@@ -1173,6 +1179,16 @@ details[open] > .faq-answer {
   }
   .mobile-menu-toggle.is-active .line3 {
     transform: translateY(-7px) rotate(-45deg);
+  }
+  .header-icons {
+    display: none;
+  }
+  .nav-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    border-top: 1px solid var(--border-color);
+    padding: 0.75rem 1.5rem;
   }
   .changelog-summary {
     flex-wrap: wrap;

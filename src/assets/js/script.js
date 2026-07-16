@@ -12,9 +12,6 @@
     CONFIG_SELECTORS = {
       THEME_BTN: "#theme-toggle-btn",
       ANIM_BTN: "#animation-toggle-btn",
-      LANG_BTN: "#lang-toggle-btn",
-      LANG_OPTS: "#lang-options",
-      LANG_LINKS: ".lang-options a",
       DL_TEXT: "#github-downloads",
       DL_BADGE: "#github-downloads-badge",
       DL_BTN: "#download-btn-main",
@@ -74,7 +71,6 @@
       })(),
       (function () {
         const btn = $(CONFIG_SELECTORS.ANIM_BTN),
-          tooltip = $("#animation-tooltip"),
           applyAnim = (state) => {
             "disabled" === state
               ? (document.body.classList.add("animations-disabled"),
@@ -94,38 +90,10 @@
                 "animations-disabled"
               );
               applyAnim(isDisabled ? "enabled" : "disabled");
-            }),
-            tooltip &&
-              (btn.addEventListener("mouseenter", () =>
-                tooltip.classList.add("is-visible")
-              ),
-              btn.addEventListener("mouseleave", () =>
-                tooltip.classList.remove("is-visible")
-              ),
-              btn.addEventListener("focus", () =>
-                tooltip.classList.add("is-visible")
-              ),
-              btn.addEventListener("blur", () =>
-                tooltip.classList.remove("is-visible")
-              )));
+            }            ));
       })(),
       (function () {
-        const langBtn = $(CONFIG_SELECTORS.LANG_BTN),
-          langOpts = $(CONFIG_SELECTORS.LANG_OPTS);
-        langBtn &&
-          langOpts &&
-          document.addEventListener("click", (e) => {
-            const isInside =
-              langBtn.contains(e.target) || langOpts.contains(e.target);
-            if (langBtn.contains(e.target)) {
-              const isVisible = langOpts.classList.toggle("is-visible");
-              langBtn.setAttribute("aria-expanded", isVisible);
-            } else
-              isInside ||
-                (langOpts.classList.remove("is-visible"),
-                langBtn.setAttribute("aria-expanded", "false"));
-          });
-        $$(CONFIG_SELECTORS.LANG_LINKS).forEach((link) => {
+        $$(".lang-bar-item").forEach((link) => {
           link.addEventListener("click", () => {
             sessionStorage.setItem(CONFIG_KEYS.SCROLL, window.scrollY);
           });
@@ -183,10 +151,6 @@
             measureAndApply(all);
         }
       })(),
-      $$(".logo-text-link, .logo-text-short, .logo-separator").forEach((el) => {
-        el.classList.add("logo-shimmer"),
-          el.setAttribute("data-shimmer", (el.textContent || "").trim());
-      }),
       (async function () {
         const textEl = $(CONFIG_SELECTORS.DL_TEXT),
           badgeEl = $(CONFIG_SELECTORS.DL_BADGE),
@@ -282,6 +246,28 @@
         });
         window.addEventListener("hashchange", () => {
           onOverlay() || clean();
+        });
+      })();
+      /* Language bar toggle. A real <button> gets a native :focus-visible ring
+         (keyboard only), so CSS handles focus and JS only drives open/close. */
+      (function () {
+        const toggle = $(".lang-toggle"),
+          bar = $("#lang-bar");
+        if (!toggle || !bar) return;
+        const setOpen = (open) =>
+          toggle.setAttribute("aria-expanded", open ? "true" : "false");
+        toggle.addEventListener("click", () => {
+          setOpen(toggle.getAttribute("aria-expanded") !== "true");
+        });
+        document.addEventListener("click", (e) => {
+          toggle.contains(e.target) ||
+            bar.contains(e.target) ||
+            setOpen(false);
+        });
+        document.addEventListener("keydown", (e) => {
+          "Escape" === e.key &&
+            "true" === toggle.getAttribute("aria-expanded") &&
+            (setOpen(false), toggle.focus());
         });
       })();
   });

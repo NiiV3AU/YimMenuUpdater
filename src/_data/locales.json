@@ -1419,12 +1419,12 @@
       "privacy_modal_conclusion": "Kısaca: Yalnızca site işlevselliği veya anonim istatistikler için gerekli olan verileri kullanıyoruz. Seni asla kişisel olarak izlemiyoruz."
     }
   },
-  "zh": {
+  "zh-Hans": {
     "page_title": "YimMenuUpdater - GTA V 模组启动器与管理器",
     "json_ld": {
       "description": "YMU 是 YimMenu 的现代化一体式启动器。它自动执行更新，将 DLL 无缝加载到游戏环境中，并提供用于管理 Lua 脚本的流畅界面。",
       "feature_list": "快速更新, 无缝 DLL 加载, Lua 脚本管理器, 深色/浅色主题 UI",
-      "keywords": "YimMenu 启动器, GTA V 工具, YMU, Lua 脚本加载器, Mod 管理器, 源码可见工具",
+      "keywords": "YimMenu 启动器, GTA V 工具, YMU, Lua 脚本加载器, Mod 管理器, 源码开放工具",
       "yimmenu_desc": "开源模组工具"
     },
     "alert_banner": {
@@ -1453,7 +1453,7 @@
       "card3_title": "Lua 脚本管理",
       "card3_desc": "无缝管理 Lua 脚本。发现新扩展，并在应用内直接启用或禁用。",
       "card4_title": "现代 UI",
-      "card4_desc": "基于 PySide6 构建的简洁直观用户界面，支持明亮和暗黑主题。",
+      "card4_desc": "基于 PySide6 构建的简洁直观用户界面，支持浅色和深色主题。",
       "card5_title": "内置帮助",
       "card5_desc": "需要帮助？每个标签页上的内置 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 按钮将指导你充分利用 YMU。",
       "card6_title": "更新提醒",
@@ -1505,7 +1505,7 @@
       "q3_answer": "我们下载部分的链接将指向官方 YimMenu-Lua GitHub 组织，这是经过验证的扩展来源。你也可以直接在 YMU 的设置标签页中管理已安装的脚本。",
       "q4_question": "YMU 安全吗？",
       "q4_answer_p1": "YMU 是源码可见的，并保持代码库整洁。",
-      "q4_answer_p2": "然而，使用第三方软件修改总是涉及技术考量。",
+      "q4_answer_p2": "然而，使用第三方软件修改总是涉及技术考虑。",
       "q4_answer_p3": "请查看 YMU 软件内的“风险”标签页。",
       "q5_question": "为什么使用 YMU 而非其他来源？",
       "q5_answer": "社区工具生态系统可能很复杂。来自论坛或克隆网站等未验证来源的下载可能包含受损或过期的文件。YMU 消除了这一变数。我们确保仅从官方 YimMenu GitHub 仓库获取 'YimMenu.dll'，以保证完整性。使用 YMU，你将获得真实、未修改的文件，确保稳定的体验。这些仓库的链接可在页脚找到。",
@@ -1528,11 +1528,11 @@
     },
     "footer_section": {
       "contact": "联系方式",
-      "project_status": "源代码可见项目。",
+      "project_status": "源码开放项目。",
       "yimmenu_sources": "YimMenu 来源",
       "disclaimer": "YMU 是一个独立的源代码可见项目，与 Rockstar Games 或 Take-Two Interactive 无关联、未获其认可或连接。所有商标均属于其各自所有者。本软件仅用于教育目的，并“按原样”分发，不提供任何保证。对于因使用 YMU 或 YimMenu 而导致的任何直接或间接后果，我们概不负责。",
       "made_with": "用心制作",
-      "by": "作者",
+      "by": "由",
       "icons": "图标",
       "fonts": "字体",
       "license_mit": "基于 MIT 许可。",
@@ -1548,7 +1548,7 @@
       "privacy_modal_intro": "您的隐私对我们很重要。以下是本网站如何使用数据的透明概览：",
       "privacy_modal_local_storage_title": "本地存储（持久）",
       "privacy_modal_local_storage_desc": "为了保存您的偏好，我们在您的浏览器本地存储中存储以下内容。此数据将保留直到您清除浏览器缓存：",
-      "privacy_modal_local_storage_item1": "<strong>主题偏好：</strong> 用于记住您的明亮或暗黑模式选择。",
+      "privacy_modal_local_storage_item1": "<strong>主题偏好：</strong> 用于记住您的浅色或深色模式选择。",
       "privacy_modal_local_storage_item2": "<strong>动画偏好：</strong> 用于记住您的动画设置。",
       "privacy_modal_local_storage_item3": "<strong>隐私同意：</strong> 用于记住您已接受此政策。",
       "privacy_modal_session_storage_title": "会话存储（临时）",
@@ -1559,6 +1559,148 @@
       "privacy_modal_analytics_desc": "为了解我们网站的使用情况，我们使用注重隐私的分析服务：",
       "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics：</strong> 为我们提供匿名、聚合的数据（如页面浏览量）。它不使用 Cookie，不跨网站追踪您，也不收集个人数据。",
       "privacy_modal_conclusion": "简而言之：我们仅使用网站功能或匿名统计所必需的数据。我们绝不会对您进行个人追踪。"
+    }
+  },
+  "zh-Hant": {
+    "page_title": "YimMenuUpdater - GTA V 模組啓動器與管理器",
+    "json_ld": {
+      "description": "YMU 是 YimMenu 的現代化一體式啓動器。它自動執行更新，將 DLL 無縫加載到遊戲環境中，並提供用於管理 Lua 腳本的流暢界面。",
+      "feature_list": "快速更新, 無縫 DLL 加載, Lua 腳本管理器, 深色/淺色主題 UI",
+      "keywords": "YimMenu 啓動器, GTA V 工具, YMU, Lua 腳本加載器, Mod 管理器, 源碼開放工具",
+      "yimmenu_desc": "開源模組工具"
+    },
+    "alert_banner": {
+      "text": "YMU v1.1.7 已發佈，GTA V 增強版現在可以穩定啓動！注意：舊版內置更新器可能無法正確替換 .exe，請下載 v1.1.7 並手動替換你的 YMU.exe。🎉"
+    },
+    "meta_description": "YMU 是 YimMenu 的終極啓動器。一鍵下載最新版本，輕鬆加載至 GTA V，並便捷管理 Lua 腳本。",
+    "nav": {
+      "features": "功能",
+      "howto": "指南",
+      "download": "下載",
+      "updates": "更新",
+      "community": "社區"
+    },
+    "animation_tooltip_text": "切換動畫",
+    "lang_toggle_aria_label": "切換語言",
+    "hero_headline": "YMU：YimMenu。簡單。最新。",
+    "hero_subheadline": "YimMenu 的智能啓動器，集成了自動更新檢測、簡化集成和 Lua 腳本管理——所有功能，一站搞定。",
+    "hero_download_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下載 YMU v1.1.7",
+    "features_section": {
+      "title": "核心功能",
+      "subtitle": "YimMenu 所需的一切，盡在此工具中。",
+      "card1_title": "始終保持最新",
+      "card1_desc": "YMU 自動驗證 YimMenu 的最新發布並通知你。輕鬆更新至最新的穩定版本。",
+      "card2_title": "無縫集成",
+      "card2_desc": "告別繁瑣的加載器。通過 YMU 界面直接啓動 GTA V 並集成 YimMenu。",
+      "card3_title": "Lua 腳本管理",
+      "card3_desc": "無縫管理 Lua 腳本。發現新擴展，並在應用內直接啓用或禁用。",
+      "card4_title": "現代 UI",
+      "card4_desc": "基於 PySide6 構建的簡潔直觀用戶界面，支持淺色和深色主題。",
+      "card5_title": "內置幫助",
+      "card5_desc": "需要幫助？每個標籤頁上的內置 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 按鈕將指導你充分利用 YMU。",
+      "card6_title": "更新提醒",
+      "card6_desc": "在應用內直接檢查 YMU 更新。一鍵即可知道你是否使用的是最新版本。"
+    },
+    "look_and_feel_section": {
+      "title": "外觀與體驗",
+      "subtitle": "現代、簡潔且可定製。"
+    },
+    "how_to_section": {
+      "title": "使用方法",
+      "subtitle": "只需幾步即可開始。",
+      "step1_title": "下載並運行",
+      "step1_desc": "下載 <mark class='code-font'>ymu.exe</mark> 並運行應用程序。",
+      "step2_desc": "使用“下載”標籤頁獲取 YimMenu 的最新版本。",
+      "step3_title": "啓動並加載",
+      "step3_desc": "前往“啓動”標籤頁。你可以直接通過 YMU 啓動 GTA V（可選），然後點擊加載 YimMenu。",
+      "additional_info": "如需更詳細的指導，請點擊 YMU 應用程序內的集成 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 幫助按鈕。"
+    },
+    "download_section": {
+      "title": "下載",
+      "card_headline": "預構建可執行文件",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下載 YMU v1.1.7",
+      "os_header": "系統：",
+      "os_info": "適用於 Windows 10 & 11",
+      "arch_header": "架構：",
+      "download_header": "下載量：",
+      "source_header": "源碼",
+      "source_stack": "技術棧：",
+      "source_tooling": "工具鏈：",
+      "source_license": "許可證：",
+      "source_version": "版本：",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>下載源代碼",
+      "lua_question": "正在尋找 Lua 腳本？",
+      "lua_subheader": "瀏覽官方社區腳本。",
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>查找 YimMenu 的 Lua 擴展"
+    },
+    "updates_section": {
+      "title": "最新更新",
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>在 GitHub 上查看完整更新日誌"
+    },
+    "faq_section": {
+      "title": "常見問題 (FAQ)",
+      "q1_question": "如何更新 YimMenu？",
+      "q1_answer": "通過 YMU 最爲簡單。在應用中前往“下載”標籤頁並選擇更新選項。YMU 會自動管理該過程，獲取並安裝最新的兼容版本。",
+      "q2_question": "如何加載 YimMenu？",
+      "q2_answer": "通過 YMU 獲取所需的 YimMenu 版本（Legacy 或 Enhanced）後，前往“啓動”標籤頁。啓動 GTA V 並一鍵執行選定的 YimMenu 版本。無需外部加載器。",
+      "q3_question": "哪裏可以找到 YimMenu 的 Lua 腳本？",
+      "q3_answer": "我們下載部分的鏈接將指向官方 YimMenu-Lua GitHub 組織，這是經過驗證的擴展來源。你也可以直接在 YMU 的設置標籤頁中管理已安裝的腳本。",
+      "q4_question": "YMU 安全嗎？",
+      "q4_answer_p1": "YMU 是源碼可見的，並保持代碼庫整潔。",
+      "q4_answer_p2": "然而，使用第三方軟件修改總是涉及技術考慮。",
+      "q4_answer_p3": "請查看 YMU 軟件內的“風險”標籤頁。",
+      "q5_question": "爲什麼使用 YMU 而非其他來源？",
+      "q5_answer": "社區工具生態系統可能很複雜。來自論壇或克隆網站等未驗證來源的下載可能包含受損或過期的文件。YMU 消除了這一變數。我們確保僅從官方 YimMenu GitHub 倉庫獲取 'YimMenu.dll'，以保證完整性。使用 YMU，你將獲得真實、未修改的文件，確保穩定的體驗。這些倉庫的鏈接可在頁腳找到。",
+      "q6_question": "我需要單獨的外部加載器嗎？",
+      "q6_answer": "不需要，YMU 設計爲綜合解決方案。它包含可靠的內置加載機制，無需使用單獨的第三方工具。YMU 獲取最新的 'YimMenu.dll' 後，你可以啓動 GTA V 並通過一次交互加載界面。這簡化了從更新到執行的工作流程。",
+      "q7_question": "如何從源碼構建 YMU？",
+      "q7_answer": "請參考我們 GitHub README 中的 <a href='https://github.com/NiiV3AU/YMU?tab=readme-ov-file#-building-from-source' target='_blank' rel='noopener'>從源碼構建</a> 部分，瞭解所有依賴項和構建說明。"
+    },
+    "community_section": {
+      "title": "加入社區",
+      "subtitle": "有想法、功能請求或發現了問題？加入討論！",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>報告問題或請求功能",
+      "discord_button": "加入我們的 Discord",
+      "support_text": "展示你的支持並幫助項目成長：",
+      "star_button": "在 GitHub 上爲我們點星"
+    },
+    "about_section": {
+      "title": "關於項目",
+      "quote": "\"起初只是一個小腳本，現已成長爲擁有千餘名用戶的強大工具。YMU 旨在簡化核心任務：更新 YimMenu、安全執行動態鏈接庫 (dll) 以及輕鬆啓用或禁用 Lua 腳本。YMU 專注於可靠性和用戶體驗，並由社區的積極參與推動。\""
+    },
+    "footer_section": {
+      "contact": "聯繫方式",
+      "project_status": "源碼開放項目。",
+      "yimmenu_sources": "YimMenu 來源",
+      "disclaimer": "YMU 是一個獨立的源代碼可見項目，與 Rockstar Games 或 Take-Two Interactive 無關聯、未獲其認可或連接。所有商標均屬於其各自所有者。本軟件僅用於教育目的，並“按原樣”分發，不提供任何保證。對於因使用 YMU 或 YimMenu 而導致的任何直接或間接後果，我們概不負責。",
+      "made_with": "用心製作",
+      "by": "由",
+      "icons": "圖標",
+      "fonts": "字體",
+      "license_mit": "基於 MIT 許可。",
+      "license_sil": "基於 SIL Open Font License 1.1。"
+    },
+    "privacy_section": {
+      "software_license": "軟件許可",
+      "website_license": "網站許可",
+      "privacy_policy": "隱私政策",
+      "cookie_banner_text": "本網站使用必要的技術數據（如您的主題偏好）和匿名分析來改善您的體驗。繼續使用本網站即表示您同意我們的 ",
+      "cookie_banner_button": "同意並繼續",
+      "privacy_modal_title": "隱私與透明度",
+      "privacy_modal_intro": "您的隱私對我們很重要。以下是本網站如何使用數據的透明概覽：",
+      "privacy_modal_local_storage_title": "本地存儲（持久）",
+      "privacy_modal_local_storage_desc": "爲了保存您的偏好，我們在您的瀏覽器本地存儲中存儲以下內容。此數據將保留直到您清除瀏覽器緩存：",
+      "privacy_modal_local_storage_item1": "<strong>主題偏好：</strong> 用於記住您的淺色或深色模式選擇。",
+      "privacy_modal_local_storage_item2": "<strong>動畫偏好：</strong> 用於記住您的動畫設置。",
+      "privacy_modal_local_storage_item3": "<strong>隱私同意：</strong> 用於記住您已接受此政策。",
+      "privacy_modal_session_storage_title": "會話存儲（臨時）",
+      "privacy_modal_session_storage_desc": "爲了核心網站功能，我們使用會話存儲。當您關閉瀏覽器標籤頁時，此數據會被自動清除：",
+      "privacy_modal_session_storage_item1": "<strong>滾動位置：</strong> 用於在切換語言時恢復您的滾動位置。",
+      "privacy_modal_session_storage_item2": "<strong>API 緩存：</strong> 用於臨時存儲 GitHub 下載計數。",
+      "privacy_modal_analytics_title": "分析",
+      "privacy_modal_analytics_desc": "爲了解我們網站的使用情況，我們使用注重隱私的分析服務：",
+      "privacy_modal_analytics_item1": "<strong>Cloudflare Web Analytics：</strong> 爲我們提供匿名、聚合的數據（如頁面瀏覽量）。它不使用 Cookie，不跨網站追蹤您，也不收集個人數據。",
+      "privacy_modal_conclusion": "簡而言之：我們僅使用網站功能或匿名統計所必需的數據。我們絕不會對您進行個人追蹤。"
     }
   },
   "ja": {

@@ -255,10 +255,28 @@ eleventyExcludeFromCollections: true
             dest = saved;
           } else {
             var browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+            var langMap = {
+              "zh-cn": "zh-Hans", "zh-sg": "zh-Hans", "zh-my": "zh-Hans",
+              "zh": "zh-Hans",
+              "zh-tw": "zh-Hant", "zh-hk": "zh-Hant", "zh-mo": "zh-Hant"
+            };
             for (var i = 0; i < browserLangs.length; i++) {
-              var code = browserLangs[i].substring(0, 2).toLowerCase();
-              if (availableLangs.includes(code)) {
-                dest = code;
+              var fullCode = browserLangs[i].toLowerCase();
+              // Try exact match first (e.g., "zh-Hans")
+              if (availableLangs.includes(fullCode)) {
+                dest = fullCode;
+                break;
+              }
+              // Try explicit language mapping (zh-CN → zh-Hans, zh-TW → zh-Hant)
+              var mapped = langMap[fullCode];
+              if (mapped && availableLangs.includes(mapped)) {
+                dest = mapped;
+                break;
+              }
+              // Fall back to 2-char prefix (e.g., "en", "de")
+              var prefix = fullCode.substring(0, 2);
+              if (availableLangs.includes(prefix)) {
+                dest = prefix;
                 break;
               }
             }
