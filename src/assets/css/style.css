@@ -57,7 +57,7 @@
   --warning-bg: #ff9800;
   --warning-text: #121212;
   --info-bg: #2196f3;
-  --info-text: #ffffff;
+  --info-text: #121212;
   color-scheme: light;
 }
 [data-theme="dark"] {
