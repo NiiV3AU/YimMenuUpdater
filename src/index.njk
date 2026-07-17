@@ -163,9 +163,15 @@ eleventyExcludeFromCollections: true
         border-color: #1a7a34;
         color: #1a7a34;
       }
+      :root[data-theme="light"] a.recommended:hover {
+        color: var(--primary-fg);
+      }
       :root[data-theme="dark"] a.recommended {
         border-color: #4caf50;
         color: #4caf50;
+      }
+      :root[data-theme="dark"] a.recommended:hover {
+        color: var(--primary-fg);
       }
 
       /* Der Punkt: Jetzt solide und nicht transparent */
