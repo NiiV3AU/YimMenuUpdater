@@ -248,8 +248,6 @@
           onOverlay() || clean();
         });
       })();
-      /* Language bar toggle. A real <button> gets a native :focus-visible ring
-         (keyboard only), so CSS handles focus and JS only drives open/close. */
       (function () {
         const toggle = $(".lang-toggle"),
           bar = $("#lang-bar");

@@ -70,8 +70,6 @@
   --text-primary: #e0e0e0;
   --text-secondary: #8b8b8b;
   --text-muted: #777777;
-  /* A drop shadow on a near-black surface is invisible, so cards stay flat in
-     dark (mirrors the app's light-only card elevation). */
   --card-shadow: none;
   --glow-color-rgb: 93, 93, 93;
   --danger: #e84555;
@@ -149,8 +147,6 @@ button:focus-visible {
 .section-padding {
   padding-bottom: 5rem;
 }
-/* Gallery and How-To get extra breathing room on top of the .flow default;
-   Download onward stays on the base rhythm, it already reads well as-is. */
 #look-and-feel,
 #how-to {
   margin-top: 8rem;
@@ -288,7 +284,6 @@ a {
 
 .alert-icon {
   flex-shrink: 0;
-  /* margin-top: 2px; */
 }
 
 .alert-close {
@@ -468,7 +463,6 @@ a {
   color: var(--text-primary);
   filter: drop-shadow(0 0 10px rgba(var(--glow-color-rgb), 1));
 }
-/* Social icons inside mobile nav dropdown */
 .nav-icons {
   display: none;
 }
@@ -710,7 +704,6 @@ a {
   transform: scale(0.9);
   transition: transform 0.1s ease;
 }
-/* Allow lang-toggle to accommodate longer codes (ZH-HANS, ZH-HANT) */
 .lang-toggle {
   width: auto;
   min-width: 40px;
@@ -769,13 +762,10 @@ a {
   background-color: var(--text-primary);
 }
 
-/* Native focus ring: :focus-visible on a real <button> shows the ring only for
-   keyboard focus, not pointer clicks — no JS modality tracking needed. */
 .lang-toggle:focus-visible {
   outline: 2px solid var(--primary);
   outline-offset: 2px;
 }
-/* ===== Language Bar (slide-in under nav) ===== */
 .lang-bar {
   position: absolute;
   left: 0;
@@ -799,7 +789,6 @@ a {
     max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
     visibility 0s 0s;
 }
-/* Toggle active state when bar is open */
 .header-sticky:has(.lang-toggle[aria-expanded="true"]) .lang-toggle {
   color: var(--text-primary);
   border-color: var(--text-primary);
@@ -1064,8 +1053,6 @@ a {
 .faq-answer {
   padding: 0 1.5rem 1rem;
 }
-/* Fallback (Firefox/Safari without ::details-content): the content box appears
-   instantly, only the inner text slides/fades in. */
 details[open] > .changelog-details,
 details[open] > .faq-answer {
   animation: ymu-details-open 0.35s cubic-bezier(0.25, 1, 0.5, 1);
@@ -1080,9 +1067,6 @@ details[open] > .faq-answer {
     transform: translateY(0);
   }
 }
-/* Progressive enhancement (Chromium 131+): animate the real content height, so
-   tall entries reveal smoothly instead of popping in. Duration is fixed, but the
-   ease-out curve keeps long bodies from snapping open at the end. */
 :root {
   interpolate-size: allow-keywords;
 }
@@ -1157,16 +1141,25 @@ details[open] > .faq-answer {
     padding: 1.5rem;
   }
   .nav-main {
-    display: none;
     position: absolute;
     top: 100%;
     left: 0;
     right: 0;
     background-color: var(--surface);
     border-bottom: 1px solid var(--border-color);
+    max-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+    transition:
+      max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      visibility 0s 0.3s;
   }
   .nav-main.is-open {
-    display: block;
+    max-height: 500px;
+    visibility: visible;
+    transition:
+      max-height 0.3s cubic-bezier(0.25, 1, 0.5, 1),
+      visibility 0s 0s;
   }
   .nav-links {
     flex-direction: column;
@@ -1643,8 +1636,6 @@ section[id] {
   flex: 1 1 auto;
   min-width: 0;
 }
-/* VirusTotal: a calm badge/link (no button jelly/shimmer), themed like the
-   rest of the UI, with only VirusTotal's brand blue borrowed as the accent. */
 .vt-badge {
   display: inline-flex;
   align-items: center;
@@ -1676,11 +1667,6 @@ section[id] {
   background-color: var(--surface);
 }
 
-/* SHA-256: muted by default, middle-truncated (first/last 8 chars) by JS,
-   reveals on hover, and copies on click. */
-/* Full-width divider above the SHA row: negative side margins cancel the
-   inner-card padding so the line meets the card's borders edge to edge, in the
-   same colour/weight as the border it mimics. */
 .sha-row {
   border-top: 1px solid var(--border-color);
   margin-top: 0.25rem;
@@ -1755,8 +1741,6 @@ section[id] {
   visibility: visible;
   transform: translate(-50%, 0);
 }
-/* Source card: the two lower links sit in one row spread across the button's
-   width, reducing the horizontal gap to the card edges. */
 .source-links {
   display: flex;
   justify-content: space-between;
@@ -1779,7 +1763,6 @@ section[id] {
   flex-shrink: 0;
   transition: transform 0.2s ease;
 }
-/* → rotates to ↗ (up-right) on hover to signal "opens externally". */
 .source-links a:hover svg {
   transform: rotate(-45deg);
 }
