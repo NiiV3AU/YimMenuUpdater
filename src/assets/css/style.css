@@ -1676,8 +1676,8 @@ section[id] {
   background-color: var(--surface);
 }
 
-/* SHA-256: muted by default, shows as much as fits (more on desktop), reveals
-   on hover, and copies on click. */
+/* SHA-256: muted by default, middle-truncated (first/last 8 chars) by JS,
+   reveals on hover, and copies on click. */
 /* Full-width divider above the SHA row: negative side margins cancel the
    inner-card padding so the line meets the card's borders edge to edge, in the
    same colour/weight as the border it mimics. */

@@ -1224,7 +1224,9 @@ permalink: "/{{ lang.code }}/"
             var m = (d.body || "").match(/\b[a-fA-F0-9]{64}\b/);
             if (!m) return;
             var sha = m[0].toLowerCase();
-            shaEl.textContent = sha;
+            var keep = 8;
+            shaEl.textContent =
+              sha.length > keep * 2 + 1 ? sha.slice(0, keep) + "…" + sha.slice(-keep) : sha;
             shaEl.setAttribute("data-sha", sha);
             if (vtBtn) vtBtn.href = "https://www.virustotal.com/gui/file/" + sha;
           })
