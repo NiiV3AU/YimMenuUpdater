@@ -1,56 +1,56 @@
 {
-    "items": [
-        {
-            "code": "en",
-            "label": "English"
-        },
-        {
-            "code": "de",
-            "label": "Deutsch"
-        },
-        {
-            "code": "nl",
-            "label": "Nederlands"
-        },
-        {
-            "code": "fr",
-            "label": "Français"
-        },
-        {
-            "code": "es",
-            "label": "Español"
-        },
-        {
-            "code": "pt",
-            "label": "Português (BR)"
-        },
-        {
-            "code": "pl",
-            "label": "Polski"
-        },
-        {
-            "code": "ru",
-            "label": "Русский"
-        },
-        {
-            "code": "uk",
-            "label": "Українська"
-        },
-        {
-            "code": "tr",
-            "label": "Türkçe"
-        },
-        {
-            "code": "zh-Hans",
-            "label": "简体中文"
-        },
-        {
-            "code": "zh-Hant",
-            "label": "繁體中文"
-        },
-        {
-            "code": "ja",
-            "label": "日本語"
-        }
-    ]
+  "items": [
+    {
+      "code": "en",
+      "label": "English"
+    },
+    {
+      "code": "de",
+      "label": "Deutsch"
+    },
+    {
+      "code": "nl",
+      "label": "Nederlands"
+    },
+    {
+      "code": "fr",
+      "label": "Français"
+    },
+    {
+      "code": "es",
+      "label": "Español"
+    },
+    {
+      "code": "pt",
+      "label": "Português (BR)"
+    },
+    {
+      "code": "pl",
+      "label": "Polski"
+    },
+    {
+      "code": "ru",
+      "label": "Русский"
+    },
+    {
+      "code": "uk",
+      "label": "Українська"
+    },
+    {
+      "code": "tr",
+      "label": "Türkçe"
+    },
+    {
+      "code": "zh-Hans",
+      "label": "简体中文"
+    },
+    {
+      "code": "zh-Hant",
+      "label": "繁體中文"
+    },
+    {
+      "code": "ja",
+      "label": "日本語"
+    }
+  ]
 }
