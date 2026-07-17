@@ -149,6 +149,12 @@ button:focus-visible {
 .section-padding {
   padding-bottom: 5rem;
 }
+/* Gallery and How-To get extra breathing room on top of the .flow default;
+   Download onward stays on the base rhythm, it already reads well as-is. */
+#look-and-feel,
+#how-to {
+  margin-top: 8rem;
+}
 h1,
 h2,
 h3,
@@ -475,14 +481,20 @@ a {
   text-decoration: none;
   font-weight: 700;
   border-radius: 6px;
-  transition: color 0.2s ease, background-color 0.2s ease;
+  transition:
+    color 0.2s ease,
+    background-color 0.2s ease;
 }
 .nav-icons a:hover {
   color: var(--text-primary);
   background-color: var(--panel);
 }
 .hero-section {
-  padding: 5rem 0 3rem;
+  min-height: 52vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3rem 0;
 }
 .hero-section .container.flow > * + * {
   margin-top: 2rem;
@@ -784,7 +796,7 @@ a {
   max-height: 250px;
   visibility: visible;
   transition:
-    max-height 0.5s cubic-bezier(0.25, 1, 0.5, 1),
+    max-height 0.4s cubic-bezier(0.25, 1, 0.5, 1),
     visibility 0s 0s;
 }
 /* Toggle active state when bar is open */
@@ -1131,6 +1143,14 @@ details[open] > .faq-answer {
     font-size: 1.75rem;
   }
   .section-padding {
+    padding: 3rem 0;
+  }
+  #look-and-feel,
+  #how-to {
+    margin-top: 5rem;
+  }
+  .hero-section {
+    min-height: 62vh;
     padding: 3rem 0;
   }
   .card {
