@@ -1095,6 +1095,23 @@ permalink: "/{{ lang.code }}/"
           &nbsp;&nbsp;|&nbsp;&nbsp;
           <a href="#privacy-modal" id="privacy-policy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>
         </div>
+        <div class="footer-links footer-scores">
+          <a
+            href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fymu.pages.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Lighthouse: Performance / Accessibility / Best Practices / SEO"
+            aria-label="Lighthouse scores for ymu.pages.dev"
+            >Lighthouse {{ scores.performance }}&middot;{{ scores.accessibility }}&middot;{{ scores.bestPractices }}&middot;{{ scores.seo }}</a>
+          &nbsp;&nbsp;|&nbsp;&nbsp;
+          <a
+            href="https://score.motion.dev/site/ymu.pages.dev"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="MotionScore"
+            aria-label="MotionScore for ymu.pages.dev"
+            >MotionScore {{ scores.motion }}</a>
+        </div>
         <div class="footer-copyright">
           <p>
             &copy; 2024-2026 YMU - {{ locales[lang.code].footer_section.made_with }}
