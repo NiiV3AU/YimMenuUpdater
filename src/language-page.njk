@@ -72,7 +72,7 @@ permalink: "/{{ lang.code }}/"
           "priceCurrency": "EUR"
         },
         "description": "{{ locales[lang.code].json_ld.description }}",
-        "softwareVersion": "1.1.7",
+        "softwareVersion": "1.1.8",
         "author": {
           "@type": "Person",
           "name": "NiiV3AU",
@@ -117,7 +117,7 @@ permalink: "/{{ lang.code }}/"
       (function() {
           const alertBanner = document.getElementById('alert-banner');
           const closeBtn = document.getElementById('alert-close-btn');
-          const bannerId = 'ymu-alert-v1-1-7-release';
+          const bannerId = 'ymu-alert-v1-1-8-release';
           if (!localStorage.getItem(bannerId)) {
               alertBanner.style.display = 'block';
           }
@@ -703,7 +703,7 @@ permalink: "/{{ lang.code }}/"
                 id="download-btn-main">
                 {{ locales[lang.code].download_section.main_button | safe }}
               </a>
-              <a href="https://www.virustotal.com/gui/file/7925f2d9faddaa72d54005bdff507522c1b1214760847629abbd5444eb39d548"
+              <a href="https://www.virustotal.com/gui/file/7c09b8c3c2031536fcdb6b8cdeb74c8745fa9221c6559a7f87b225a3d03d6ecc"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="vt-badge"
@@ -787,6 +787,30 @@ permalink: "/{{ lang.code }}/"
           <div class="changelog-list">
           <details class="changelog-item">
               <summary class="changelog-summary">
+                <span class="changelog-version">v1.1.8</span>
+                <span class="changelog-description"
+                  >- Reliability &amp; Clarity</span
+                >
+                <span class="changelog-date"
+                  ><mark class="code-font">Jul 21, 2026</mark></span
+                >
+              </summary>
+              <div class="changelog-details">
+                <div class="details-content-wrapper">
+                  <p>
+                    Fixes injection failing when your install path contains
+                    accented or non-ASCII characters (e.g.
+                    "M<strong>ü</strong>ller" or a Cyrillic user name). Injection
+                    errors are now shown in plain language with one-click fixes,
+                    plus a non-blocking BattlEye warning, a pre-injection DLL
+                    check, and a Start button that recovers when a launch never
+                    completes.
+                  </p>
+                </div>
+              </div>
+            </details>
+            <details class="changelog-item">
+              <summary class="changelog-summary">
                 <span class="changelog-version">v1.1.7</span>
                 <span class="changelog-description"
                   >- Compatibility, Customizability &amp; Bugfixes</span
@@ -798,7 +822,7 @@ permalink: "/{{ lang.code }}/"
               <div class="changelog-details">
                 <div class="details-content-wrapper">
                   <p>
-                    The headline fix: GTA V <strong>Enhanced</strong> is
+                    GTA V <strong>Enhanced</strong> is
                     reliably detected again and launches through YMU. On top of
                     that, v1.1.7 adds a Legacy/Enhanced switch, custom GTA&nbsp;V
                     install-path and custom-DLL support, and remembers your

@@ -8,7 +8,7 @@
       "yimmenu_desc": "Open Source Modding Tool"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 is out, and GTA V Enhanced launches reliably again! Heads up: the old in-app self-updater may not swap the .exe cleanly, so please download v1.1.7 and replace your YMU.exe manually. 🎉"
+      "text": "YMU v1.1.8 is out: injection now works even when your install path contains accented or non-ASCII characters, plus clearer error messages and one-click fixes. Updating is manual — grab the latest YMU.exe and replace your old one; your settings and DLLs are kept."
     },
     "meta_description": "YMU is the ultimate launchpad for YimMenu. Seamlessly download the latest version, load it into GTA V with a few clicks, manage your Lua scripts, and much more.",
     "nav": {
@@ -56,7 +56,7 @@
     "download_section": {
       "title": "Download",
       "card_headline": "Prebuilt Executable",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.8",
       "os_header": "OS:",
       "os_info": "For Windows 10 & 11",
       "arch_header": "Architecture:",
@@ -150,7 +150,7 @@
       "yimmenu_desc": "Open Source Modding Tool"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 ist da, und die GTA V Enhanced-Version startet wieder zuverlässig! Hinweis: Der alte In-App-Updater ersetzt die .exe evtl. nicht sauber. Bitte lade v1.1.7 herunter und ersetze deine YMU.exe manuell. 🎉"
+      "text": "YMU v1.1.8 ist da: Die Injection funktioniert jetzt auch, wenn dein Installationspfad akzentuierte oder Nicht-ASCII-Zeichen enthält – dazu klar verständliche Fehlermeldungen und Ein-Klick-Lösungen. Updaten ist manuell: Lade die neueste YMU.exe herunter und ersetze deine alte; deine Einstellungen und DLLs bleiben erhalten."
     },
     "meta_description": "YMU ist der ultimative Launcher für YimMenu. Lade die aktuellste Version herunter, injecte sie mit wenigen Klicks in GTA V, verwalte deine Lua-Skripte und mehr.",
     "nav": {
@@ -198,7 +198,7 @@
     "download_section": {
       "title": "Download",
       "card_headline": "Vorgefertigte Anwendung",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.7 herunterladen",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.8 herunterladen",
       "os_header": "OS:",
       "os_info": "Für Windows 10 & 11",
       "arch_header": "Architektur:",
@@ -292,7 +292,7 @@
       "yimmenu_desc": "Open Source Modding Tool"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 is uit en GTA V Enhanced start weer betrouwbaar! Let op: de oude ingebouwde updater vervangt de .exe mogelijk niet netjes. Download v1.1.7 en vervang je YMU.exe handmatig. 🎉"
+      "text": "YMU v1.1.8 is uit: injectie werkt nu ook als je installatiepad accenttekens of niet-ASCII-tekens bevat, met duidelijkere foutmeldingen en oplossingen in één klik. Updaten gaat handmatig: download de nieuwste YMU.exe en vervang je oude; je instellingen en DLL's blijven behouden."
     },
     "meta_description": "YMU is dé ultieme launcher voor YimMenu. Download eenvoudig de nieuwste versie, injecteer deze in GTA V met een paar klikken, beheer je Lua-scripts en nog meer.",
     "nav": {
@@ -340,7 +340,7 @@
     "download_section": {
       "title": "Download",
       "card_headline": "Kant-en-klare applicatie",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.8",
       "os_header": "OS:",
       "os_info": "Voor Windows 10 & 11",
       "arch_header": "Architectuur:",
@@ -434,7 +434,7 @@
       "yimmenu_desc": "Outil de Modding Open Source"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 est disponible, et GTA V Enhanced se lance à nouveau de façon fiable ! À noter : l'ancien système de mise à jour intégré peut ne pas remplacer le .exe correctement. Télécharge v1.1.7 et remplace ton YMU.exe manuellement. 🎉"
+      "text": "YMU v1.1.8 est disponible : l'injection fonctionne désormais même si ton chemin d'installation contient des caractères accentués ou non-ASCII, avec des messages d'erreur plus clairs et des corrections en un clic. La mise à jour est manuelle : télécharge la dernière YMU.exe et remplace l'ancienne ; tes paramètres et tes DLL sont conservés."
     },
     "meta_description": "YMU est le lanceur ultime pour YimMenu. Télécharge sans effort la dernière version, charge-la dans GTA V en quelques clics, gère tes scripts Lua et plus encore.",
     "nav": {
@@ -482,7 +482,7 @@
     "download_section": {
       "title": "Télécharger",
       "card_headline": "Exécutable pré-compilé",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.8",
       "os_header": "OS :",
       "os_info": "Pour Windows 10 & 11",
       "arch_header": "Architecture :",
@@ -576,7 +576,7 @@
       "yimmenu_desc": "Herramienta de Modding Open Source"
     },
     "alert_banner": {
-      "text": "¡YMU v1.1.7 ya está aquí y la versión Enhanced de GTA V vuelve a iniciarse de forma fiable! Aviso: el antiguo actualizador integrado puede no reemplazar el .exe correctamente. Descarga v1.1.7 y reemplaza tu YMU.exe manualmente. 🎉"
+      "text": "¡YMU v1.1.8 ya está aquí! La inyección ahora funciona aunque tu ruta de instalación tenga caracteres acentuados o no ASCII, con mensajes de error más claros y soluciones con un clic. La actualización es manual: descarga la última YMU.exe y reemplaza la anterior; tus ajustes y DLL se conservan."
     },
     "meta_description": "YMU es la plataforma de lanzamiento definitiva para YimMenu. Descarga la última versión sin esfuerzo, cárgala en GTA V con unos pocos clics, gestiona tus scripts Lua y mucho más.",
     "nav": {
@@ -624,7 +624,7 @@
     "download_section": {
       "title": "Descarga",
       "card_headline": "Ejecutable precompilado",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.8",
       "os_header": "SO:",
       "os_info": "Para Windows 10 y 11",
       "arch_header": "Arquitectura:",
@@ -718,7 +718,7 @@
       "yimmenu_desc": "Ferramenta de Modding Open Source"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 chegou, e a versão Enhanced do GTA V volta a iniciar de forma confiável! Atenção: o antigo atualizador interno pode não substituir o .exe corretamente. Baixe a v1.1.7 e substitua o seu YMU.exe manualmente. 🎉"
+      "text": "YMU v1.1.8 chegou: a injeção agora funciona mesmo quando o seu caminho de instalação tem caracteres acentuados ou não ASCII, com mensagens de erro mais claras e correções com um clique. A atualização é manual: baixe a YMU.exe mais recente e substitua a antiga; as suas configurações e DLLs são mantidas."
     },
     "meta_description": "O YMU é o launcher definitivo para o YimMenu. Baixe a versão mais recente, carregue-a no GTA V com poucos cliques, gerencie seus scripts Lua e muito mais.",
     "nav": {
@@ -766,7 +766,7 @@
     "download_section": {
       "title": "Download",
       "card_headline": "Executável pré-compilado",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.8",
       "os_header": "SO:",
       "os_info": "Para Windows 10 e 11",
       "arch_header": "Arquitetura:",
@@ -860,7 +860,7 @@
       "yimmenu_desc": "Narzędzie Moddingowe Open Source"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 już jest, a wersja Enhanced GTA V znów niezawodnie się uruchamia! Uwaga: stary wbudowany aktualizator może nie podmienić pliku .exe poprawnie. Pobierz v1.1.7 i ręcznie zastąp swój plik YMU.exe. 🎉"
+      "text": "YMU v1.1.8 już jest: wstrzykiwanie działa teraz nawet wtedy, gdy ścieżka instalacji zawiera znaki akcentowane lub spoza ASCII, wraz z czytelniejszymi komunikatami o błędach i poprawkami jednym kliknięciem. Aktualizacja jest ręczna: pobierz najnowszy plik YMU.exe i zastąp stary; twoje ustawienia i pliki DLL zostają zachowane."
     },
     "meta_description": "YMU to najlepszy launcher dla YimMenu. Pobierz najnowszą wersję, wstrzyknij ją do GTA V kilkoma kliknięciami, zarządzaj skryptami Lua i wiele więcej.",
     "nav": {
@@ -908,7 +908,7 @@
     "download_section": {
       "title": "Pobierz",
       "card_headline": "Gotowa aplikacja",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.8",
       "os_header": "System:",
       "os_info": "Dla Windows 10 i 11",
       "arch_header": "Architektura:",
@@ -1002,7 +1002,7 @@
       "yimmenu_desc": "Инструмент для моддинга с открытым кодом"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 вышел, и Enhanced-версия GTA V снова стабильно запускается! Внимание: старый встроенный апдейтер может некорректно заменить .exe. Скачай v1.1.7 и замени YMU.exe вручную. 🎉"
+      "text": "YMU v1.1.8 вышел: инъекция теперь работает, даже если путь установки содержит диакритические или не-ASCII символы, а сообщения об ошибках стали понятнее и снабжены исправлениями в один клик. Обновление вручную: скачай последнюю YMU.exe и замени старую; твои настройки и DLL сохраняются."
     },
     "meta_description": "YMU — это идеальный лаунчер для YimMenu. Скачивай последнюю версию, загружай её в GTA V парой кликов, управляй скриптами Lua и многое другое.",
     "nav": {
@@ -1050,7 +1050,7 @@
     "download_section": {
       "title": "Скачать",
       "card_headline": "Готовый исполняемый файл",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.8",
       "os_header": "ОС:",
       "os_info": "Для Windows 10 и 11",
       "arch_header": "Архитектура:",
@@ -1144,7 +1144,7 @@
       "yimmenu_desc": "Інструмент для моддингу з відкритим кодом"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 вже тут, і Enhanced-версія GTA V знову стабільно запускається! Увага: старий вбудований оновлювач може некоректно замінити .exe. Завантаж v1.1.7 і заміни YMU.exe вручну. 🎉"
+      "text": "YMU v1.1.8 вже тут: ін'єкція тепер працює, навіть якщо шлях встановлення містить діакритичні або не-ASCII символи, разом із зрозумілішими повідомленнями про помилки та виправленнями в один клік. Оновлення вручну: завантаж найновішу YMU.exe і заміни стару; твої налаштування та DLL зберігаються."
     },
     "meta_description": "YMU — це ідеальний лаунчер для YimMenu. Легко завантажуй останню версію, запускай її в GTA V у кілька кліків, керуй Lua-скриптами та багато іншого.",
     "nav": {
@@ -1192,7 +1192,7 @@
     "download_section": {
       "title": "Завантажити",
       "card_headline": "Готовий виконуваний файл",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.8",
       "os_header": "ОС:",
       "os_info": "Для Windows 10 та 11",
       "arch_header": "Архітектура:",
@@ -1286,7 +1286,7 @@
       "yimmenu_desc": "Açık Kaynak Modlama Aracı"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 çıktı ve GTA V Enhanced sürümü artık yeniden güvenilir şekilde başlıyor! Not: Eski uygulama içi güncelleyici .exe dosyasını düzgün değiştirmeyebilir. Lütfen v1.1.7'yi indirip YMU.exe dosyanı elle değiştir. 🎉"
+      "text": "YMU v1.1.8 çıktı: kurulum yolunuz aksanlı veya ASCII olmayan karakterler içerse bile enjeksiyon artık çalışıyor; ayrıca daha anlaşılır hata mesajları ve tek tıkla çözümler geldi. Güncelleme elle yapılır: en yeni YMU.exe'yi indirip eskisiyle değiştir; ayarların ve DLL'lerin korunur."
     },
     "meta_description": "YMU, YimMenu için nihai başlatıcısıdır. En son sürümü sorunsuz indir, GTA V'ye birkaç tıkla yükle, Lua scriptlerini yönet ve çok daha fazlasını yap.",
     "nav": {
@@ -1334,7 +1334,7 @@
     "download_section": {
       "title": "İndir",
       "card_headline": "Hazır Uygulama",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.7'yi İndir",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.8'yi İndir",
       "os_header": "İşletim Sistemi:",
       "os_info": "Windows 10 & 11 için",
       "arch_header": "Mimari:",
@@ -1428,7 +1428,7 @@
       "yimmenu_desc": "开源模组工具"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 已发布，GTA V 增强版现在又能稳定启动了！注意：旧版内置更新器可能无法正确替换 .exe，请下载 v1.1.7 并手动替换你的 YMU.exe。🎉"
+      "text": "YMU v1.1.8 已发布：即使安装路径包含带重音或非 ASCII 字符，现在注入也能正常工作，还带来了更清晰的错误提示和一键修复。更新需手动进行：下载最新的 YMU.exe 并替换旧版本；你的设置和 DLL 都会保留。"
     },
     "meta_description": "YMU 是 YimMenu 的终极启动器。一键下载最新版本，轻松加载至 GTA V，并便捷管理 Lua 脚本。",
     "nav": {
@@ -1476,7 +1476,7 @@
     "download_section": {
       "title": "下载",
       "card_headline": "预构建可执行文件",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.8",
       "os_header": "系统：",
       "os_info": "适用于 Windows 10 & 11",
       "arch_header": "架构：",
@@ -1570,7 +1570,7 @@
       "yimmenu_desc": "開源模組工具"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 已發佈，GTA V 增強版現在可以穩定啟動！注意：舊版內建更新器可能無法正確替換 .exe，請下載 v1.1.7 並手動替換你的 YMU.exe。🎉"
+      "text": "YMU v1.1.8 已發佈：即使安裝路徑包含帶重音或非 ASCII 字元，現在注入也能正常運作，並帶來更清楚的錯誤提示與一鍵修復。更新需手動進行：下載最新的 YMU.exe 並替換舊版本；你的設定和 DLL 都會保留。"
     },
     "meta_description": "YMU 是 YimMenu 的終極啟動器。一鍵下載最新版本，輕鬆載入至 GTA V，並便捷管理 Lua 腳本。",
     "nav": {
@@ -1618,7 +1618,7 @@
     "download_section": {
       "title": "下載",
       "card_headline": "預構建可執行檔案",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下載 YMU v1.1.7",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下載 YMU v1.1.8",
       "os_header": "系統：",
       "os_info": "適用於 Windows 10 & 11",
       "arch_header": "架構：",
@@ -1712,7 +1712,7 @@
       "yimmenu_desc": "オープンソースModツール"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7 が公開されました。GTA V Enhanced 版が再び安定して起動します！ご注意：旧バージョンのアプリ内アップデーターは .exe を正しく置き換えられない場合があります。v1.1.7 をダウンロードし、YMU.exe を手動で置き換えてください。🎉"
+      "text": "YMU v1.1.8 が公開されました：インストールパスにアクセント付き文字や非 ASCII 文字が含まれていても、インジェクションが正しく動作するようになりました。さらに分かりやすいエラーメッセージとワンクリック修正も追加。アップデートは手動です：最新の YMU.exe をダウンロードして古いものと置き換えてください。設定と DLL は保持されます。"
     },
     "meta_description": "YMUはYimMenuのための究極のランチャーです。最新版をスムーズにダウンロードし、数クリックでGTA Vにロード、Luaスクリプトの管理などが可能です。",
     "nav": {
@@ -1760,7 +1760,7 @@
     "download_section": {
       "title": "ダウンロード",
       "card_headline": "ビルド済み実行ファイル",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.7をダウンロード",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.8をダウンロード",
       "os_header": "対応OS：",
       "os_info": "Windows 10 & 11 用",
       "arch_header": "アーキテクチャ：",
@@ -1854,7 +1854,7 @@
       "yimmenu_desc": "오픈소스 모딩 도구"
     },
     "alert_banner": {
-      "text": "YMU v1.1.7이 출시되어, GTA V Enhanced가 다시 안정적으로 실행돼요! 잠깐, 확인해 주세요: 기존 앱 내 자동 업데이터는 .exe 파일을 깔끔하게 교체하지 못할 수 있으니, v1.1.7을 다운로드한 후 YMU.exe를 직접 교체해 주세요. 🎉"
+      "text": "YMU v1.1.8이 출시됐어요: 설치 경로에 악센트 문자나 비 ASCII 문자가 있어도 이제 인젝션이 정상 작동해요. 더 명확한 오류 메시지와 원클릭 해결도 추가됐어요. 업데이트는 수동이에요: 최신 YMU.exe를 내려받아 기존 파일을 교체해 주세요. 설정과 DLL은 그대로 유지돼요."
     },
     "meta_description": "YMU는 YimMenu를 위한 궁극의 런처입니다. 최신 버전을 매끄럽게 다운로드하고, 몇 번의 클릭만으로 GTA V에 로드하며, Lua 스크립트를 관리하는 등 다양한 기능을 이용할 수 있습니다.",
     "nav": {
@@ -1902,7 +1902,7 @@
     "download_section": {
       "title": "다운로드",
       "card_headline": "사전 빌드된 실행 파일",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.7 다운로드",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.8 다운로드",
       "os_header": "OS:",
       "os_info": "Windows 10 & 11용",
       "arch_header": "아키텍처:",
