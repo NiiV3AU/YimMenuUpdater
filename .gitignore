@@ -4,3 +4,4 @@ _site/
 .env
 .wrangler/
 .wrangler/env
+bun.lock

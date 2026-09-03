@@ -72,7 +72,7 @@ permalink: "/{{ lang.code }}/"
           "priceCurrency": "EUR"
         },
         "description": "{{ locales[lang.code].json_ld.description }}",
-        "softwareVersion": "1.1.9",
+        "softwareVersion": "1.1.10",
         "author": {
           "@type": "Person",
           "name": "NiiV3AU",
@@ -117,7 +117,7 @@ permalink: "/{{ lang.code }}/"
       (function() {
           const alertBanner = document.getElementById('alert-banner');
           const closeBtn = document.getElementById('alert-close-btn');
-          const bannerId = 'ymu-alert-v1-1-9-release';
+          const bannerId = 'ymu-alert-v1-1-10-release';
           if (!localStorage.getItem(bannerId)) {
               alertBanner.style.display = 'block';
           }
@@ -736,7 +736,7 @@ permalink: "/{{ lang.code }}/"
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_version }}</span>
-                <span class="inner-value">v1.1.9</span>
+                <span class="inner-value">v1.1.10</span>
               </div>
             </div>
             <div class="action-wrapper">
@@ -785,6 +785,24 @@ permalink: "/{{ lang.code }}/"
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].updates_section.title }}</h2>
           <div class="changelog-list">
+            <details class="changelog-item">
+              <summary class="changelog-summary">
+                <span class="changelog-version">v1.1.10</span>
+                <span class="changelog-description"
+                  >- In-App Restart Hotfix</span
+                >
+                <span class="changelog-date"
+                  ><mark class="code-font">Sep 03, 2026</mark></span
+                >
+              </summary>
+              <div class="changelog-details">
+                <div class="details-content-wrapper">
+                  <p>
+                    Targeted hotfix resolving an issue where restarting YMU from within the application (e.g. after language changes or translation updates) caused SSL and network connection failures.
+                  </p>
+                </div>
+              </div>
+            </details>
             <details class="changelog-item">
               <summary class="changelog-summary">
                 <span class="changelog-version">v1.1.9</span>
