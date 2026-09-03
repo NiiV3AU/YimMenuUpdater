@@ -72,7 +72,7 @@ permalink: "/{{ lang.code }}/"
           "priceCurrency": "EUR"
         },
         "description": "{{ locales[lang.code].json_ld.description }}",
-        "softwareVersion": "1.1.8",
+        "softwareVersion": "1.1.9",
         "author": {
           "@type": "Person",
           "name": "NiiV3AU",
@@ -99,7 +99,7 @@ permalink: "/{{ lang.code }}/"
     </script>
   </head>
   <body>
-  <div id="alert-banner" class="alert-banner info-mode" role="alert" style="display: none;">
+  {# <div id="alert-banner" class="alert-banner info-mode" role="alert" style="display: none;">
     <div class="container alert-container">
       <div class="alert-content">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" class="alert-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
@@ -129,7 +129,7 @@ permalink: "/{{ lang.code }}/"
           }
       })();
     </script>
-  </div>
+  </div> #}
     <header class="header-sticky">
       <div class="container header-container">
         <div class="logo">
@@ -736,7 +736,7 @@ permalink: "/{{ lang.code }}/"
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_version }}</span>
-                <span class="inner-value">v1.1.8</span>
+                <span class="inner-value">v1.1.9</span>
               </div>
             </div>
             <div class="action-wrapper">
@@ -785,6 +785,24 @@ permalink: "/{{ lang.code }}/"
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].updates_section.title }}</h2>
           <div class="changelog-list">
+                      <details class="changelog-item">
+              <summary class="changelog-summary">
+                <span class="changelog-version">v1.1.9</span>
+                <span class="changelog-description"
+                  >- Quality of Life &amp; Precision</span
+                >
+                <span class="changelog-date"
+                  ><mark class="code-font">Sep 03, 2026</mark></span
+                >
+              </summary>
+              <div class="changelog-details">
+                <div class="details-content-wrapper">
+                  <p>
+                    Real-time in-memory module verification, auto-close after successful injection, audio feedback chimes, one-click -nobattleye commandline helper, full keyboard navigation & focus overhaul, and hardened notification lifecycle.
+                  </p>
+                </div>
+              </div>
+            </details>
           <details class="changelog-item">
               <summary class="changelog-summary">
                 <span class="changelog-version">v1.1.8</span>

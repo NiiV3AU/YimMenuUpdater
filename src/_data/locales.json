@@ -56,7 +56,7 @@
     "download_section": {
       "title": "Download",
       "card_headline": "Prebuilt Executable",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.9",
       "os_header": "OS:",
       "os_info": "For Windows 10 & 11",
       "arch_header": "Architecture:",
@@ -198,7 +198,7 @@
     "download_section": {
       "title": "Download",
       "card_headline": "Vorgefertigte Anwendung",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.8 herunterladen",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.9 herunterladen",
       "os_header": "OS:",
       "os_info": "Für Windows 10 & 11",
       "arch_header": "Architektur:",
@@ -340,7 +340,7 @@
     "download_section": {
       "title": "Download",
       "card_headline": "Kant-en-klare applicatie",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.9",
       "os_header": "OS:",
       "os_info": "Voor Windows 10 & 11",
       "arch_header": "Architectuur:",
@@ -482,7 +482,7 @@
     "download_section": {
       "title": "Télécharger",
       "card_headline": "Exécutable pré-compilé",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.9",
       "os_header": "OS :",
       "os_info": "Pour Windows 10 & 11",
       "arch_header": "Architecture :",
@@ -624,7 +624,7 @@
     "download_section": {
       "title": "Descarga",
       "card_headline": "Ejecutable precompilado",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.9",
       "os_header": "SO:",
       "os_info": "Para Windows 10 y 11",
       "arch_header": "Arquitectura:",
@@ -766,7 +766,7 @@
     "download_section": {
       "title": "Download",
       "card_headline": "Executável pré-compilado",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.9",
       "os_header": "SO:",
       "os_info": "Para Windows 10 e 11",
       "arch_header": "Arquitetura:",
@@ -908,7 +908,7 @@
     "download_section": {
       "title": "Pobierz",
       "card_headline": "Gotowa aplikacja",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.9",
       "os_header": "System:",
       "os_info": "Dla Windows 10 i 11",
       "arch_header": "Architektura:",
@@ -1050,7 +1050,7 @@
     "download_section": {
       "title": "Скачать",
       "card_headline": "Готовый исполняемый файл",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.9",
       "os_header": "ОС:",
       "os_info": "Для Windows 10 и 11",
       "arch_header": "Архитектура:",
@@ -1192,7 +1192,7 @@
     "download_section": {
       "title": "Завантажити",
       "card_headline": "Готовий виконуваний файл",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.9",
       "os_header": "ОС:",
       "os_info": "Для Windows 10 та 11",
       "arch_header": "Архітектура:",
@@ -1334,7 +1334,7 @@
     "download_section": {
       "title": "İndir",
       "card_headline": "Hazır Uygulama",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.8'yi İndir",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.9'yi İndir",
       "os_header": "İşletim Sistemi:",
       "os_info": "Windows 10 & 11 için",
       "arch_header": "Mimari:",
@@ -1476,7 +1476,7 @@
     "download_section": {
       "title": "下载",
       "card_headline": "预构建可执行文件",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.9",
       "os_header": "系统：",
       "os_info": "适用于 Windows 10 & 11",
       "arch_header": "架构：",
@@ -1618,7 +1618,7 @@
     "download_section": {
       "title": "下載",
       "card_headline": "預構建可執行檔案",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下載 YMU v1.1.8",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下載 YMU v1.1.9",
       "os_header": "系統：",
       "os_info": "適用於 Windows 10 & 11",
       "arch_header": "架構：",
@@ -1760,7 +1760,7 @@
     "download_section": {
       "title": "ダウンロード",
       "card_headline": "ビルド済み実行ファイル",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.8をダウンロード",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.9をダウンロード",
       "os_header": "対応OS：",
       "os_info": "Windows 10 & 11 用",
       "arch_header": "アーキテクチャ：",
@@ -1902,7 +1902,7 @@
     "download_section": {
       "title": "다운로드",
       "card_headline": "사전 빌드된 실행 파일",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.8 다운로드",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.9 다운로드",
       "os_header": "OS:",
       "os_info": "Windows 10 & 11용",
       "arch_header": "아키텍처:",
