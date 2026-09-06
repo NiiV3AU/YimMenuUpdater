@@ -15,6 +15,11 @@ const TARGET = "https://ymu.pages.dev/en/";
 const SITE = "ymu.pages.dev";
 const CATEGORIES = ["performance", "accessibility", "best-practices", "seo"];
 
+if (process.argv.includes("--if-enabled") && !process.env.FETCH_SCORES) {
+  console.log("scores: skipped (set FETCH_SCORES=1 or run 'npm run scores' to fetch)");
+  process.exit(0);
+}
+
 const existing = await readFile(OUT, "utf8")
   .then(JSON.parse)
   .catch(() => ({}));

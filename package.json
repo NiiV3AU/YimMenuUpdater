@@ -4,7 +4,9 @@
   "description": "The official website for the YimMenuUpdater (YMU) project, built with Eleventy.",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build": "node --env-file-if-exists=.env scripts/fetch-scores.mjs && cross-env NODE_ENV=production npx @11ty/eleventy && npm run minify-js",
+    "build": "node scripts/fetch-translations.mjs && node scripts/fetch-release.mjs && node scripts/fetch-changelogs.mjs && node --env-file-if-exists=.env scripts/fetch-scores.mjs --if-enabled && cross-env NODE_ENV=production npx @11ty/eleventy && npm run minify-js",
+    "build:scores": "cross-env FETCH_SCORES=1 npm run build",
+    "changelogs": "node scripts/fetch-changelogs.mjs",
     "minify-js": "terser _site/assets/js/script.js --config-file terser.config.json --output _site/assets/js/script.js",
     "scores": "node --env-file-if-exists=.env scripts/fetch-scores.mjs"
   },
@@ -21,8 +23,8 @@
   "devDependencies": {
     "@11ty/eleventy": "3.1.6",
     "cross-env": "^10.1.0",
-    "html-minifier-next": "8.3.1",
+    "html-minifier-next": "8.4.0",
     "terser": "5.51.2",
-    "wrangler": "^4.128.0"
+    "wrangler": "^4.129.0"
   }
 }

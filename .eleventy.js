@@ -13,7 +13,12 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("src/android-chrome-192x192.png");
   eleventyConfig.addPassthroughCopy("src/android-chrome-512x512.png");
   eleventyConfig.addPassthroughCopy("src/site.webmanifest");
+  eleventyConfig.addPassthroughCopy("src/translations.json");
   eleventyConfig.addPassthroughCopy("functions");
+  eleventyConfig.addFilter("withReleaseVersion", function (str, versionTag) {
+    if (!str || !versionTag) return str;
+    return str.replace(/v\d+\.\d+\.\d+/g, versionTag);
+  });
   eleventyConfig.addTransform("htmlmin", function (content) {
     if (this.page.outputPath && this.page.outputPath.endsWith(".html")) {
       try {

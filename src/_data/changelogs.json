@@ -1,0 +1,38 @@
+[
+  {
+    "version": "v1.1.10",
+    "title": "- In-App Restart Hotfix",
+    "date": "Sep 03, 2026",
+    "description": "Targeted hotfix resolving an issue where restarting YMU from within the application caused SSL and network connection failures."
+  },
+  {
+    "version": "v1.1.9",
+    "title": "- Quality of Life & Precision",
+    "date": "Sep 03, 2026",
+    "description": "Real-time in-memory module verification, auto-close after successful injection, audio feedback chimes, one-click -nobattleye commandline helper, full keyboard navigation & focus overhaul, and hardened notification lifecycle."
+  },
+  {
+    "version": "v1.1.8",
+    "title": "- Reliability & Clarity",
+    "date": "Jul 21, 2026",
+    "description": "Fixes injection failing when your install path contains accented or non-ASCII characters (e.g. \"Müller\" or a Cyrillic user name), plus plain-language injection errors with one-click fixes, a non-blocking BattlEye warning, a pre-injection DLL check, and a Start button that recovers when a launch never completes."
+  },
+  {
+    "version": "v1.1.7",
+    "title": "- Compatibility, Customizability & Bugfixes",
+    "date": "Jul 08, 2026",
+    "description": "GTA V Enhanced is reliably detected again and launches through YMU, complemented by a Legacy/Enhanced switch, custom install paths, custom DLL injection, remembered selections, and a refreshed light theme."
+  },
+  {
+    "version": "v1.1.6",
+    "title": "- Localization, Performance & Bugfixes",
+    "date": "Dec 17, 2025",
+    "description": "Added full support for GTA V Enhanced Edition, support for 12 languages, and migrated to Nuitka for a significantly smaller and faster executable."
+  },
+  {
+    "version": "v1.1.5",
+    "title": "- The Modern UI Update",
+    "date": "Aug 31, 2025",
+    "description": "Complete rewrite from the ground up with a modern PySide6 architecture, brand-new user interface, non-blocking notifications, and initial GTA V Enhanced Edition support."
+  }
+]

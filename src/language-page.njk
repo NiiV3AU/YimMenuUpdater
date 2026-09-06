@@ -72,7 +72,7 @@ permalink: "/{{ lang.code }}/"
           "priceCurrency": "EUR"
         },
         "description": "{{ locales[lang.code].json_ld.description }}",
-        "softwareVersion": "1.1.10",
+        "softwareVersion": "{{ release.cleanVersion }}",
         "author": {
           "@type": "Person",
           "name": "NiiV3AU",
@@ -107,7 +107,13 @@ permalink: "/{{ lang.code }}/"
           <line x1="12" x2="12" y1="16" y2="12" />
           <line x1="12" x2="12.01" y1="8" y2="8" />
         </svg>
-        <span class="alert-text">{{ locales[lang.code].alert_banner.text }}</span>
+        {% set currentAlert = locales[lang.code].alert_banner %}
+        {% if currentAlert and currentAlert.version == release.cleanVersion %}
+          <span class="alert-text">{{ currentAlert.text }}</span>
+        {% else %}
+          {% set placeholder = alert_placeholders[lang.code] or alert_placeholders['en'] %}
+          <span class="alert-text">{{ placeholder | replace('{version}', release.tag) }}</span>
+        {% endif %}
       </div>
       <button id="alert-close-btn" class="alert-close" aria-label="Close alert">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
@@ -117,7 +123,7 @@ permalink: "/{{ lang.code }}/"
       (function() {
           const alertBanner = document.getElementById('alert-banner');
           const closeBtn = document.getElementById('alert-close-btn');
-          const bannerId = 'ymu-alert-v1-1-10-release';
+          const bannerId = '{{ release.bannerId }}';
           if (!localStorage.getItem(bannerId)) {
               alertBanner.style.display = 'block';
           }
@@ -701,9 +707,9 @@ permalink: "/{{ lang.code }}/"
                 rel="noopener noreferrer"
                 class="btn btn-primary btn-large btn-download-main"
                 id="download-btn-main">
-                {{ locales[lang.code].download_section.main_button | safe }}
+                {{ locales[lang.code].download_section.main_button | withReleaseVersion(release.tag) | safe }}
               </a>
-              <a href="https://www.virustotal.com/gui/file/7c09b8c3c2031536fcdb6b8cdeb74c8745fa9221c6559a7f87b225a3d03d6ecc"
+              <a href="https://www.virustotal.com/gui/file/{{ release.sha or '707a8d841a39c42eacb1900d025cbcc08243ddd62c571bb107e0a9de5930ec8d' }}"
                 target="_blank"
                 rel="noopener noreferrer"
                 class="vt-badge"
@@ -736,7 +742,7 @@ permalink: "/{{ lang.code }}/"
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_version }}</span>
-                <span class="inner-value">v1.1.10</span>
+                <span class="inner-value">{{ release.tag }}</span>
               </div>
             </div>
             <div class="action-wrapper">
@@ -785,186 +791,24 @@ permalink: "/{{ lang.code }}/"
         <div class="container">
           <h2 class="section-title text-center">{{ locales[lang.code].updates_section.title }}</h2>
           <div class="changelog-list">
+            {% for item in changelogs %}
             <details class="changelog-item">
               <summary class="changelog-summary">
-                <span class="changelog-version">v1.1.10</span>
-                <span class="changelog-description"
-                  >- In-App Restart Hotfix</span
-                >
-                <span class="changelog-date"
-                  ><mark class="code-font">Sep 03, 2026</mark></span
-                >
+                <span class="changelog-version">{{ item.version }}</span>
+                <span class="changelog-description">{{ item.title }}</span>
+                <span class="changelog-date"><mark class="code-font">{{ item.date }}</mark></span>
               </summary>
               <div class="changelog-details">
                 <div class="details-content-wrapper">
-                  <p>
-                    Targeted hotfix resolving an issue where restarting YMU from within the application (e.g. after language changes or translation updates) caused SSL and network connection failures.
-                  </p>
+                  <p>{{ item.description | safe }}</p>
                 </div>
               </div>
             </details>
-            <details class="changelog-item">
-              <summary class="changelog-summary">
-                <span class="changelog-version">v1.1.9</span>
-                <span class="changelog-description"
-                  >- Quality of Life &amp; Precision</span
-                >
-                <span class="changelog-date"
-                  ><mark class="code-font">Sep 03, 2026</mark></span
-                >
-              </summary>
-              <div class="changelog-details">
-                <div class="details-content-wrapper">
-                  <p>
-                    Real-time in-memory module verification, auto-close after successful injection, audio feedback chimes, one-click -nobattleye commandline helper, full keyboard navigation & focus overhaul, and hardened notification lifecycle.
-                  </p>
-                </div>
-              </div>
-            </details>
-            <details class="changelog-item">
-              <summary class="changelog-summary">
-                <span class="changelog-version">v1.1.8</span>
-                <span class="changelog-description"
-                  >- Reliability &amp; Clarity</span
-                >
-                <span class="changelog-date"
-                  ><mark class="code-font">Jul 21, 2026</mark></span
-                >
-              </summary>
-              <div class="changelog-details">
-                <div class="details-content-wrapper">
-                  <p>
-                    Fixes injection failing when your install path contains
-                    accented or non-ASCII characters (e.g.
-                    "M<strong>ü</strong>ller" or a Cyrillic user name). Injection
-                    errors are now shown in plain language with one-click fixes,
-                    plus a non-blocking BattlEye warning, a pre-injection DLL
-                    check, and a Start button that recovers when a launch never
-                    completes.
-                  </p>
-                </div>
-              </div>
-            </details>
-            <details class="changelog-item">
-              <summary class="changelog-summary">
-                <span class="changelog-version">v1.1.7</span>
-                <span class="changelog-description"
-                  >- Compatibility, Customizability &amp; Bugfixes</span
-                >
-                <span class="changelog-date"
-                  ><mark class="code-font">Jul 08, 2026</mark></span
-                >
-              </summary>
-              <div class="changelog-details">
-                <div class="details-content-wrapper">
-                  <p>
-                    GTA V <strong>Enhanced</strong> is
-                    reliably detected again and launches through YMU. On top of
-                    that, v1.1.7 adds a Legacy/Enhanced switch, custom GTA&nbsp;V
-                    install-path and custom-DLL support, and remembers your
-                    launcher and DLL choices between sessions. The light theme
-                    was reworked too, with an elevated palette and soft card
-                    shadows to match the dark theme's polish. Under the hood it
-                    brings a thread-safe settings store with atomic writes,
-                    background threading for a smoother UI, and a passive update
-                    check that points you to the latest release.
-                  </p>
-                </div>
-              </div>
-            </details>
-            <details class="changelog-item">
-              <summary class="changelog-summary">
-                <span class="changelog-version">v1.1.6</span>
-                <span class="changelog-description"
-                  >- Localization, Performance &amp; Bugfixes</span
-                >
-                <span class="changelog-date"
-                  ><mark class="code-font">Dec 17, 2025</mark></span
-                >
-              </summary>
-              <div class="changelog-details">
-                <div class="details-content-wrapper">
-                  <p>
-                    Added full support for GTA V Enhanced Edition, support for 12 languages, and migrated to Nuitka for a significantly smaller and faster executable.
-                  </p>
-                </div>
-              </div>
-            </details>
-            <details class="changelog-item">
-              <summary class="changelog-summary">
-                <span class="changelog-version">v1.1.5</span>
-                <span class="changelog-description"
-                  >- Redesign and GTA 5 Enhanced Support</span
-                >
-                <span class="changelog-date"
-                  ><mark class="code-font">Aug 31, 2025</mark></span
-                >
-              </summary>
-              <div class="changelog-details">
-                <div class="details-content-wrapper">
-                  <p>
-                    Complete UI Overhaul and Code Refactoring (CustomTkinter ->
-                    PySide6). GTA 5 Enhanced is now supported thanks to YimMenuV2.
-                  </p>
-                </div>
-              </div>
-            </details>
-            <details class="changelog-item">
-              <summary class="changelog-summary">
-                <span class="changelog-version">v1.1.4</span>
-                <span class="changelog-description"
-                  >- Buttons, "More Info" Updates</span
-                >
-                <span class="changelog-date"
-                  ><mark class="code-font">Oct 12, 2024</mark></span
-                >
-              </summary>
-              <div class="changelog-details">
-                <div class="details-content-wrapper">
-                  <p>
-                    Added Buttons (YimMenu GitHub Repo &amp; FSL) in
-                    Download Tab + updated "more info"-windows in various tabs.
-                  </p>
-                </div>
-              </div>
-            </details>
-            <details class="changelog-item">
-              <summary class="changelog-summary">
-                <span class="changelog-version">v1.1.3</span>
-                <span class="changelog-description"
-                  >- New Lua list in Settings-Tab</span
-                >
-                <span class="changelog-date"
-                  ><mark class="code-font">Sep 1, 2024</mark></span
-                >
-              </summary>
-              <div class="changelog-details">
-                <div class="details-content-wrapper">
-                  <p>
-                    New Lua list in Settings-Tab - activate/deactivate scripts &amp;
-                    discover more extensions.
-                  </p>
-                </div>
-              </div>
-            </details>
-            <details class="changelog-item">
-              <summary class="changelog-summary">
-                <span class="changelog-version">v1.1.2</span>
-                <span class="changelog-description">- Bugfix Progressbar</span>
-                <span class="changelog-date"
-                  ><mark class="code-font">Aug 29, 2024</mark></span
-                >
-              </summary>
-              <div class="changelog-details">
-                <div class="details-content-wrapper">
-                  <p>Fixed progressbar freezing.</p>
-                </div>
-              </div>
-            </details>
+            {% endfor %}
           </div>
           <div class="text-center">
             <a
-              href="https://github.com/NiiV3AU/YMU?tab=readme-ov-file#full-changelog"
+              href="https://github.com/NiiV3AU/YMU/blob/main/CHANGELOG.md"
               target="_blank"
               rel="noopener noreferrer"
               class="btn btn-secondary">{{ locales[lang.code].updates_section.changelog_button | safe }}
