@@ -1,11 +1,11 @@
 {
-  "version": "1.1.10",
-  "cleanVersion": "1.1.10",
-  "tag": "v1.1.10",
-  "name": "YMU v1.1.10",
-  "dateFormatted": "Sep 03, 2026",
-  "bannerId": "ymu-alert-v1-1-10-release",
-  "sha": "707a8d841a39c42eacb1900d025cbcc08243ddd62c571bb107e0a9de5930ec8d",
-  "bodySnippet": "# v1.1.10 - In-App Restart Hotfix\r\n\r\nVersion 1.1.10 is a targeted hotfix addressing an issue where restarting YMU from within the app (such as after changing languages or updating translations) could cause internet connection and SSL errors.\r\n\r\n> [!IMPORTANT]\r\n> To update, simply **download v1.1.10 ",
-  "htmlUrl": "https://github.com/NiiV3AU/YMU/releases/tag/v1.1.10"
+  "version": "1.1.11",
+  "cleanVersion": "1.1.11",
+  "tag": "v1.1.11",
+  "name": "YMU v1.1.11",
+  "dateFormatted": "Sep 07, 2026",
+  "bannerId": "ymu-alert-v1-1-11-release",
+  "sha": "0e6f442e56b757e387c2d22c2885136868a4b8d0d7856e7eb620bc1df32ebab2",
+  "bodySnippet": "## [v1.1.11] - 2026-09-07\n\n### Systems Engineering, Antivirus Hardening & UX Polish\n\n> Eliminates antivirus false positives via native Win32 process enumeration, hardens handle lifecycles and UAC operations, migrates DLL storage to %LOCALAPPDATA%, adds a dedicated maintenance suite (cache cleaner, b",
+  "htmlUrl": "https://github.com/NiiV3AU/YMU/releases/tag/v1.1.11"
 }

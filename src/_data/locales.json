@@ -8,8 +8,8 @@
       "yimmenu_desc": "Open Source Modding Tool"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 is out: targeted hotfix resolving SSL and network connection errors during in-app restarts. Updating is manual — grab the latest YMU.exe and replace your old one; your settings and DLLs are kept."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 is out: eliminates antivirus false positives with native Win32 process enumeration, hardens UAC operations, moves DLL storage to %LOCALAPPDATA%, and adds new maintenance tools and refreshed Lucide icons. Updating is manual — grab the latest YMU.exe and replace your old one; your settings and DLLs are kept."
     },
     "meta_description": "YMU is the ultimate launchpad for YimMenu. Seamlessly download the latest version, load it into GTA V with a few clicks, manage your Lua scripts, and much more.",
     "nav": {
@@ -36,7 +36,7 @@
       "card4_title": "Modern UI",
       "card4_desc": "A clean and intuitive user interface, built with PySide6, featuring both Light and Dark themes.",
       "card5_title": "Integrated Help",
-      "card5_desc": "Need assistance? Integrated <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> buttons on every tab guide you to maximize your YMU experience.",
+      "card5_desc": "Need assistance? Integrated <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> buttons on every tab guide you to maximize your YMU experience.",
       "card6_title": "Update Notifications",
       "card6_desc": "Check for YMU updates right inside the app. One click tells you whether you're running the latest version."
     },
@@ -52,12 +52,12 @@
       "step2_desc": "Use the 'Download' tab to download the latest version of YimMenu.",
       "step3_title": "Start & Inject",
       "step3_desc": "Navigate to the 'Inject' tab. You can start GTA V directly from YMU (optional), then simply click to inject YimMenu.",
-      "additional_info": "For more detailed guidance, click the integrated <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> help buttons within the YMU application."
+      "additional_info": "For more detailed guidance, click the integrated <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> help buttons within the YMU application."
     },
     "download_section": {
       "title": "Download",
       "card_headline": "Prebuilt Executable",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>Download YMU v1.1.10",
       "os_header": "OS:",
       "os_info": "For Windows 10 & 11",
       "arch_header": "Architecture:",
@@ -67,14 +67,14 @@
       "source_tooling": "Tooling:",
       "source_license": "License:",
       "source_version": "Version:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Download Source Code",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Download Source Code",
       "lua_question": "Looking for Lua Scripts?",
       "lua_subheader": "Browse official community scripts.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Find Lua Extensions for YimMenu"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>Find Lua Extensions for YimMenu"
     },
     "updates_section": {
       "title": "Latest Updates",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Complete Changelog on GitHub"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>Complete Changelog on GitHub"
     },
     "faq_section": {
       "title": "Frequently Asked Questions (FAQ)",
@@ -98,7 +98,7 @@
     "community_section": {
       "title": "Join the Community",
       "subtitle": "Got an idea, a feature request, or found a bug? Join the conversation!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Report an Issue or Request a Feature",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Report an Issue or Request a Feature",
       "discord_button": "Join our Discord",
       "support_text": "Show your support and help the project grow:",
       "star_button": "Star us on GitHub"
@@ -116,7 +116,7 @@
       "by": "by",
       "icons": "Icons",
       "fonts": "Fonts",
-      "license_mit": "Licensed under the MIT License.",
+      "license_isc": "Licensed under the ISC License.",
       "license_sil": "Licensed under the SIL Open Font License 1.1."
     },
     "privacy_section": {
@@ -151,8 +151,8 @@
       "yimmenu_desc": "Open Source Modding Tool"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 ist da: gezielter Hotfix zur Behebung von SSL- und Netzwerkfehlern bei internen App-Neustarts. Updaten ist manuell: Lade die neueste YMU.exe herunter und ersetze deine alte; deine Einstellungen und DLLs bleiben erhalten."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 ist da: Beseitigt Antivirus-Fehlalarme durch native Win32-Prozessaufzählung, härtet UAC-Abläufe und Handles, verlegt DLLs nach %LOCALAPPDATA% und bringt neue Wartungstools sowie Lucide-Icons. Updaten ist manuell: Lade die neueste YMU.exe herunter und ersetze deine alte; deine Einstellungen und DLLs bleiben erhalten."
     },
     "meta_description": "YMU ist der ultimative Launcher für YimMenu. Lade die aktuellste Version herunter, injecte sie mit wenigen Klicks in GTA V, verwalte deine Lua-Skripte und mehr.",
     "nav": {
@@ -179,7 +179,7 @@
       "card4_title": "Modernes UI",
       "card4_desc": "Eine saubere und intuitive Benutzeroberfläche auf Basis von PySide6, mit Light- und Dark-Mode.",
       "card5_title": "Integrierte Hilfe",
-      "card5_desc": "Brauchst du Hilfe? Integrierte <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> Buttons in jedem Tab zeigen dir, wie du YMU optimal nutzt.",
+      "card5_desc": "Brauchst du Hilfe? Integrierte <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> Buttons in jedem Tab zeigen dir, wie du YMU optimal nutzt.",
       "card6_title": "Update-Benachrichtigungen",
       "card6_desc": "Prüfe direkt in der App auf YMU-Updates. Ein Klick zeigt dir, ob du die neueste Version nutzt."
     },
@@ -195,12 +195,12 @@
       "step2_desc": "Nutze den 'Download'-Tab, um die neueste Version von YimMenu zu erhalten.",
       "step3_title": "Starten & Injecten",
       "step3_desc": "Gehe zum 'Injecten'-Tab. Du kannst GTA V direkt über YMU starten (optional) und YimMenu dann mit einem Klick injecten.",
-      "additional_info": "Für detaillierte Anweisungen klicke auf die integrierten <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> Hilfe-Buttons innerhalb von YMU."
+      "additional_info": "Für detaillierte Anweisungen klicke auf die integrierten <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> Hilfe-Buttons innerhalb von YMU."
     },
     "download_section": {
       "title": "Download",
       "card_headline": "Vorgefertigte Anwendung",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.10 herunterladen",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>YMU v1.1.10 herunterladen",
       "os_header": "OS:",
       "os_info": "Für Windows 10 & 11",
       "arch_header": "Architektur:",
@@ -210,14 +210,14 @@
       "source_tooling": "Tools:",
       "source_license": "Lizenz:",
       "source_version": "Version:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Quellcode herunterladen",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Quellcode herunterladen",
       "lua_question": "Suchst du Lua-Skripte?",
       "lua_subheader": "Durchstöbere offizielle Community-Skripte.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Lua-Erweiterungen für YimMenu finden"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>Lua-Erweiterungen für YimMenu finden"
     },
     "updates_section": {
       "title": "Neueste Updates",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Kompletter Changelog auf GitHub"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>Kompletter Changelog auf GitHub"
     },
     "faq_section": {
       "title": "Häufig gestellte Fragen (FAQ)",
@@ -241,7 +241,7 @@
     "community_section": {
       "title": "Tritt der Community bei",
       "subtitle": "Du hast eine Idee, einen Feature-Wunsch oder einen Bug gefunden? Dann mach mit!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Bug melden oder Feature vorschlagen",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Bug melden oder Feature vorschlagen",
       "discord_button": "Komm auf unseren Discord",
       "support_text": "Zeig deine Unterstützung und hilf dem Projekt zu wachsen:",
       "star_button": "Gib uns einen Stern auf GitHub"
@@ -259,7 +259,7 @@
       "by": "von",
       "icons": "Icons",
       "fonts": "Schriftarten",
-      "license_mit": "Lizenziert unter der MIT License.",
+      "license_isc": "Lizenziert unter der ISC License.",
       "license_sil": "Lizenziert unter der SIL Open Font License 1.1."
     },
     "privacy_section": {
@@ -294,8 +294,8 @@
       "yimmenu_desc": "Open Source Modding Tool"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 is uit: gerichte hotfix die SSL- en netwerkverbindingsfouten bij herstarts vanuit de app verhelpt. Updaten gaat handmatig: download de nieuwste YMU.exe en vervang je oude; je instellingen en DLL's blijven behouden."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 is uit: elimineert valse virusmeldingen via native Win32-procesopsomming, versterkt UAC- en handle-processen, verplaatst DLL-opslag naar %LOCALAPPDATA% en voegt nieuwe onderhoudstools en Lucide-iconen toe. Updaten gaat handmatig: download de nieuwste YMU.exe en vervang je oude; je instellingen en DLL's blijven behouden."
     },
     "meta_description": "YMU is dé ultieme launcher voor YimMenu. Download eenvoudig de nieuwste versie, injecteer deze in GTA V met een paar klikken, beheer je Lua-scripts en nog meer.",
     "nav": {
@@ -322,7 +322,7 @@
       "card4_title": "Moderne UI",
       "card4_desc": "Een strakke en intuïtieve interface, gebouwd met PySide6, met zowel Licht- als Donker-thema's.",
       "card5_title": "Geïntegreerde Hulp",
-      "card5_desc": "Hulp nodig? De geïntegreerde <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> knoppen op elk tabblad helpen je om alles uit YMU te halen.",
+      "card5_desc": "Hulp nodig? De geïntegreerde <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> knoppen op elk tabblad helpen je om alles uit YMU te halen.",
       "card6_title": "Updatemeldingen",
       "card6_desc": "Check direct in de app op YMU-updates. Eén klik laat zien of je de nieuwste versie gebruikt."
     },
@@ -338,12 +338,12 @@
       "step2_desc": "Gebruik het 'Download'-tabblad om de nieuwste versie van YimMenu te verkrijgen.",
       "step3_title": "Starten & Injecteren",
       "step3_desc": "Ga naar het 'Injecteren'-tabblad. Je kunt GTA V direct vanuit YMU starten (optioneel), en klik vervolgens om YimMenu te injecteren.",
-      "additional_info": "Voor meer details, klik op de geïntegreerde <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> hulpknoppen in de YMU-applicatie."
+      "additional_info": "Voor meer details, klik op de geïntegreerde <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> hulpknoppen in de YMU-applicatie."
     },
     "download_section": {
       "title": "Download",
       "card_headline": "Kant-en-klare applicatie",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Download YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>Download YMU v1.1.10",
       "os_header": "OS:",
       "os_info": "Voor Windows 10 & 11",
       "arch_header": "Architectuur:",
@@ -353,14 +353,14 @@
       "source_tooling": "Tools:",
       "source_license": "Licentie:",
       "source_version": "Versie:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Download Broncode",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Download Broncode",
       "lua_question": "Op zoek naar Lua-scripts?",
       "lua_subheader": "Bekijk officiële community-scripts.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Vind Lua-extensies voor YimMenu"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>Vind Lua-extensies voor YimMenu"
     },
     "updates_section": {
       "title": "Laatste Updates",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Volledige Changelog op GitHub"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>Volledige Changelog op GitHub"
     },
     "faq_section": {
       "title": "Veelgestelde Vragen (FAQ)",
@@ -384,7 +384,7 @@
     "community_section": {
       "title": "Doe mee met de Community",
       "subtitle": "Heb je een idee, een verzoek voor een functie, of een probleem gevonden? Praat mee!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Meld een probleem of vraag een functie aan",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Meld een probleem of vraag een functie aan",
       "discord_button": "Word lid van onze Discord",
       "support_text": "Toon je steun en help het project groeien:",
       "star_button": "Geef ons een ster op GitHub"
@@ -402,7 +402,7 @@
       "by": "door",
       "icons": "Iconen",
       "fonts": "Lettertypen",
-      "license_mit": "Gelicentieerd onder de MIT License.",
+      "license_isc": "Gelicentieerd onder de ISC License.",
       "license_sil": "Gelicentieerd onder de SIL Open Font License 1.1."
     },
     "privacy_section": {
@@ -437,8 +437,8 @@
       "yimmenu_desc": "Outil de Modding Open Source"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 est disponible : correctif ciblé résolvant les erreurs SSL et de connexion réseau lors des redémarrages intégrés à l'application. La mise à jour est manuelle : télécharge la dernière YMU.exe et remplace l'ancienne ; tes paramètres et tes DLL sont conservés."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 est disponible : élimine les faux positifs antivirus grâce à l'énumération native Win32, renforce les opérations UAC et la gestion des handles, déplace les DLL vers %LOCALAPPDATA%, et ajoute des outils de maintenance ainsi que des icônes Lucide actualisées. La mise à jour est manuelle : télécharge la dernière YMU.exe et remplace l'ancienne ; tes paramètres et tes DLL sont conservés."
     },
     "meta_description": "YMU est le lanceur ultime pour YimMenu. Télécharge sans effort la dernière version, charge-la dans GTA V en quelques clics, gère tes scripts Lua et plus encore.",
     "nav": {
@@ -465,7 +465,7 @@
       "card4_title": "Interface moderne",
       "card4_desc": "Une interface utilisateur propre et intuitive, construite avec PySide6, proposant des thèmes Clair et Sombre.",
       "card5_title": "Aide intégrée",
-      "card5_desc": "Besoin d'aide ? Des boutons <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> intégrés à chaque onglet te guident pour maximiser ton expérience YMU.",
+      "card5_desc": "Besoin d'aide ? Des boutons <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> intégrés à chaque onglet te guident pour maximiser ton expérience YMU.",
       "card6_title": "Notifications de mise à jour",
       "card6_desc": "Vérifie les mises à jour de YMU directement dans l'application. Un clic te dit si tu utilises la dernière version."
     },
@@ -481,12 +481,12 @@
       "step2_desc": "Utilise l'onglet « Télécharger » pour obtenir la dernière version de YimMenu.",
       "step3_title": "Démarrer & Injecter",
       "step3_desc": "Va dans l'onglet « Injecter ». Tu peux démarrer GTA V directement depuis YMU (optionnel), puis clique simplement pour injecter YimMenu.",
-      "additional_info": "Pour plus de détails, clique sur les boutons d'aide <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> intégrés dans l'application YMU."
+      "additional_info": "Pour plus de détails, clique sur les boutons d'aide <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> intégrés dans l'application YMU."
     },
     "download_section": {
       "title": "Télécharger",
       "card_headline": "Exécutable pré-compilé",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Télécharger YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>Télécharger YMU v1.1.10",
       "os_header": "OS :",
       "os_info": "Pour Windows 10 & 11",
       "arch_header": "Architecture :",
@@ -496,14 +496,14 @@
       "source_tooling": "Outils :",
       "source_license": "Licence :",
       "source_version": "Version :",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Télécharger le Code Source",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Télécharger le Code Source",
       "lua_question": "Tu cherches des scripts Lua ?",
       "lua_subheader": "Parcours les scripts officiels de la communauté.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Trouver des extensions Lua pour YimMenu"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>Trouver des extensions Lua pour YimMenu"
     },
     "updates_section": {
       "title": "Dernières mises à jour",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Changelog complet sur GitHub"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>Changelog complet sur GitHub"
     },
     "faq_section": {
       "title": "Foire aux questions (FAQ)",
@@ -527,7 +527,7 @@
     "community_section": {
       "title": "Rejoins la communauté",
       "subtitle": "Tu as une idée, une demande de fonctionnalité ou tu as trouvé un bug ? Rejoins la conversation !",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Signaler un problème ou demander une fonctionnalité",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Signaler un problème ou demander une fonctionnalité",
       "discord_button": "Rejoins notre Discord",
       "support_text": "Montre ton soutien et aide le projet à grandir :",
       "star_button": "Laisse-nous une étoile sur GitHub"
@@ -545,7 +545,7 @@
       "by": "par",
       "icons": "Icônes",
       "fonts": "Polices",
-      "license_mit": "Sous licence MIT.",
+      "license_isc": "Sous licence ISC.",
       "license_sil": "Sous licence SIL Open Font License 1.1."
     },
     "privacy_section": {
@@ -580,8 +580,8 @@
       "yimmenu_desc": "Herramienta de Modding Open Source"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "¡YMU v1.1.10 ya está aquí! Hotfix específico que corrige errores de SSL y de conexión de red durante reinicios dentro de la aplicación. La actualización es manual: descarga la última YMU.exe y reemplaza la anterior; tus ajustes y DLL se conservan."
+      "version": "1.1.11",
+      "text": "¡YMU v1.1.11 ya está aquí! Elimina falsos positivos del antivirus mediante enumeración nativa de procesos Win32, refuerza las operaciones de UAC, traslada las DLL a %LOCALAPPDATA% y añade nuevas herramientas de mantenimiento e iconos Lucide renovados. La actualización es manual: descarga la última YMU.exe y reemplaza la anterior; tus ajustes y DLL se conservan."
     },
     "meta_description": "YMU es la plataforma de lanzamiento definitiva para YimMenu. Descarga la última versión sin esfuerzo, cárgala en GTA V con unos pocos clics, gestiona tus scripts Lua y mucho más.",
     "nav": {
@@ -608,7 +608,7 @@
       "card4_title": "Interfaz moderna",
       "card4_desc": "Una interfaz limpia e intuitiva, creada con PySide6, que incluye temas claro y oscuro.",
       "card5_title": "Ayuda integrada",
-      "card5_desc": "¿Necesitas asistencia? Los botones integrados <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> en cada pestaña te guían para aprovechar YMU al máximo.",
+      "card5_desc": "¿Necesitas asistencia? Los botones integrados <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> en cada pestaña te guían para aprovechar YMU al máximo.",
       "card6_title": "Notificaciones de actualización",
       "card6_desc": "Comprueba las actualizaciones de YMU directamente en la app. Un clic te dice si tienes la última versión."
     },
@@ -624,12 +624,12 @@
       "step2_desc": "Usa la pestaña 'Descarga' para obtener la última versión de YimMenu.",
       "step3_title": "Iniciar e inyectar",
       "step3_desc": "Ve a la pestaña 'Inyectar'. Puedes iniciar GTA V directamente desde YMU (opcional) y luego hacer clic para inyectar YimMenu.",
-      "additional_info": "Para una guía más detallada, haz clic en los botones de ayuda <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> integrados dentro de la aplicación YMU."
+      "additional_info": "Para una guía más detallada, haz clic en los botones de ayuda <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> integrados dentro de la aplicación YMU."
     },
     "download_section": {
       "title": "Descarga",
       "card_headline": "Ejecutable precompilado",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Descargar YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>Descargar YMU v1.1.10",
       "os_header": "SO:",
       "os_info": "Para Windows 10 y 11",
       "arch_header": "Arquitectura:",
@@ -639,14 +639,14 @@
       "source_tooling": "Herramientas:",
       "source_license": "Licencia:",
       "source_version": "Versión:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Descargar código fuente",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Descargar código fuente",
       "lua_question": "¿Buscas scripts Lua?",
       "lua_subheader": "Explora scripts oficiales de la comunidad.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Buscar extensiones Lua para YimMenu"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>Buscar extensiones Lua para YimMenu"
     },
     "updates_section": {
       "title": "Últimas actualizaciones",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Registro de cambios completo en GitHub"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>Registro de cambios completo en GitHub"
     },
     "faq_section": {
       "title": "Preguntas frecuentes (FAQ)",
@@ -670,7 +670,7 @@
     "community_section": {
       "title": "Únete a la comunidad",
       "subtitle": "¿Tienes una idea, quieres pedir una función o has encontrado un error? ¡Únete a la conversación!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Reportar un error o pedir una función",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Reportar un error o pedir una función",
       "discord_button": "Únete a nuestro Discord",
       "support_text": "Muestra tu apoyo y ayuda a que el proyecto crezca:",
       "star_button": "Danos una estrella en GitHub"
@@ -688,7 +688,7 @@
       "by": "por",
       "icons": "Iconos",
       "fonts": "Tipografías",
-      "license_mit": "Licenciado bajo la MIT License.",
+      "license_isc": "Licenciado bajo la ISC License.",
       "license_sil": "Licenciado bajo la SIL Open Font License 1.1."
     },
     "privacy_section": {
@@ -723,8 +723,8 @@
       "yimmenu_desc": "Ferramenta de Modding Open Source"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 chegou: hotfix focado na correção de erros de SSL e de conexão de rede durante reinicializações no próprio aplicativo. A atualização é manual: baixe a YMU.exe mais recente e substitua a antiga; as suas configurações e DLLs são mantidas."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 chegou: elimina falsos positivos de antivírus via enumeração nativa Win32, reforça operações UAC e handles, migra o armazenamento de DLLs para %LOCALAPPDATA% e adiciona novas ferramentas de manutenção e ícones Lucide renovados. A atualização é manual: baixe a YMU.exe mais recente e substitua a antiga; as suas configurações e DLLs são mantidas."
     },
     "meta_description": "O YMU é o launcher definitivo para o YimMenu. Baixe a versão mais recente, carregue-a no GTA V com poucos cliques, gerencie seus scripts Lua e muito mais.",
     "nav": {
@@ -751,7 +751,7 @@
       "card4_title": "Interface Moderna",
       "card4_desc": "Uma interface limpa e intuitiva, feita com PySide6, com temas Claro e Escuro.",
       "card5_title": "Ajuda Integrada",
-      "card5_desc": "Precisa de ajuda? Botões de ajuda <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> integrados em cada guia orientam você para aproveitar ao máximo o YMU.",
+      "card5_desc": "Precisa de ajuda? Botões de ajuda <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> integrados em cada guia orientam você para aproveitar ao máximo o YMU.",
       "card6_title": "Notificações de Atualização",
       "card6_desc": "Verifique atualizações do YMU direto no app. Um clique mostra se você está na versão mais recente."
     },
@@ -767,12 +767,12 @@
       "step2_desc": "Use a guia 'Download' para obter a versão mais recente do YimMenu.",
       "step3_title": "Iniciar e Injetar",
       "step3_desc": "Vá para a guia 'Injetar'. Você pode abrir o GTA V diretamente pelo YMU (opcional) e clicar para injetar o YimMenu.",
-      "additional_info": "Para instruções mais detalhadas, clique nos botões de ajuda <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> integrados no YMU."
+      "additional_info": "Para instruções mais detalhadas, clique nos botões de ajuda <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> integrados no YMU."
     },
     "download_section": {
       "title": "Download",
       "card_headline": "Executável pré-compilado",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Baixar YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>Baixar YMU v1.1.10",
       "os_header": "SO:",
       "os_info": "Para Windows 10 e 11",
       "arch_header": "Arquitetura:",
@@ -782,14 +782,14 @@
       "source_tooling": "Ferramentas:",
       "source_license": "Licença:",
       "source_version": "Versão:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Baixar Código-Fonte",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Baixar Código-Fonte",
       "lua_question": "Procurando Scripts Lua?",
       "lua_subheader": "Navegue pelos scripts oficiais da comunidade.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Encontrar Extensões Lua para YimMenu"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>Encontrar Extensões Lua para YimMenu"
     },
     "updates_section": {
       "title": "Últimas Atualizações",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Changelog Completo no GitHub"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>Changelog Completo no GitHub"
     },
     "faq_section": {
       "title": "Perguntas Frequentes (FAQ)",
@@ -813,7 +813,7 @@
     "community_section": {
       "title": "Participe da Comunidade",
       "subtitle": "Tem uma ideia, um pedido de recurso ou encontrou um problema? Junte-se à conversa!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Relatar Problema ou Pedir Recurso",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Relatar Problema ou Pedir Recurso",
       "discord_button": "Entre no nosso Discord",
       "support_text": "Mostre seu apoio e ajude o projeto a crescer:",
       "star_button": "Dê uma estrela no GitHub"
@@ -831,7 +831,7 @@
       "by": "por",
       "icons": "Ícones",
       "fonts": "Tipografia",
-      "license_mit": "Licenciado sob a MIT License.",
+      "license_isc": "Licenciado sob a ISC License.",
       "license_sil": "Licenciado sob a SIL Open Font License 1.1."
     },
     "privacy_section": {
@@ -866,8 +866,8 @@
       "yimmenu_desc": "Narzędzie Moddingowe Open Source"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 już jest: dedykowany hotfix naprawiający błędy SSL i połączenia sieciowego podczas restartu z poziomu aplikacji. Aktualizacja jest ręczna: pobierz najnowszy plik YMU.exe i zastąp stary; twoje ustawienia i pliki DLL zostają zachowane."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 już jest: eliminuje fałszywe alarmy antywirusa dzięki natywnej enumeracji procesów Win32, wzmacnia operacje UAC i uchwyty, przenosi biblioteki DLL do %LOCALAPPDATA% oraz dodaje nowe narzędzia konserwacyjne i odświeżone ikony Lucide. Aktualizacja jest ręczna: pobierz najnowszy plik YMU.exe i zastąp stary; twoje ustawienia i pliki DLL zostają zachowane."
     },
     "meta_description": "YMU to najlepszy launcher dla YimMenu. Pobierz najnowszą wersję, wstrzyknij ją do GTA V kilkoma kliknięciami, zarządzaj skryptami Lua i wiele więcej.",
     "nav": {
@@ -894,7 +894,7 @@
       "card4_title": "Nowoczesne UI",
       "card4_desc": "Czysty i intuicyjny interfejs oparty na PySide6, dostępny w motywie jasnym i ciemnym.",
       "card5_title": "Wbudowana pomoc",
-      "card5_desc": "Potrzebujesz wsparcia? Zintegrowane przyciski <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> w każdej zakładce pomogą Ci wycisnąć z YMU maksimum.",
+      "card5_desc": "Potrzebujesz wsparcia? Zintegrowane przyciski <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> w każdej zakładce pomogą Ci wycisnąć z YMU maksimum.",
       "card6_title": "Powiadomienia o aktualizacjach",
       "card6_desc": "Sprawdź aktualizacje YMU bezpośrednio w aplikacji. Jedno kliknięcie pokazuje, czy masz najnowszą wersję."
     },
@@ -910,12 +910,12 @@
       "step2_desc": "Użyj zakładki 'Pobierz', aby pobrać najnowszą wersję YimMenu.",
       "step3_title": "Uruchom i wstrzyknij",
       "step3_desc": "Przejdź do zakładki 'Wstrzyknij'. Możesz uruchomić GTA V bezpośrednio przez YMU (opcjonalnie), a następnie kliknąć, aby wstrzyknąć YimMenu.",
-      "additional_info": "Aby uzyskać szczegółową pomoc, kliknij ikonę <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> wewnątrz aplikacji YMU."
+      "additional_info": "Aby uzyskać szczegółową pomoc, kliknij ikonę <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> wewnątrz aplikacji YMU."
     },
     "download_section": {
       "title": "Pobierz",
       "card_headline": "Gotowa aplikacja",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Pobierz YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>Pobierz YMU v1.1.10",
       "os_header": "System:",
       "os_info": "Dla Windows 10 i 11",
       "arch_header": "Architektura:",
@@ -925,14 +925,14 @@
       "source_tooling": "Narzędzia:",
       "source_license": "Licencja:",
       "source_version": "Wersja:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Pobierz kod źródłowy",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Pobierz kod źródłowy",
       "lua_question": "Szukasz skryptów Lua?",
       "lua_subheader": "Przeglądaj oficjalne skrypty społeczności.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Znajdź rozszerzenia Lua dla YimMenu"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>Znajdź rozszerzenia Lua dla YimMenu"
     },
     "updates_section": {
       "title": "Ostatnie aktualizacje",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Pełna lista zmian na GitHub"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>Pełna lista zmian na GitHub"
     },
     "faq_section": {
       "title": "Częste pytania (FAQ)",
@@ -956,7 +956,7 @@
     "community_section": {
       "title": "Dołącz do społeczności",
       "subtitle": "Masz pomysł, propozycję funkcji albo zgłaszasz błąd? Dołącz do rozmowy!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Zgłoś błąd lub propozycję",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Zgłoś błąd lub propozycję",
       "discord_button": "Dołącz do Discorda",
       "support_text": "Wesprzyj rozwój projektu:",
       "star_button": "Daj gwiazdkę na GitHubie"
@@ -974,7 +974,7 @@
       "by": "przez",
       "icons": "Ikony",
       "fonts": "Czcionki",
-      "license_mit": "Na licencji MIT.",
+      "license_isc": "Na licencji ISC.",
       "license_sil": "Na licencji SIL Open Font License 1.1."
     },
     "privacy_section": {
@@ -1009,8 +1009,8 @@
       "yimmenu_desc": "Инструмент для моддинга с открытым кодом"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 вышел: точечный хотфикс, устраняющий ошибки SSL и сетевого подключения при перезапуске из самого приложения. Обновление вручную: скачай последнюю YMU.exe и замени старую; твои настройки и DLL сохраняются."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 вышел: устраняет ложные срабатывания антивируса благодаря нативному перечислению процессов Win32, усиливает работу с дескрипторами и UAC, переносит DLL в %LOCALAPPDATA%, а также добавляет новые инструменты обслуживания и обновлённые иконки Lucide. Обновление вручную: скачай последнюю YMU.exe и замени старую; твои настройки и DLL сохраняются."
     },
     "meta_description": "YMU — это идеальный лаунчер для YimMenu. Скачивай последнюю версию, загружай её в GTA V парой кликов, управляй скриптами Lua и многое другое.",
     "nav": {
@@ -1037,7 +1037,7 @@
       "card4_title": "Современный UI",
       "card4_desc": "Чистый и интуитивный интерфейс на PySide6 с поддержкой светлой и тёмной тем.",
       "card5_title": "Встроенная помощь",
-      "card5_desc": "Нужна помощь? Кнопки <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> на каждой вкладке помогут тебе разобраться с YMU.",
+      "card5_desc": "Нужна помощь? Кнопки <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> на каждой вкладке помогут тебе разобраться с YMU.",
       "card6_title": "Уведомления об обновлениях",
       "card6_desc": "Проверяй обновления YMU прямо в приложении. Один клик покажет, установлена ли у тебя последняя версия."
     },
@@ -1053,12 +1053,12 @@
       "step2_desc": "Используй вкладку «Скачать», чтобы получить последнюю версию YimMenu.",
       "step3_title": "Запуск и инжект",
       "step3_desc": "Перейди на вкладку «Инжект». Ты можешь запустить GTA V прямо из YMU (опционально), а затем просто нажми кнопку, чтобы инжектировать YimMenu.",
-      "additional_info": "Для подробностей нажимай на встроенные кнопки помощи <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> внутри приложения YMU."
+      "additional_info": "Для подробностей нажимай на встроенные кнопки помощи <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> внутри приложения YMU."
     },
     "download_section": {
       "title": "Скачать",
       "card_headline": "Готовый исполняемый файл",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Скачать YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>Скачать YMU v1.1.10",
       "os_header": "ОС:",
       "os_info": "Для Windows 10 и 11",
       "arch_header": "Архитектура:",
@@ -1068,14 +1068,14 @@
       "source_tooling": "Инструменты:",
       "source_license": "Лицензия:",
       "source_version": "Версия:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Скачать исходный код",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Скачать исходный код",
       "lua_question": "Ищешь Lua-скрипты?",
       "lua_subheader": "Официальные скрипты от сообщества.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Найти Lua-расширения для YimMenu"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>Найти Lua-расширения для YimMenu"
     },
     "updates_section": {
       "title": "Последние обновления",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Полный список изменений на GitHub"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>Полный список изменений на GitHub"
     },
     "faq_section": {
       "title": "Часто задаваемые вопросы (FAQ)",
@@ -1099,7 +1099,7 @@
     "community_section": {
       "title": "Присоединяйся к сообществу",
       "subtitle": "Есть идея, запрос на функцию или нашел баг? Присоединяйся к обсуждению!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Сообщить о проблеме или предложить функцию",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Сообщить о проблеме или предложить функцию",
       "discord_button": "Присоединяйся к Discord",
       "support_text": "Поддержи проект и помоги ему развиваться:",
       "star_button": "Поставь звезду на GitHub"
@@ -1117,7 +1117,7 @@
       "by": "от",
       "icons": "Иконки",
       "fonts": "Шрифты",
-      "license_mit": "Лицензия MIT.",
+      "license_isc": "Лицензия ISC.",
       "license_sil": "Лицензия SIL Open Font License 1.1."
     },
     "privacy_section": {
@@ -1152,8 +1152,8 @@
       "yimmenu_desc": "Інструмент для моддингу з відкритим кодом"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 вже тут: точковий хотфікс, що виправляє помилки SSL та мережевого з'єднання під час перезапуску з самого застосунку. Оновлення вручну: завантаж найновішу YMU.exe і заміни стару; твої налаштування та DLL зберігаються."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 вже тут: усуває хибні спрацьовування антивірусу через нативне перерахування процесів Win32, зміцнює операції UAC і дескрипторів, переносить DLL до %LOCALAPPDATA% та додає новий набір обслуговування й оновлені іконки Lucide. Оновлення вручну: завантаж найновішу YMU.exe і заміни стару; твої налаштування та DLL зберігаються."
     },
     "meta_description": "YMU — це ідеальний лаунчер для YimMenu. Легко завантажуй останню версію, запускай її в GTA V у кілька кліків, керуй Lua-скриптами та багато іншого.",
     "nav": {
@@ -1180,7 +1180,7 @@
       "card4_title": "Сучасний інтерфейс",
       "card4_desc": "Чистий та інтуїтивний інтерфейс на PySide6, з підтримкою світлої та темної тем.",
       "card5_title": "Вбудована довідка",
-      "card5_desc": "Потрібна допомога? Інтегровані кнопки <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> на кожній вкладці допоможуть тобі максимально ефективно використовувати YMU.",
+      "card5_desc": "Потрібна допомога? Інтегровані кнопки <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> на кожній вкладці допоможуть тобі максимально ефективно використовувати YMU.",
       "card6_title": "Сповіщення про оновлення",
       "card6_desc": "Перевіряй оновлення YMU прямо в застосунку. Один клік покаже, чи маєш ти найновішу версію."
     },
@@ -1196,12 +1196,12 @@
       "step2_desc": "Використовуй вкладку «Завантажити», щоб отримати останню версію YimMenu.",
       "step3_title": "Запуск та інжект",
       "step3_desc": "Перейди на вкладку «Інжект». Ти можеш запустити GTA V прямо з YMU (опціонально), а потім просто натисни, щоб інжектувати YimMenu.",
-      "additional_info": "Для детальніших інструкцій натискай інтегровані кнопки довідки <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> у застосунку YMU."
+      "additional_info": "Для детальніших інструкцій натискай інтегровані кнопки довідки <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> у застосунку YMU."
     },
     "download_section": {
       "title": "Завантажити",
       "card_headline": "Готовий виконуваний файл",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>Завантажити YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>Завантажити YMU v1.1.10",
       "os_header": "ОС:",
       "os_info": "Для Windows 10 та 11",
       "arch_header": "Архітектура:",
@@ -1211,14 +1211,14 @@
       "source_tooling": "Інструменти:",
       "source_license": "Ліцензія:",
       "source_version": "Версія:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Завантажити вихідний код",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Завантажити вихідний код",
       "lua_question": "Шукаєш Lua-скрипти?",
       "lua_subheader": "Переглянь офіційні скрипти від спільноти.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>Знайти Lua-розширення для YimMenu"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>Знайти Lua-розширення для YimMenu"
     },
     "updates_section": {
       "title": "Останні оновлення",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>Повний список змін на GitHub"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>Повний список змін на GitHub"
     },
     "faq_section": {
       "title": "Часті запитання (FAQ)",
@@ -1242,7 +1242,7 @@
     "community_section": {
       "title": "Приєднуйся до спільноти",
       "subtitle": "Маєш ідею, запит на функцію або знайшов проблему? Приєднуйся до обговорення!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Повідом про проблему або запропонуй функцію",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Повідом про проблему або запропонуй функцію",
       "discord_button": "Приєднуйся до нашого Discord",
       "support_text": "Підтримай проєкт і допоможи йому зростати:",
       "star_button": "Постав зірочку на GitHub"
@@ -1260,7 +1260,7 @@
       "by": "від",
       "icons": "Іконки",
       "fonts": "Шрифти",
-      "license_mit": "Ліцензія MIT.",
+      "license_isc": "Ліцензія ISC.",
       "license_sil": "Ліцензія SIL Open Font License 1.1."
     },
     "privacy_section": {
@@ -1295,8 +1295,8 @@
       "yimmenu_desc": "Açık Kaynak Modlama Aracı"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 çıktı: uygulama içi yeniden başlatmalarda ortaya çıkan SSL ve ağ bağlantısı hatalarını gideren hedefli hotfix. Güncelleme elle yapılır: en yeni YMU.exe'yi indirip eskisiyle değiştir; ayarların ve DLL'lerin korunur."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 çıktı: yerel Win32 işlem numaralandırmasıyla virüsten koruma yanlış alarmlarını ortadan kaldırır, UAC ve tanıtıcı işlemlerini güçlendirir, DLL depolamasını %LOCALAPPDATA% konumuna taşır ve yeni bakım araçları ile yenilenmiş Lucide simgeleri ekler. Güncelleme elle yapılır: en yeni YMU.exe'yi indirip eskisiyle değiştir; ayarların ve DLL'lerin korunur."
     },
     "meta_description": "YMU, YimMenu için nihai başlatıcısıdır. En son sürümü sorunsuz indir, GTA V'ye birkaç tıkla yükle, Lua scriptlerini yönet ve çok daha fazlasını yap.",
     "nav": {
@@ -1323,7 +1323,7 @@
       "card4_title": "Modern Arayüz",
       "card4_desc": "PySide6 ile oluşturulmuş, hem Açık hem de Koyu tema içeren temiz ve sezgisel bir kullanıcı arayüzü.",
       "card5_title": "Entegre Yardım",
-      "card5_desc": "Yardıma mı ihtiyacın var? Her sekmedeki entegre <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> düğmeleri, YMU deneyimini en üst düzeye çıkarman için sana rehberlik eder.",
+      "card5_desc": "Yardıma mı ihtiyacın var? Her sekmedeki entegre <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> düğmeleri, YMU deneyimini en üst düzeye çıkarman için sana rehberlik eder.",
       "card6_title": "Güncelleme Bildirimleri",
       "card6_desc": "YMU güncellemelerini doğrudan uygulamada kontrol et. Tek tıkla en son sürümü kullanıp kullanmadığını gör."
     },
@@ -1339,12 +1339,12 @@
       "step2_desc": "YimMenu'nün en son sürümünü edinmek için 'İndir' sekmesini kullan.",
       "step3_title": "Başlat & Enjekte Et",
       "step3_desc": "'Enjekte Et' sekmesine git. GTA V'yi doğrudan YMU'dan başlatabilirsin (isteğe bağlı), ardından YimMenu'yü enjekte etmek için tıklayabilirsin.",
-      "additional_info": "Daha ayrıntılı rehberlik için YMU uygulaması içindeki entegre <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> yardım düğmelerine tıkla."
+      "additional_info": "Daha ayrıntılı rehberlik için YMU uygulaması içindeki entegre <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> yardım düğmelerine tıkla."
     },
     "download_section": {
       "title": "İndir",
       "card_headline": "Hazır Uygulama",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.10'u İndir",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>YMU v1.1.10'u İndir",
       "os_header": "İşletim Sistemi:",
       "os_info": "Windows 10 & 11 için",
       "arch_header": "Mimari:",
@@ -1354,14 +1354,14 @@
       "source_tooling": "Araçlar:",
       "source_license": "Lisans:",
       "source_version": "Sürüm:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>Kaynak Kodunu İndir",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>Kaynak Kodunu İndir",
       "lua_question": "Lua Scriptleri mi Arıyorsun?",
       "lua_subheader": "Resmi topluluk scriptlerine göz at.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>YimMenu için Lua Eklentileri Bul"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>YimMenu için Lua Eklentileri Bul"
     },
     "updates_section": {
       "title": "Son Güncellemeler",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>GitHub'daki Tam Değişiklik Günlüğü"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>GitHub'daki Tam Değişiklik Günlüğü"
     },
     "faq_section": {
       "title": "Sıkça Sorulan Sorular (SSS)",
@@ -1385,7 +1385,7 @@
     "community_section": {
       "title": "Topluluğa Katıl",
       "subtitle": "Bir fikrin, özellik isteğin mi var veya bir sorun mu buldun? Sohbete katıl!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>Sorun Bildir veya Özellik İste",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>Sorun Bildir veya Özellik İste",
       "discord_button": "Discord'umuza Katıl",
       "support_text": "Desteğini göster ve projenin büyümesine yardımcı ol:",
       "star_button": "GitHub'da bize yıldız ver"
@@ -1403,7 +1403,7 @@
       "by": "yapan:",
       "icons": "İkonlar",
       "fonts": "Yazı Tipleri",
-      "license_mit": "MIT Lisansı altındadır.",
+      "license_isc": "ISC Lisansı altındadır.",
       "license_sil": "SIL Open Font License 1.1 altındadır."
     },
     "privacy_section": {
@@ -1438,8 +1438,8 @@
       "yimmenu_desc": "开源模组工具"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 已发布：针对性热修复补丁，解决了在应用内重启时出现的 SSL 和网络连接错误。更新需手动进行：下载最新的 YMU.exe 并替换旧版本；你的设置和 DLL 都会保留。"
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 已发布：通过原生 Win32 进程枚举消除了杀毒软件误报，强化了 UAC 与句柄生命周期管理，将 DLL 存储迁移至 %LOCALAPPDATA%，并新增维护工具套件与全新的 Lucide 图标。更新需手动进行：下载最新的 YMU.exe 并替换旧版本；你的设置和 DLL 都会保留。"
     },
     "meta_description": "YMU 是 YimMenu 的终极启动器。一键下载最新版本，轻松加载至 GTA V，并便捷管理 Lua 脚本。",
     "nav": {
@@ -1466,7 +1466,7 @@
       "card4_title": "现代 UI",
       "card4_desc": "基于 PySide6 构建的简洁直观用户界面，支持浅色和深色主题。",
       "card5_title": "内置帮助",
-      "card5_desc": "需要帮助？每个标签页上的内置 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 按钮将指导你充分利用 YMU。",
+      "card5_desc": "需要帮助？每个标签页上的内置 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> 按钮将指导你充分利用 YMU。",
       "card6_title": "更新提醒",
       "card6_desc": "在应用内直接检查 YMU 更新。一键即可知道你是否使用的是最新版本。"
     },
@@ -1482,12 +1482,12 @@
       "step2_desc": "使用“下载”标签页获取 YimMenu 的最新版本。",
       "step3_title": "启动并注入",
       "step3_desc": "前往“注入”标签页。你可以直接通过 YMU 启动 GTA V（可选），然后点击注入 YimMenu。",
-      "additional_info": "如需更详细的指导，请点击 YMU 应用程序内的集成 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 帮助按钮。"
+      "additional_info": "如需更详细的指导，请点击 YMU 应用程序内的集成 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> 帮助按钮。"
     },
     "download_section": {
       "title": "下载",
       "card_headline": "预构建可执行文件",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下载 YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>下载 YMU v1.1.10",
       "os_header": "系统：",
       "os_info": "适用于 Windows 10 & 11",
       "arch_header": "架构：",
@@ -1497,14 +1497,14 @@
       "source_tooling": "工具链：",
       "source_license": "许可证：",
       "source_version": "版本：",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>下载源代码",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>下载源代码",
       "lua_question": "在寻找 Lua 脚本吗？",
       "lua_subheader": "浏览官方社区脚本。",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>查找 YimMenu 的 Lua 扩展"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>查找 YimMenu 的 Lua 扩展"
     },
     "updates_section": {
       "title": "最新更新",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>在 GitHub 上查看完整更新日志"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>在 GitHub 上查看完整更新日志"
     },
     "faq_section": {
       "title": "常见问题 (FAQ)",
@@ -1528,7 +1528,7 @@
     "community_section": {
       "title": "加入社区",
       "subtitle": "有想法、功能请求或发现了问题？加入讨论！",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>报告问题或请求功能",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>报告问题或请求功能",
       "discord_button": "加入我们的 Discord",
       "support_text": "展示你的支持并帮助项目成长：",
       "star_button": "在 GitHub 上为我们点星"
@@ -1546,7 +1546,7 @@
       "by": "由",
       "icons": "图标",
       "fonts": "字体",
-      "license_mit": "基于 MIT License 授权。",
+      "license_isc": "基于 ISC License 授权。",
       "license_sil": "基于 SIL Open Font License 1.1。"
     },
     "privacy_section": {
@@ -1581,8 +1581,8 @@
       "yimmenu_desc": "開源模組工具"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 已發佈：針對性熱修復更新，解決了在應用程式內重啟時出現的 SSL 和網路連線錯誤。更新需手動進行：下載最新的 YMU.exe 並替換舊版本；你的設定和 DLL 都會保留。"
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 已發佈：透過原生 Win32 行程列舉消除了防毒軟體誤報，強化了 UAC 與控制代碼生命週期管理，將 DLL 儲存遷移至 %LOCALAPPDATA%，並新增維護工具套件與全新的 Lucide 圖示。更新需手動進行：下載最新的 YMU.exe 並替換舊版本；你的設定和 DLL 都會保留。"
     },
     "meta_description": "YMU 是 YimMenu 的終極啟動器。一鍵下載最新版本，輕鬆載入至 GTA V，並便捷管理 Lua 腳本。",
     "nav": {
@@ -1609,7 +1609,7 @@
       "card4_title": "現代 UI",
       "card4_desc": "基於 PySide6 構建的簡潔直觀用戶介面，支持淺色和深色主題。",
       "card5_title": "內建幫助",
-      "card5_desc": "需要幫助？每個標籤頁上的內建 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 按鈕將指導你充分利用 YMU。",
+      "card5_desc": "需要幫助？每個標籤頁上的內建 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> 按鈕將指導你充分利用 YMU。",
       "card6_title": "更新提醒",
       "card6_desc": "在應用內直接檢查 YMU 更新。一鍵即可知道你是否使用的是最新版本。"
     },
@@ -1625,12 +1625,12 @@
       "step2_desc": "使用“下載”標籤頁獲取 YimMenu 的最新版本。",
       "step3_title": "啟動並注入",
       "step3_desc": "前往“注入”標籤頁。你可以直接通過 YMU 啟動 GTA V（可選），然後點擊注入 YimMenu。",
-      "additional_info": "如需更詳細的指導，請點擊 YMU 應用程式內的整合 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 幫助按鈕。"
+      "additional_info": "如需更詳細的指導，請點擊 YMU 應用程式內的整合 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> 幫助按鈕。"
     },
     "download_section": {
       "title": "下載",
       "card_headline": "預構建可執行檔案",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>下載 YMU v1.1.10",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>下載 YMU v1.1.10",
       "os_header": "系統：",
       "os_info": "適用於 Windows 10 & 11",
       "arch_header": "架構：",
@@ -1640,14 +1640,14 @@
       "source_tooling": "工具鏈：",
       "source_license": "許可證：",
       "source_version": "版本：",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>下載源代碼",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>下載源代碼",
       "lua_question": "正在尋找 Lua 腳本？",
       "lua_subheader": "瀏覽官方社區腳本。",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>查找 YimMenu 的 Lua 擴展"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>查找 YimMenu 的 Lua 擴展"
     },
     "updates_section": {
       "title": "最新更新",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>在 GitHub 上查看完整更新日誌"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>在 GitHub 上查看完整更新日誌"
     },
     "faq_section": {
       "title": "常見問題 (FAQ)",
@@ -1671,7 +1671,7 @@
     "community_section": {
       "title": "加入社區",
       "subtitle": "有想法、功能請求或發現了問題？加入討論！",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>報告問題或請求功能",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>報告問題或請求功能",
       "discord_button": "加入我們的 Discord",
       "support_text": "展示你的支持並幫助專案成長：",
       "star_button": "在 GitHub 上為我們點星"
@@ -1689,7 +1689,7 @@
       "by": "由",
       "icons": "圖示",
       "fonts": "字體",
-      "license_mit": "基於 MIT License 授權。",
+      "license_isc": "基於 ISC License 授權。",
       "license_sil": "基於 SIL Open Font License 1.1。"
     },
     "privacy_section": {
@@ -1724,8 +1724,8 @@
       "yimmenu_desc": "オープンソースModツール"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10 が公開されました：アプリ内からの再起動時に発生していた SSL およびネットワーク接続エラーを修正する緊急ホットフィックス。アップデートは手動です：最新の YMU.exe をダウンロードして古いものと置き換えてください。設定と DLL は保持されます。"
+      "version": "1.1.11",
+      "text": "YMU v1.1.11 が公開されました：ネイティブ Win32 プロセス列挙によりウイルス対策の誤検知を解消し、UAC 処理やハンドル管理を強化、DLL 保存先を %LOCALAPPDATA% に移行し、新たなメンテナンス機能と刷新された Lucide アイコンを追加しました。アップデートは手動です：最新の YMU.exe をダウンロードして古いものと置き換えてください。設定と DLL は保持されます。"
     },
     "meta_description": "YMUはYimMenuのための究極のランチャーです。最新版をスムーズにダウンロードし、数クリックでGTA Vにロード、Luaスクリプトの管理などが可能です。",
     "nav": {
@@ -1752,7 +1752,7 @@
       "card4_title": "モダンなUI",
       "card4_desc": "PySide6で構築された、クリーンで直感的なUI。ライトテーマとダークテーマに対応しています。",
       "card5_title": "統合ヘルプ",
-      "card5_desc": "サポートが必要ですか？各タブにある統合された <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> ボタンが、YMUの活用方法をご案内します。",
+      "card5_desc": "サポートが必要ですか？各タブにある統合された <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> ボタンが、YMUの活用方法をご案内します。",
       "card6_title": "更新通知",
       "card6_desc": "アプリ内で直接YMUの更新を確認。ワンクリックで最新バージョンかどうかが分かります。"
     },
@@ -1768,12 +1768,12 @@
       "step2_desc": "「ダウンロード」タブを使って、YimMenuの最新版を入手します。",
       "step3_title": "起動とインジェクト",
       "step3_desc": "「インジェクト」タブに移動します。YMUからGTA Vを直接起動し（任意）、クリックするだけでYimMenuをインジェクトできます。",
-      "additional_info": "詳細は、YMUアプリ内の統合ヘルプボタン <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> をクリックしてください。"
+      "additional_info": "詳細は、YMUアプリ内の統合ヘルプボタン <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> をクリックしてください。"
     },
     "download_section": {
       "title": "ダウンロード",
       "card_headline": "ビルド済み実行ファイル",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.10をダウンロード",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>YMU v1.1.10をダウンロード",
       "os_header": "対応OS：",
       "os_info": "Windows 10 & 11 用",
       "arch_header": "アーキテクチャ：",
@@ -1783,14 +1783,14 @@
       "source_tooling": "ツール：",
       "source_license": "ライセンス：",
       "source_version": "バージョン：",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>ソースコードをダウンロード",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>ソースコードをダウンロード",
       "lua_question": "Luaスクリプトをお探しですか？",
       "lua_subheader": "公式コミュニティスクリプトを閲覧。",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>YimMenu用Lua拡張機能を探す"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>YimMenu用Lua拡張機能を探す"
     },
     "updates_section": {
       "title": "最新の更新情報",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>GitHubで変更履歴をすべて見る"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>GitHubで変更履歴をすべて見る"
     },
     "faq_section": {
       "title": "よくある質問 (FAQ)",
@@ -1814,7 +1814,7 @@
     "community_section": {
       "title": "コミュニティに参加",
       "subtitle": "アイデアや機能リクエスト、問題の発見などがあれば、ぜひ会話に参加してください！",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>問題を報告 / 機能をリクエスト",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>問題を報告 / 機能をリクエスト",
       "discord_button": "Discordに参加",
       "support_text": "プロジェクトの成長を応援してください:",
       "star_button": "GitHubでスターをつける"
@@ -1832,7 +1832,7 @@
       "by": "作成者",
       "icons": "アイコン",
       "fonts": "フォント",
-      "license_mit": "MITライセンス。",
+      "license_isc": "ISCライセンス。",
       "license_sil": "SIL Open Font License 1.1。"
     },
     "privacy_section": {
@@ -1867,8 +1867,8 @@
       "yimmenu_desc": "오픈소스 모딩 도구"
     },
     "alert_banner": {
-      "version": "1.1.10",
-      "text": "YMU v1.1.10이 출시됐어요: 앱 내 재시작 시 발생하던 SSL 및 네트워크 연결 오류를 해결하는 긴급 핫픽스예요. 업데이트는 수동이에요: 최신 YMU.exe를 내려받아 기존 파일을 교체해 주세요. 설정과 DLL은 그대로 유지돼요."
+      "version": "1.1.11",
+      "text": "YMU v1.1.11이 출시됐어요: 네이티브 Win32 프로세스 열거로 백신 오탐지를 해결하고, UAC 작업 및 핸들 관리를 강화했으며, DLL 저장소를 %LOCALAPPDATA%로 이전하고 새로운 유지 관리 도구와 새로워진 Lucide 아이콘을 추가했어요. 업데이트는 수동이에요: 최신 YMU.exe를 내려받아 기존 파일을 교체해 주세요. 설정과 DLL은 그대로 유지돼요."
     },
     "meta_description": "YMU는 YimMenu를 위한 궁극의 런처입니다. 최신 버전을 매끄럽게 다운로드하고, 몇 번의 클릭만으로 GTA V에 로드하며, Lua 스크립트를 관리하는 등 다양한 기능을 이용할 수 있습니다.",
     "nav": {
@@ -1895,7 +1895,7 @@
       "card4_title": "모던한 UI",
       "card4_desc": "PySide6로 제작된 깔끔하고 직관적인 사용자 인터페이스로, 라이트 테마와 다크 테마를 모두 지원해요.",
       "card5_title": "통합 도움말",
-      "card5_desc": "도움이 필요하신가요? 각 탭에 있는 통합 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 버튼이 YMU를 최대한 활용할 수 있도록 안내해 드려요.",
+      "card5_desc": "도움이 필요하신가요? 각 탭에 있는 통합 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> 버튼이 YMU를 최대한 활용할 수 있도록 안내해 드려요.",
       "card6_title": "업데이트 알림",
       "card6_desc": "앱 안에서 바로 YMU 업데이트를 확인하세요. 클릭 한 번으로 최신 버전 여부를 알 수 있어요."
     },
@@ -1911,12 +1911,12 @@
       "step2_desc": "'다운로드' 탭에서 YimMenu의 최신 버전을 받으세요.",
       "step3_title": "실행 및 인젝트",
       "step3_desc": "'인젝트' 탭으로 이동하세요. YMU에서 바로 GTA V를 시작할 수 있으며(선택 사항), 클릭 한 번으로 YimMenu를 인젝트할 수 있어요.",
-      "additional_info": "더 자세한 안내가 필요하면 YMU 애플리케이션 내의 통합 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><line x1='12' x2='12.01' y1='17' y2='17' /></svg></span> 도움말 버튼을 클릭하세요."
+      "additional_info": "더 자세한 안내가 필요하면 YMU 애플리케이션 내의 통합 <span class='inline-icon'><svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><circle cx='12' cy='12' r='10' /><path d='M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3' /><path d='M12 17h.01' /></svg></span> 도움말 버튼을 클릭하세요."
     },
     "download_section": {
       "title": "다운로드",
       "card_headline": "사전 빌드된 실행 파일",
-      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><polyline points='7 10 12 15 17 10' /><line x1='12' x2='12' y1='15' y2='3' /></svg>YMU v1.1.10 다운로드",
+      "main_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M12 15V3' /><path d='M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4' /><path d='m7 10 5 5 5-5' /></svg>YMU v1.1.10 다운로드",
       "os_header": "OS:",
       "os_info": "Windows 10 & 11용",
       "arch_header": "아키텍처:",
@@ -1926,14 +1926,14 @@
       "source_tooling": "도구:",
       "source_license": "라이선스:",
       "source_version": "버전:",
-      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 19a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h5l2 3h9a2 2 0 0 1 2 2z' /></svg>소스 코드 다운로드",
+      "source_code_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z' /></svg>소스 코드 다운로드",
       "lua_question": "Lua 스크립트를 찾고 계신가요?",
       "lua_subheader": "공식 커뮤니티 스크립트를 둘러보세요.",
-      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z'></path><polyline points='14 2 14 8 20 8'></polyline><line x1='12' x2='12' y1='18' y2='12'></line><line x1='9' x2='15' y1='15' y2='15'></line></svg>YimMenu용 Lua 확장 기능 찾기"
+      "lua_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z' /><path d='M14 2v5a1 1 0 0 0 1 1h5' /><path d='M9 15h6' /><path d='M12 18v-6' /></svg>YimMenu용 Lua 확장 기능 찾기"
     },
     "updates_section": {
       "title": "최신 업데이트",
-      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><line x1='8' x2='21' y1='6' y2='6' /><line x1='8' x2='21' y1='12' y2='12' /><line x1='8' x2='21' y1='18' y2='18' /><line x1='3' x2='3.01' y1='6' y2='6' /><line x1='3' x2='3.01' y1='12' y2='12' /><line x1='3' x2='3.01' y1='18' y2='18' /></svg>GitHub에서 전체 변경 로그 보기"
+      "changelog_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M3 5h.01' /><path d='M3 12h.01' /><path d='M3 19h.01' /><path d='M8 5h13' /><path d='M8 12h13' /><path d='M8 19h13' /></svg>GitHub에서 전체 변경 로그 보기"
     },
     "faq_section": {
       "title": "자주 묻는 질문 (FAQ)",
@@ -1957,7 +1957,7 @@
     "community_section": {
       "title": "커뮤니티에 참여하세요",
       "subtitle": "아이디어나 기능 요청이 있으신가요? 아니면 문제를 발견하셨나요? 함께 이야기해요!",
-      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z' /></svg>문제 신고 또는 기능 요청하기",
+      "bug_report_button": "<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' width='24' height='24' class='main-grid-item-icon' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2'><path d='M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z' /></svg>문제 신고 또는 기능 요청하기",
       "discord_button": "Discord 참여하기",
       "support_text": "여러분의 응원으로 프로젝트 성장을 도와주세요:",
       "star_button": "GitHub에서 스타 눌러주기"
@@ -1975,7 +1975,7 @@
       "by": "제작자",
       "icons": "아이콘",
       "fonts": "폰트",
-      "license_mit": "MIT 라이선스에 따라 배포됩니다.",
+      "license_isc": "ISC 라이선스에 따라 배포됩니다.",
       "license_sil": "SIL Open Font License 1.1에 따라 배포됩니다."
     },
     "privacy_section": {

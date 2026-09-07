@@ -1,5 +1,11 @@
 [
   {
+    "version": "v1.1.11",
+    "title": "- Systems Engineering, Antivirus Hardening & UX Polish",
+    "date": "Sep 07, 2026",
+    "description": "Eliminates antivirus false positives via native Win32 process enumeration, hardens handle lifecycles and UAC operations, migrates DLL storage to %LOCALAPPDATA%, adds a dedicated maintenance suite (cache cleaner, bulk Lua toggling, FSL detection), handles locked DLL files gracefully, and introduces refreshed Lucide icons with comprehensive UI/UX refinements."
+  },
+  {
     "version": "v1.1.10",
     "title": "- In-App Restart Hotfix",
     "date": "Sep 03, 2026",

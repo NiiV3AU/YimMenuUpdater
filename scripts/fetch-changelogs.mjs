@@ -35,25 +35,49 @@ function isAtLeastMinVersion(version, min = MIN_VERSION) {
 }
 
 function parseChangelog(content) {
-  const regex = /^##\s+\[(v?\d+\.\d+\.\d+)\]\s*-\s*(\d{4}-\d{2}-\d{2})\r?\n###\s+([^\r\n]+)\r?\n((?:>[^\r\n]*\r?\n?)+)/gm;
-
+  const versionRegex = /^##\s+\[(v?\d+\.\d+\.\d+)\]\s*-\s*(\d{4}-\d{2}-\d{2})/gm;
+  const sections = [];
   let match;
+  while ((match = versionRegex.exec(content)) !== null) {
+    sections.push({
+      rawVersion: match[1],
+      rawDate: match[2],
+      index: match.index,
+      headerLength: match[0].length,
+    });
+  }
+
   const entries = [];
-  while ((match = regex.exec(content)) !== null) {
-    const rawVersion = match[1];
+  for (let i = 0; i < sections.length; i++) {
+    const current = sections[i];
+    const rawVersion = current.rawVersion;
     const version = rawVersion.startsWith('v') ? rawVersion : 'v' + rawVersion;
 
     if (!isAtLeastMinVersion(version)) {
       continue;
     }
 
-    const rawDate = match[2];
-    const title = '- ' + match[3].trim();
-    const description = match[4]
-      .split(/\r?\n/)
-      .map((line) => line.replace(/^>\s?/, '').trim())
-      .filter(Boolean)
-      .join(' ');
+    const nextIndex = i + 1 < sections.length ? sections[i + 1].index : content.length;
+    const body = content.slice(current.index + current.headerLength, nextIndex).trim();
+    const rawDate = current.rawDate;
+
+    // Extract title: ### Title
+    const titleMatch = body.match(/^###\s+([^\r\n]+)/m);
+    const title = titleMatch ? '- ' + titleMatch[1].trim() : '- Release ' + version;
+
+    // Extract blockquote description: > ...
+    let description = '';
+    const bqMatch = body.match(/(?:^|\r?\n)((?:>[^\r\n]*\r?\n?)+)/);
+    if (bqMatch) {
+      description = bqMatch[1]
+        .split(/\r?\n/)
+        .map((line) => line.replace(/^>\s?/, '').trim())
+        .filter(Boolean)
+        .join(' ');
+    } else {
+      const paraMatch = body.match(/(?:^|\r?\n)([^#>\s][^\r\n]+)/);
+      if (paraMatch) description = paraMatch[1].trim();
+    }
 
     const d = new Date(rawDate + 'T00:00:00Z');
     const date = isNaN(d.getTime())

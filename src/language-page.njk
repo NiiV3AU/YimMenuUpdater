@@ -104,8 +104,8 @@ permalink: "/{{ lang.code }}/"
       <div class="alert-content">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" class="alert-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
           <circle cx="12" cy="12" r="10" />
-          <line x1="12" x2="12" y1="16" y2="12" />
-          <line x1="12" x2="12.01" y1="8" y2="8" />
+          <path d="M12 16v-4" />
+          <path d="M12 8h.01" />
         </svg>
         {% set currentAlert = locales[lang.code].alert_banner %}
         {% if currentAlert and currentAlert.version == release.cleanVersion %}
@@ -116,7 +116,7 @@ permalink: "/{{ lang.code }}/"
         {% endif %}
       </div>
       <button id="alert-close-btn" class="alert-close" aria-label="Close alert">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
       </button>
     </div>
     <script>
@@ -367,11 +367,10 @@ permalink: "/{{ lang.code }}/"
                       stroke-linejoin="round"
                       stroke-width="2"
                     >
-                      <polyline points="23 4 23 10 17 10" />
-                      <polyline points="1 20 1 14 7 14" />
-                      <path
-                        d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"
-                      />
+                      <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                      <path d="M21 3v5h-5" />
+                      <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                      <path d="M8 16H3v5" />
                     </svg>
                   </span>
                 </div>
@@ -396,11 +395,12 @@ permalink: "/{{ lang.code }}/"
                       stroke-linejoin="round"
                       stroke-width="2"
                     >
-                      <circle cx="12" cy="12" r="10" />
-                      <line x1="22" x2="18" y1="12" y2="12" />
-                      <line x1="6" x2="2" y1="12" y2="12" />
-                      <line x1="12" x2="12" y1="6" y2="2" />
-                      <line x1="12" x2="12" y1="22" y2="18" />
+                      <path d="m18 2 4 4" />
+                      <path d="m17 7 3-3" />
+                      <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" />
+                      <path d="m9 11 4 4" />
+                      <path d="m5 19-3 3" />
+                      <path d="m14 4 6 6" />
                     </svg>
                   </span>
                 </div>
@@ -425,9 +425,9 @@ permalink: "/{{ lang.code }}/"
                       stroke-width="2"
                     >
                       <path
-                        d="M13 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9z"
+                        d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
                       />
-                      <polyline points="13 2 13 9 20 9" />
+                      <path d="M14 2v5a1 1 0 0 0 1 1h5" />
                     </svg>
                   </span>
                 </div>
@@ -451,8 +451,8 @@ permalink: "/{{ lang.code }}/"
                       stroke-linejoin="round"
                       stroke-width="2"
                     >
-                      <path d="M3 3l7.07 16.97 2.51-7.39 7.39-2.51L3 3z" />
-                      <path d="M13 13l6 6" />
+                      <path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" />
+                      <path d="m21.854 2.147-10.94 10.939" />
                     </svg>
                   </span>
                 </div>
@@ -478,7 +478,7 @@ permalink: "/{{ lang.code }}/"
                     >
                       <circle cx="12" cy="12" r="10" />
                       <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                      <line x1="12" x2="12.01" y1="17" y2="17" />
+                      <path d="M12 17h.01" />
                     </svg>
                   </span>
                 </div>
@@ -502,11 +502,9 @@ permalink: "/{{ lang.code }}/"
                       stroke-linejoin="round"
                       stroke-width="2"
                     >
-                      <polyline points="8 17 12 21 16 17" />
-                      <line x1="12" x2="12" y1="12" y2="21" />
-                      <path
-                        d="M20.88 18.09A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.29"
-                      />
+                      <path d="M12 13v8l-4-4" />
+                      <path d="m12 21 4-4" />
+                      <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284" />
                     </svg>
                   </span>
                 </div>
@@ -593,12 +591,10 @@ permalink: "/{{ lang.code }}/"
                       stroke-linejoin="round"
                       stroke-width="2"
                     >
-                      <line x1="16.5" x2="7.5" y1="9.4" y2="4.21" />
-                      <path
-                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"
-                      />
-                      <polyline points="3.27 6.96 12 12.01 20.73 6.96" />
-                      <line x1="12" x2="12" y1="22.08" y2="12" />
+                      <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+                      <path d="M12 22V12" />
+                      <polyline points="3.29 7 12 12 20.71 7" />
+                      <path d="m7.5 4.27 9 5.15" />
                     </svg>
                   </span>
                 </div>
@@ -622,9 +618,9 @@ permalink: "/{{ lang.code }}/"
                       stroke-linejoin="round"
                       stroke-width="2"
                     >
+                      <path d="M12 15V3" />
                       <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                      <polyline points="7 10 12 15 17 10" />
-                      <line x1="12" x2="12" y1="15" y2="3" />
+                      <path d="m7 10 5 5 5-5" />
                     </svg>
                   </span>
                 </div>
@@ -648,11 +644,12 @@ permalink: "/{{ lang.code }}/"
                       stroke-linejoin="round"
                       stroke-width="2"
                     >
-                      <circle cx="12" cy="12" r="10" />
-                      <line x1="22" x2="18" y1="12" y2="12" />
-                      <line x1="6" x2="2" y1="12" y2="12" />
-                      <line x1="12" x2="12" y1="6" y2="2" />
-                      <line x1="12" x2="12" y1="22" y2="18" />
+                      <path d="m18 2 4 4" />
+                      <path d="m17 7 3-3" />
+                      <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" />
+                      <path d="m9 11 4 4" />
+                      <path d="m5 19-3 3" />
+                      <path d="m14 4 6 6" />
                     </svg>
                   </span>
                 </div>
@@ -671,7 +668,7 @@ permalink: "/{{ lang.code }}/"
           <div class="card download-card main-card">
             <div class="card-header-row">
               <div class="icon-wrapper icon-placement">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
               </div>
               <h3 class="card-headline">{{ locales[lang.code].download_section.card_headline }}</h3>
             </div>
@@ -696,7 +693,7 @@ permalink: "/{{ lang.code }}/"
                 <span class="sha256-wrap">
                   <span class="sha256-value code-font-clean" id="ymu-sha256" role="button" tabindex="0" aria-label="Copy the SHA-256 of YMU.exe">…</span>
                   <span class="sha-tooltip" aria-hidden="true">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
                     <span class="sha-tooltip-text">Copy</span>
                   </span>
                 </span>
@@ -723,7 +720,7 @@ permalink: "/{{ lang.code }}/"
           <div class="card download-card source-card">
             <div class="card-header-row">
               <div class="icon-wrapper icon-placement">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg>
               </div>
               <h3 class="card-headline">{{ locales[lang.code].download_section.source_header }}</h3>
             </div>
@@ -754,15 +751,15 @@ permalink: "/{{ lang.code }}/"
               <div class="source-links text-small">
                 <a href="https://github.com/NiiV3AU/YMU" target="_blank" rel="noopener noreferrer">
                   REPO
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </a>
                 <a href="https://github.com/NiiV3AU/YMU#readme" target="_blank" rel="noopener noreferrer">
                   README
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </a>
                 <a href="https://github.com/NiiV3AU/YMU/issues" target="_blank" rel="noopener noreferrer">
                   ISSUES
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
                 </a>
               </div>
             </div>
@@ -936,8 +933,8 @@ permalink: "/{{ lang.code }}/"
               stroke-linejoin="round"
               stroke-width="2"
             >
-              <polygon
-                points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"
+              <path
+                d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
               />
             </svg>
             <span>{{ locales[lang.code].community_section.star_button }}</span>
@@ -1029,14 +1026,14 @@ permalink: "/{{ lang.code }}/"
           </p>
           <p>
             {{ locales[lang.code].footer_section.icons }}: 
-            <a href="https://feathericons.com/" target="_blank" rel="noopener noreferrer" class="links" aria-label="Feather Icons (icon source)">Feather Icons</a>&#185;
+            <a href="https://lucide.dev/" target="_blank" rel="noopener noreferrer" class="links" aria-label="Lucide (icon source)">Lucide</a>&#185;
             &nbsp;&nbsp;|&nbsp;&nbsp;
             {{ locales[lang.code].footer_section.fonts }}: 
             <a href="https://fonts.google.com/specimen/Manrope" target="_blank" rel="noopener noreferrer" class="links" aria-label="Manrope (font source)">Manrope</a> <span style="opacity: 0.8; font-size: 0.9em;">(Web/App)</span>&#178;
             &amp;
             <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener noreferrer" class="links" aria-label="JetBrains Mono (font source)">JetBrains Mono</a> <span style="opacity: 0.8; font-size: 0.9em;">(App)</span>&#178;
             <br>
-            &#185;{{ locales[lang.code].footer_section.license_mit }}
+            &#185;{{ locales[lang.code].footer_section.license_isc }}
             <br>
             &#178;{{ locales[lang.code].footer_section.license_sil }}
           </p>
@@ -1050,21 +1047,21 @@ permalink: "/{{ lang.code }}/"
       <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
       <img class="theme-img lightbox-image" src="/assets/img/Inject.webp" alt="Inject (enlarged)" width="782" height="552" loading="lazy" data-dark="/assets/img/Inject.webp" data-light="/assets/img/Inject_Light.webp" />
       <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
       </a>
     </div>
     <div id="lightbox-settings" class="lightbox-overlay">
       <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
       <img class="theme-img lightbox-image" src="/assets/img/Settings.webp" alt="Settings (enlarged)" width="782" height="552" loading="lazy" data-dark="/assets/img/Settings.webp" data-light="/assets/img/Settings_Light.webp" />
       <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
       </a>
     </div>
     <div id="lightbox-download" class="lightbox-overlay">
       <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
       <img class="theme-img lightbox-image" src="/assets/img/Download.webp" alt="Download (enlarged)" width="782" height="552" loading="lazy" data-dark="/assets/img/Download.webp" data-light="/assets/img/Download_Light.webp" />
       <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
       </a>
     </div>
     <div id="cookie-consent-banner" class="cookie-banner">
@@ -1076,7 +1073,7 @@ permalink: "/{{ lang.code }}/"
       <div class="privacy-modal-content">
         <div class="privacy-modal-header">
           <h2>{{ locales[lang.code].privacy_section.privacy_modal_title }}</h2>
-          <a class="modal-close-btn" href="#_" aria-label="Close privacy information"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="18" x2="6" y1="6" y2="18" /><line x1="6" x2="18" y1="6" y2="18" /></svg></a>
+          <a class="modal-close-btn" href="#_" aria-label="Close privacy information"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></a>
         </div>
         <div class="privacy-modal-body">
           <p>{{ locales[lang.code].privacy_section.privacy_modal_intro }}</p>

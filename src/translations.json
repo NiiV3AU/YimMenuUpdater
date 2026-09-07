@@ -78,8 +78,8 @@
       },
       "Help": {
         "Title": "DLL & FSL Info",
-        "DllSteps": "1. Click on (Download)\n2. Wait for the download to finish\n3. The file is in the 'YMU/dll' folder\n\nIf the file gets deleted, add an exception\nin your antivirus or disable it temporarily.",
-        "FslSteps": "1. Download FSL (Link provided in the Risks tab)\n2. Open your GTA V directory\n3. Drop the WINMM.dll in the folder\n   (filename MUST be exactly 'WINMM.dll')\n4. Disable BattlEye in the Rockstar Games Launcher\n5. Done! ✅"
+        "DllSteps": "1. Click on [Download]\n2. Wait for the download to finish\n3. The file is in the '%LOCALAPPDATA%/YMU/dll' folder\n\nIf the file gets deleted, add an exception\nin your antivirus or disable it temporarily.",
+        "FslSteps": "1. Download FSL (Link provided in the Risks tab)\n2. Open your GTA V directory\n3. Drop the WINMM.dll in the folder\n   (filename MUST be exactly 'WINMM.dll')\n4. Disable BattlEye in the Rockstar Games Launcher\n5. Done!"
       },
       "Tooltip": {
         "Help": "Show help for DLL and FSL installation",
@@ -92,7 +92,8 @@
         "DownloadAnyway": "Download anyway"
       },
       "Error": {
-        "RateLimited": "GitHub API rate limit reached. Please try again in {0} minutes."
+        "RateLimited": "GitHub API rate limit reached. Please try again in {0} minutes.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -116,9 +117,9 @@
       },
       "Help": {
         "Title": "Injection Info",
-        "StartGtaSteps": "1. Select your launcher\n2. Press 'Start GTA 5'\n3. Read the next step ↗",
+        "StartGtaSteps": "1. Select your launcher\n2. Press [Start GTA 5]\n3. Read the next step ↗",
         "TabInject": "Inject DLL",
-        "InjectSteps": "1. Start GTA 5 (↖ Previous Step)\n2. Wait for the game's start screen/menu\n3. Click on 'Inject YimMenu'\n4. Wait for YimMenu to finish loading\n5. Done! ✅"
+        "InjectSteps": "1. Start GTA 5 (↖ Previous Step)\n2. Wait for the game's start screen/menu\n3. Click on [Inject YimMenu]\n4. Wait for YimMenu to finish loading\n5. Done!"
       },
       "Tooltip": {
         "Help": "Show help for the injection process",
@@ -155,6 +156,7 @@
         "Appearance": "Appearance",
         "Injection": "Injection",
         "Lua": "Lua Settings",
+        "Maintenance": "Maintenance",
         "Other": "Other",
         "Paths": "Custom Paths"
       },
@@ -177,11 +179,17 @@
         "AutoReload": "Auto-reload changed scripts",
         "ListDisabled": "Disabled",
         "ListEnabled": "Enabled",
+        "Btn": {
+          "DisableAll": "Disable All",
+          "EnableAll": "Enable All"
+        },
         "Tooltip": {
           "AutoReload": "Automatically re-apply changes when Lua script files are saved",
           "Enable": "Enable selected script(s)",
           "Disable": "Disable selected script(s)",
-          "Refresh": "Refresh script lists"
+          "Refresh": "Refresh script lists",
+          "DisableAll": "Disable all scripts at once (Safe Mode)",
+          "EnableAll": "Re-enable all disabled scripts"
         },
         "NoScriptsDir": "The {0} folder hasn't been created yet.\nInject and run YimMenu once to generate it."
       },
@@ -196,20 +204,27 @@
         "DiscoverLua": "Discover Lua Scripts",
         "OpenYimFolder": "Open YimMenu Folder",
         "OpenYmuFolder": "Open YMU Folder",
+        "OpenLog": "Open YimMenu Log",
+        "ResetCaches": "Clear Pointer Caches",
         "ReportBug": "Report a Bug",
         "RequestFeature": "Request a Feature",
         "CheckUpdates": "Check for YMU Updates",
-        "UpToDate": "YMU is up-to-date"
+        "UpToDate": "YMU is up-to-date",
+        "OpenYimV2Folder": "Open YimMenuV2 Folder",
+        "OpenV2Log": "Open YimMenuV2 Log"
       },
       "Tooltip": {
         "OpenScripts": "Open the folder where your Lua scripts are located",
         "DiscoverLua": "Open the official YimMenu-Lua GitHub organization to find new scripts",
         "OpenYimFolder": "Open YimMenu folder (%APPDATA%/YimMenu)",
         "OpenYmuFolder": "Open YMU folder (%APPDATA%/YMU)",
+        "OpenLog": "Open the active edition's cout.log in your text editor",
+        "ResetCaches": "Deletes cached binary offsets. Recommended after game updates if the menu crashes on launch.",
         "ReportBug": "Open the bug report page on GitHub in your browser",
         "RequestFeature": "Open the feature request page on GitHub in your browser",
         "Language": "Select application language (requires restart)",
-        "UpdateLang": "Check for translation updates"
+        "UpdateLang": "Check for translation updates",
+        "OpenYimV2Folder": "Open YimMenuV2 folder (%APPDATA%/YimMenuV2)"
       },
       "Update": {
         "Title": "YMU Updates",
@@ -232,7 +247,13 @@
         "BattlEyeDisabledTitle": "BattlEye Disabled",
         "BattlEyeDisabledMsg": "Added -nobattleye to commandline.txt in your GTA V directory.",
         "BattlEyeRestoredTitle": "BattlEye Restored",
-        "BattlEyeRestoredMsg": "Removed -nobattleye from commandline.txt."
+        "BattlEyeRestoredMsg": "Removed -nobattleye from commandline.txt.",
+        "CachesClearedTitle": "Caches Cleared",
+        "CachesClearedMsg": "{0} cache file(s) cleared successfully.",
+        "NoCachesMsg": "No cache files found to clear."
+      },
+      "Notice": {
+        "LegacyOnly": "Only available in YimMenu Legacy"
       },
       "Paths": {
         "GtaDir": "GTA V install folder",
@@ -246,9 +267,16 @@
         "ErrorNotDll": "Please select a .dll file.",
         "ErrorWriteCommandline": "Could not modify commandline.txt. Please check file permissions.",
         "NoBattlEye": "Disable BattlEye (commandline.txt)",
+        "FslDetected": "FSL (WINMM.dll): Detected",
+        "FslMissing": "FSL (WINMM.dll): Not found (Recommended for online)",
+        "FslHelp": "FSL Info",
         "Tooltip": {
-          "NoBattlEye": "Adds or removes -nobattleye in commandline.txt in your GTA V directory to run without BattlEye"
+          "NoBattlEye": "Adds or removes -nobattleye in commandline.txt in your GTA V directory to run without BattlEye",
+          "Fsl": "Free Save Launcher (FSL) provides local GTA Online saves and BattlEye bypass. Click to open UnknownCheats thread."
         }
+      },
+      "Badge": {
+        "LegacyOnly": "Legacy only"
       }
     }
   },
@@ -331,8 +359,8 @@
       },
       "Help": {
         "Title": "Infos zu DLL & FSL",
-        "DllSteps": "1. Klicke auf (Download)\n2. Warte bis der Download fertig ist\n3. Die Datei liegt im 'YMU/dll' Ordner\n\nFalls die Datei gelöscht wird: Füge eine Ausnahme\nzu deinem Antivirus hinzu oder deaktiviere es kurz.",
-        "FslSteps": "1. Lade FSL herunter (Link auf der Risiko-Seite)\n2. Öffne dein GTA V-Verzeichnis\n3. Zieh die WINMM.dll in den Ordner\n   (Dateiname MUSS exakt 'WINMM.dll' sein)\n4. Deaktiviere BattlEye im Rockstar Game Launcher\n5. Fertig! ✅"
+        "DllSteps": "1. Klicke auf [Download]\n2. Warte bis der Download fertig ist\n3. Die Datei liegt im '%LOCALAPPDATA%/YMU/dll' Ordner\n\nFalls die Datei gelöscht wird: Füge eine Ausnahme\nzu deinem Antivirus hinzu oder deaktiviere es kurz.",
+        "FslSteps": "1. Lade FSL herunter (Link auf der Risiko-Seite)\n2. Öffne dein GTA V-Verzeichnis\n3. Zieh die WINMM.dll in den Ordner\n   (Dateiname MUSS exakt 'WINMM.dll' sein)\n4. Deaktiviere BattlEye im Rockstar Game Launcher\n5. Fertig!"
       },
       "Tooltip": {
         "Help": "Hilfe zur DLL- und FSL-Installation anzeigen",
@@ -345,7 +373,8 @@
         "DownloadAnyway": "Trotzdem herunterladen"
       },
       "Error": {
-        "RateLimited": "GitHub API-Limit erreicht. Bitte in {0} Minuten erneut versuchen."
+        "RateLimited": "GitHub API-Limit erreicht. Bitte in {0} Minuten erneut versuchen.",
+        "FileLocked": "YimMenu.dll wird derzeit von GTA V oder einem anderen Prozess verwendet. Bitte schließe GTA V und versuche es erneut."
       }
     },
     "Inject": {
@@ -369,9 +398,9 @@
       },
       "Help": {
         "Title": "Infos zum Inject",
-        "StartGtaSteps": "1. Wähle deinen Launcher\n2. Drücke 'GTA 5 starten'\n3. Lies den nächsten Schritt ↗",
+        "StartGtaSteps": "1. Wähle deinen Launcher\n2. Drücke [GTA 5 starten]\n3. Lies den nächsten Schritt ↗",
         "TabInject": "DLL injecten",
-        "InjectSteps": "1. Starte GTA 5 (↖ Vorheriger Schritt)\n2. Warte auf den Startbildschirm/Menü\n3. Klicke auf 'YimMenu injecten'\n4. Warte bis YimMenu geladen hat\n5. Fertig! ✅"
+        "InjectSteps": "1. Starte GTA 5 (↖ Vorheriger Schritt)\n2. Warte auf den Startbildschirm/Menü\n3. Klicke auf [YimMenu injecten]\n4. Warte bis YimMenu geladen hat\n5. Fertig!"
       },
       "Tooltip": {
         "Help": "Hilfe zum Inject-Vorgang anzeigen",
@@ -408,6 +437,7 @@
         "Appearance": "Design",
         "Injection": "Injektion",
         "Lua": "Lua Einstellungen",
+        "Maintenance": "Wartung",
         "Other": "Sonstiges",
         "Paths": "Eigene Pfade"
       },
@@ -430,11 +460,17 @@
         "AutoReload": "Geänderte Skripte auto-reloaden",
         "ListDisabled": "Deaktiviert",
         "ListEnabled": "Aktiviert",
+        "Btn": {
+          "DisableAll": "Alle deaktivieren",
+          "EnableAll": "Alle aktivieren"
+        },
         "Tooltip": {
           "AutoReload": "Änderungen automatisch übernehmen, wenn Lua-Skriptdateien gespeichert werden",
           "Enable": "Ausgewählte Skripte aktivieren",
           "Disable": "Ausgewählte Skripte deaktivieren",
-          "Refresh": "Skript-Liste aktualisieren"
+          "Refresh": "Skript-Liste aktualisieren",
+          "DisableAll": "Alle Skripte auf einmal deaktivieren (Safe Mode)",
+          "EnableAll": "Alle deaktivierten Skripte wieder aktivieren"
         },
         "NoScriptsDir": "Noch kein {0}-Ordner gefunden.\nInjecte es einmal, um ihn zu erstellen."
       },
@@ -449,20 +485,27 @@
         "DiscoverLua": "Luas entdecken",
         "OpenYimFolder": "YimMenu Ordner öffnen",
         "OpenYmuFolder": "YMU Ordner öffnen",
+        "OpenLog": "YimMenu-Log öffnen",
+        "ResetCaches": "Pointer-Caches leeren",
         "ReportBug": "Bug melden",
         "RequestFeature": "Feature vorschlagen",
         "CheckUpdates": "Auf YMU Updates prüfen",
-        "UpToDate": "YMU ist aktuell"
+        "UpToDate": "YMU ist aktuell",
+        "OpenYimV2Folder": "YimMenuV2 Ordner öffnen",
+        "OpenV2Log": "YimMenuV2-Log öffnen"
       },
       "Tooltip": {
         "OpenScripts": "Öffnet den Ordner, in dem deine Lua-Skripte liegen",
         "DiscoverLua": "Öffnet die offizielle YimMenu-Lua GitHub Org, um neue Skripte zu finden",
         "OpenYimFolder": "Öffnet YimMenu Ordner (%APPDATA%/YimMenu)",
         "OpenYmuFolder": "Öffnet YMU Ordner (%APPDATA%/YMU)",
+        "OpenLog": "Öffnet die cout.log der aktiven Edition im Texteditor",
+        "ResetCaches": "Löscht zwischengespeicherte Binär-Offsets. Empfohlen nach Spiel-Updates bei Startabstürzen.",
         "ReportBug": "Öffnet die Bug-Report Seite auf GitHub im Browser",
         "RequestFeature": "Öffnet die Feature-Request Seite auf GitHub im Browser",
         "Language": "App-Sprache wählen (erfordert Neustart)",
-        "UpdateLang": "Auf Übersetzungs-Updates prüfen"
+        "UpdateLang": "Auf Übersetzungs-Updates prüfen",
+        "OpenYimV2Folder": "Öffnet YimMenuV2 Ordner (%APPDATA%/YimMenuV2)"
       },
       "Update": {
         "Title": "YMU Updates",
@@ -485,7 +528,13 @@
         "BattlEyeDisabledTitle": "BattlEye deaktiviert",
         "BattlEyeDisabledMsg": "-nobattleye wurde zur commandline.txt im GTA V-Ordner hinzugefügt.",
         "BattlEyeRestoredTitle": "BattlEye wiederhergestellt",
-        "BattlEyeRestoredMsg": "-nobattleye wurde aus der commandline.txt entfernt."
+        "BattlEyeRestoredMsg": "-nobattleye wurde aus der commandline.txt entfernt.",
+        "CachesClearedTitle": "Caches geleert",
+        "CachesClearedMsg": "{0} Cache-Datei(en) erfolgreich gelöscht.",
+        "NoCachesMsg": "Keine Cache-Dateien zum Löschen gefunden."
+      },
+      "Notice": {
+        "LegacyOnly": "Nur in YimMenu Legacy verfügbar"
       },
       "Paths": {
         "AutoDetect": "Automatisch erkannt",
@@ -499,9 +548,16 @@
         "ErrorWriteCommandline": "commandline.txt konnte nicht geändert werden. Bitte Dateirechte prüfen.",
         "GtaDir": "GTA V-Installationsordner",
         "NoBattlEye": "BattlEye deaktivieren (commandline.txt)",
+        "FslDetected": "FSL (WINMM.dll): Erkannt",
+        "FslMissing": "FSL (WINMM.dll): Nicht installiert (Empfohlen für Online)",
+        "FslHelp": "FSL-Info",
         "Tooltip": {
-          "NoBattlEye": "Fügt -nobattleye zur commandline.txt im GTA V-Ordner hinzu oder entfernt es, um ohne BattlEye zu starten"
+          "NoBattlEye": "Fügt -nobattleye zur commandline.txt im GTA V-Ordner hinzu oder entfernt es, um ohne BattlEye zu starten",
+          "Fsl": "Free Save Launcher (FSL) stellt lokale Saves und BattlEye-Bypass bereit. Klicke, um den UnknownCheats-Thread zu öffnen."
         }
+      },
+      "Badge": {
+        "LegacyOnly": "Nur Legacy"
       }
     }
   },
@@ -584,8 +640,8 @@
       },
       "Help": {
         "Title": "DLL & FSL Info",
-        "DllSteps": "1. Klik op (Download)\n2. Wacht tot de download klaar is\n3. Het bestand staat in de 'YMU/dll' map\n\nAls het bestand wordt verwijderd, voeg een uitzondering\ntoe in je antivirus of schakel deze tijdelijk uit.",
-        "FslSteps": "1. Download FSL (Link op de Risico Pagina)\n2. Open je GTA V-map\n3. Drop de WINMM.dll in de map\n   (bestandsnaam MOET exact 'WINMM.dll' zijn)\n4. Schakel BattlEye uit in Rockstar's Game Launcher\n5. Klaar! ✅"
+        "DllSteps": "1. Klik op [Download]\n2. Wacht tot de download klaar is\n3. Het bestand staat in de '%LOCALAPPDATA%/YMU/dll' map\n\nAls het bestand wordt verwijderd, voeg een uitzondering\ntoe in je antivirus of schakel deze tijdelijk uit.",
+        "FslSteps": "1. Download FSL (Link op de Risico Pagina)\n2. Open je GTA V-map\n3. Drop de WINMM.dll in de map\n   (bestandsnaam MOET exact 'WINMM.dll' zijn)\n4. Schakel BattlEye uit in Rockstar's Game Launcher\n5. Klaar!"
       },
       "Tooltip": {
         "Help": "Toon hulp voor DLL en FSL installatie",
@@ -598,7 +654,8 @@
         "DownloadAnyway": "Toch downloaden"
       },
       "Error": {
-        "RateLimited": "GitHub API-limiet bereikt. Probeer het over {0} minuten opnieuw."
+        "RateLimited": "GitHub API-limiet bereikt. Probeer het over {0} minuten opnieuw.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -622,9 +679,9 @@
       },
       "Help": {
         "Title": "Injectie Info",
-        "StartGtaSteps": "1. Selecteer je launcher\n2. Druk op 'Start GTA 5'\n3. Lees de volgende stap ↗",
+        "StartGtaSteps": "1. Selecteer je launcher\n2. Druk op [Start GTA 5]\n3. Lees de volgende stap ↗",
         "TabInject": "Injecteer DLL",
-        "InjectSteps": "1. Start GTA 5 (↖ Vorige Stap)\n2. Wacht op het startscherm/menu van de game\n3. Klik op 'Injecteer YimMenu'\n4. Wacht tot YimMenu klaar is met laden\n5. Klaar! ✅"
+        "InjectSteps": "1. Start GTA 5 (↖ Vorige Stap)\n2. Wacht op het startscherm/menu van de game\n3. Klik op [Injecteer YimMenu]\n4. Wacht tot YimMenu klaar is met laden\n5. Klaar!"
       },
       "Tooltip": {
         "Help": "Toon hulp voor het injectie proces",
@@ -662,7 +719,8 @@
         "Injection": "Injectie",
         "Lua": "Lua Instellingen",
         "Other": "Overig",
-        "Paths": "Aangepaste paden"
+        "Paths": "Aangepaste paden",
+        "Maintenance": "Onderhoud"
       },
       "Inject": {
         "AutoClose": "YMU sluiten na injectie",
@@ -687,9 +745,15 @@
           "AutoReload": "Automatisch wijzigingen toepassen als Lua script bestanden worden opgeslagen",
           "Enable": "Geselecteerde script(s) inschakelen",
           "Disable": "Geselecteerde script(s) uitschakelen",
-          "Refresh": "Script lijst verversen"
+          "Refresh": "Script lijst verversen",
+          "DisableAll": "Schakel alle scripts tegelijk uit (Veilige modus)",
+          "EnableAll": "Schakel alle uitgeschakelde scripts weer in"
         },
-        "NoScriptsDir": "Nog geen {0}-map gevonden.\nInjecteer het één keer om hem aan te maken."
+        "NoScriptsDir": "Nog geen {0}-map gevonden.\nInjecteer het één keer om hem aan te maken.",
+        "Btn": {
+          "DisableAll": "Alles uitschakelen",
+          "EnableAll": "Alles inschakelen"
+        }
       },
       "Other": {
         "DebugConsole": "Externe Debug Console inschakelen",
@@ -705,7 +769,11 @@
         "ReportBug": "Meld een Bug",
         "RequestFeature": "Vraag een Feature aan",
         "CheckUpdates": "Check voor YMU Updates",
-        "UpToDate": "YMU is up-to-date"
+        "UpToDate": "YMU is up-to-date",
+        "OpenYimV2Folder": "Open YimMenuV2 Map",
+        "OpenLog": "YimMenu-logbestand openen",
+        "ResetCaches": "Pointer-caches wissen",
+        "OpenV2Log": "YimMenuV2-logbestand openen"
       },
       "Tooltip": {
         "OpenScripts": "Open de map waar je Lua scripts staan",
@@ -715,7 +783,10 @@
         "ReportBug": "Open de bug report pagina op GitHub in je browser",
         "RequestFeature": "Open de feature request pagina op GitHub in je browser",
         "Language": "Selecteer applicatie taal (vereist herstart)",
-        "UpdateLang": "Check voor vertaling updates"
+        "UpdateLang": "Check voor vertaling updates",
+        "OpenYimV2Folder": "Open YimMenuV2 map (%APPDATA%/YimMenuV2)",
+        "OpenLog": "Open de cout.log van de actieve editie in je teksteditor",
+        "ResetCaches": "Verwijdert gecachte binaire offsets. Aanbevolen na game-updates als het menu crasht bij opstarten."
       },
       "Update": {
         "Title": "YMU Updates",
@@ -738,7 +809,10 @@
         "BattlEyeDisabledTitle": "BattlEye uitgeschakeld",
         "BattlEyeDisabledMsg": "-nobattleye is toegevoegd aan commandline.txt in je GTA V-map.",
         "BattlEyeRestoredTitle": "BattlEye hersteld",
-        "BattlEyeRestoredMsg": "-nobattleye is verwijderd uit commandline.txt."
+        "BattlEyeRestoredMsg": "-nobattleye is verwijderd uit commandline.txt.",
+        "CachesClearedTitle": "Caches gewist",
+        "CachesClearedMsg": "{0} cachebestand(en) succesvol gewist.",
+        "NoCachesMsg": "Geen cachebestanden gevonden om te wissen."
       },
       "Paths": {
         "AutoDetect": "Automatisch gedetecteerd",
@@ -753,8 +827,18 @@
         "ErrorWriteCommandline": "Kon commandline.txt niet aanpassen. Controleer de bestandsrechten.",
         "NoBattlEye": "BattlEye uitschakelen (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "Voegt -nobattleye toe aan of verwijdert het uit commandline.txt in je GTA V-map om zonder BattlEye te spelen"
-        }
+          "NoBattlEye": "Voegt -nobattleye toe aan of verwijdert het uit commandline.txt in je GTA V-map om zonder BattlEye te spelen",
+          "Fsl": "Free Save Launcher (FSL) biedt lokale GTA Online-saves en BattlEye-bypass. Klik om UnknownCheats-thread te openen."
+        },
+        "FslDetected": "FSL (WINMM.dll): Gedetecteerd",
+        "FslMissing": "FSL (WINMM.dll): Niet gevonden (Aanbevolen voor online)",
+        "FslHelp": "FSL-info"
+      },
+      "Notice": {
+        "LegacyOnly": "Alleen beschikbaar in YimMenu Legacy"
+      },
+      "Badge": {
+        "LegacyOnly": "Alleen Legacy"
       }
     }
   },
@@ -837,8 +921,8 @@
       },
       "Help": {
         "Title": "Infos DLL & FSL",
-        "DllSteps": "1. Clique sur (Télécharger)\n2. Attends la fin du téléchargement\n3. Le fichier est dans le dossier 'YMU/dll'\n\nSi le fichier est supprimé, ajoute une exception\ndans ton antivirus ou désactive-le temporairement.",
-        "FslSteps": "1. Télécharge FSL (Lien sur la page Risques)\n2. Ouvre ton répertoire GTA V\n3. Dépose le fichier WINMM.dll dans le dossier\n   (le nom DOIT être exactement 'WINMM.dll')\n4. Désactive BattlEye dans le Launcher Rockstar\n5. C'est fait ! ✅"
+        "DllSteps": "1. Clique sur [Télécharger]\n2. Attends la fin du téléchargement\n3. Le fichier est dans le dossier '%LOCALAPPDATA%/YMU/dll'\n\nSi le fichier est supprimé, ajoute une exception\ndans ton antivirus ou désactive-le temporairement.",
+        "FslSteps": "1. Télécharge FSL (Lien sur la page Risques)\n2. Ouvre ton répertoire GTA V\n3. Dépose le fichier WINMM.dll dans le dossier\n   (le nom DOIT être exactement 'WINMM.dll')\n4. Désactive BattlEye dans le Launcher Rockstar\n5. C'est fait !"
       },
       "Tooltip": {
         "Help": "Afficher l'aide pour l'installation DLL et FSL",
@@ -851,7 +935,8 @@
         "DownloadAnyway": "Télécharger quand même"
       },
       "Error": {
-        "RateLimited": "Limite de l'API GitHub atteinte. Réessaie dans {0} minutes."
+        "RateLimited": "Limite de l'API GitHub atteinte. Réessaie dans {0} minutes.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -875,9 +960,9 @@
       },
       "Help": {
         "Title": "Infos Injection",
-        "StartGtaSteps": "1. Sélectionne ton launcher\n2. Appuie sur 'Lancer GTA 5'\n3. Lis l'étape suivante ↗",
+        "StartGtaSteps": "1. Sélectionne ton launcher\n2. Appuie sur [Lancer GTA 5]\n3. Lis l'étape suivante ↗",
         "TabInject": "Injecter DLL",
-        "InjectSteps": "1. Lance GTA 5 (↖ Étape Précédente)\n2. Attends l'écran d'accueil/menu du jeu\n3. Clique sur 'Injecter YimMenu'\n4. Attends le chargement de YimMenu\n5. C'est fait ! ✅"
+        "InjectSteps": "1. Lance GTA 5 (↖ Étape Précédente)\n2. Attends l'écran d'accueil/menu du jeu\n3. Clique sur [Injecter YimMenu]\n4. Attends le chargement de YimMenu\n5. C'est fait !"
       },
       "Tooltip": {
         "Help": "Afficher l'aide pour le processus d'injection",
@@ -915,7 +1000,8 @@
         "Injection": "Injection",
         "Lua": "Paramètres Lua",
         "Other": "Autre",
-        "Paths": "Chemins personnalisés"
+        "Paths": "Chemins personnalisés",
+        "Maintenance": "Maintenance"
       },
       "Inject": {
         "AutoClose": "Fermer YMU après l'injection",
@@ -940,9 +1026,15 @@
           "AutoReload": "Appliquer automatiquement les changements quand les fichiers scripts Lua sont sauvegardés",
           "Enable": "Activer le(s) script(s) sélectionné(s)",
           "Disable": "Désactiver le(s) script(s) sélectionné(s)",
-          "Refresh": "Rafraîchir la liste des scripts"
+          "Refresh": "Rafraîchir la liste des scripts",
+          "DisableAll": "Désactiver tous les scripts en même temps (Mode sans échec)",
+          "EnableAll": "Réactiver tous les scripts désactivés"
         },
-        "NoScriptsDir": "Aucun dossier {0} trouvé pour l'instant.\nInjecte-le une fois pour le créer."
+        "NoScriptsDir": "Aucun dossier {0} trouvé pour l'instant.\nInjecte-le une fois pour le créer.",
+        "Btn": {
+          "DisableAll": "Tout désactiver",
+          "EnableAll": "Tout activer"
+        }
       },
       "Other": {
         "DebugConsole": "Activer la Console de Debug Externe",
@@ -958,7 +1050,11 @@
         "ReportBug": "Signaler un Bug",
         "RequestFeature": "Suggérer une Fonctionnalité",
         "CheckUpdates": "Chercher MAJ YMU",
-        "UpToDate": "YMU est à jour"
+        "UpToDate": "YMU est à jour",
+        "OpenYimV2Folder": "Ouvrir dossier YimMenuV2",
+        "OpenLog": "Ouvrir le log YimMenu",
+        "ResetCaches": "Vider les caches de pointeurs",
+        "OpenV2Log": "Ouvrir le log YimMenuV2"
       },
       "Tooltip": {
         "OpenScripts": "Ouvrir le dossier où se trouvent tes scripts Lua",
@@ -968,7 +1064,10 @@
         "ReportBug": "Ouvrir la page de signalement de bug sur GitHub",
         "RequestFeature": "Ouvrir la page de demande de fonctionnalité sur GitHub",
         "Language": "Choisir la langue de l'app (nécessite redémarrage)",
-        "UpdateLang": "Vérifier les mises à jour de traduction"
+        "UpdateLang": "Vérifier les mises à jour de traduction",
+        "OpenYimV2Folder": "Ouvrir le dossier YimMenuV2 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "Ouvrir le fichier cout.log de l'édition active dans votre éditeur de texte",
+        "ResetCaches": "Supprime les offsets binaires en cache. Recommandé après les mises à jour du jeu si le menu plante au lancement."
       },
       "Update": {
         "Title": "MAJ YMU",
@@ -991,7 +1090,10 @@
         "BattlEyeDisabledTitle": "BattlEye désactivé",
         "BattlEyeDisabledMsg": "-nobattleye a été ajouté à commandline.txt dans ton dossier GTA V.",
         "BattlEyeRestoredTitle": "BattlEye rétabli",
-        "BattlEyeRestoredMsg": "-nobattleye a été retiré de commandline.txt."
+        "BattlEyeRestoredMsg": "-nobattleye a été retiré de commandline.txt.",
+        "CachesClearedTitle": "Caches vidés",
+        "CachesClearedMsg": "{0} fichier(s) de cache effacé(s) avec succès.",
+        "NoCachesMsg": "Aucun fichier de cache à effacer."
       },
       "Paths": {
         "AutoDetect": "Détecté automatiquement",
@@ -1006,8 +1108,18 @@
         "ErrorWriteCommandline": "Impossible de modifier commandline.txt. Vérifie les autorisations du fichier.",
         "NoBattlEye": "Désactiver BattlEye (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "Ajoute ou retire -nobattleye dans commandline.txt dans ton dossier GTA V pour lancer le jeu sans BattlEye"
-        }
+          "NoBattlEye": "Ajoute ou retire -nobattleye dans commandline.txt dans ton dossier GTA V pour lancer le jeu sans BattlEye",
+          "Fsl": "Free Save Launcher (FSL) fournit des sauvegardes locales GTA Online et le contournement de BattlEye. Cliquez pour ouvrir le sujet UnknownCheats."
+        },
+        "FslDetected": "FSL (WINMM.dll) : Détecté",
+        "FslMissing": "FSL (WINMM.dll) : Non trouvé (Recommandé pour le jeu en ligne)",
+        "FslHelp": "Info FSL"
+      },
+      "Notice": {
+        "LegacyOnly": "Disponible uniquement dans YimMenu Legacy"
+      },
+      "Badge": {
+        "LegacyOnly": "Legacy uniquement"
       }
     }
   },
@@ -1090,8 +1202,8 @@
       },
       "Help": {
         "Title": "Info DLL y FSL",
-        "DllSteps": "1. Haz clic en (Descargar)\n2. Espera a que termine la descarga\n3. El archivo está en la carpeta 'YMU/dll'\n\nSi el archivo se borra, añade una excepción\nen tu antivirus o desactívalo temporalmente.",
-        "FslSteps": "1. Descarga FSL (Link en la página de Riesgos)\n2. Abre tu directorio de GTA V\n3. Arrastra la WINMM.dll a la carpeta\n   (el nombre DEBE ser exactamente 'WINMM.dll')\n4. Desactiva BattlEye en el Launcher de Rockstar\n5. ¡Listo! ✅"
+        "DllSteps": "1. Haz clic en [Descargar]\n2. Espera a que termine la descarga\n3. El archivo está en la carpeta '%LOCALAPPDATA%/YMU/dll'\n\nSi el archivo se borra, añade una excepción\nen tu antivirus o desactívalo temporalmente.",
+        "FslSteps": "1. Descarga FSL (Link en la página de Riesgos)\n2. Abre tu directorio de GTA V\n3. Arrastra la WINMM.dll a la carpeta\n   (el nombre DEBE ser exactamente 'WINMM.dll')\n4. Desactiva BattlEye en el Launcher de Rockstar\n5. ¡Listo!"
       },
       "Tooltip": {
         "Help": "Mostrar ayuda para la instalación de DLL y FSL",
@@ -1104,7 +1216,8 @@
         "DownloadAnyway": "Descargar de todos modos"
       },
       "Error": {
-        "RateLimited": "Límite de la API de GitHub alcanzado. Inténtalo de nuevo en {0} minutos."
+        "RateLimited": "Límite de la API de GitHub alcanzado. Inténtalo de nuevo en {0} minutos.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -1128,9 +1241,9 @@
       },
       "Help": {
         "Title": "Info Inyección",
-        "StartGtaSteps": "1. Selecciona tu launcher\n2. Pulsa 'Iniciar GTA 5'\n3. Lee el siguiente paso ↗",
+        "StartGtaSteps": "1. Selecciona tu launcher\n2. Pulsa [Iniciar GTA 5]\n3. Lee el siguiente paso ↗",
         "TabInject": "Inyectar DLL",
-        "InjectSteps": "1. Inicia GTA 5 (↖ Paso Anterior)\n2. Espera a la pantalla de inicio/menú del juego\n3. Haz clic en 'Inyectar YimMenu'\n4. Espera a que YimMenu termine de cargar\n5. ¡Listo! ✅"
+        "InjectSteps": "1. Inicia GTA 5 (↖ Paso Anterior)\n2. Espera a la pantalla de inicio/menú del juego\n3. Haz clic en [Inyectar YimMenu]\n4. Espera a que YimMenu termine de cargar\n5. ¡Listo!"
       },
       "Tooltip": {
         "Help": "Mostrar ayuda para el proceso de inyección",
@@ -1168,7 +1281,8 @@
         "Injection": "Inyección",
         "Lua": "Ajustes Lua",
         "Other": "Otros",
-        "Paths": "Rutas personalizadas"
+        "Paths": "Rutas personalizadas",
+        "Maintenance": "Mantenimiento"
       },
       "Inject": {
         "AutoClose": "Cerrar YMU tras la inyección",
@@ -1193,9 +1307,15 @@
           "AutoReload": "Aplicar cambios automáticamente al guardar archivos de script Lua",
           "Enable": "Activar script(s) seleccionado(s)",
           "Disable": "Desactivar script(s) seleccionado(s)",
-          "Refresh": "Refrescar lista de scripts"
+          "Refresh": "Refrescar lista de scripts",
+          "DisableAll": "Desactivar todos los scripts a la vez (Modo seguro)",
+          "EnableAll": "Volver a activar todos los scripts desactivados"
         },
-        "NoScriptsDir": "Aún no se encontró la carpeta {0}.\nInyéctalo una vez para crearla."
+        "NoScriptsDir": "Aún no se encontró la carpeta {0}.\nInyéctalo una vez para crearla.",
+        "Btn": {
+          "DisableAll": "Desactivar todo",
+          "EnableAll": "Activar todo"
+        }
       },
       "Other": {
         "DebugConsole": "Activar Consola de Depuración Externa",
@@ -1211,7 +1331,11 @@
         "ReportBug": "Reportar un Bug",
         "RequestFeature": "Pedir una Función",
         "CheckUpdates": "Buscar Updates de YMU",
-        "UpToDate": "YMU está actualizado"
+        "UpToDate": "YMU está actualizado",
+        "OpenYimV2Folder": "Abrir Carpeta YimMenuV2",
+        "OpenLog": "Abrir registro de YimMenu",
+        "ResetCaches": "Borrar cachés de punteros",
+        "OpenV2Log": "Abrir registro de YimMenuV2"
       },
       "Tooltip": {
         "OpenScripts": "Abre la carpeta donde están tus scripts Lua",
@@ -1221,7 +1345,10 @@
         "ReportBug": "Abre la página de reporte de bugs en GitHub en tu navegador",
         "RequestFeature": "Abre la página de solicitud de funciones en GitHub en tu navegador",
         "Language": "Seleccionar idioma de la app (requiere reinicio)",
-        "UpdateLang": "Buscar actualizaciones de traducción"
+        "UpdateLang": "Buscar actualizaciones de traducción",
+        "OpenYimV2Folder": "Abre la carpeta YimMenuV2 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "Abrir cout.log de la edición activa en tu editor de texto",
+        "ResetCaches": "Elimina los offsets binarios en caché. Recomendado tras actualizaciones del juego si el menú se bloquea al iniciar."
       },
       "Update": {
         "Title": "Actualizaciones YMU",
@@ -1244,7 +1371,10 @@
         "BattlEyeDisabledTitle": "BattlEye desactivado",
         "BattlEyeDisabledMsg": "Se añadió -nobattleye a commandline.txt en tu carpeta de GTA V.",
         "BattlEyeRestoredTitle": "BattlEye restaurado",
-        "BattlEyeRestoredMsg": "Se eliminó -nobattleye de commandline.txt."
+        "BattlEyeRestoredMsg": "Se eliminó -nobattleye de commandline.txt.",
+        "CachesClearedTitle": "Cachés borrados",
+        "CachesClearedMsg": "{0} archivo(s) de caché borrado(s) con éxito.",
+        "NoCachesMsg": "No se encontraron archivos de caché para borrar."
       },
       "Paths": {
         "AutoDetect": "Detectado automáticamente",
@@ -1259,8 +1389,18 @@
         "ErrorWriteCommandline": "No se pudo modificar commandline.txt. Comprueba los permisos del archivo.",
         "NoBattlEye": "Desactivar BattlEye (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "Añade o quita -nobattleye en commandline.txt en tu carpeta de GTA V para jugar sin BattlEye"
-        }
+          "NoBattlEye": "Añade o quita -nobattleye en commandline.txt en tu carpeta de GTA V para jugar sin BattlEye",
+          "Fsl": "Free Save Launcher (FSL) proporciona guardados locales de GTA Online y bypass de BattlEye. Haz clic para abrir el hilo de UnknownCheats."
+        },
+        "FslDetected": "FSL (WINMM.dll): Detectado",
+        "FslMissing": "FSL (WINMM.dll): No encontrado (Recomendado para online)",
+        "FslHelp": "Información de FSL"
+      },
+      "Notice": {
+        "LegacyOnly": "Solo disponible en YimMenu Legacy"
+      },
+      "Badge": {
+        "LegacyOnly": "Solo Legacy"
       }
     }
   },
@@ -1343,8 +1483,8 @@
       },
       "Help": {
         "Title": "Info sobre DLL e FSL",
-        "DllSteps": "1. Clique em (Baixar)\n2. Aguarde o download terminar\n3. O arquivo está na pasta 'YMU/dll'\n\nSe o arquivo for deletado, adicione uma exceção\nno seu antivírus ou desative-o temporariamente.",
-        "FslSteps": "1. Baixe o FSL (Link na página de Riscos)\n2. Abra o diretório do seu GTA V\n3. Solte o arquivo WINMM.dll na pasta\n   (o nome DEVE ser exatamente 'WINMM.dll')\n4. Desative o BattlEye no Launcher da Rockstar\n5. Pronto! ✅"
+        "DllSteps": "1. Clique em [Baixar]\n2. Aguarde o download terminar\n3. O arquivo está na pasta '%LOCALAPPDATA%/YMU/dll'\n\nSe o arquivo for deletado, adicione uma exceção\nno seu antivírus ou desative-o temporariamente.",
+        "FslSteps": "1. Baixe o FSL (Link na página de Riscos)\n2. Abra o diretório do seu GTA V\n3. Solte o arquivo WINMM.dll na pasta\n   (o nome DEVE ser exatamente 'WINMM.dll')\n4. Desative o BattlEye no Launcher da Rockstar\n5. Pronto!"
       },
       "Tooltip": {
         "Help": "Mostrar ajuda para instalação da DLL e FSL",
@@ -1357,7 +1497,8 @@
         "DownloadAnyway": "Baixar mesmo assim"
       },
       "Error": {
-        "RateLimited": "Limite de taxa da API do GitHub atingido. Tente novamente em {0} minutos."
+        "RateLimited": "Limite de taxa da API do GitHub atingido. Tente novamente em {0} minutos.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -1381,9 +1522,9 @@
       },
       "Help": {
         "Title": "Info de Injection",
-        "StartGtaSteps": "1. Selecione seu launcher\n2. Clique em 'Iniciar GTA 5'\n3. Leia o próximo passo ↗",
+        "StartGtaSteps": "1. Selecione seu launcher\n2. Clique em [Iniciar GTA 5]\n3. Leia o próximo passo ↗",
         "TabInject": "Injetar DLL",
-        "InjectSteps": "1. Inicie o GTA 5 (↖ Passo Anterior)\n2. Aguarde a tela inicial/menu do jogo\n3. Clique em 'Injetar YimMenu'\n4. Aguarde o YimMenu carregar\n5. Pronto! ✅"
+        "InjectSteps": "1. Inicie o GTA 5 (↖ Passo Anterior)\n2. Aguarde a tela inicial/menu do jogo\n3. Clique em [Injetar YimMenu]\n4. Aguarde o YimMenu carregar\n5. Pronto!"
       },
       "Tooltip": {
         "Help": "Mostrar ajuda sobre o processo de injection",
@@ -1421,7 +1562,8 @@
         "Injection": "Injeção",
         "Lua": "Configurações Lua",
         "Other": "Outros",
-        "Paths": "Caminhos personalizados"
+        "Paths": "Caminhos personalizados",
+        "Maintenance": "Manutenção"
       },
       "Inject": {
         "AutoClose": "Fechar YMU após a injeção",
@@ -1446,9 +1588,15 @@
           "AutoReload": "Reaplicar alterações automaticamente quando scripts Lua são salvos",
           "Enable": "Ativar script(s) selecionado(s)",
           "Disable": "Desativar script(s) selecionado(s)",
-          "Refresh": "Recarregar lista de scripts"
+          "Refresh": "Recarregar lista de scripts",
+          "DisableAll": "Desativar todos os scripts de uma vez (Modo de Segurança)",
+          "EnableAll": "Reativar todos os scripts desativados"
         },
-        "NoScriptsDir": "Nenhuma pasta {0} encontrada ainda.\nInjete uma vez para criá-la."
+        "NoScriptsDir": "Nenhuma pasta {0} encontrada ainda.\nInjete uma vez para criá-la.",
+        "Btn": {
+          "DisableAll": "Desativar tudo",
+          "EnableAll": "Ativar tudo"
+        }
       },
       "Other": {
         "DebugConsole": "Ativar Console de Debug Externo",
@@ -1464,7 +1612,11 @@
         "ReportBug": "Reportar Bug",
         "RequestFeature": "Pedir Recurso",
         "CheckUpdates": "Checar Updates do YMU",
-        "UpToDate": "YMU está atualizado"
+        "UpToDate": "YMU está atualizado",
+        "OpenYimV2Folder": "Abrir Pasta YimMenuV2",
+        "OpenLog": "Abrir log do YimMenu",
+        "ResetCaches": "Limpar caches de ponteiros",
+        "OpenV2Log": "Abrir log do YimMenuV2"
       },
       "Tooltip": {
         "OpenScripts": "Abrir a pasta onde seus scripts Lua estão localizados",
@@ -1474,7 +1626,10 @@
         "ReportBug": "Abrir página de report de bugs no GitHub",
         "RequestFeature": "Abrir página de solicitação de recursos no GitHub",
         "Language": "Selecionar idioma do app (requer reinício)",
-        "UpdateLang": "Verificar atualizações de tradução"
+        "UpdateLang": "Verificar atualizações de tradução",
+        "OpenYimV2Folder": "Abrir pasta YimMenuV2 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "Abrir o cout.log da edição ativa no seu editor de texto",
+        "ResetCaches": "Exclui offsets binários em cache. Recomendado após atualizações do jogo se o menu travar ao iniciar."
       },
       "Update": {
         "Title": "Updates YMU",
@@ -1497,7 +1652,10 @@
         "BattlEyeDisabledTitle": "BattlEye desativado",
         "BattlEyeDisabledMsg": "Adicionado -nobattleye ao commandline.txt na pasta do GTA V.",
         "BattlEyeRestoredTitle": "BattlEye restaurado",
-        "BattlEyeRestoredMsg": "Removido -nobattleye do commandline.txt."
+        "BattlEyeRestoredMsg": "Removido -nobattleye do commandline.txt.",
+        "CachesClearedTitle": "Caches limpos",
+        "CachesClearedMsg": "{0} arquivo(s) de cache limpo(s) com sucesso.",
+        "NoCachesMsg": "Nenhum arquivo de cache encontrado para limpar."
       },
       "Paths": {
         "AutoDetect": "Detectado automaticamente",
@@ -1512,8 +1670,18 @@
         "ErrorWriteCommandline": "Não foi possível modificar o commandline.txt. Verifique as permissões do arquivo.",
         "NoBattlEye": "Desativar BattlEye (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "Adiciona ou remove -nobattleye no commandline.txt na sua pasta do GTA V para rodar sem o BattlEye"
-        }
+          "NoBattlEye": "Adiciona ou remove -nobattleye no commandline.txt na sua pasta do GTA V para rodar sem o BattlEye",
+          "Fsl": "Free Save Launcher (FSL) fornece saves locais do GTA Online e bypass do BattlEye. Clique para abrir o tópico do UnknownCheats."
+        },
+        "FslDetected": "FSL (WINMM.dll): Detectado",
+        "FslMissing": "FSL (WINMM.dll): Não encontrado (Recomendado para online)",
+        "FslHelp": "Informações do FSL"
+      },
+      "Notice": {
+        "LegacyOnly": "Disponível apenas no YimMenu Legacy"
+      },
+      "Badge": {
+        "LegacyOnly": "Apenas Legacy"
       }
     }
   },
@@ -1596,8 +1764,8 @@
       },
       "Help": {
         "Title": "Info o DLL i FSL",
-        "DllSteps": "1. Kliknij (Pobierz)\n2. Poczekaj na zakończenie pobierania\n3. Plik znajduje się w folderze 'YMU/dll'\n\nJeśli plik zostanie usunięty, dodaj wyjątek\nw antywirusie lub wyłącz go tymczasowo.",
-        "FslSteps": "1. Pobierz FSL (Link na stronie Ryzyka)\n2. Otwórz folder z GTA V\n3. Wrzuć plik WINMM.dll do folderu\n   (nazwa MUSI brzmieć dokładnie 'WINMM.dll')\n4. Wyłącz BattlEye w Launcherze Rockstar\n5. Gotowe! ✅"
+        "DllSteps": "1. Kliknij [Pobierz]\n2. Poczekaj na zakończenie pobierania\n3. Plik znajduje się w folderze '%LOCALAPPDATA%/YMU/dll'\n\nJeśli plik zostanie usunięty, dodaj wyjątek\nw antywirusie lub wyłącz go tymczasowo.",
+        "FslSteps": "1. Pobierz FSL (Link na stronie Ryzyka)\n2. Otwórz folder z GTA V\n3. Wrzuć plik WINMM.dll do folderu\n   (nazwa MUSI brzmieć dokładnie 'WINMM.dll')\n4. Wyłącz BattlEye w Launcherze Rockstar\n5. Gotowe!"
       },
       "Tooltip": {
         "Help": "Pokaż pomoc dotyczącą instalacji DLL i FSL",
@@ -1610,7 +1778,8 @@
         "DownloadAnyway": "Pobierz mimo to"
       },
       "Error": {
-        "RateLimited": "Osiągnięto limit zapytań API GitHub. Spróbuj ponownie za {0} minut."
+        "RateLimited": "Osiągnięto limit zapytań API GitHub. Spróbuj ponownie za {0} minut.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -1634,9 +1803,9 @@
       },
       "Help": {
         "Title": "Info o Injection",
-        "StartGtaSteps": "1. Wybierz swój launcher\n2. Kliknij 'Uruchom GTA 5'\n3. Przeczytaj następny krok ↗",
+        "StartGtaSteps": "1. Wybierz swój launcher\n2. Kliknij [Uruchom GTA 5]\n3. Przeczytaj następny krok ↗",
         "TabInject": "Wstrzyknij DLL",
-        "InjectSteps": "1. Uruchom GTA 5 (↖ Poprzedni krok)\n2. Poczekaj na ekran startowy/menu gry\n3. Kliknij 'Wstrzyknij YimMenu'\n4. Poczekaj, aż YimMenu się załaduje\n5. Gotowe! ✅"
+        "InjectSteps": "1. Uruchom GTA 5 (↖ Poprzedni krok)\n2. Poczekaj na ekran startowy/menu gry\n3. Kliknij [Wstrzyknij YimMenu]\n4. Poczekaj, aż YimMenu się załaduje\n5. Gotowe!"
       },
       "Tooltip": {
         "Help": "Pokaż pomoc dotyczącą procesu wstrzykiwania",
@@ -1674,7 +1843,8 @@
         "Injection": "Wstrzykiwanie",
         "Lua": "Ustawienia Lua",
         "Other": "Inne",
-        "Paths": "Własne ścieżki"
+        "Paths": "Własne ścieżki",
+        "Maintenance": "Konserwacja"
       },
       "Inject": {
         "AutoClose": "Zamknij YMU po wstrzyknięciu",
@@ -1699,9 +1869,15 @@
           "AutoReload": "Automatycznie zastosuj zmiany po zapisaniu plików Lua",
           "Enable": "Włącz wybrane skrypty",
           "Disable": "Wyłącz wybrane skrypty",
-          "Refresh": "Odśwież listę skryptów"
+          "Refresh": "Odśwież listę skryptów",
+          "DisableAll": "Wyłącz wszystkie skrypty naraz (Tryb bezpieczny)",
+          "EnableAll": "Włącz ponownie wszystkie wyłączone skrypty"
         },
-        "NoScriptsDir": "Nie znaleziono jeszcze folderu {0}.\nWstrzyknij raz, aby go utworzyć."
+        "NoScriptsDir": "Nie znaleziono jeszcze folderu {0}.\nWstrzyknij raz, aby go utworzyć.",
+        "Btn": {
+          "DisableAll": "Wyłącz wszystko",
+          "EnableAll": "Włącz wszystko"
+        }
       },
       "Other": {
         "DebugConsole": "Włącz Zewnętrzną Konsolę Debug",
@@ -1717,7 +1893,11 @@
         "ReportBug": "Zgłoś błąd",
         "RequestFeature": "Poproś o funkcję",
         "CheckUpdates": "Sprawdź aktualizacje YMU",
-        "UpToDate": "YMU jest aktualne"
+        "UpToDate": "YMU jest aktualne",
+        "OpenYimV2Folder": "Otwórz folder YimMenuV2",
+        "OpenLog": "Otwórz dziennik YimMenu",
+        "ResetCaches": "Wyczyść pamięć podręczną wskaźników",
+        "OpenV2Log": "Otwórz dziennik YimMenuV2"
       },
       "Tooltip": {
         "OpenScripts": "Otwórz folder, w którym znajdują się twoje skrypty Lua",
@@ -1727,7 +1907,10 @@
         "ReportBug": "Otwórz stronę zgłaszania błędów na GitHub",
         "RequestFeature": "Otwórz stronę próśb o funkcje na GitHub",
         "Language": "Wybierz język aplikacji (wymaga restartu)",
-        "UpdateLang": "Sprawdź aktualizacje tłumaczeń"
+        "UpdateLang": "Sprawdź aktualizacje tłumaczeń",
+        "OpenYimV2Folder": "Otwórz folder YimMenuV2 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "Otwórz plik cout.log aktywnej edycji w edytorze tekstu",
+        "ResetCaches": "Usuwa zapisane w pamięci podręcznej offsety binarne. Zalecane po aktualizacjach gry, jeśli menu zawiesza się przy starcie."
       },
       "Update": {
         "Title": "Aktualizacje YMU",
@@ -1750,7 +1933,10 @@
         "BattlEyeDisabledTitle": "BattlEye wyłączony",
         "BattlEyeDisabledMsg": "Dodano -nobattleye do commandline.txt w folderze GTA V.",
         "BattlEyeRestoredTitle": "BattlEye przywrócony",
-        "BattlEyeRestoredMsg": "Usunięto -nobattleye z commandline.txt."
+        "BattlEyeRestoredMsg": "Usunięto -nobattleye z commandline.txt.",
+        "CachesClearedTitle": "Pamięć podręczna wyczyszczona",
+        "CachesClearedMsg": "Pomyślnie wyczyszczono {0} plik(ów) pamięci podręcznej.",
+        "NoCachesMsg": "Nie znaleziono plików pamięci podręcznej do wyczyszczenia."
       },
       "Paths": {
         "AutoDetect": "Wykryto automatycznie",
@@ -1765,8 +1951,18 @@
         "ErrorWriteCommandline": "Nie można zmodyfikować commandline.txt. Sprawdź uprawnienia do pliku.",
         "NoBattlEye": "Wyłącz BattlEye (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "Dodaje lub usuwa -nobattleye w pliku commandline.txt w folderze GTA V, aby uruchamiać bez BattlEye"
-        }
+          "NoBattlEye": "Dodaje lub usuwa -nobattleye w pliku commandline.txt w folderze GTA V, aby uruchamiać bez BattlEye",
+          "Fsl": "Free Save Launcher (FSL) zapewnia lokalne zapisy GTA Online i ominięcie BattlEye. Kliknij, aby otworzyć wątek UnknownCheats."
+        },
+        "FslDetected": "FSL (WINMM.dll): Wykryto",
+        "FslMissing": "FSL (WINMM.dll): Nie znaleziono (Zalecane do gry online)",
+        "FslHelp": "Informacje o FSL"
+      },
+      "Notice": {
+        "LegacyOnly": "Dostępne tylko w YimMenu Legacy"
+      },
+      "Badge": {
+        "LegacyOnly": "Tylko Legacy"
       }
     }
   },
@@ -1849,8 +2045,8 @@
       },
       "Help": {
         "Title": "Инфо о DLL и FSL",
-        "DllSteps": "1. Нажми (Скачать)\n2. Дождись окончания загрузки\n3. Файл находится в папке 'YMU/dll'\n\nЕсли файл удалился, добавь исключение\nв антивирус или временно отключи его.",
-        "FslSteps": "1. Скачай FSL (Ссылка на странице Риски)\n2. Открой папку с GTA V\n3. Закинь WINMM.dll в папку\n   (имя должно быть ТОЧНО 'WINMM.dll')\n4. Отключи BattlEye в Лаунчере Rockstar\n5. Готово! ✅"
+        "DllSteps": "1. Нажми [Скачать]\n2. Дождись окончания загрузки\n3. Файл находится в папке '%LOCALAPPDATA%/YMU/dll'\n\nЕсли файл удалился, добавь исключение\nв антивирус или временно отключи его.",
+        "FslSteps": "1. Скачай FSL (Ссылка на странице Риски)\n2. Открой папку с GTA V\n3. Закинь WINMM.dll в папку\n   (имя должно быть ТОЧНО 'WINMM.dll')\n4. Отключи BattlEye в Лаунчере Rockstar\n5. Готово!"
       },
       "Tooltip": {
         "Help": "Показать помощь по установке DLL и FSL",
@@ -1863,7 +2059,8 @@
         "DownloadAnyway": "Всё равно скачать"
       },
       "Error": {
-        "RateLimited": "Достигнут лимит запросов GitHub API. Попробуй снова через {0} мин."
+        "RateLimited": "Достигнут лимит запросов GitHub API. Попробуй снова через {0} мин.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -1887,9 +2084,9 @@
       },
       "Help": {
         "Title": "Инфо об Инжекте",
-        "StartGtaSteps": "1. Выбери свой лаунчер\n2. Нажми 'Запустить GTA 5'\n3. Читай следующий шаг ↗",
+        "StartGtaSteps": "1. Выбери свой лаунчер\n2. Нажми [Запустить GTA 5]\n3. Читай следующий шаг ↗",
         "TabInject": "Инжект DLL",
-        "InjectSteps": "1. Запусти GTA 5 (↖ Пред. шаг)\n2. Жди загрузочный экран/меню игры\n3. Нажми 'Заинжектить YimMenu'\n4. Жди загрузки YimMenu\n5. Готово! ✅"
+        "InjectSteps": "1. Запусти GTA 5 (↖ Пред. шаг)\n2. Жди загрузочный экран/меню игры\n3. Нажми [Заинжектить YimMenu]\n4. Жди загрузки YimMenu\n5. Готово!"
       },
       "Tooltip": {
         "Help": "Показать помощь по процессу инжекта",
@@ -1927,7 +2124,8 @@
         "Injection": "Инжект",
         "Lua": "Настройки Lua",
         "Other": "Прочее",
-        "Paths": "Пользовательские пути"
+        "Paths": "Пользовательские пути",
+        "Maintenance": "Обслуживание"
       },
       "Inject": {
         "AutoClose": "Закрывать YMU после инжекта",
@@ -1952,9 +2150,15 @@
           "AutoReload": "Автоматически применять изменения при сохранении Lua файлов",
           "Enable": "Включить выбранные скрипты",
           "Disable": "Отключить выбранные скрипты",
-          "Refresh": "Обновить список скриптов"
+          "Refresh": "Обновить список скриптов",
+          "DisableAll": "Отключить все скрипты одновременно (Безопасный режим)",
+          "EnableAll": "Снова включить все отключенные скрипты"
         },
-        "NoScriptsDir": "Папка {0} пока не найдена.\nВыполни инжект один раз, чтобы создать её."
+        "NoScriptsDir": "Папка {0} пока не найдена.\nВыполни инжект один раз, чтобы создать её.",
+        "Btn": {
+          "DisableAll": "Отключить все",
+          "EnableAll": "Включить все"
+        }
       },
       "Other": {
         "DebugConsole": "Включить внешнюю Debug консоль",
@@ -1970,7 +2174,11 @@
         "ReportBug": "Репортнуть баг",
         "RequestFeature": "Запросить фичу",
         "CheckUpdates": "Проверить апдейты YMU",
-        "UpToDate": "YMU обновлен"
+        "UpToDate": "YMU обновлен",
+        "OpenYimV2Folder": "Открыть папку YimMenuV2",
+        "OpenLog": "Открыть лог YimMenu",
+        "ResetCaches": "Очистить кэш указателей",
+        "OpenV2Log": "Открыть лог YimMenuV2"
       },
       "Tooltip": {
         "OpenScripts": "Открыть папку, где лежат твои Lua скрипты",
@@ -1980,7 +2188,10 @@
         "ReportBug": "Открыть страницу баг-репорта на GitHub",
         "RequestFeature": "Открыть страницу запроса функций на GitHub",
         "Language": "Выбрать язык приложения (нужен перезапуск)",
-        "UpdateLang": "Проверить обновления переводов"
+        "UpdateLang": "Проверить обновления переводов",
+        "OpenYimV2Folder": "Открыть папку YimMenuV2 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "Открыть cout.log активной версии в текстовом редакторе",
+        "ResetCaches": "Удаляет кэшированные бинарные смещения. Рекомендуется после обновлений игры, если меню вылетает при запуске."
       },
       "Update": {
         "Title": "Апдейтеры YMU",
@@ -2003,7 +2214,10 @@
         "BattlEyeDisabledTitle": "BattlEye отключён",
         "BattlEyeDisabledMsg": "Параметр -nobattleye добавлен в commandline.txt в папке GTA V.",
         "BattlEyeRestoredTitle": "BattlEye восстановлен",
-        "BattlEyeRestoredMsg": "Параметр -nobattleye удалён из commandline.txt."
+        "BattlEyeRestoredMsg": "Параметр -nobattleye удалён из commandline.txt.",
+        "CachesClearedTitle": "Кэш очищен",
+        "CachesClearedMsg": "Успешно очищено файлов кэша: {0}.",
+        "NoCachesMsg": "Файлы кэша для очистки не найдены."
       },
       "Paths": {
         "AutoDetect": "Определено автоматически",
@@ -2018,8 +2232,18 @@
         "ErrorWriteCommandline": "Не удалось изменить commandline.txt. Проверь права доступа к файлу.",
         "NoBattlEye": "Отключить BattlEye (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "Добавляет или удаляет -nobattleye в commandline.txt в папке GTA V для запуска без BattlEye"
-        }
+          "NoBattlEye": "Добавляет или удаляет -nobattleye в commandline.txt в папке GTA V для запуска без BattlEye",
+          "Fsl": "Free Save Launcher (FSL) обеспечивает локальные сохранения GTA Online и обход BattlEye. Нажмите, чтобы открыть тему UnknownCheats."
+        },
+        "FslDetected": "FSL (WINMM.dll): Обнаружен",
+        "FslMissing": "FSL (WINMM.dll): Не найден (Рекомендуется для игры по сети)",
+        "FslHelp": "Инфо о FSL"
+      },
+      "Notice": {
+        "LegacyOnly": "Доступно только в YimMenu Legacy"
+      },
+      "Badge": {
+        "LegacyOnly": "Только для Legacy"
       }
     }
   },
@@ -2102,8 +2326,8 @@
       },
       "Help": {
         "Title": "Інфо про DLL та FSL",
-        "DllSteps": "1. Натисни (Завантажити)\n2. Дочекайся завершення завантаження\n3. Файл знаходиться в папці 'YMU/dll'\n\nЯкщо файл видалився, додай виняток\nв антивірус або тимчасово вимкни його.",
-        "FslSteps": "1. Завантаж FSL (Посилання на сторінці Ризики)\n2. Відкрий папку з GTA V\n3. Закинь WINMM.dll у папку\n   (ім'я має бути ТОЧНО 'WINMM.dll')\n4. Вимкни BattlEye в Лаунчері Rockstar\n5. Готово! ✅"
+        "DllSteps": "1. Натисни [Завантажити]\n2. Дочекайся завершення завантаження\n3. Файл знаходиться в папці '%LOCALAPPDATA%/YMU/dll'\n\nЯкщо файл видалився, додай виняток\nв антивірус або тимчасово вимкни його.",
+        "FslSteps": "1. Завантаж FSL (Посилання на сторінці Ризики)\n2. Відкрий папку з GTA V\n3. Закинь WINMM.dll у папку\n   (ім'я має бути ТОЧНО 'WINMM.dll')\n4. Вимкни BattlEye в Лаунчері Rockstar\n5. Готово!"
       },
       "Tooltip": {
         "Help": "Показати допомогу зі встановлення DLL та FSL",
@@ -2116,7 +2340,8 @@
         "DownloadAnyway": "Все одно завантажити"
       },
       "Error": {
-        "RateLimited": "Досягнуто ліміту запитів GitHub API. Спробуй знову через {0} хв."
+        "RateLimited": "Досягнуто ліміту запитів GitHub API. Спробуй знову через {0} хв.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -2140,9 +2365,9 @@
       },
       "Help": {
         "Title": "Інфо про Інжект",
-        "StartGtaSteps": "1. Обери свій лаунчер\n2. Натисни 'Запустити GTA 5'\n3. Читай наступний крок ↗",
+        "StartGtaSteps": "1. Обери свій лаунчер\n2. Натисни [Запустити GTA 5]\n3. Читай наступний крок ↗",
         "TabInject": "Інжект DLL",
-        "InjectSteps": "1. Запусти GTA 5 (↖ Попередній крок)\n2. Чекай завантажувальний екран/меню гри\n3. Натисни 'Заінжектити YimMenu'\n4. Чекай завантаження YimMenu\n5. Готово! ✅"
+        "InjectSteps": "1. Запусти GTA 5 (↖ Попередній крок)\n2. Чекай завантажувальний екран/меню гри\n3. Натисни [Заінжектити YimMenu]\n4. Чекай завантаження YimMenu\n5. Готово!"
       },
       "Tooltip": {
         "Help": "Показати допомогу по процесу інжекту",
@@ -2180,7 +2405,8 @@
         "Injection": "Інжект",
         "Lua": "Налаштування Lua",
         "Other": "Інше",
-        "Paths": "Користувацькі шляхи"
+        "Paths": "Користувацькі шляхи",
+        "Maintenance": "Обслуговування"
       },
       "Inject": {
         "AutoClose": "Закривати YMU після інжекту",
@@ -2205,9 +2431,15 @@
           "AutoReload": "Автоматично застосовувати зміни при збереженні Lua файлів",
           "Enable": "Увімкнути обрані скрипти",
           "Disable": "Вимкнути обрані скрипти",
-          "Refresh": "Оновити список скриптів"
+          "Refresh": "Оновити список скриптів",
+          "DisableAll": "Вимкнути всі скрипти одночасно (Безпечний режим)",
+          "EnableAll": "Знову увімкнути всі вимкнені скрипти"
         },
-        "NoScriptsDir": "Папку {0} ще не знайдено.\nВиконай інжект один раз, щоб її створити."
+        "NoScriptsDir": "Папку {0} ще не знайдено.\nВиконай інжект один раз, щоб її створити.",
+        "Btn": {
+          "DisableAll": "Вимкнути все",
+          "EnableAll": "Увімкнути все"
+        }
       },
       "Other": {
         "DebugConsole": "Увімкнути зовнішню Debug консоль",
@@ -2223,7 +2455,11 @@
         "ReportBug": "Репортнути баг",
         "RequestFeature": "Запросити фічу",
         "CheckUpdates": "Перевірити оновлення YMU",
-        "UpToDate": "YMU оновлено"
+        "UpToDate": "YMU оновлено",
+        "OpenYimV2Folder": "Відкрити папку YimMenuV2",
+        "OpenLog": "Відкрити лог YimMenu",
+        "ResetCaches": "Очистити кеш вказівників",
+        "OpenV2Log": "Відкрити лог YimMenuV2"
       },
       "Tooltip": {
         "OpenScripts": "Відкрити папку, де знаходяться твої Lua скрипти",
@@ -2233,7 +2469,10 @@
         "ReportBug": "Відкрити сторінку баг-репорту на GitHub",
         "RequestFeature": "Відкрити сторінку запиту функцій на GitHub",
         "Language": "Обрати мову програми (потрібен перезапуск)",
-        "UpdateLang": "Перевірити оновлення перекладів"
+        "UpdateLang": "Перевірити оновлення перекладів",
+        "OpenYimV2Folder": "Відкрити папку YimMenuV2 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "Відкрити cout.log активної версії у текстовому редакторі",
+        "ResetCaches": "Видаляє кешовані бінарні зміщення. Рекомендовано після оновлень гри, якщо меню вилітає під час запуску."
       },
       "Update": {
         "Title": "Апдейтери YMU",
@@ -2256,7 +2495,10 @@
         "BattlEyeDisabledTitle": "BattlEye вимкнено",
         "BattlEyeDisabledMsg": "Параметр -nobattleye додано до commandline.txt у папці GTA V.",
         "BattlEyeRestoredTitle": "BattlEye відновлено",
-        "BattlEyeRestoredMsg": "Параметр -nobattleye видалено з commandline.txt."
+        "BattlEyeRestoredMsg": "Параметр -nobattleye видалено з commandline.txt.",
+        "CachesClearedTitle": "Кеш очищено",
+        "CachesClearedMsg": "Успішно очищено файлів кешу: {0}.",
+        "NoCachesMsg": "Файлів кешу для очищення не знайдено."
       },
       "Paths": {
         "AutoDetect": "Визначено автоматично",
@@ -2271,8 +2513,18 @@
         "ErrorWriteCommandline": "Не вдалося змінити commandline.txt. Перевір права доступу до файлу.",
         "NoBattlEye": "Вимкнути BattlEye (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "Додає або видаляє -nobattleye у commandline.txt у папці GTA V для запуску без BattlEye"
-        }
+          "NoBattlEye": "Додає або видаляє -nobattleye у commandline.txt у папці GTA V для запуску без BattlEye",
+          "Fsl": "Free Save Launcher (FSL) надає локальні збереження GTA Online та обхід BattlEye. Натисніть, щоб відкрити тему UnknownCheats."
+        },
+        "FslDetected": "FSL (WINMM.dll): Виявлено",
+        "FslMissing": "FSL (WINMM.dll): Не знайдено (Рекомендовано для гри онлайн)",
+        "FslHelp": "Інфо про FSL"
+      },
+      "Notice": {
+        "LegacyOnly": "Доступно лише в YimMenu Legacy"
+      },
+      "Badge": {
+        "LegacyOnly": "Тільки для Legacy"
       }
     }
   },
@@ -2355,8 +2607,8 @@
       },
       "Help": {
         "Title": "DLL & FSL Bilgisi",
-        "DllSteps": "1. (İndir) butonuna tıkla\n2. İndirme bitene kadar bekle\n3. Dosya 'YMU/dll' klasöründe olacak\n\nEğer dosya silinirse, antivirüsüne istisna ekle\nveya geçici olarak devre dışı bırak.",
-        "FslSteps": "1. FSL'i indir (Link Riskler sayfasında)\n2. GTA V Ana Klasörünü aç\n3. WINMM.dll dosyasını klasörün içine at\n   (dosya adı TAM OLARAK 'WINMM.dll' olmalı)\n4. Rockstar Game Launcher'dan BattlEye'ı kapat\n5. Bitti! ✅"
+        "DllSteps": "1. [İndir] butonuna tıkla\n2. İndirme bitene kadar bekle\n3. Dosya '%LOCALAPPDATA%/YMU/dll' klasöründe olacak\n\nEğer dosya silinirse, antivirüsüne istisna ekle\nveya geçici olarak devre dışı bırak.",
+        "FslSteps": "1. FSL'i indir (Link Riskler sayfasında)\n2. GTA V Ana Klasörünü aç\n3. WINMM.dll dosyasını klasörün içine at\n   (dosya adı TAM OLARAK 'WINMM.dll' olmalı)\n4. Rockstar Game Launcher'dan BattlEye'ı kapat\n5. Bitti!"
       },
       "Tooltip": {
         "Help": "DLL ve FSL kurulum yardımını göster",
@@ -2369,7 +2621,8 @@
         "DownloadAnyway": "Yine de indir"
       },
       "Error": {
-        "RateLimited": "GitHub API istek sınırına ulaşıldı. Lütfen {0} dakika sonra tekrar dene."
+        "RateLimited": "GitHub API istek sınırına ulaşıldı. Lütfen {0} dakika sonra tekrar dene.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -2393,9 +2646,9 @@
       },
       "Help": {
         "Title": "Enjeksiyon Bilgisi",
-        "StartGtaSteps": "1. Launcher'ını seç\n2. 'GTA 5'i Başlat'a bas\n3. Sonraki adımı oku ↗",
+        "StartGtaSteps": "1. Launcher'ını seç\n2. [GTA 5'i Başlat]'a bas\n3. Sonraki adımı oku ↗",
         "TabInject": "DLL Enjekte Et",
-        "InjectSteps": "1. GTA 5'i başlat (↖ Önceki Adım)\n2. Oyunun başlangıç ekranını/menüsünü bekle\n3. 'YimMenu'yu Enjekte Et' butonuna tıkla\n4. YimMenu'nun yüklenmesini bekle\n5. Bitti! ✅"
+        "InjectSteps": "1. GTA 5'i başlat (↖ Önceki Adım)\n2. Oyunun başlangıç ekranını/menüsünü bekle\n3. [YimMenu'yu Enjekte Et] butonuna tıkla\n4. YimMenu'nun yüklenmesini bekle\n5. Bitti!"
       },
       "Tooltip": {
         "Help": "Enjeksiyon işlemi için yardımı göster",
@@ -2433,7 +2686,8 @@
         "Injection": "Inject",
         "Lua": "Lua Ayarları",
         "Other": "Diğer",
-        "Paths": "Özel yollar"
+        "Paths": "Özel yollar",
+        "Maintenance": "Bakım"
       },
       "Inject": {
         "AutoClose": "Inject işleminden sonra YMU'yu kapat",
@@ -2458,9 +2712,15 @@
           "AutoReload": "Lua script dosyaları kaydedildiğinde değişiklikleri otomatik uygula",
           "Enable": "Seçili script(leri) etkinleştir",
           "Disable": "Seçili script(leri) devre dışı bırak",
-          "Refresh": "Script listesini yenile"
+          "Refresh": "Script listesini yenile",
+          "DisableAll": "Tüm komut dosyalarını aynı anda devre dışı bırak (Güvenli Mod)",
+          "EnableAll": "Devre dışı bırakılan tüm komut dosyalarını yeniden etkinleştir"
         },
-        "NoScriptsDir": "Henüz {0} klasörü bulunamadı.\nOluşturmak için bir kez inject et."
+        "NoScriptsDir": "Henüz {0} klasörü bulunamadı.\nOluşturmak için bir kez inject et.",
+        "Btn": {
+          "DisableAll": "Tümünü Devre Dışı Bırak",
+          "EnableAll": "Tümünü Etkinleştir"
+        }
       },
       "Other": {
         "DebugConsole": "Harici Debug Konsolunu Aç",
@@ -2476,7 +2736,11 @@
         "ReportBug": "Bug Raporla",
         "RequestFeature": "Özellik İste",
         "CheckUpdates": "YMU Güncellemelerini Kontrol Et",
-        "UpToDate": "YMU güncel"
+        "UpToDate": "YMU güncel",
+        "OpenYimV2Folder": "YimMenuV2 Klasörünü Aç",
+        "OpenLog": "YimMenu Günlüğünü Aç",
+        "ResetCaches": "İşaretçi Önbelleğini Temizle",
+        "OpenV2Log": "YimMenuV2 Günlüğünü Aç"
       },
       "Tooltip": {
         "OpenScripts": "Lua scriptlerinin bulunduğu klasörü aç",
@@ -2486,7 +2750,10 @@
         "ReportBug": "Tarayıcıda GitHub hata raporu sayfasını aç",
         "RequestFeature": "Tarayıcıda GitHub özellik isteği sayfasını aç",
         "Language": "Uygulama dilini seç (yeniden başlatma gerektirir)",
-        "UpdateLang": "Çeviri güncellemelerini kontrol et"
+        "UpdateLang": "Çeviri güncellemelerini kontrol et",
+        "OpenYimV2Folder": "YimMenuV2 klasörünü aç (%APPDATA%/YimMenuV2)",
+        "OpenLog": "Etkin sürümün cout.log dosyasını metin düzenleyicinizde açın",
+        "ResetCaches": "Önbelleğe alınmış ikili ofsetleri siler. Menü başlangıçta çökerse oyun güncellemelerinden sonra önerilir."
       },
       "Update": {
         "Title": "YMU Güncellemeleri",
@@ -2509,7 +2776,10 @@
         "BattlEyeDisabledTitle": "BattlEye Devre Dışı Bırakıldı",
         "BattlEyeDisabledMsg": "GTA V klasöründeki commandline.txt dosyasına -nobattleye eklendi.",
         "BattlEyeRestoredTitle": "BattlEye Geri Yüklendi",
-        "BattlEyeRestoredMsg": "commandline.txt dosyasından -nobattleye kaldırıldı."
+        "BattlEyeRestoredMsg": "commandline.txt dosyasından -nobattleye kaldırıldı.",
+        "CachesClearedTitle": "Önbellek Temizlendi",
+        "CachesClearedMsg": "{0} önbellek dosyası başarıyla temizlendi.",
+        "NoCachesMsg": "Temizlenecek önbellek dosyası bulunamadı."
       },
       "Paths": {
         "AutoDetect": "Otomatik algılandı",
@@ -2524,8 +2794,18 @@
         "ErrorWriteCommandline": "commandline.txt dosyası değiştirilemedi. Lütfen dosya izinlerini kontrol et.",
         "NoBattlEye": "BattlEye'ı devre dışı bırak (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "BattlEye olmadan çalıştırmak için GTA V klasöründeki commandline.txt dosyasına -nobattleye ekler veya kaldırır"
-        }
+          "NoBattlEye": "BattlEye olmadan çalıştırmak için GTA V klasöründeki commandline.txt dosyasına -nobattleye ekler veya kaldırır",
+          "Fsl": "Free Save Launcher (FSL) yerel GTA Online kayıtları ve BattlEye atlatması sağlar. UnknownCheats konusunu açmak için tıklayın."
+        },
+        "FslDetected": "FSL (WINMM.dll): Tespit Edildi",
+        "FslMissing": "FSL (WINMM.dll): Bulunamadı (Çevrimiçi için önerilir)",
+        "FslHelp": "FSL Bilgisi"
+      },
+      "Notice": {
+        "LegacyOnly": "Yalnızca YimMenu Legacy sürümünde kullanılabilir"
+      },
+      "Badge": {
+        "LegacyOnly": "Yalnızca Legacy"
       }
     }
   },
@@ -2608,8 +2888,8 @@
       },
       "Help": {
         "Title": "DLL 和 FSL 说明",
-        "DllSteps": "1. 点击 (下载)\n2. 等待下载完成\n3. 文件位于 'YMU/dll' 文件夹中\n\n如果文件被删除，请在杀毒软件中添加白名单\n或暂时禁用杀毒软件。",
-        "FslSteps": "1. 下载 FSL (链接在风险提示页面)\n2. 打开你的 GTA V 游戏目录\n3. 将 WINMM.dll 拖入该文件夹\n   (文件名必须完全一致：'WINMM.dll')\n4. 在 Rockstar 启动器中禁用 BattlEye\n5. 完成！ ✅"
+        "DllSteps": "1. 点击 [下载]\n2. 等待下载完成\n3. 文件位于 '%LOCALAPPDATA%/YMU/dll' 文件夹中\n\n如果文件被删除，请在杀毒软件中添加白名单\n或暂时禁用杀毒软件。",
+        "FslSteps": "1. 下载 FSL (链接在风险提示页面)\n2. 打开你的 GTA V 游戏目录\n3. 将 WINMM.dll 拖入该文件夹\n   (文件名必须完全一致：'WINMM.dll')\n4. 在 Rockstar 启动器中禁用 BattlEye\n5. 完成！"
       },
       "Tooltip": {
         "Help": "显示 DLL 和 FSL 安装帮助",
@@ -2622,7 +2902,8 @@
         "DownloadAnyway": "仍然下载"
       },
       "Error": {
-        "RateLimited": "已达到 GitHub API 速率限制。请在 {0} 分钟后重试。"
+        "RateLimited": "已达到 GitHub API 速率限制。请在 {0} 分钟后重试。",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -2646,9 +2927,9 @@
       },
       "Help": {
         "Title": "注入说明",
-        "StartGtaSteps": "1. 选择你的启动器\n2. 点击 '启动 GTA 5'\n3. 阅读下一步 ↗",
+        "StartGtaSteps": "1. 选择你的启动器\n2. 点击 [启动 GTA 5]\n3. 阅读下一步 ↗",
         "TabInject": "注入 DLL",
-        "InjectSteps": "1. 启动 GTA 5 (↖ 上一步)\n2. 等待游戏进入开始画面/菜单\n3. 点击 '注入 YimMenu'\n4. 等待 YimMenu 加载完成\n5. 完成！ ✅"
+        "InjectSteps": "1. 启动 GTA 5 (↖ 上一步)\n2. 等待游戏进入开始画面/菜单\n3. 点击 [注入 YimMenu]\n4. 等待 YimMenu 加载完成\n5. 完成！"
       },
       "Tooltip": {
         "Help": "显示注入过程的帮助信息",
@@ -2686,7 +2967,8 @@
         "Injection": "注入",
         "Lua": "Lua 设置",
         "Other": "其他",
-        "Paths": "自定义路径"
+        "Paths": "自定义路径",
+        "Maintenance": "维护"
       },
       "Inject": {
         "AutoClose": "注入后自动关闭 YMU",
@@ -2711,9 +2993,15 @@
           "AutoReload": "当 Lua 脚本文件保存时自动应用更改",
           "Enable": "启用选中的脚本",
           "Disable": "禁用选中的脚本",
-          "Refresh": "刷新脚本列表"
+          "Refresh": "刷新脚本列表",
+          "DisableAll": "一次性禁用所有脚本（安全模式）",
+          "EnableAll": "重新启用所有已禁用的脚本"
         },
-        "NoScriptsDir": "尚未找到 {0} 文件夹。\n先注入一次以创建它。"
+        "NoScriptsDir": "尚未找到 {0} 文件夹。\n先注入一次以创建它。",
+        "Btn": {
+          "DisableAll": "全部禁用",
+          "EnableAll": "全部启用"
+        }
       },
       "Other": {
         "DebugConsole": "启用外部调试控制台",
@@ -2729,7 +3017,11 @@
         "ReportBug": "报告 Bug",
         "RequestFeature": "请求新功能",
         "CheckUpdates": "检查 YMU 更新",
-        "UpToDate": "YMU 已是最新"
+        "UpToDate": "YMU 已是最新",
+        "OpenYimV2Folder": "打开 YimMenuV2 文件夹",
+        "OpenLog": "打开 YimMenu 日志",
+        "ResetCaches": "清除指针缓存",
+        "OpenV2Log": "打开 YimMenuV2 日志"
       },
       "Tooltip": {
         "OpenScripts": "打开 Lua 脚本所在的文件夹",
@@ -2739,7 +3031,10 @@
         "ReportBug": "在浏览器中打开 GitHub 的 Bug 报告页面",
         "RequestFeature": "在浏览器中打开 GitHub 的功能请求页面",
         "Language": "选择应用程序语言 (需要重启)",
-        "UpdateLang": "检查翻译更新"
+        "UpdateLang": "检查翻译更新",
+        "OpenYimV2Folder": "打开 YimMenuV2 文件夹 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "在文本编辑器中打开当前版本的 cout.log",
+        "ResetCaches": "删除缓存的二进制偏移量。游戏更新后如果菜单启动崩溃，建议使用。"
       },
       "Update": {
         "Title": "YMU 更新",
@@ -2762,7 +3057,10 @@
         "BattlEyeDisabledTitle": "BattlEye 已禁用",
         "BattlEyeDisabledMsg": "已向 GTA V 目录下的 commandline.txt 添加 -nobattleye。",
         "BattlEyeRestoredTitle": "BattlEye 已恢复",
-        "BattlEyeRestoredMsg": "已从 commandline.txt 中移除 -nobattleye。"
+        "BattlEyeRestoredMsg": "已从 commandline.txt 中移除 -nobattleye。",
+        "CachesClearedTitle": "缓存已清除",
+        "CachesClearedMsg": "已成功清除 {0} 个缓存文件。",
+        "NoCachesMsg": "未找到可清除的缓存文件。"
       },
       "Paths": {
         "AutoDetect": "自动检测",
@@ -2777,8 +3075,18 @@
         "ErrorWriteCommandline": "无法修改 commandline.txt。请检查文件权限。",
         "NoBattlEye": "禁用 BattlEye (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "在 GTA V 目录下的 commandline.txt 中添加或移除 -nobattleye，以便在不运行 BattlEye 的情况下启动游戏"
-        }
+          "NoBattlEye": "在 GTA V 目录下的 commandline.txt 中添加或移除 -nobattleye，以便在不运行 BattlEye 的情况下启动游戏",
+          "Fsl": "Free Save Launcher (FSL) 提供本地 GTA 在线模式存档及 BattlEye 绕过。点击打开 UnknownCheats 帖子。"
+        },
+        "FslDetected": "FSL (WINMM.dll)：已检测到",
+        "FslMissing": "FSL (WINMM.dll)：未找到（在线模式推荐）",
+        "FslHelp": "FSL 详情"
+      },
+      "Notice": {
+        "LegacyOnly": "仅在 YimMenu Legacy 中可用"
+      },
+      "Badge": {
+        "LegacyOnly": "仅限 Legacy"
       }
     }
   },
@@ -2861,8 +3169,8 @@
       },
       "Help": {
         "Title": "DLL 與 FSL 說明",
-        "DllSteps": "1. 點擊 (下載)\n2. 等待下載完成\n3. 檔案位於 'YMU/dll' 資料夾中\n\n如果檔案被刪除，請在防毒軟體中將其設為例外\n或暫時關閉防毒軟體。",
-        "FslSteps": "1. 下載 FSL (連結在風險提示頁面)\n2. 開啟你的 GTA V 遊戲目錄\n3. 將 WINMM.dll 拖曳到該資料夾\n   (檔案名稱必須完全相同：'WINMM.dll')\n4. 在 Rockstar 啟動器中停用 BattlEye\n5. 完成！ ✅"
+        "DllSteps": "1. 點擊 [下載]\n2. 等待下載完成\n3. 檔案位於 '%LOCALAPPDATA%/YMU/dll' 資料夾中\n\n如果檔案被刪除，請在防毒軟體中將其設為例外\n或暫時關閉防毒軟體。",
+        "FslSteps": "1. 下載 FSL (連結在風險提示頁面)\n2. 開啟你的 GTA V 遊戲目錄\n3. 將 WINMM.dll 拖曳到該資料夾\n   (檔案名稱必須完全相同：'WINMM.dll')\n4. 在 Rockstar 啟動器中停用 BattlEye\n5. 完成！"
       },
       "Tooltip": {
         "Help": "顯示 DLL 與 FSL 安裝說明",
@@ -2875,7 +3183,8 @@
         "DownloadAnyway": "仍然下載"
       },
       "Error": {
-        "RateLimited": "已達到 GitHub API 速率限制。請在 {0} 分鐘後重試。"
+        "RateLimited": "已達到 GitHub API 速率限制。請在 {0} 分鐘後重試。",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -2899,9 +3208,9 @@
       },
       "Help": {
         "Title": "注入說明",
-        "StartGtaSteps": "1. 選擇你的啟動器\n2. 點擊 '啟動 GTA 5'\n3. 閱讀下一步 ↗",
+        "StartGtaSteps": "1. 選擇你的啟動器\n2. 點擊 [啟動 GTA 5]\n3. 閱讀下一步 ↗",
         "TabInject": "注入 DLL",
-        "InjectSteps": "1. 啟動 GTA 5 (↖ 上一步)\n2. 等待遊戲進入開始畫面/選單\n3. 點擊 '注入 YimMenu'\n4. 等待 YimMenu 載入完成\n5. 完成！ ✅"
+        "InjectSteps": "1. 啟動 GTA 5 (↖ 上一步)\n2. 等待遊戲進入開始畫面/選單\n3. 點擊 [注入 YimMenu]\n4. 等待 YimMenu 載入完成\n5. 完成！"
       },
       "Tooltip": {
         "Help": "顯示注入過程的說明資料",
@@ -2939,7 +3248,8 @@
         "Injection": "注入",
         "Lua": "Lua 設定",
         "Other": "其他",
-        "Paths": "自訂路徑"
+        "Paths": "自訂路徑",
+        "Maintenance": "維護"
       },
       "Inject": {
         "AutoClose": "注入後自動關閉 YMU",
@@ -2964,9 +3274,15 @@
           "AutoReload": "當 Lua 腳本檔案儲存時自動套用變更",
           "Enable": "啟用選中的腳本",
           "Disable": "停用選中的腳本",
-          "Refresh": "重新整理腳本列表"
+          "Refresh": "重新整理腳本列表",
+          "DisableAll": "一次停用所有腳本（安全模式）",
+          "EnableAll": "重新啟用所有已停用的腳本"
         },
-        "NoScriptsDir": "尚未找到 {0} 資料夾。\n先注入一次以建立它。"
+        "NoScriptsDir": "尚未找到 {0} 資料夾。\n先注入一次以建立它。",
+        "Btn": {
+          "DisableAll": "全部停用",
+          "EnableAll": "全部啟用"
+        }
       },
       "Other": {
         "DebugConsole": "啟用外部除錯控制台",
@@ -2982,7 +3298,11 @@
         "ReportBug": "回報 Bug",
         "RequestFeature": "請求新功能",
         "CheckUpdates": "檢查 YMU 更新",
-        "UpToDate": "YMU 已是最新"
+        "UpToDate": "YMU 已是最新",
+        "OpenYimV2Folder": "開啟 YimMenuV2 資料夾",
+        "OpenLog": "開啟 YimMenu 記錄檔",
+        "ResetCaches": "清除指標快取",
+        "OpenV2Log": "開啟 YimMenuV2 記錄檔"
       },
       "Tooltip": {
         "OpenScripts": "開啟 Lua 腳本所在的資料夾",
@@ -2992,7 +3312,10 @@
         "ReportBug": "在瀏覽器中開啟 GitHub 的 Bug 回報頁面",
         "RequestFeature": "在瀏覽器中開啟 GitHub 的功能請求頁面",
         "Language": "選擇應用程式語言 (需要重新啟動)",
-        "UpdateLang": "檢查翻譯更新"
+        "UpdateLang": "檢查翻譯更新",
+        "OpenYimV2Folder": "開啟 YimMenuV2 資料夾 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "在文字編輯器中開啟當前版本的 cout.log",
+        "ResetCaches": "刪除快取的二進位偏移量。遊戲更新後若選單啟動崩潰，建議使用。"
       },
       "Update": {
         "Title": "YMU 更新",
@@ -3015,7 +3338,10 @@
         "BattlEyeDisabledTitle": "BattlEye 已停用",
         "BattlEyeDisabledMsg": "已向 GTA V 目錄下的 commandline.txt 新增 -nobattleye。",
         "BattlEyeRestoredTitle": "BattlEye 已復原",
-        "BattlEyeRestoredMsg": "已從 commandline.txt 中移除 -nobattleye。"
+        "BattlEyeRestoredMsg": "已從 commandline.txt 中移除 -nobattleye。",
+        "CachesClearedTitle": "快取已清除",
+        "CachesClearedMsg": "已成功清除 {0} 個快取檔案。",
+        "NoCachesMsg": "未找到可清除的快取檔案。"
       },
       "Paths": {
         "AutoDetect": "自動偵測",
@@ -3030,8 +3356,18 @@
         "ErrorWriteCommandline": "無法修改 commandline.txt。請檢查檔案權限。",
         "NoBattlEye": "停用 BattlEye (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "在 GTA V 目錄下的 commandline.txt 中新增或移除 -nobattleye，以便在不執行 BattlEye 的情況下啟動遊戲"
-        }
+          "NoBattlEye": "在 GTA V 目錄下的 commandline.txt 中新增或移除 -nobattleye，以便在不執行 BattlEye 的情況下啟動遊戲",
+          "Fsl": "Free Save Launcher (FSL) 提供本機 GTA 線上模式存檔及 BattlEye 繞過。點擊開啟 UnknownCheats 貼文。"
+        },
+        "FslDetected": "FSL (WINMM.dll)：已檢測到",
+        "FslMissing": "FSL (WINMM.dll)：未找到（線上模式推薦）",
+        "FslHelp": "FSL 資訊"
+      },
+      "Notice": {
+        "LegacyOnly": "僅在 YimMenu Legacy 中可用"
+      },
+      "Badge": {
+        "LegacyOnly": "僅限 Legacy"
       }
     }
   },
@@ -3114,8 +3450,8 @@
       },
       "Help": {
         "Title": "DLL 與 FSL 說明",
-        "DllSteps": "1. 點擊 (下載)\n2. 等待下載完成\n3. 檔案位於 'YMU/dll' 資料夾中\n\n如果檔案被刪除，請在防毒軟體中將其設為例外\n或暫時關閉防毒軟體。",
-        "FslSteps": "1. 下載 FSL (連結在風險提示頁面)\n2. 開啟你的 GTA V 遊戲目錄\n3. 將 WINMM.dll 拖曳到該資料夾\n   (檔案名稱必須完全相同：'WINMM.dll')\n4. 在 Rockstar 啟動器中停用 BattlEye\n5. 完成！ ✅"
+        "DllSteps": "1. 點擊 [下載]\n2. 等待下載完成\n3. 檔案位於 '%LOCALAPPDATA%/YMU/dll' 資料夾中\n\n如果檔案被刪除，請在防毒軟體中將其設為例外\n或暫時關閉防毒軟體。",
+        "FslSteps": "1. 下載 FSL (連結在風險提示頁面)\n2. 開啟你的 GTA V 遊戲目錄\n3. 將 WINMM.dll 拖曳到該資料夾\n   (檔案名稱必須完全相同：'WINMM.dll')\n4. 在 Rockstar 啟動器中停用 BattlEye\n5. 完成！"
       },
       "Tooltip": {
         "Help": "顯示 DLL 與 FSL 安裝說明",
@@ -3128,7 +3464,8 @@
         "DownloadAnyway": "仍要下載"
       },
       "Error": {
-        "RateLimited": "已達到 GitHub API 速率限制。請在 {0} 分鐘後重試。"
+        "RateLimited": "已達到 GitHub API 速率限制。請在 {0} 分鐘後重試。",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -3152,9 +3489,9 @@
       },
       "Help": {
         "Title": "注入說明",
-        "StartGtaSteps": "1. 選擇你的啟動器\n2. 點擊 '啟動 GTA 5'\n3. 閱讀下一步 ↗",
+        "StartGtaSteps": "1. 選擇你的啟動器\n2. 點擊 [啟動 GTA 5]\n3. 閱讀下一步 ↗",
         "TabInject": "注入 DLL",
-        "InjectSteps": "1. 啟動 GTA 5 (↖ 上一步)\n2. 等待遊戲進入開始畫面/選單\n3. 點擊 '注入 YimMenu'\n4. 等待 YimMenu 載入完成\n5. 完成！ ✅"
+        "InjectSteps": "1. 啟動 GTA 5 (↖ 上一步)\n2. 等待遊戲進入開始畫面/選單\n3. 點擊 [注入 YimMenu]\n4. 等待 YimMenu 載入完成\n5. 完成！"
       },
       "Tooltip": {
         "Help": "顯示注入過程的說明資訊",
@@ -3192,7 +3529,8 @@
         "Injection": "注入",
         "Lua": "Lua 設定",
         "Other": "其他",
-        "Paths": "自訂路徑"
+        "Paths": "自訂路徑",
+        "Maintenance": "維護"
       },
       "Inject": {
         "AutoClose": "注入後自動關閉 YMU",
@@ -3217,9 +3555,15 @@
           "AutoReload": "當 Lua 腳本檔案儲存時自動套用變更",
           "Enable": "啟用選中的腳本",
           "Disable": "停用選中的腳本",
-          "Refresh": "重新整理腳本列表"
+          "Refresh": "重新整理腳本列表",
+          "DisableAll": "一次停用所有腳本（安全模式）",
+          "EnableAll": "重新啟用所有已停用的腳本"
         },
-        "NoScriptsDir": "尚未找到 {0} 資料夾。\n先注入一次以建立它。"
+        "NoScriptsDir": "尚未找到 {0} 資料夾。\n先注入一次以建立它。",
+        "Btn": {
+          "DisableAll": "全部停用",
+          "EnableAll": "全部啟用"
+        }
       },
       "Other": {
         "DebugConsole": "啟用外部除錯控制台",
@@ -3235,7 +3579,11 @@
         "ReportBug": "回報 Bug",
         "RequestFeature": "請求新功能",
         "CheckUpdates": "檢查 YMU 更新",
-        "UpToDate": "YMU 已是最新"
+        "UpToDate": "YMU 已是最新",
+        "OpenYimV2Folder": "開啟 YimMenuV2 資料夾",
+        "OpenLog": "開啟 YimMenu 記錄檔",
+        "ResetCaches": "清除指標快取",
+        "OpenV2Log": "開啟 YimMenuV2 記錄檔"
       },
       "Tooltip": {
         "OpenScripts": "開啟 Lua 腳本所在的資料夾",
@@ -3245,7 +3593,10 @@
         "ReportBug": "在瀏覽器中開啟 GitHub 的 Bug 回報頁面",
         "RequestFeature": "在瀏覽器中開啟 GitHub 的功能請求頁面",
         "Language": "選擇應用程式語言 (需要重新啟動)",
-        "UpdateLang": "檢查翻譯更新"
+        "UpdateLang": "檢查翻譯更新",
+        "OpenYimV2Folder": "開啟 YimMenuV2 資料夾 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "在文字編輯器中開啟當前版本的 cout.log",
+        "ResetCaches": "刪除快取的二進位偏移量。遊戲更新後若選單啟動崩潰，建議使用。"
       },
       "Update": {
         "Title": "YMU 更新",
@@ -3268,7 +3619,10 @@
         "BattlEyeDisabledTitle": "BattlEye 已停用",
         "BattlEyeDisabledMsg": "已在 GTA V 目錄下的 commandline.txt 新增 -nobattleye。",
         "BattlEyeRestoredTitle": "BattlEye 已還原",
-        "BattlEyeRestoredMsg": "已從 commandline.txt 中移除 -nobattleye。"
+        "BattlEyeRestoredMsg": "已從 commandline.txt 中移除 -nobattleye。",
+        "CachesClearedTitle": "快取已清除",
+        "CachesClearedMsg": "已成功清除 {0} 個快取檔案。",
+        "NoCachesMsg": "未找到可清除的快取檔案。"
       },
       "Paths": {
         "AutoDetect": "自動偵測",
@@ -3283,8 +3637,18 @@
         "ErrorWriteCommandline": "無法修改 commandline.txt。請檢查檔案權限。",
         "NoBattlEye": "停用 BattlEye (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "在 GTA V 目錄下的 commandline.txt 中新增或移除 -nobattleye，以便在不執行 BattlEye 的情況下啟動遊戲"
-        }
+          "NoBattlEye": "在 GTA V 目錄下的 commandline.txt 中新增或移除 -nobattleye，以便在不執行 BattlEye 的情況下啟動遊戲",
+          "Fsl": "Free Save Launcher (FSL) 提供本機 GTA 線上模式存檔及 BattlEye 繞過。點擊開啟 UnknownCheats 貼文。"
+        },
+        "FslDetected": "FSL (WINMM.dll)：已檢測到",
+        "FslMissing": "FSL (WINMM.dll)：未找到（線上模式推薦）",
+        "FslHelp": "FSL 資訊"
+      },
+      "Notice": {
+        "LegacyOnly": "僅在 YimMenu Legacy 中可用"
+      },
+      "Badge": {
+        "LegacyOnly": "僅限 Legacy"
       }
     }
   },
@@ -3367,8 +3731,8 @@
       },
       "Help": {
         "Title": "DLL & FSL 情報",
-        "DllSteps": "1. (ダウンロード) をクリック\n2. ダウンロード完了まで待機\n3. ファイルは 'YMU/dll' フォルダにあります\n\nファイルが削除される場合は、アンチウイルスの除外設定に追加するか\n一時的に無効にしてください。",
-        "FslSteps": "1. FSLをダウンロード (リスクページにリンクあり)\n2. GTA Vのインストールフォルダを開く\n3. WINMM.dllをフォルダに入れる\n   (ファイル名は必ず 'WINMM.dll' である必要があります)\n4. Rockstar Game LauncherでBattlEyeを無効化\n5. 完了！ ✅"
+        "DllSteps": "1. [ダウンロード] をクリック\n2. ダウンロード完了まで待機\n3. ファイルは '%LOCALAPPDATA%/YMU/dll' フォルダにあります\n\nファイルが削除される場合は、アンチウイルスの除外設定に追加するか\n一時的に無効にしてください。",
+        "FslSteps": "1. FSLをダウンロード (リスクページにリンクあり)\n2. GTA Vのインストールフォルダを開く\n3. WINMM.dllをフォルダに入れる\n   (ファイル名は必ず 'WINMM.dll' である必要があります)\n4. Rockstar Game LauncherでBattlEyeを無効化\n5. 完了！"
       },
       "Tooltip": {
         "Help": "DLLとFSLのインストールヘルプを表示",
@@ -3381,7 +3745,8 @@
         "DownloadAnyway": "それでもダウンロード"
       },
       "Error": {
-        "RateLimited": "GitHub API のレート制限に達しました。{0} 分後に再試行してください。"
+        "RateLimited": "GitHub API のレート制限に達しました。{0} 分後に再試行してください。",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -3405,9 +3770,9 @@
       },
       "Help": {
         "Title": "インジェクト情報",
-        "StartGtaSteps": "1. ランチャーを選択\n2. 'GTA 5 を起動' をクリック\n3. 次の手順へ ↗",
+        "StartGtaSteps": "1. ランチャーを選択\n2. [GTA 5 を起動] をクリック\n3. 次の手順へ ↗",
         "TabInject": "DLL インジェクト",
-        "InjectSteps": "1. GTA 5 を起動 (↖ 前の手順)\n2. ゲームの開始画面/メニューまで待機\n3. 'YimMenuをインジェクト' をクリック\n4. YimMenuのロード完了まで待機\n5. 完了！ ✅"
+        "InjectSteps": "1. GTA 5 を起動 (↖ 前の手順)\n2. ゲームの開始画面/メニューまで待機\n3. [YimMenuをインジェクト] をクリック\n4. YimMenuのロード完了まで待機\n5. 完了！"
       },
       "Tooltip": {
         "Help": "インジェクト手順のヘルプを表示",
@@ -3445,7 +3810,8 @@
         "Injection": "インジェクト",
         "Lua": "Lua 設定",
         "Other": "その他",
-        "Paths": "カスタムパス"
+        "Paths": "カスタムパス",
+        "Maintenance": "メンテナンス"
       },
       "Inject": {
         "AutoClose": "インジェクト後にYMUを閉じる",
@@ -3470,9 +3836,15 @@
           "AutoReload": "Luaスクリプトファイルが保存された際、変更を自動的に適用します",
           "Enable": "選択したスクリプトを有効化",
           "Disable": "選択したスクリプトを無効化",
-          "Refresh": "スクリプトリストを更新"
+          "Refresh": "スクリプトリストを更新",
+          "DisableAll": "すべてのスクリプトを一度に無効化（セーフモード）",
+          "EnableAll": "無効化されたすべてのスクリプトを再度有効化"
         },
-        "NoScriptsDir": "{0} フォルダーがまだ見つかりません。\n一度インジェクトして作成してください。"
+        "NoScriptsDir": "{0} フォルダーがまだ見つかりません。\n一度インジェクトして作成してください。",
+        "Btn": {
+          "DisableAll": "すべて無効化",
+          "EnableAll": "すべて有効化"
+        }
       },
       "Other": {
         "DebugConsole": "外部デバッグコンソールを有効化",
@@ -3488,7 +3860,11 @@
         "ReportBug": "バグを報告",
         "RequestFeature": "機能をリクエスト",
         "CheckUpdates": "YMUの更新を確認",
-        "UpToDate": "YMUは最新です"
+        "UpToDate": "YMUは最新です",
+        "OpenYimV2Folder": "YimMenuV2フォルダを開く",
+        "OpenLog": "YimMenu ログを開く",
+        "ResetCaches": "ポインターキャッシュをクリア",
+        "OpenV2Log": "YimMenuV2 ログを開く"
       },
       "Tooltip": {
         "OpenScripts": "Luaスクリプトが配置されているフォルダを開く",
@@ -3498,7 +3874,10 @@
         "ReportBug": "ブラウザでGitHubのバグ報告ページを開く",
         "RequestFeature": "ブラウザでGitHubの機能リクエストページを開く",
         "Language": "アプリの言語を選択 (再起動が必要)",
-        "UpdateLang": "翻訳の更新を確認"
+        "UpdateLang": "翻訳の更新を確認",
+        "OpenYimV2Folder": "YimMenuV2フォルダを開く (%APPDATA%/YimMenuV2)",
+        "OpenLog": "テキストエディターで現在のアクティブバージョンの cout.log を開く",
+        "ResetCaches": "キャッシュされたバイナリオフセットを削除します。ゲーム更新後に起動時クラッシュが発生する場合に推奨されます。"
       },
       "Update": {
         "Title": "YMU アップデート",
@@ -3521,7 +3900,10 @@
         "BattlEyeDisabledTitle": "BattlEye が無効化されました",
         "BattlEyeDisabledMsg": "GTA V ディレクトリ内の commandline.txt に -nobattleye を追加しました。",
         "BattlEyeRestoredTitle": "BattlEye が復元されました",
-        "BattlEyeRestoredMsg": "commandline.txt から -nobattleye を削除しました。"
+        "BattlEyeRestoredMsg": "commandline.txt から -nobattleye を削除しました。",
+        "CachesClearedTitle": "キャッシュをクリアしました",
+        "CachesClearedMsg": "{0} 個のキャッシュファイルを正常にクリアしました。",
+        "NoCachesMsg": "クリアするキャッシュファイルが見つかりません。"
       },
       "Paths": {
         "AutoDetect": "自動検出",
@@ -3536,8 +3918,18 @@
         "ErrorWriteCommandline": "commandline.txt を変更できませんでした。ファイルのアクセス許可を確認してください。",
         "NoBattlEye": "BattlEye を無効化 (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "BattlEye なしで起動するために、GTA V ディレクトリ内の commandline.txt に -nobattleye を追加または削除します"
-        }
+          "NoBattlEye": "BattlEye なしで起動するために、GTA V ディレクトリ内の commandline.txt に -nobattleye を追加または削除します",
+          "Fsl": "Free Save Launcher (FSL) はローカル GTA オンラインセーブおよび BattlEye バイパスを提供します。UnknownCheats スレッドを開くにはクリックしてください。"
+        },
+        "FslDetected": "FSL (WINMM.dll): 検出されました",
+        "FslMissing": "FSL (WINMM.dll): 見つかりません（オンライン推奨）",
+        "FslHelp": "FSL 情報"
+      },
+      "Notice": {
+        "LegacyOnly": "YimMenu Legacy でのみ利用可能"
+      },
+      "Badge": {
+        "LegacyOnly": "Legacy 限定"
       }
     }
   },
@@ -3620,8 +4012,8 @@
       },
       "Help": {
         "Title": "DLL 및 FSL 정보",
-        "DllSteps": "1. (다운로드)를 클릭하세요\n2. 다운로드가 끝날 때까지 기다리세요\n3. 파일은 'YMU/dll' 폴더에 있습니다\n\n파일이 삭제되는 경우, 백신 프로그램에서\n예외 처리를 추가하거나 일시적으로 비활성화하세요.",
-        "FslSteps": "1. FSL을 다운로드하세요 (링크는 위험 페이지에 있습니다)\n2. GTA V 설치 폴더를 여세요\n3. WINMM.dll을 폴더에 넣으세요\n   (파일 이름은 반드시 'WINMM.dll'이어야 합니다)\n4. Rockstar Games Launcher에서 BattlEye를 비활성화하세요\n5. 완료! ✅"
+        "DllSteps": "1. [다운로드]를 클릭하세요\n2. 다운로드가 끝날 때까지 기다리세요\n3. 파일은 '%LOCALAPPDATA%/YMU/dll' 폴더에 있습니다\n\n파일이 삭제되는 경우, 백신 프로그램에서\n예외 처리를 추가하거나 일시적으로 비활성화하세요.",
+        "FslSteps": "1. FSL을 다운로드하세요 (링크는 위험 페이지에 있습니다)\n2. GTA V 설치 폴더를 여세요\n3. WINMM.dll을 폴더에 넣으세요\n   (파일 이름은 반드시 'WINMM.dll'이어야 합니다)\n4. Rockstar Games Launcher에서 BattlEye를 비활성화하세요\n5. 완료!"
       },
       "Tooltip": {
         "Help": "DLL 및 FSL 설치 도움말을 표시합니다",
@@ -3634,7 +4026,8 @@
         "DownloadAnyway": "그래도 다운로드"
       },
       "Error": {
-        "RateLimited": "GitHub API 요청 한도에 도달했습니다. {0}분 후에 다시 시도해 주세요."
+        "RateLimited": "GitHub API 요청 한도에 도달했습니다. {0}분 후에 다시 시도해 주세요.",
+        "FileLocked": "YimMenu.dll is currently in use by GTA V or another process. Please close GTA V and try again."
       }
     },
     "Inject": {
@@ -3658,9 +4051,9 @@
       },
       "Help": {
         "Title": "인젝트 정보",
-        "StartGtaSteps": "1. 사용할 런처를 선택하세요\n2. 'GTA 5 시작'을 누르세요\n3. 다음 단계를 확인하세요 ↗",
+        "StartGtaSteps": "1. 사용할 런처를 선택하세요\n2. [GTA 5 시작]을 누르세요\n3. 다음 단계를 확인하세요 ↗",
         "TabInject": "DLL 인젝트",
-        "InjectSteps": "1. GTA 5를 시작하세요 (↖ 이전 단계)\n2. 게임의 시작 화면/메뉴가 나타날 때까지 기다리세요\n3. 'YimMenu 인젝트'를 클릭하세요\n4. YimMenu 로딩이 끝날 때까지 기다리세요\n5. 완료! ✅"
+        "InjectSteps": "1. GTA 5를 시작하세요 (↖ 이전 단계)\n2. 게임의 시작 화면/메뉴가 나타날 때까지 기다리세요\n3. [YimMenu 인젝트]를 클릭하세요\n4. YimMenu 로딩이 끝날 때까지 기다리세요\n5. 완료!"
       },
       "Tooltip": {
         "Help": "인젝트 과정에 대한 도움말을 표시합니다",
@@ -3698,7 +4091,8 @@
         "Injection": "인젝트",
         "Lua": "Lua 설정",
         "Other": "기타",
-        "Paths": "사용자 지정 경로"
+        "Paths": "사용자 지정 경로",
+        "Maintenance": "유지 관리"
       },
       "Inject": {
         "AutoClose": "인젝트 후 YMU 자동 종료",
@@ -3723,9 +4117,15 @@
           "AutoReload": "Lua 스크립트 파일이 저장되면 변경 사항을 자동으로 다시 적용합니다",
           "Enable": "선택한 스크립트 활성화",
           "Disable": "선택한 스크립트 비활성화",
-          "Refresh": "스크립트 목록 새로고침"
+          "Refresh": "스크립트 목록 새로고침",
+          "DisableAll": "모든 스크립트를 한 번에 비활성화 (안전 모드)",
+          "EnableAll": "비활성화된 모든 스크립트를 다시 활성화"
         },
-        "NoScriptsDir": "{0} 폴더를 아직 찾을 수 없습니다.\n한 번 인젝트하여 실행하면 생성됩니다."
+        "NoScriptsDir": "{0} 폴더를 아직 찾을 수 없습니다.\n한 번 인젝트하여 실행하면 생성됩니다.",
+        "Btn": {
+          "DisableAll": "모두 비활성화",
+          "EnableAll": "모두 활성화"
+        }
       },
       "Other": {
         "DebugConsole": "외부 디버그 콘솔 활성화",
@@ -3741,7 +4141,11 @@
         "ReportBug": "버그 신고",
         "RequestFeature": "기능 요청",
         "CheckUpdates": "YMU 업데이트 확인",
-        "UpToDate": "YMU 최신 상태"
+        "UpToDate": "YMU 최신 상태",
+        "OpenYimV2Folder": "YimMenuV2 폴더 열기",
+        "OpenLog": "YimMenu 로그 열기",
+        "ResetCaches": "포인터 캐시 지우기",
+        "OpenV2Log": "YimMenuV2 로그 열기"
       },
       "Tooltip": {
         "OpenScripts": "Lua 스크립트가 있는 폴더를 엽니다",
@@ -3751,7 +4155,10 @@
         "ReportBug": "브라우저에서 GitHub의 버그 신고 페이지를 엽니다",
         "RequestFeature": "브라우저에서 GitHub의 기능 요청 페이지를 엽니다",
         "Language": "애플리케이션 언어를 선택합니다 (재시작 필요)",
-        "UpdateLang": "번역 업데이트 확인"
+        "UpdateLang": "번역 업데이트 확인",
+        "OpenYimV2Folder": "YimMenuV2 폴더를 엽니다 (%APPDATA%/YimMenuV2)",
+        "OpenLog": "텍스트 편집기에서 활성 에디션의 cout.log 열기",
+        "ResetCaches": "캐시된 바이너리 오프셋을 삭제합니다. 게임 업데이트 후 메뉴 실행 시 충돌이 발생할 경우 권장됩니다."
       },
       "Update": {
         "Title": "YMU 업데이트",
@@ -3774,7 +4181,10 @@
         "BattlEyeDisabledTitle": "BattlEye 비활성화됨",
         "BattlEyeDisabledMsg": "GTA V 디렉터리의 commandline.txt에 -nobattleye를 추가했습니다.",
         "BattlEyeRestoredTitle": "BattlEye 복원됨",
-        "BattlEyeRestoredMsg": "commandline.txt에서 -nobattleye를 제거했습니다."
+        "BattlEyeRestoredMsg": "commandline.txt에서 -nobattleye를 제거했습니다.",
+        "CachesClearedTitle": "캐시 삭제 완료",
+        "CachesClearedMsg": "{0}개의 캐시 파일을 성공적으로 삭제했습니다.",
+        "NoCachesMsg": "삭제할 캐시 파일이 없습니다."
       },
       "Paths": {
         "GtaDir": "GTA V 설치 폴더",
@@ -3789,8 +4199,18 @@
         "ErrorWriteCommandline": "commandline.txt를 수정할 수 없습니다. 파일 권한을 확인해 주세요.",
         "NoBattlEye": "BattlEye 비활성화 (commandline.txt)",
         "Tooltip": {
-          "NoBattlEye": "BattlEye 없이 실행하기 위해 GTA V 디렉터리의 commandline.txt에 -nobattleye를 추가하거나 제거합니다"
-        }
+          "NoBattlEye": "BattlEye 없이 실행하기 위해 GTA V 디렉터리의 commandline.txt에 -nobattleye를 추가하거나 제거합니다",
+          "Fsl": "Free Save Launcher (FSL)는 로컬 GTA 온라인 저장 및 BattlEye 우회를 제공합니다. UnknownCheats 스레드를 열려면 클릭하세요."
+        },
+        "FslDetected": "FSL (WINMM.dll): 감지됨",
+        "FslMissing": "FSL (WINMM.dll): 찾을 수 없음 (온라인 권장)",
+        "FslHelp": "FSL 정보"
+      },
+      "Notice": {
+        "LegacyOnly": "YimMenu Legacy에서만 사용 가능"
+      },
+      "Badge": {
+        "LegacyOnly": "Legacy 전용"
       }
     }
   }
