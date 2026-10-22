@@ -4,7 +4,9 @@ import { readFile, writeFile } from "node:fs/promises";
 import { existsSync } from "node:fs";
 import { fileURLToPath } from "node:url";
 
-const OUT = fileURLToPath(new URL("../src/_data/release.json", import.meta.url));
+const OUT = fileURLToPath(
+  new URL("../src/_data/release.json", import.meta.url),
+);
 
 function formatDate(isoString) {
   try {
@@ -33,7 +35,7 @@ async function fetchLatestRelease() {
       {
         headers: { "User-Agent": "YMU-Website-Build" },
         signal: AbortSignal.timeout(8_000),
-      }
+      },
     );
     if (res.ok) {
       const data = await res.json();
@@ -52,9 +54,12 @@ async function fetchLatestRelease() {
           bannerId: `ymu-alert-${tag.toLowerCase().replace(/\./g, "-")}-release`,
           sha: sha,
           bodySnippet: (data.body || "").slice(0, 300),
-          htmlUrl: data.html_url || `https://github.com/NiiV3AU/YMU/releases/latest`,
+          htmlUrl:
+            data.html_url || `https://github.com/NiiV3AU/YMU/releases/latest`,
         };
-        console.log(`release: fetched latest release ${tag} (${releaseData.dateFormatted})`);
+        console.log(
+          `release: fetched latest release ${tag} (${releaseData.dateFormatted})`,
+        );
       }
     }
   } catch (err) {
@@ -66,11 +71,13 @@ async function fetchLatestRelease() {
     try {
       const res = await fetch(
         "https://raw.githubusercontent.com/NiiV3AU/YMU/main/src/core/paths.py",
-        { signal: AbortSignal.timeout(6_000) }
+        { signal: AbortSignal.timeout(6_000) },
       );
       if (res.ok) {
         const text = await res.text();
-        const m = text.match(/LOCAL_VERSION\s*=\s*"v?([0-9]+\.[0-9]+\.[0-9]+)"/);
+        const m = text.match(
+          /LOCAL_VERSION\s*=\s*"v?([0-9]+\.[0-9]+\.[0-9]+)"/,
+        );
         if (m) {
           const cleanVersion = m[1];
           const tag = `v${cleanVersion}`;
@@ -85,7 +92,9 @@ async function fetchLatestRelease() {
             bodySnippet: "",
             htmlUrl: "https://github.com/NiiV3AU/YMU/releases/latest",
           };
-          console.log(`release: extracted version ${tag} from paths.py fallback`);
+          console.log(
+            `release: extracted version ${tag} from paths.py fallback`,
+          );
         }
       }
     } catch {}
@@ -106,7 +115,9 @@ async function fetchLatestRelease() {
     }
   } else {
     if (existsSync(OUT)) {
-      console.warn("release: could not fetch remote, keeping existing src/_data/release.json");
+      console.warn(
+        "release: could not fetch remote, keeping existing src/_data/release.json",
+      );
     } else {
       // Notfall-Fallback
       const fallback = {

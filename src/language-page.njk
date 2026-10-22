@@ -6,60 +6,59 @@ pagination:
 permalink: "/{{ lang.code }}/"
 ---
 <!DOCTYPE html>
-<html lang="{{ lang.code }}">
-  <head>
-    <link rel="canonical" href="{{ metadata.url }}{{ page.url }}" />
-    {%- for item in languages.items -%}
-    <link rel="alternate" hreflang="{{ item.code }}" href="{{ metadata.url }}/{{ item.code }}/" />
-    {%- endfor -%}
-    <link rel="alternate" hreflang="x-default" href="{{ metadata.url }}/en/" />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{{ locales[lang.code].page_title }}</title>
-    <meta name="google-site-verification" content="_f6dGnLNZBlwsL9BdFwl6TM5fzcSC5_ubno6fyX9SIg" />
-    <link rel="icon" href="{{ '/favicon.svg' | url }}" type="image/svg+xml">
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}">
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
-    <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
-    <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
-    <link rel="preload" href="/assets/fonts/manrope-v20-cyrillic_cyrillic-ext_latin_latin-ext-800.woff2" as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
-    <meta
-      name="description"
-      content="{{ locales[lang.code].meta_description }}"
-    />
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://ymu.pages.dev/{{ lang.code }}/">
-    <meta property="og:title" content="{{ locales[lang.code].page_title }}">
-    <meta property="og:description" content="{{ locales[lang.code].meta_description }}">
-    <meta property="og:image" content="https://ymu.pages.dev/assets/img/og-preview.jpg">
+<html lang="{{ lang.code }}" {% if lang.dir %} dir="{{ lang.dir }}" {% endif %}>
 
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@NiiV3AU">
-    <meta name="twitter:url" content="https://ymu.pages.dev/{{ lang.code }}/">
-    <meta name="twitter:title" content="{{ locales[lang.code].page_title }}">
-    <meta name="twitter:description" content="{{ locales[lang.code].meta_description }}">
-    <meta name="twitter:image" content="https://ymu.pages.dev/assets/img/og-preview.jpg">
-    <script defer src="{{ '/assets/js/script.js' | url }}"></script>
-    <script>
-      (function () {
-        try {
-          document.documentElement.classList.add("js");
-          const theme = localStorage.getItem("theme");
-          if (theme === "dark") {
-            document.documentElement.setAttribute("data-theme", "dark");
-          } else if (
-            theme === null &&
-            window.matchMedia("(prefers-color-scheme: dark)").matches
-          ) {
-            document.documentElement.setAttribute("data-theme", "dark");
-          }
-        } catch (e) {
-          console.error("Error applying initial theme:", e);
+<head>
+  <link rel="canonical" href="{{ metadata.url }}{{ page.url }}" />
+  {%- for item in languages.items -%}
+  <link rel="alternate" hreflang="{{ item.code }}" href="{{ metadata.url }}/{{ item.code }}/" />
+  {%- endfor -%}
+  <link rel="alternate" hreflang="x-default" href="{{ metadata.url }}/en/" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ locales[lang.code].page_title }}</title>
+  <meta name="google-site-verification" content="_f6dGnLNZBlwsL9BdFwl6TM5fzcSC5_ubno6fyX9SIg" />
+  <link rel="icon" href="{{ '/favicon.svg' | url }}" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | url }}">
+  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
+  <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
+  <link rel="preload" href="/assets/fonts/rubik-v31-arabic_cyrillic_cyrillic-ext_latin_latin-ext-800.woff2" as="font"
+    type="font/woff2" crossorigin="anonymous">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
+  <meta name="description" content="{{ locales[lang.code].meta_description }}" />
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ymu.pages.dev/{{ lang.code }}/">
+  <meta property="og:title" content="{{ locales[lang.code].page_title }}">
+  <meta property="og:description" content="{{ locales[lang.code].meta_description }}">
+  <meta property="og:image" content="https://ymu.pages.dev/assets/img/og-preview.jpg">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@NiiV3AU">
+  <meta name="twitter:url" content="https://ymu.pages.dev/{{ lang.code }}/">
+  <meta name="twitter:title" content="{{ locales[lang.code].page_title }}">
+  <meta name="twitter:description" content="{{ locales[lang.code].meta_description }}">
+  <meta name="twitter:image" content="https://ymu.pages.dev/assets/img/og-preview.jpg">
+  <script defer src="{{ '/assets/js/script.js' | url }}"></script>
+  <script>
+    (function () {
+      try {
+        document.documentElement.classList.add("js");
+        const theme = localStorage.getItem("theme");
+        if (theme === "dark") {
+          document.documentElement.setAttribute("data-theme", "dark");
+        } else if (
+          theme === null &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches
+        ) {
+          document.documentElement.setAttribute("data-theme", "dark");
         }
-      })();
-    </script>
-    <script type="application/ld+json">
+      } catch (e) {
+        console.error("Error applying initial theme:", e);
+      }
+    })();
+  </script>
+  <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
@@ -97,581 +96,412 @@ permalink: "/{{ lang.code }}/"
         ]
       }
     </script>
-  </head>
-  <body>
+</head>
+
+<body>
   <div id="alert-banner" class="alert-banner info-mode" role="alert" style="display: none;">
     <div class="container alert-container">
       <div class="alert-content">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" class="alert-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" class="alert-icon"
+          fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
           <circle cx="12" cy="12" r="10" />
           <path d="M12 16v-4" />
           <path d="M12 8h.01" />
         </svg>
-        {% set currentAlert = locales[lang.code].alert_banner %}
-        {% if currentAlert and currentAlert.version == release.cleanVersion %}
-          <span class="alert-text">{{ currentAlert.text }}</span>
-        {% else %}
-          {% set placeholder = alert_placeholders[lang.code] or alert_placeholders['en'] %}
-          <span class="alert-text">{{ placeholder | replace('{version}', release.tag) }}</span>
-        {% endif %}
+        {% set placeholder = alert_placeholders[lang.code] or alert_placeholders['en'] %}
+        <span class="alert-text">{{ placeholder | replace('{version}', release.tag) | safe }}</span>
       </div>
       <button id="alert-close-btn" class="alert-close" aria-label="Close alert">
-        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18"></path><path d="m6 6 12 12"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M18 6 6 18"></path>
+          <path d="m6 6 12 12"></path>
+        </svg>
       </button>
     </div>
     <script>
-      (function() {
-          const alertBanner = document.getElementById('alert-banner');
-          const closeBtn = document.getElementById('alert-close-btn');
-          const bannerId = '{{ release.bannerId }}';
-          if (!localStorage.getItem(bannerId)) {
-              alertBanner.style.display = 'block';
-          }
-          if(closeBtn) {
-              closeBtn.addEventListener('click', function() {
-                  alertBanner.style.display = 'none';
-                  localStorage.setItem(bannerId, 'dismissed');
-              });
-          }
+      (function () {
+        const alertBanner = document.getElementById('alert-banner');
+        const closeBtn = document.getElementById('alert-close-btn');
+        const bannerId = '{{ release.bannerId }}';
+        if (!localStorage.getItem(bannerId)) {
+          alertBanner.style.display = 'block';
+        }
+        if (closeBtn) {
+          closeBtn.addEventListener('click', function () {
+            alertBanner.style.display = 'none';
+            localStorage.setItem(bannerId, 'dismissed');
+          });
+        }
       })();
     </script>
   </div>
-    <header class="header-sticky">
-      <div class="container header-container">
-        <div class="logo">
-          <div class="logo-full">
-            <a href="https://niveau.pages.dev" target="_blank" rel="noopener" class="logo-svg-link" aria-label="NiiV3AU's Portfolio">
-              <svg width="50" height="50" viewBox="0 0 50 50" class="logo-nv3-svg" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M43.1932 19.572L39.1942 21.851V0.479998H49.9442V28H39.1942L6.8152 9.252L10.8142 6.93V28H0.0641992V0.479998H10.8142L43.1932 19.572Z" fill="currentColor"/>
-                  <rect y="49" width="50" height="0.5" fill="url(#paint0_linear_1_111)"/>
-                  <rect y="47" width="50" height="1" fill="url(#paint1_linear_1_111)"/>
-                  <rect y="44" width="50" height="2" fill="url(#paint2_linear_1_111)"/>
-                  <rect y="40" width="50" height="3" fill="url(#paint3_linear_1_111)"/>
-                  <rect y="35" width="50" height="4" fill="url(#paint4_linear_1_111)"/>
-                  <rect y="29" width="50" height="5" fill="url(#paint5_linear_1_111)"/>
-                  <defs>
-                  <linearGradient id="paint0_linear_1_111" x1="0" y1="49.25" x2="50" y2="49.25" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="currentColor" stop-opacity="0"/>
-                  <stop offset="1" stop-color="currentColor"/>
-                  </linearGradient>
-                  <linearGradient id="paint1_linear_1_111" x1="0" y1="47.5" x2="50" y2="47.5" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="currentColor"/>
-                  <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
-                  </linearGradient>
-                  <linearGradient id="paint2_linear_1_111" x1="0" y1="45" x2="50" y2="45" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="currentColor" stop-opacity="0"/>
-                  <stop offset="1" stop-color="currentColor"/>
-                  </linearGradient>
-                  <linearGradient id="paint3_linear_1_111" x1="0" y1="41.5" x2="50" y2="41.5" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="currentColor"/>
-                  <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
-                  </linearGradient>
-                  <linearGradient id="paint4_linear_1_111" x1="0" y1="37" x2="50" y2="37" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="currentColor" stop-opacity="0"/>
-                  <stop offset="1" stop-color="currentColor"/>
-                  </linearGradient>
-                  <linearGradient id="paint5_linear_1_111" x1="0" y1="31.5" x2="50" y2="31.5" gradientUnits="userSpaceOnUse">
-                  <stop stop-color="currentColor"/>
-                  <stop offset="1" stop-color="currentColor" stop-opacity="0"/>
-                  </linearGradient>
-                </defs>
-              </svg>
-            </a>
-            <span class="logo-separator">&nbsp;|&nbsp;</span>
-            <a href="#" class="logo-text-link">
-              <span class="logo-text-full">YimMenuUpdater</span>
-              <span class="logo-text-short">YMU</span>
-            </a>
-          </div>
-          <a href="#" class="logo-short">YMU</a>
-        </div>
-        <nav class="nav-main" id="main-navigation">
-          <ul class="nav-links">
-            <li>
-              <a href="#features">{{ locales[lang.code].nav.features }}</a>
-            </li>
-            <li>
-              <a href="#how-to">{{ locales[lang.code].nav.howto }}</a>
-            </li>
-            <li>
-              <a href="#download">{{ locales[lang.code].nav.download }}</a>
-            </li>
-            <li>
-              <a href="#updates">{{ locales[lang.code].nav.updates }}</a>
-            </li>
-            <li>
-              <a href="#community">{{ locales[lang.code].nav.community }}</a>
-            </li>
-          </ul>
-          <div class="nav-icons">
-            <a
-              href="https://github.com/NiiV3AU/YMU"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub Repository"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="20"
-                height="20"
-                class="main-grid-item-icon-header"
-                fill="none"
-              >
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  fill="currentColor"
-                />
-              </svg>
-              <span>GitHub</span>
-            </a>
-            <a
-              href="https://discord.gg/S4PKmKr22k"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Discord Community"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="20"
-                height="20"
-                class="main-grid-item-icon-header"
-                fill="none"
-              >
-                <path
-                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037c-1.687.29-3.33.8-4.885 1.515a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.083.083 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.227-1.994a.076.076 0 0 0-.042-.106 13.107 13.107 0 0 1-1.872-.892.078.078 0 0 1-.038-.062.077.077 0 0 1 .03-.066c.126-.094.252-.192.372-.292a.075.075 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.076.076 0 0 1 .03.065.078.078 0 0 1-.036.063c-.599.349-1.225.647-1.873.89a.076.076 0 0 0-.05.076c.001.012.004.022.009.032.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03ZM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <span>Discord</span>
-            </a>
-          </div>
-        </nav>
-        <div class="header-actions">
-          <div class="header-icons">
-            <a
-              href="https://github.com/NiiV3AU/YMU"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="GitHub Repository"
-              >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                class="main-grid-item-icon-header"
-                fill="none"
-              >
-                <path
-                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
-            <a
-              href="https://discord.gg/S4PKmKr22k"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Discord Community"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                class="main-grid-item-icon-header"
-                fill="none"
-              >
-                <path
-                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037c-1.687.29-3.33.8-4.885 1.515a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.083.083 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.227-1.994a.076.076 0 0 0-.042-.106 13.107 13.107 0 0 1-1.872-.892.078.078 0 0 1-.038-.062.077.077 0 0 1 .03-.066c.126-.094.252-.192.372-.292a.075.075 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.076.076 0 0 1 .03.065.078.078 0 0 1-.036.063c-.599.349-1.225.647-1.873.89a.076.076 0 0 0-.05.076c.001.012.004.022.009.032.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03ZM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"
-                  fill="currentColor"
-                />
-              </svg>
-            </a>
-          </div>
-          <button
-            class="mobile-menu-toggle"
-            type="button"
-            aria-label="Mobile Menu"
-            aria-expanded="false"
-            aria-controls="main-navigation"
-          >
-            <span class="line line1"></span>
-            <span class="line line2"></span>
-            <span class="line line3"></span>
-          </button>
-          <button
-            type="button"
-            class="lang-toggle"
-            aria-haspopup="true"
-            aria-expanded="false"
-            aria-controls="lang-bar"
-            aria-label="{{ locales[lang.code].lang_toggle_aria_label }}"
-          >
-            {{ lang.code | upper }}
-          </button>
-            <button
-            id="theme-toggle-btn"
-            class="theme-toggle"
-            aria-label="Toggle theme"
-          ></button>
-            <div class="tooltip-wrapper">
-              <button id="animation-toggle-btn" class="animation-toggle" aria-label="Toggle animations"></button>
-                <div id="animation-tooltip" class="header-tooltip">
-                  <span>{{ locales[lang.code].animation_tooltip_text }}</span>
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="lang-bar" id="lang-bar" role="menu">
-        <div class="container lang-bar-inner">
-          {%- for item in languages.items -%}
-          <a href="/{{ item.code }}/" role="menuitem" class="lang-bar-item {{ 'is-active' if item.code == lang.code }}" data-lang="{{ item.code }}">
-            <span class="lang-bar-code">{{ item.code | upper }}</span>
-            <span class="lang-bar-label">{{ item.label }}</span>
+  <header class="header-sticky">
+    <div class="container header-container">
+      <div class="logo">
+        <div class="logo-full">
+          <a href="https://niveau.pages.dev" target="_blank" rel="noopener" class="logo-svg-link"
+            aria-label="NiiV3AU's Portfolio">
+            <svg width="50" height="50" viewBox="0 0 50 50" class="logo-nv3-svg" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M43.1932 19.572L39.1942 21.851V0.479998H49.9442V28H39.1942L6.8152 9.252L10.8142 6.93V28H0.0641992V0.479998H10.8142L43.1932 19.572Z"
+                fill="currentColor" />
+              <rect y="49" width="50" height="0.5" fill="url(#paint0_linear_1_111)" />
+              <rect y="47" width="50" height="1" fill="url(#paint1_linear_1_111)" />
+              <rect y="44" width="50" height="2" fill="url(#paint2_linear_1_111)" />
+              <rect y="40" width="50" height="3" fill="url(#paint3_linear_1_111)" />
+              <rect y="35" width="50" height="4" fill="url(#paint4_linear_1_111)" />
+              <rect y="29" width="50" height="5" fill="url(#paint5_linear_1_111)" />
+              <defs>
+                <linearGradient id="paint0_linear_1_111" x1="0" y1="49.25" x2="50" y2="49.25"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="currentColor" stop-opacity="0" />
+                  <stop offset="1" stop-color="currentColor" />
+                </linearGradient>
+                <linearGradient id="paint1_linear_1_111" x1="0" y1="47.5" x2="50" y2="47.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="currentColor" />
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint2_linear_1_111" x1="0" y1="45" x2="50" y2="45" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="currentColor" stop-opacity="0" />
+                  <stop offset="1" stop-color="currentColor" />
+                </linearGradient>
+                <linearGradient id="paint3_linear_1_111" x1="0" y1="41.5" x2="50" y2="41.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="currentColor" />
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+                </linearGradient>
+                <linearGradient id="paint4_linear_1_111" x1="0" y1="37" x2="50" y2="37" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="currentColor" stop-opacity="0" />
+                  <stop offset="1" stop-color="currentColor" />
+                </linearGradient>
+                <linearGradient id="paint5_linear_1_111" x1="0" y1="31.5" x2="50" y2="31.5"
+                  gradientUnits="userSpaceOnUse">
+                  <stop stop-color="currentColor" />
+                  <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+                </linearGradient>
+              </defs>
+            </svg>
           </a>
-          {%- endfor -%}
+          <span class="logo-separator">&nbsp;|&nbsp;</span>
+          <a href="#" class="logo-text-link">
+            <span class="logo-text-full">YimMenuUpdater</span>
+            <span class="logo-text-short">YMU</span>
+          </a>
+        </div>
+        <a href="#" class="logo-short">YMU</a>
+      </div>
+      <nav class="nav-main" id="main-navigation">
+        <ul class="nav-links">
+          <li>
+            <a href="#features">{{ locales[lang.code].nav.features }}</a>
+          </li>
+          <li>
+            <a href="#how-to">{{ locales[lang.code].nav.howto }}</a>
+          </li>
+          <li>
+            <a href="#download">{{ locales[lang.code].nav.download }}</a>
+          </li>
+          <li>
+            <a href="#community">{{ locales[lang.code].nav.community }}</a>
+          </li>
+        </ul>
+        <div class="nav-icons">
+          <a href="https://github.com/NiiV3AU/YMU" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub Repository">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+              class="main-grid-item-icon-header" fill="none">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                fill="currentColor" />
+            </svg>
+            <span>GitHub</span>
+          </a>
+          <a href="https://discord.gg/S4PKmKr22k" target="_blank" rel="noopener noreferrer"
+            aria-label="Discord Community">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
+              class="main-grid-item-icon-header" fill="none">
+              <path
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037c-1.687.29-3.33.8-4.885 1.515a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.083.083 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.227-1.994a.076.076 0 0 0-.042-.106 13.107 13.107 0 0 1-1.872-.892.078.078 0 0 1-.038-.062.077.077 0 0 1 .03-.066c.126-.094.252-.192.372-.292a.075.075 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.076.076 0 0 1 .03.065.078.078 0 0 1-.036.063c-.599.349-1.225.647-1.873.89a.076.076 0 0 0-.05.076c.001.012.004.022.009.032.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03ZM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"
+                fill="currentColor" />
+            </svg>
+            <span>Discord</span>
+          </a>
+        </div>
+      </nav>
+      <div class="header-actions">
+        <div class="header-icons">
+          <a href="https://github.com/NiiV3AU/YMU" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub Repository">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              class="main-grid-item-icon-header" fill="none">
+              <path
+                d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                fill="currentColor" />
+            </svg>
+          </a>
+          <a href="https://discord.gg/S4PKmKr22k" target="_blank" rel="noopener noreferrer"
+            aria-label="Discord Community">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+              class="main-grid-item-icon-header" fill="none">
+              <path
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037c-1.687.29-3.33.8-4.885 1.515a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.083.083 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.227-1.994a.076.076 0 0 0-.042-.106 13.107 13.107 0 0 1-1.872-.892.078.078 0 0 1-.038-.062.077.077 0 0 1 .03-.066c.126-.094.252-.192.372-.292a.075.075 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.076.076 0 0 1 .03.065.078.078 0 0 1-.036.063c-.599.349-1.225.647-1.873.89a.076.076 0 0 0-.05.076c.001.012.004.022.009.032.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03ZM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"
+                fill="currentColor" />
+            </svg>
+          </a>
+        </div>
+        <button class="mobile-menu-toggle" type="button" aria-label="Mobile Menu" aria-expanded="false"
+          aria-controls="main-navigation">
+          <span class="line line1"></span>
+          <span class="line line2"></span>
+          <span class="line line3"></span>
+        </button>
+        <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="lang-bar"
+          aria-label="{{ locales[lang.code].lang_toggle_aria_label }}">
+          {{ lang.code | upper }}
+        </button>
+        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle theme"></button>
+        <div class="tooltip-wrapper">
+          <button id="animation-toggle-btn" class="animation-toggle" aria-label="Toggle animations"></button>
+          <div id="animation-tooltip" class="header-tooltip">
+            <span>{{ locales[lang.code].animation_tooltip_text }}</span>
+          </div>
         </div>
       </div>
-    </header>
-    <main class="flow">
-      <section id="hero" class="hero-section text-center">
-        <div class="container flow">
-          <h1 class="hero-headline">{{ locales[lang.code].hero_headline }}</h1>
-          <p class="hero-subheadline">{{ locales[lang.code].hero_subheadline }}</p>
-          <a href="#download" class="btn btn-primary btn-large">{{ locales[lang.code].hero_download_button | safe }}</a>
-        </div>
-      </section>
-      <section id="features" class="features-section section-padding  fade-in">
-        <div class="container">
-          <h2 class="section-title text-center">{{ locales[lang.code].features_section.title }}</h2>
-          <p class="section-subtitle text-center">{{ locales[lang.code].features_section.subtitle }}</p>
-          <div class="card">
-            <div class="features-grid">
-              <div class="feature-card" tabindex="0">
-                <div class="feature-icon">
-                  <span class="icon-placeholder">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      focusable="false" 
-                      class="main-grid-item-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
-                      <path d="M21 3v5h-5" />
-                      <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
-                      <path d="M8 16H3v5" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="feature-title">{{ locales[lang.code].features_section.card1_title }}</h3>
-                <p class="feature-description">{{ locales[lang.code].features_section.card1_desc }}</p>
+    </div>
+    <div class="lang-bar" id="lang-bar" role="menu">
+      <div class="container lang-bar-inner">
+        {%- for item in languages.items -%}
+        <a href="/{{ item.code }}/" role="menuitem" class="lang-bar-item {{ 'is-active' if item.code == lang.code }}"
+          data-lang="{{ item.code }}">
+          <span class="lang-bar-code">{{ item.code | upper }}</span>
+          <span class="lang-bar-label">{{ item.label }}</span>
+        </a>
+        {%- endfor -%}
+      </div>
+    </div>
+  </header>
+  <main class="flow">
+    <section id="hero" class="hero-section text-center">
+      <div class="container flow">
+        <h1 class="hero-headline">{{ locales[lang.code].hero_headline }}</h1>
+        <p class="hero-subheadline">{{ locales[lang.code].hero_subheadline }}</p>
+        <a href="#download" class="btn btn-primary btn-large">{{ locales[lang.code].hero_download_button | safe }}</a>
+      </div>
+    </section>
+    <section id="features" class="features-section section-padding  fade-in">
+      <div class="container">
+        <h2 class="section-title text-center">{{ locales[lang.code].features_section.title }}</h2>
+        <p class="section-subtitle text-center">{{ locales[lang.code].features_section.subtitle }}</p>
+        <div class="card">
+          <div class="features-grid">
+            <div class="feature-card" tabindex="0">
+              <div class="feature-icon">
+                <span class="icon-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+                    focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8" />
+                    <path d="M21 3v5h-5" />
+                    <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16" />
+                    <path d="M8 16H3v5" />
+                  </svg>
+                </span>
               </div>
-              <div class="feature-card" tabindex="0">
-                <div class="feature-icon">
-                  <span class="icon-placeholder">
-                    
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      focusable="false"
-                      class="main-grid-item-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path d="m18 2 4 4" />
-                      <path d="m17 7 3-3" />
-                      <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" />
-                      <path d="m9 11 4 4" />
-                      <path d="m5 19-3 3" />
-                      <path d="m14 4 6 6" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="feature-title">{{ locales[lang.code].features_section.card2_title }}</h3>
-                <p class="feature-description">{{ locales[lang.code].features_section.card2_desc }}</p>
+              <h3 class="feature-title">{{ locales[lang.code].features_section.card1_title }}</h3>
+              <p class="feature-description">{{ locales[lang.code].features_section.card1_desc }}</p>
+            </div>
+            <div class="feature-card" tabindex="0">
+              <div class="feature-icon">
+                <span class="icon-placeholder">
+
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+                    focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="m18 2 4 4" />
+                    <path d="m17 7 3-3" />
+                    <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" />
+                    <path d="m9 11 4 4" />
+                    <path d="m5 19-3 3" />
+                    <path d="m14 4 6 6" />
+                  </svg>
+                </span>
               </div>
-              <div class="feature-card" tabindex="0">
-                <div class="feature-icon">
-                  <span class="icon-placeholder">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      focusable="false"
-                      class="main-grid-item-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path
-                        d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"
-                      />
-                      <path d="M14 2v5a1 1 0 0 0 1 1h5" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="feature-title">{{ locales[lang.code].features_section.card3_title }}</h3>
-                <p class="feature-description">{{ locales[lang.code].features_section.card3_desc }}</p>
+              <h3 class="feature-title">{{ locales[lang.code].features_section.card2_title }}</h3>
+              <p class="feature-description">{{ locales[lang.code].features_section.card2_desc }}</p>
+            </div>
+            <div class="feature-card" tabindex="0">
+              <div class="feature-icon">
+                <span class="icon-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+                    focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path
+                      d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z" />
+                    <path d="M14 2v5a1 1 0 0 0 1 1h5" />
+                  </svg>
+                </span>
               </div>
-              <div class="feature-card" tabindex="0">
-                <div class="feature-icon">
-                  <span class="icon-placeholder">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      focusable="false"
-                      class="main-grid-item-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path d="M14 4.1 12 6" />
-                      <path d="m5.1 8-2.9-.8" />
-                      <path d="m6 12-1.9 2" />
-                      <path d="M7.2 2.2 8 5.1" />
-                      <path d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="feature-title">{{ locales[lang.code].features_section.card4_title }}</h3>
-                <p class="feature-description">{{ locales[lang.code].features_section.card4_desc }}</p>
+              <h3 class="feature-title">{{ locales[lang.code].features_section.card3_title }}</h3>
+              <p class="feature-description">{{ locales[lang.code].features_section.card3_desc }}</p>
+            </div>
+            <div class="feature-card" tabindex="0">
+              <div class="feature-icon">
+                <span class="icon-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+                    focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M14 4.1 12 6" />
+                    <path d="m5.1 8-2.9-.8" />
+                    <path d="m6 12-1.9 2" />
+                    <path d="M7.2 2.2 8 5.1" />
+                    <path
+                      d="M9.037 9.69a.498.498 0 0 1 .653-.653l11 4.5a.5.5 0 0 1-.074.949l-4.349 1.041a1 1 0 0 0-.74.739l-1.04 4.35a.5.5 0 0 1-.95.074z" />
+                  </svg>
+                </span>
               </div>
-              <div class="feature-card" tabindex="0">
-                <div class="feature-icon">
-                  <span class="icon-placeholder">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      focusable="false"
-                      class="main-grid-item-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <circle cx="12" cy="12" r="10" />
-                      <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
-                      <path d="M12 17h.01" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="feature-title">{{ locales[lang.code].features_section.card5_title }}</h3>
-                <p class="feature-description">{{ locales[lang.code].features_section.card5_desc | safe }}</p>
+              <h3 class="feature-title">{{ locales[lang.code].features_section.card4_title }}</h3>
+              <p class="feature-description">{{ locales[lang.code].features_section.card4_desc }}</p>
+            </div>
+            <div class="feature-card" tabindex="0">
+              <div class="feature-icon">
+                <span class="icon-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+                    focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <circle cx="12" cy="12" r="10" />
+                    <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3" />
+                    <path d="M12 17h.01" />
+                  </svg>
+                </span>
               </div>
-              <div class="feature-card" tabindex="0">
-                <div class="feature-icon">
-                  <span class="icon-placeholder">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      focusable="false"
-                      class="main-grid-item-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path d="M12 13v8l-4-4" />
-                      <path d="m12 21 4-4" />
-                      <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="feature-title">{{ locales[lang.code].features_section.card6_title }}</h3>
-                <p class="feature-description">{{ locales[lang.code].features_section.card6_desc }}</p>
+              <h3 class="feature-title">{{ locales[lang.code].features_section.card5_title }}</h3>
+              <p class="feature-description">{{ locales[lang.code].features_section.card5_desc | safe }}</p>
+            </div>
+            <div class="feature-card" tabindex="0">
+              <div class="feature-icon">
+                <span class="icon-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+                    focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M12 13v8l-4-4" />
+                    <path d="m12 21 4-4" />
+                    <path d="M4.393 15.269A7 7 0 1 1 15.71 8h1.79a4.5 4.5 0 0 1 2.436 8.284" />
+                  </svg>
+                </span>
               </div>
+              <h3 class="feature-title">{{ locales[lang.code].features_section.card6_title }}</h3>
+              <p class="feature-description">{{ locales[lang.code].features_section.card6_desc }}</p>
             </div>
           </div>
         </div>
-      </section>
-      <section id="look-and-feel" class="look-feel-section section-padding fade-in">
-        <div class="container">
-          <h2 class="section-title text-center">{{ locales[lang.code].look_and_feel_section.title }}</h2>
-          <p class="section-subtitle text-center">{{ locales[lang.code].look_and_feel_section.subtitle }}</p>
-          <div class="look-grid">
-            <figure class="look-card">
-              <a class="look-card-link" href="#lightbox-launch" aria-label="View enlarged image of Launch screen">
-                <img
-                  class="theme-img"
-                  src="/assets/img/Inject.webp"
-                  alt="Launch and Inject"
-                  width="782"
-                  height="552"
-                  loading="lazy"
-                  data-dark="/assets/img/Inject.webp"
-                  data-light="/assets/img/Inject_Light.webp"
-                />
-              </a>
-              <figcaption>Launch & Inject</figcaption>
-            </figure>
-            <figure class="look-card">
-              <a class="look-card-link" href="#lightbox-settings" aria-label="View enlarged image of Settings screen">
-                <img
-                  class="theme-img"
-                  src="/assets/img/Settings.webp"
-                  alt="Settings"
-                  width="782"
-                  height="552"
-                  loading="lazy"
-                  data-dark="/assets/img/Settings.webp"
-                  data-light="/assets/img/Settings_Light.webp"
-                />
-              </a>
-              <figcaption>Settings</figcaption>
-            </figure>
-            <figure class="look-card">
-              <a class="look-card-link" href="#lightbox-download" aria-label="View enlarged image of Download screen">
-                <img
-                  class="theme-img"
-                  src="/assets/img/Download.webp"
-                  alt="Download"
-                  width="782"
-                  height="552"
-                  loading="lazy"
-                  data-dark="/assets/img/Download.webp"
-                  data-light="/assets/img/Download_Light.webp"
-                />
-              </a>
-              <figcaption>Download</figcaption>
-            </figure>
-          </div>
+      </div>
+    </section>
+    <section id="look-and-feel" class="look-feel-section section-padding fade-in">
+      <div class="container">
+        <h2 class="section-title text-center">{{ locales[lang.code].look_and_feel_section.title }}</h2>
+        <p class="section-subtitle text-center">{{ locales[lang.code].look_and_feel_section.subtitle }}</p>
+        <div class="look-grid">
+          <figure class="look-card">
+            <a class="look-card-link" href="#lightbox-download" aria-label="View enlarged image of Download screen">
+              <img class="theme-img" src="/assets/img/Download.webp" alt="Download" width="862" height="552"
+                loading="lazy" data-dark="/assets/img/Download.webp" data-light="/assets/img/Download_Light.webp" />
+            </a>
+            <figcaption>Download</figcaption>
+          </figure>
+          <figure class="look-card">
+            <a class="look-card-link" href="#lightbox-launch" aria-label="View enlarged image of Launch screen">
+              <img class="theme-img" src="/assets/img/Inject.webp" alt="Launch and Inject" width="862" height="552"
+                loading="lazy" data-dark="/assets/img/Inject.webp" data-light="/assets/img/Inject_Light.webp" />
+            </a>
+            <figcaption>Launch & Inject</figcaption>
+          </figure>
+          <figure class="look-card">
+            <a class="look-card-link" href="#lightbox-settings" aria-label="View enlarged image of Settings screen">
+              <img class="theme-img" src="/assets/img/Settings.webp" alt="Settings" width="862" height="552"
+                loading="lazy" data-dark="/assets/img/Settings.webp" data-light="/assets/img/Settings_Light.webp" />
+            </a>
+            <figcaption>Settings</figcaption>
+          </figure>
         </div>
-      </section>
-      <section id="how-to" class="how-to-section section-padding fade-in">
-        <div class="container">
-          <h2 class="section-title text-center">{{ locales[lang.code].how_to_section.title }}</h2>
-          <p class="section-subtitle text-center">{{ locales[lang.code].how_to_section.subtitle }}</p>
-          <div class="card">
-            <div class="how-to-steps">
-              <div class="how-to-step">
-                <div class="step-number-icon">
-                  <span class="icon-placeholder">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      focusable="false"
-                      class="main-grid-item-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
-                      <path d="M12 22V12" />
-                      <polyline points="3.29 7 12 12 20.71 7" />
-                      <path d="m7.5 4.27 9 5.15" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="step-title">{{ locales[lang.code].how_to_section.step1_title }}</h3>
-                <p class="step-description">{{ locales[lang.code].how_to_section.step1_desc | safe }}</p>
+      </div>
+    </section>
+    <section id="how-to" class="how-to-section section-padding fade-in">
+      <div class="container">
+        <h2 class="section-title text-center">{{ locales[lang.code].how_to_section.title }}</h2>
+        <p class="section-subtitle text-center">{{ locales[lang.code].how_to_section.subtitle }}</p>
+        <div class="card">
+          <div class="how-to-steps">
+            <div class="how-to-step">
+              <div class="step-number-icon">
+                <span class="icon-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+                    focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path
+                      d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z" />
+                    <path d="M12 22V12" />
+                    <polyline points="3.29 7 12 12 20.71 7" />
+                    <path d="m7.5 4.27 9 5.15" />
+                  </svg>
+                </span>
               </div>
-              <div class="how-to-step">
-                <div class="step-number-icon">
-                  <span class="icon-placeholder">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      focusable="false"
-                      class="main-grid-item-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path d="M12 15V3" />
-                      <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
-                      <path d="m7 10 5 5 5-5" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="step-title">YimMenu Download</h3>
-                <p class="step-description">{{ locales[lang.code].how_to_section.step2_desc }}</p>
+              <h3 class="step-title">{{ locales[lang.code].how_to_section.step1_title }}</h3>
+              <p class="step-description">{{ locales[lang.code].how_to_section.step1_desc | safe }}</p>
+            </div>
+            <div class="how-to-step">
+              <div class="step-number-icon">
+                <span class="icon-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+                    focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="M12 15V3" />
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                    <path d="m7 10 5 5 5-5" />
+                  </svg>
+                </span>
               </div>
-              <div class="how-to-step">
-                <div class="step-number-icon">
-                  <span class="icon-placeholder">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      viewBox="0 0 24 24"
-                      width="24"
-                      height="24"
-                      aria-hidden="true"
-                      focusable="false"
-                      class="main-grid-item-icon"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                    >
-                      <path d="m18 2 4 4" />
-                      <path d="m17 7 3-3" />
-                      <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" />
-                      <path d="m9 11 4 4" />
-                      <path d="m5 19-3 3" />
-                      <path d="m14 4 6 6" />
-                    </svg>
-                  </span>
-                </div>
-                <h3 class="step-title">{{ locales[lang.code].how_to_section.step3_title }}</h3>
-                <p class="step-description">{{ locales[lang.code].how_to_section.step3_desc }}</p>
+              <h3 class="step-title">{{ locales[lang.code].how_to_section.step2_title or 'YimMenu Download' }}</h3>
+              <p class="step-description">{{ locales[lang.code].how_to_section.step2_desc }}</p>
+            </div>
+            <div class="how-to-step">
+              <div class="step-number-icon">
+                <span class="icon-placeholder">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+                    focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+                    <path d="m18 2 4 4" />
+                    <path d="m17 7 3-3" />
+                    <path d="M19 9 8.7 19.3c-1 1-2.5 1-3.4 0l-.6-.6c-1-1-1-2.5 0-3.4L15 5" />
+                    <path d="m9 11 4 4" />
+                    <path d="m5 19-3 3" />
+                    <path d="m14 4 6 6" />
+                  </svg>
+                </span>
               </div>
+              <h3 class="step-title">{{ locales[lang.code].how_to_section.step3_title }}</h3>
+              <p class="step-description">{{ locales[lang.code].how_to_section.step3_desc }}</p>
             </div>
           </div>
-          <p class="text-center additional-info">{{ locales[lang.code].how_to_section.additional_info | safe }}</p>
         </div>
-      </section>
-      <section id="download" class="download-section section-padding fade-in">
-        <div class="container">
+        <p class="text-center additional-info">{{ locales[lang.code].how_to_section.additional_info | safe }}</p>
+      </div>
+    </section>
+    <section id="download" class="download-section section-padding fade-in">
+      <div class="container">
         <h2 class="section-title text-center">{{ locales[lang.code].download_section.title }}</h2>
         <div class="download-grid-layout">
           <div class="card download-card main-card">
             <div class="card-header-row">
               <div class="icon-wrapper icon-placement">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 15V3"></path><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><path d="m7 10 5 5 5-5"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 15V3"></path>
+                  <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                  <path d="m7 10 5 5 5-5"></path>
+                </svg>
               </div>
               <h3 class="card-headline">{{ locales[lang.code].download_section.card_headline }}</h3>
             </div>
@@ -682,40 +512,44 @@ permalink: "/{{ lang.code }}/"
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.arch_header }}</span>
-                <span class="inner-value">x64</span>
+                <span class="inner-value"><bdi dir="ltr">x64</bdi></span>
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.download_header }}</span>
                 <span class="inner-value code-font-clean">
                   <span id="github-downloads">...</span>
-                  <img id="github-downloads-badge" src="" alt="Download Count" style="display: none; vertical-align: middle; height: 20px;" />
+                  <img id="github-downloads-badge" src="" alt="Download Count"
+                    style="display: none; vertical-align: middle; height: 20px;" />
                 </span>
               </div>
               <div class="inner-row sha-row">
-                <span class="inner-label">SHA-256:</span>
+                <span class="inner-label"><bdi>SHA-256</bdi>:</span>
                 <span class="sha256-wrap">
-                  <span class="sha256-value code-font-clean" id="ymu-sha256" role="button" tabindex="0" aria-label="Copy the SHA-256 of YMU.exe">…</span>
+                  <span class="sha256-value code-font-clean" id="ymu-sha256" role="button" tabindex="0"
+                    aria-label="Copy the SHA-256 of YMU.exe">…</span>
                   <span class="sha-tooltip" aria-hidden="true">
-                      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path></svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                      stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
+                      <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
+                    </svg>
                     <span class="sha-tooltip-text">Copy</span>
                   </span>
                 </span>
               </div>
             </div>
             <div class="action-wrapper action-row">
-              <a href="https://github.com/NiiV3AU/YMU/releases/latest/"
-                rel="noopener noreferrer"
-                class="btn btn-primary btn-large btn-download-main"
-                id="download-btn-main">
+              <a href="https://github.com/NiiV3AU/YMU/releases/latest/" rel="noopener noreferrer"
+                class="btn btn-primary btn-large btn-download-main" id="download-btn-main">
                 {{ locales[lang.code].download_section.main_button | withReleaseVersion(release.tag) | safe }}
               </a>
               <a href="https://www.virustotal.com/gui/file/{{ release.sha or '707a8d841a39c42eacb1900d025cbcc08243ddd62c571bb107e0a9de5930ec8d' }}"
-                target="_blank"
-                rel="noopener noreferrer"
-                class="vt-badge"
-                id="vt-btn-main"
+                target="_blank" rel="noopener noreferrer" class="vt-badge" id="vt-btn-main"
                 aria-label="View the VirusTotal scan report for YMU.exe">
-                <svg class="vt-logo" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10.87 12L0 22.68h24V1.32H0zm10.73 8.52H5.28l8.637-8.448L5.28 3.48H21.6z"></path></svg>
+                <svg class="vt-logo" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                  fill="currentColor" aria-hidden="true">
+                  <path d="M10.87 12L0 22.68h24V1.32H0zm10.73 8.52H5.28l8.637-8.448L5.28 3.48H21.6z"></path>
+                </svg>
                 <span>VirusTotal</span>
               </a>
             </div>
@@ -723,46 +557,65 @@ permalink: "/{{ lang.code }}/"
           <div class="card download-card source-card">
             <div class="card-header-row">
               <div class="icon-wrapper icon-placement">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 18 6-6-6-6"></path><path d="m8 6-6 6 6 6"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m16 18 6-6-6-6"></path>
+                  <path d="m8 6-6 6 6 6"></path>
+                </svg>
               </div>
               <h3 class="card-headline">{{ locales[lang.code].download_section.source_header }}</h3>
             </div>
             <div class="inner-card">
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_stack }}</span>
-                <span class="inner-value">Python 3.12 · PySide6</span>
+                <span class="inner-value"><bdi dir="ltr">Python 3.12 · PySide6</bdi></span>
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_tooling }}</span>
-                <span class="inner-value">uv · Nuitka</span>
+                <span class="inner-value"><bdi dir="ltr">uv · Nuitka</bdi></span>
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_license }}</span>
-                <span class="inner-value">PolyForm Shield 1.0</span>
+                <span class="inner-value"><bdi dir="ltr">PolyForm Shield 1.0</bdi></span>
               </div>
               <div class="inner-row">
                 <span class="inner-label">{{ locales[lang.code].download_section.source_version }}</span>
-                <span class="inner-value">{{ release.tag }}</span>
+                <span class="inner-value"><span class="version-badge">{{ release.tag }}</span></span>
               </div>
             </div>
             <div class="action-wrapper">
-              <a href="https://github.com/NiiV3AU/YMU/releases/latest/"
-                rel="noopener noreferrer"
+              <a href="https://github.com/NiiV3AU/YMU/releases/latest/" rel="noopener noreferrer"
                 class="btn btn-secondary btn-block">
                 {{ locales[lang.code].download_section.source_code_button | safe }}
               </a>
               <div class="source-links text-small">
                 <a href="https://github.com/NiiV3AU/YMU" target="_blank" rel="noopener noreferrer">
                   REPO
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                </a>
-                <a href="https://github.com/NiiV3AU/YMU#readme" target="_blank" rel="noopener noreferrer">
-                  README
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
                 </a>
                 <a href="https://github.com/NiiV3AU/YMU/issues" target="_blank" rel="noopener noreferrer">
                   ISSUES
-                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
+                <a href="https://github.com/NiiV3AU/YMU/blob/main/CHANGELOG.md" target="_blank"
+                  rel="noopener noreferrer">
+                  CHANGELOG
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"
+                    aria-hidden="true">
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
                 </a>
               </div>
             </div>
@@ -770,401 +623,342 @@ permalink: "/{{ lang.code }}/"
           <div class="card download-card lua-card">
             <div class="card-header-row">
               <div class="icon-wrapper icon-placement">
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                  stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                  </path>
+                </svg>
               </div>
               <div class="lua-text-group">
-                  <h3 class="card-headline" style="font-size: 1.2rem;">{{ locales[lang.code].download_section.lua_question }}</h3>
-                  <p class="text-small mb-0" style="opacity: 0.7;">{{ locales[lang.code].download_section.lua_subheader }}</p>
+                <h3 class="card-headline" style="font-size: 1.2rem;">
+                  {{ locales[lang.code].download_section.lua_question }}</h3>
+                <p class="text-small mb-0" style="opacity: 0.7;">{{ locales[lang.code].download_section.lua_subheader }}
+                </p>
               </div>
               <div class="lua-action-right">
-                  <a href="https://github.com/orgs/YimMenu-Lua/repositories"
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <a href="https://github.com/orgs/YimMenu-Lua/repositories" target="_blank" rel="noopener noreferrer"
                   class="btn btn-secondary">
                   {{ locales[lang.code].download_section.lua_button | safe }}
                 </a>
               </div>
             </div>
           </div>
-      </section>
-      <section id="updates" class="updates-section section-padding fade-in">
-        <div class="container">
-          <h2 class="section-title text-center">{{ locales[lang.code].updates_section.title }}</h2>
-          <div class="changelog-list">
-            {% for item in changelogs %}
-            <details class="changelog-item">
-              <summary class="changelog-summary">
-                <span class="changelog-version">{{ item.version }}</span>
-                <span class="changelog-description">{{ item.title }}</span>
-                <span class="changelog-date"><mark class="code-font">{{ item.date }}</mark></span>
-              </summary>
-              <div class="changelog-details">
-                <div class="details-content-wrapper">
-                  <p>{{ item.description | safe }}</p>
-                </div>
+    </section>
+    <section id="faq" class="faq-section section-padding fade-in">
+      <div class="container">
+        <h2 class="section-title text-center">{{ locales[lang.code].faq_section.title }}</h2>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary class="faq-question">{{ locales[lang.code].faq_section.q1_question }}</summary>
+            <div class="faq-answer">
+              <div class="details-content-wrapper">
+                <p>{{ locales[lang.code].faq_section.q1_answer }}</p>
               </div>
-            </details>
-            {% endfor %}
-          </div>
-          <div class="text-center">
-            <a
-              href="https://github.com/NiiV3AU/YMU/blob/main/CHANGELOG.md"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary">{{ locales[lang.code].updates_section.changelog_button | safe }}
-            </a>
-          </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">{{ locales[lang.code].faq_section.q2_question }}</summary>
+            <div class="faq-answer">
+              <div class="details-content-wrapper">
+                <p>{{ locales[lang.code].faq_section.q2_answer }}</p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">{{ locales[lang.code].faq_section.q3_question }}</summary>
+            <div class="faq-answer">
+              <div class="details-content-wrapper">
+                <p>{{ locales[lang.code].faq_section.q3_answer }}</p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">{{ locales[lang.code].faq_section.q4_question }}</summary>
+            <div class="faq-answer">
+              <div class="details-content-wrapper">
+                <p>{{ locales[lang.code].faq_section.q4_answer_p1 }}</p>
+                <p>{{ locales[lang.code].faq_section.q4_answer_p2 }}</p>
+                <p>{{ locales[lang.code].faq_section.q4_answer_p3 }}</p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">{{ locales[lang.code].faq_section.q5_question }}</summary>
+            <div class="faq-answer">
+              <div class="details-content-wrapper">
+                <p>{{ locales[lang.code].faq_section.q5_answer }}</p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">{{ locales[lang.code].faq_section.q6_question }}</summary>
+            <div class="faq-answer">
+              <div class="details-content-wrapper">
+                <p>{{ locales[lang.code].faq_section.q6_answer }}</p>
+              </div>
+            </div>
+          </details>
+          <details class="faq-item">
+            <summary class="faq-question">{{ locales[lang.code].faq_section.q7_question }}</summary>
+            <div class="faq-answer">
+              <div class="details-content-wrapper">
+                <p>{{ locales[lang.code].faq_section.q7_answer | safe }}</p>
+              </div>
+            </div>
+          </details>
         </div>
-      </section>
-      <section id="faq" class="faq-section section-padding fade-in">
-        <div class="container">
-          <h2 class="section-title text-center">{{ locales[lang.code].faq_section.title }}</h2>
-          <div class="faq-list">
-            <details class="faq-item">
-              <summary class="faq-question">{{ locales[lang.code].faq_section.q1_question }}</summary>
-              <div class="faq-answer">
-                <div class="details-content-wrapper">
-                  <p>{{ locales[lang.code].faq_section.q1_answer }}</p>
-                </div>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary class="faq-question">{{ locales[lang.code].faq_section.q2_question }}</summary>
-              <div class="faq-answer">
-                <div class="details-content-wrapper">
-                  <p>{{ locales[lang.code].faq_section.q2_answer }}</p>
-                </div>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary class="faq-question">{{ locales[lang.code].faq_section.q3_question }}</summary>
-              <div class="faq-answer">
-                <div class="details-content-wrapper">
-                  <p>{{ locales[lang.code].faq_section.q3_answer }}</p>
-                </div>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary class="faq-question">{{ locales[lang.code].faq_section.q4_question }}</summary>
-              <div class="faq-answer">
-                <div class="details-content-wrapper">
-                  <p>{{ locales[lang.code].faq_section.q4_answer_p1 }}</p>
-                  <p>{{ locales[lang.code].faq_section.q4_answer_p2 }}</p>
-                  <p>{{ locales[lang.code].faq_section.q4_answer_p3 }}</p>
-                </div>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary class="faq-question">{{ locales[lang.code].faq_section.q5_question }}</summary>
-              <div class="faq-answer">
-                <div class="details-content-wrapper">
-                  <p>{{ locales[lang.code].faq_section.q5_answer }}</p>
-                </div>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary class="faq-question">{{ locales[lang.code].faq_section.q6_question }}</summary>
-              <div class="faq-answer">
-                <div class="details-content-wrapper">
-                  <p>{{ locales[lang.code].faq_section.q6_answer }}</p>
-                </div>
-              </div>
-            </details>
-            <details class="faq-item">
-              <summary class="faq-question">{{ locales[lang.code].faq_section.q7_question }}</summary>
-              <div class="faq-answer">
-                <div class="details-content-wrapper">
-                  <p>{{ locales[lang.code].faq_section.q7_answer | safe }}</p>
-                </div>
-              </div>
-            </details>
-          </div>
-        </div>
-      </section>
-      <section id="community" class="community-section section-padding fade-in">
-        <div class="container text-center">
-          <h2 class="section-title">{{ locales[lang.code].community_section.title }}</h2>
-          <p class="section-subtitle">{{ locales[lang.code].community_section.subtitle }}</p>
-          <div class="community-actions">
-            <a
-              href="https://github.com/NiiV3AU/YMU/issues/new/choose"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary">{{ locales[lang.code].community_section.bug_report_button | safe }}</a>
-            <a
-              href="https://discord.gg/S4PKmKr22k"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="btn btn-secondary"
-              >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                width="24"
-                height="24"
-                aria-hidden="true"
-                      focusable="false"
-                class="main-grid-item-icon"
-                fill="none"
-              >
-                <path
-                  d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037c-1.687.29-3.33.8-4.885 1.515a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.083.083 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.227-1.994a.076.076 0 0 0-.042-.106 13.107 13.107 0 0 1-1.872-.892.078.078 0 0 1-.038-.062.077.077 0 0 1 .03-.066c.126-.094.252-.192.372-.292a.075.075 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.076.076 0 0 1 .03.065.078.078 0 0 1-.036.063c-.599.349-1.225.647-1.873.89a.076.076 0 0 0-.05.076c.001.012.004.022.009.032.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03ZM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"
-                  fill="currentColor"
-                />
-              </svg>
-              <span>{{ locales[lang.code].community_section.discord_button }}</span>
-            </a>
-          </div>
-          <p class="support-text">{{ locales[lang.code].community_section.support_text }}</p>
-          <a
-            href="https://github.com/NiiV3AU/YMU"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn btn-secondary btn-github"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              aria-hidden="true"
-              focusable="false"
-              class="main-grid-item-icon"
-              fill="none"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-            >
+      </div>
+    </section>
+    <section id="community" class="community-section section-padding fade-in">
+      <div class="container text-center">
+        <h2 class="section-title">{{ locales[lang.code].community_section.title }}</h2>
+        <p class="section-subtitle">{{ locales[lang.code].community_section.subtitle }}</p>
+        <div class="community-actions">
+          <a href="https://github.com/NiiV3AU/YMU/issues/new/choose" target="_blank" rel="noopener noreferrer"
+            class="btn btn-secondary">{{ locales[lang.code].community_section.bug_report_button | safe }}</a>
+          <a href="https://discord.gg/S4PKmKr22k" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+              focusable="false" class="main-grid-item-icon" fill="none">
               <path
-                d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z"
-              />
+                d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.865-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037c-1.687.29-3.33.8-4.885 1.515a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.083.083 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.077.077 0 0 0 .084-.028c.462-.63.874-1.295 1.227-1.994a.076.076 0 0 0-.042-.106 13.107 13.107 0 0 1-1.872-.892.078.078 0 0 1-.038-.062.077.077 0 0 1 .03-.066c.126-.094.252-.192.372-.292a.075.075 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.076.076 0 0 1 .03.065.078.078 0 0 1-.036.063c-.599.349-1.225.647-1.873.89a.076.076 0 0 0-.05.076c.001.012.004.022.009.032.36.698.772 1.362 1.225 1.993a.077.077 0 0 0 .084.028 19.84 19.84 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.06.06 0 0 0-.031-.03ZM8.02 15.33c-1.182 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418Zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418Z"
+                fill="currentColor" />
             </svg>
-            <span>{{ locales[lang.code].community_section.star_button }}</span>
+            <span>{{ locales[lang.code].community_section.discord_button }}</span>
           </a>
         </div>
-      </section>
-      <section id="about" class="about-section section-padding fade-in">
-        <div class="container text-center">
-          <h2 class="section-title">{{ locales[lang.code].about_section.title }}</h2>
-          <blockquote class="about-text">{{ locales[lang.code].about_section.quote }}</blockquote>
-          <cite class="about-author">- NiiV3AU</cite>
-        </div>
-      </section>
-    </main>
-        
-<footer class="footer-section text-center fade-in">
-      <div class="container footer-content-wrapper">
-        <div class="footer-project-status">
-          <p>{{ locales[lang.code].footer_section.project_status }}</p>
-        </div>
-        <div class="footer-sources footer-links">
-          <p>
-            {{ locales[lang.code].footer_section.yimmenu_sources }}:
-            <a 
-              href="https://github.com/Mr-X-GTA/YimMenu" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="YimMenu.dll (Legacy) Source Code on GitHub"
-              >YimMenu.dll (Legacy)</a>
-            &amp;
-            <a 
-              href="https://github.com/YimMenu/YimMenuV2" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              aria-label="YimMenuV2.dll (E&amp;E) Source Code on GitHub"
-              >YimMenuV2.dll (E&amp;E)</a>
-          </p>
-        </div>
-        <div class="footer-links footer-privacy">
-          <a
-            href="https://github.com/NiiV3AU/YMU"
-            target="_blank"
-            rel="noopener noreferrer"
-            >GitHub</a
-          >
-          &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a
-            href="mailto:ymu.overtake493@silomails.com"
-            rel="noopener noreferrer"
-            >{{ locales[lang.code].footer_section.contact }}</a>
-          &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="https://polyformproject.org/licenses/shield/1.0.0" target="_blank" rel="noopener noreferrer">
-            {{ locales[lang.code].privacy_section.software_license }}
-          </a>
-          &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
-            {{ locales[lang.code].privacy_section.website_license }}
-          </a>
-          &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a href="#privacy-modal" id="privacy-policy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>
-        </div>
-        <div class="footer-links footer-scores">
-          <a
-            href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fymu.pages.dev%2Fen%2F"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="Lighthouse: Performance / Accessibility / Best Practices / SEO"
-            aria-label="Lighthouse scores for ymu.pages.dev"
-            >Lighthouse {{ scores.performance }}&middot;{{ scores.accessibility }}&middot;{{ scores.bestPractices }}&middot;{{ scores.seo }}</a>
-          &nbsp;&nbsp;|&nbsp;&nbsp;
-          <a
-            href="https://score.motion.dev/site/ymu.pages.dev%2Fen%2F"
-            target="_blank"
-            rel="noopener noreferrer"
-            title="MotionScore"
-            aria-label="MotionScore for ymu.pages.dev"
-            >MotionScore {{ scores.motion }}</a>
-        </div>
-        <div class="footer-copyright">
-          <p>
-            &copy; 2024-2026 YMU - {{ locales[lang.code].footer_section.made_with }}
-            <span class="heart">&hearts;</span> {{ locales[lang.code].footer_section.by }}
-            <a
-              href="https://niveau.pages.dev/"
-              target="_blank"
-              rel="noopener"
-              >NiiV3AU aka NV3</a
-            >
-          </p>
-          <p>
-            {{ locales[lang.code].footer_section.icons }}: 
-            <a href="https://lucide.dev/" target="_blank" rel="noopener noreferrer" class="links" aria-label="Lucide (icon source)">Lucide</a>&#185;
-            &nbsp;&nbsp;|&nbsp;&nbsp;
-            {{ locales[lang.code].footer_section.fonts }}: 
-            <a href="https://fonts.google.com/specimen/Manrope" target="_blank" rel="noopener noreferrer" class="links" aria-label="Manrope (font source)">Manrope</a> <span style="opacity: 0.8; font-size: 0.9em;">(Web/App)</span>&#178;
-            &amp;
-            <a href="https://www.jetbrains.com/lp/mono/" target="_blank" rel="noopener noreferrer" class="links" aria-label="JetBrains Mono (font source)">JetBrains Mono</a> <span style="opacity: 0.8; font-size: 0.9em;">(App)</span>&#178;
-            <br>
-            &#185;{{ locales[lang.code].footer_section.license_isc }}
-            <br>
-            &#178;{{ locales[lang.code].footer_section.license_sil }}
-          </p>
-        </div>
-        <div class="footer-disclaimer">
-          <p>{{ locales[lang.code].footer_section.disclaimer }}</p>
-        </div>
+        <p class="support-text">{{ locales[lang.code].community_section.support_text }}</p>
+        <a href="https://github.com/NiiV3AU/YMU" target="_blank" rel="noopener noreferrer"
+          class="btn btn-secondary btn-github">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+            focusable="false" class="main-grid-item-icon" fill="none" stroke="currentColor" stroke-linecap="round"
+            stroke-linejoin="round" stroke-width="2">
+            <path
+              d="M11.525 2.295a.53.53 0 0 1 .95 0l2.31 4.679a2.123 2.123 0 0 0 1.595 1.16l5.166.756a.53.53 0 0 1 .294.904l-3.736 3.638a2.123 2.123 0 0 0-.611 1.878l.882 5.14a.53.53 0 0 1-.771.56l-4.618-2.428a2.122 2.122 0 0 0-1.973 0L6.396 21.01a.53.53 0 0 1-.77-.56l.881-5.139a2.122 2.122 0 0 0-.611-1.879L2.16 9.795a.53.53 0 0 1 .294-.906l5.165-.755a2.122 2.122 0 0 0 1.597-1.16z" />
+          </svg>
+          <span>{{ locales[lang.code].community_section.star_button }}</span>
+        </a>
       </div>
-    </footer>
-    <div id="lightbox-launch" class="lightbox-overlay">
-      <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
-      <img class="theme-img lightbox-image" src="/assets/img/Inject.webp" alt="Inject (enlarged)" width="782" height="552" loading="lazy" data-dark="/assets/img/Inject.webp" data-light="/assets/img/Inject_Light.webp" />
-      <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
-      </a>
-    </div>
-    <div id="lightbox-settings" class="lightbox-overlay">
-      <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
-      <img class="theme-img lightbox-image" src="/assets/img/Settings.webp" alt="Settings (enlarged)" width="782" height="552" loading="lazy" data-dark="/assets/img/Settings.webp" data-light="/assets/img/Settings_Light.webp" />
-      <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
-      </a>
-    </div>
-    <div id="lightbox-download" class="lightbox-overlay">
-      <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
-      <img class="theme-img lightbox-image" src="/assets/img/Download.webp" alt="Download (enlarged)" width="782" height="552" loading="lazy" data-dark="/assets/img/Download.webp" data-light="/assets/img/Download_Light.webp" />
-      <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg>
-      </a>
-    </div>
-    <div id="cookie-consent-banner" class="cookie-banner">
-        <p>{{ locales[lang.code].privacy_section.cookie_banner_text | safe}} <a href="#privacy-modal" id="cookie-banner-privacy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>.</p>
-        <button id="cookie-accept-btn" class="btn btn-primary">{{ locales[lang.code].privacy_section.cookie_banner_button }}</button>
+    </section>
+    <section id="about" class="about-section section-padding fade-in">
+      <div class="container text-center">
+        <h2 class="section-title">{{ locales[lang.code].about_section.title }}</h2>
+        <blockquote class="about-text">{{ locales[lang.code].about_section.quote }}</blockquote>
+        <cite class="about-author">- NiiV3AU</cite>
       </div>
-      <div id="privacy-modal" class="lightbox-overlay">
-      <a class="lightbox-backdrop" href="#_" aria-label="Close privacy information"></a>
-      <div class="privacy-modal-content">
-        <div class="privacy-modal-header">
-          <h2>{{ locales[lang.code].privacy_section.privacy_modal_title }}</h2>
-          <a class="modal-close-btn" href="#_" aria-label="Close privacy information"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><path d="M18 6 6 18" /><path d="m6 6 12 12" /></svg></a>
-        </div>
-        <div class="privacy-modal-body">
-          <p>{{ locales[lang.code].privacy_section.privacy_modal_intro }}</p>
-          <h4>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_title }}</h4>
-          <p>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_desc }}</p>
-          <ul>
-            <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item1 | safe }}</li>
-            <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item2 | safe }}</li>
-            <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item3 | safe }}</li>
-          </ul>
-          <h4>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_title }}</h4>
-          <p>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_desc }}</p>
-          <ul>
-            <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item1 | safe }}</li>
-            <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item2 | safe }}</li>
-          </ul>
-          <h4>{{ locales[lang.code].privacy_section.privacy_modal_analytics_title }}</h4>
-          <p>{{ locales[lang.code].privacy_section.privacy_modal_analytics_desc }}</p>
-          <ul>
-            <li>{{ locales[lang.code].privacy_section.privacy_modal_analytics_item1 | safe }}</li>
-          </ul>
-          <p><strong>{{ locales[lang.code].privacy_section.privacy_modal_conclusion }}</strong></p>
-        </div>
+    </section>
+  </main>
+
+  <footer class="footer-section text-center fade-in">
+    <div class="container footer-content-wrapper">
+      <div class="footer-project-status">
+        <p>{{ locales[lang.code].footer_section.project_status }}</p>
+      </div>
+      <div class="footer-sources footer-links">
+        <p>
+          <span>{{ locales[lang.code].footer_section.yimmenu_sources }}:</span>
+          <bdi dir="ltr"><a href="https://github.com/Mr-X-GTA/YimMenu" target="_blank" rel="noopener noreferrer"
+            aria-label="YimMenu.dll (Legacy) Source Code on GitHub">YimMenu.dll (Legacy)</a></bdi>
+          &amp;
+          <bdi dir="ltr"><a href="https://github.com/YimMenu/YimMenuV2" target="_blank" rel="noopener noreferrer"
+            aria-label="YimMenuV2.dll (E&amp;E) Source Code on GitHub">YimMenuV2.dll (E&amp;E)</a></bdi>
+        </p>
+      </div>
+      <div class="footer-links footer-privacy">
+        <a href="https://github.com/NiiV3AU/YMU" target="_blank" rel="noopener noreferrer">GitHub</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="mailto:ymu.overtake493@silomails.com"
+          rel="noopener noreferrer">{{ locales[lang.code].footer_section.contact }}</a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://polyformproject.org/licenses/shield/1.0.0" target="_blank" rel="noopener noreferrer">
+          {{ locales[lang.code].privacy_section.software_license }}
+        </a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank" rel="noopener noreferrer">
+          {{ locales[lang.code].privacy_section.website_license }}
+        </a>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <a href="#privacy-modal" id="privacy-policy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>
+      </div>
+      <div class="footer-links footer-scores">
+        <bdi><a href="https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fymu.pages.dev%2Fen%2F" target="_blank"
+          rel="noopener noreferrer" title="Lighthouse: Performance / Accessibility / Best Practices / SEO"
+          aria-label="Lighthouse scores for ymu.pages.dev">Lighthouse
+          {{ scores.performance }}&middot;{{ scores.accessibility }}&middot;{{ scores.bestPractices }}&middot;{{ scores.seo }}</a></bdi>
+        &nbsp;&nbsp;|&nbsp;&nbsp;
+        <bdi><a href="https://score.motion.dev/site/ymu.pages.dev%2Fen%2F" target="_blank" rel="noopener noreferrer"
+          title="MotionScore" aria-label="MotionScore for ymu.pages.dev">MotionScore {{ scores.motion }}</a></bdi>
+      </div>
+      <div class="footer-copyright">
+        <p>
+          <bdi dir="ltr">&copy; 2024-2026 YMU</bdi> - {{ locales[lang.code].footer_section.made_with }}
+          <span class="heart">&hearts;</span> {{ locales[lang.code].footer_section.by }}
+          <bdi><a href="https://niveau.pages.dev/" target="_blank" rel="noopener">NiiV3AU aka NV3</a></bdi>
+        </p>
+        <p>
+          <span>{{ locales[lang.code].footer_section.icons }}:</span>
+          <bdi dir="ltr"><a href="https://lucide.dev/" target="_blank" rel="noopener noreferrer" class="links"
+            aria-label="Lucide (icon source)">Lucide</a>&#185;</bdi>
+          <span class="footer-sep">&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+          <span>{{ locales[lang.code].footer_section.fonts }}:</span>
+          <bdi dir="ltr"><a href="https://fonts.google.com/specimen/Rubik" target="_blank" rel="noopener noreferrer" class="links"
+            aria-label="Rubik (font source)">Rubik</a>&#178;</bdi>
+          <br>
+          &#185;&nbsp;{{ locales[lang.code].footer_section.license_isc | safe }}
+          <br>
+          &#178;&nbsp;{{ locales[lang.code].footer_section.license_sil | safe }}
+        </p>
+      </div>
+      <div class="footer-disclaimer">
+        <p>{{ locales[lang.code].footer_section.disclaimer }}</p>
       </div>
     </div>
-    <script>
-      (function () {
-        var shaEl = document.getElementById("ymu-sha256");
-        var vtBtn = document.getElementById("vt-btn-main");
-        if (!shaEl) return;
-        var wrap = shaEl.closest(".sha256-wrap");
-        var ttText = wrap ? wrap.querySelector(".sha-tooltip-text") : null;
-        function copy() {
-          var t = shaEl.getAttribute("data-sha");
-          if (!t || !navigator.clipboard) return;
-          navigator.clipboard.writeText(t).then(function () {
-            shaEl.classList.add("copied");
-            if (ttText) ttText.textContent = "Copied!";
-            setTimeout(function () {
-              shaEl.classList.remove("copied");
-              if (ttText) ttText.textContent = "Copy";
-            }, 1200);
-          });
+  </footer>
+  <div id="lightbox-download" class="lightbox-overlay">
+    <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
+    <img class="theme-img lightbox-image" src="/assets/img/Download.webp" alt="Download (enlarged)" width="862"
+      height="552" loading="lazy" data-dark="/assets/img/Download.webp" data-light="/assets/img/Download_Light.webp" />
+    <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+        focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2">
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+    </a>
+  </div>
+  <div id="lightbox-launch" class="lightbox-overlay">
+    <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
+    <img class="theme-img lightbox-image" src="/assets/img/Inject.webp" alt="Inject (enlarged)" width="862" height="552"
+      loading="lazy" data-dark="/assets/img/Inject.webp" data-light="/assets/img/Inject_Light.webp" />
+    <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+        focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2">
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+    </a>
+  </div>
+  <div id="lightbox-settings" class="lightbox-overlay">
+    <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
+    <img class="theme-img lightbox-image" src="/assets/img/Settings.webp" alt="Settings (enlarged)" width="862"
+      height="552" loading="lazy" data-dark="/assets/img/Settings.webp" data-light="/assets/img/Settings_Light.webp" />
+    <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
+        focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+        stroke-width="2">
+        <path d="M18 6 6 18" />
+        <path d="m6 6 12 12" />
+      </svg>
+    </a>
+  </div>
+  <div id="cookie-consent-banner" class="cookie-banner">
+    <p>{{ locales[lang.code].privacy_section.cookie_banner_text | safe}} <a href="#privacy-modal"
+        id="cookie-banner-privacy-link">{{ locales[lang.code].privacy_section.privacy_policy }}</a>.</p>
+    <button id="cookie-accept-btn"
+      class="btn btn-primary">{{ locales[lang.code].privacy_section.cookie_banner_button }}</button>
+  </div>
+  <div id="privacy-modal" class="lightbox-overlay">
+    <a class="lightbox-backdrop" href="#_" aria-label="Close privacy information"></a>
+    <div class="privacy-modal-content">
+      <div class="privacy-modal-header">
+        <h2>{{ locales[lang.code].privacy_section.privacy_modal_title }}</h2>
+        <a class="modal-close-btn" href="#_" aria-label="Close privacy information"><svg
+            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
+            stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
+            <path d="M18 6 6 18" />
+            <path d="m6 6 12 12" />
+          </svg></a>
+      </div>
+      <div class="privacy-modal-body">
+        <p>{{ locales[lang.code].privacy_section.privacy_modal_intro }}</p>
+        <h4>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_title }}</h4>
+        <p>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_desc }}</p>
+        <ul>
+          <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item1 | safe }}</li>
+          <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item2 | safe }}</li>
+          <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item3 | safe }}</li>
+        </ul>
+        <h4>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_title }}</h4>
+        <p>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_desc }}</p>
+        <ul>
+          <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item1 | safe }}</li>
+          <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item2 | safe }}</li>
+        </ul>
+        <h4>{{ locales[lang.code].privacy_section.privacy_modal_analytics_title }}</h4>
+        <p>{{ locales[lang.code].privacy_section.privacy_modal_analytics_desc }}</p>
+        <ul>
+          <li>{{ locales[lang.code].privacy_section.privacy_modal_analytics_item1 | safe }}</li>
+        </ul>
+        <p><strong>{{ locales[lang.code].privacy_section.privacy_modal_conclusion }}</strong></p>
+      </div>
+    </div>
+  </div>
+  <script>
+    (function () {
+      var shaEl = document.getElementById("ymu-sha256");
+      var vtBtn = document.getElementById("vt-btn-main");
+      if (!shaEl) return;
+      var wrap = shaEl.closest(".sha256-wrap");
+      var ttText = wrap ? wrap.querySelector(".sha-tooltip-text") : null;
+      function copy() {
+        var t = shaEl.getAttribute("data-sha");
+        if (!t || !navigator.clipboard) return;
+        navigator.clipboard.writeText(t).then(function () {
+          shaEl.classList.add("copied");
+          if (ttText) ttText.textContent = "Copied!";
+          setTimeout(function () {
+            shaEl.classList.remove("copied");
+            if (ttText) ttText.textContent = "Copy";
+          }, 1200);
+        });
+      }
+      shaEl.addEventListener("click", copy);
+      shaEl.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") {
+          e.preventDefault();
+          copy();
         }
-        shaEl.addEventListener("click", copy);
-        shaEl.addEventListener("keydown", function (e) {
-          if (e.key === "Enter" || e.key === " ") {
-            e.preventDefault();
-            copy();
-          }
-        });
-        var tip = wrap ? wrap.querySelector(".sha-tooltip") : null;
-        shaEl.addEventListener("mousemove", function (e) {
-          if (!tip) return;
-          var r = wrap.getBoundingClientRect();
-          var half = tip.offsetWidth / 2;
-          var x = e.clientX - r.left;
-          tip.style.left = Math.max(half, Math.min(x, r.width - half)) + "px";
-        });
-        var fullSha = null;
-        function renderSha() {
-          if (!fullSha) return;
-          shaEl.textContent = fullSha;
-          if (shaEl.scrollWidth > shaEl.clientWidth) {
-            var keep = 8;
-            shaEl.textContent = fullSha.slice(0, keep) + "…" + fullSha.slice(-keep);
-          }
+      });
+      var tip = wrap ? wrap.querySelector(".sha-tooltip") : null;
+      shaEl.addEventListener("mousemove", function (e) {
+        if (!tip) return;
+        var r = wrap.getBoundingClientRect();
+        var half = tip.offsetWidth / 2;
+        var x = e.clientX - r.left;
+        tip.style.left = Math.max(half, Math.min(x, r.width - half)) + "px";
+      });
+      var fullSha = null;
+      function renderSha() {
+        if (!fullSha) return;
+        shaEl.textContent = fullSha;
+        if (shaEl.scrollWidth > shaEl.clientWidth) {
+          var keep = 8;
+          shaEl.textContent = fullSha.slice(0, keep) + "…" + fullSha.slice(-keep);
         }
-        var resizeTimer;
-        window.addEventListener("resize", function () {
-          clearTimeout(resizeTimer);
-          resizeTimer = setTimeout(renderSha, 150);
-        });
-        fetch("https://api.github.com/repos/NiiV3AU/YMU/releases/latest")
-          .then(function (r) {
-            if (!r.ok) throw new Error("bad status");
-            return r.json();
-          })
-          .then(function (d) {
-            var m = (d.body || "").match(/\b[a-fA-F0-9]{64}\b/);
-            if (!m) return;
-            fullSha = m[0].toLowerCase();
-            shaEl.setAttribute("data-sha", fullSha);
-            renderSha();
-            if (vtBtn) vtBtn.href = "https://www.virustotal.com/gui/file/" + fullSha;
-          })
-          .catch(function () {});
-      })();
-    </script>
-  </body>
+      }
+      var resizeTimer;
+      window.addEventListener("resize", function () {
+        clearTimeout(resizeTimer);
+        resizeTimer = setTimeout(renderSha, 150);
+      });
+      fetch("https://api.github.com/repos/NiiV3AU/YMU/releases/latest")
+        .then(function (r) {
+          if (!r.ok) throw new Error("bad status");
+          return r.json();
+        })
+        .then(function (d) {
+          var m = (d.body || "").match(/\b[a-fA-F0-9]{64}\b/);
+          if (!m) return;
+          fullSha = m[0].toLowerCase();
+          shaEl.setAttribute("data-sha", fullSha);
+          renderSha();
+          if (vtBtn) vtBtn.href = "https://www.virustotal.com/gui/file/" + fullSha;
+        })
+        .catch(function () { });
+    })();
+  </script>
+</body>
+
 </html>

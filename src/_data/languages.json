@@ -49,12 +49,21 @@
       "label": "繁體中文"
     },
     {
+      "code": "zh-TW",
+      "label": "繁體中文（台灣）"
+    },
+    {
       "code": "ja",
       "label": "日本語"
     },
     {
       "code": "ko",
       "label": "한국어"
+    },
+    {
+      "code": "ar",
+      "label": "العربية",
+      "dir": "rtl"
     }
   ]
 }

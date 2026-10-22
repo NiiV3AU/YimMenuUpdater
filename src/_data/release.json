@@ -1,11 +1,11 @@
 {
-  "version": "1.1.11",
-  "cleanVersion": "1.1.11",
-  "tag": "v1.1.11",
-  "name": "YMU v1.1.11",
-  "dateFormatted": "Sep 07, 2026",
-  "bannerId": "ymu-alert-v1-1-11-release",
-  "sha": "0e6f442e56b757e387c2d22c2885136868a4b8d0d7856e7eb620bc1df32ebab2",
-  "bodySnippet": "## [v1.1.11] - 2026-09-07\n\n### Systems Engineering, Antivirus Hardening & UX Polish\n\n> Eliminates antivirus false positives via native Win32 process enumeration, hardens handle lifecycles and UAC operations, migrates DLL storage to %LOCALAPPDATA%, adds a dedicated maintenance suite (cache cleaner, b",
-  "htmlUrl": "https://github.com/NiiV3AU/YMU/releases/tag/v1.1.11"
+  "version": "1.2.0",
+  "cleanVersion": "1.2.0",
+  "tag": "v1.2.0",
+  "name": "YMU v1.2.0",
+  "dateFormatted": "Oct 22, 2026",
+  "bannerId": "ymu-alert-v1-2-0-release",
+  "sha": "72389398346378578757e6fdba9693323f157af71b01c2b3284e8b26385a64d4",
+  "bodySnippet": "## [1.2.0] - 2026-10-22\n\n### Added\n\n- Full Right-to-Left (RTL) layout support, automatically mirroring interface orientation and navigation for RTL locales.\n- Complete Arabic (`ar_SA`) translation with gaming-appropriate terminology, expanding YMU to 16 supported languages.\n- Direct keyboard editing",
+  "htmlUrl": "https://github.com/NiiV3AU/YMU/releases/tag/v1.2.0"
 }

@@ -2,6 +2,7 @@ node_modules/
 _site/
 .DS_Store
 .env
+.vscode/
 .wrangler/
 .wrangler/env
 bun.lock

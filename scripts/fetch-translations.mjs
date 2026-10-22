@@ -50,9 +50,13 @@ async function syncTranslations() {
     }
   } else {
     if (existsSync(OUT)) {
-      console.warn("translations: fetch failed, keeping existing local src/translations.json");
+      console.warn(
+        "translations: fetch failed, keeping existing local src/translations.json",
+      );
     } else {
-      console.error("translations: fetch failed and no local src/translations.json found!");
+      console.error(
+        "translations: fetch failed and no local src/translations.json found!",
+      );
       process.exit(1);
     }
   }

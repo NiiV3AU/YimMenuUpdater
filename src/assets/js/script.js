@@ -25,7 +25,7 @@
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="animation-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg>',
     };
   document.addEventListener("DOMContentLoaded", () => {
-    !(function () {
+    (!(function () {
       const savedPos = sessionStorage.getItem(CONFIG_KEYS.SCROLL);
       savedPos &&
         ((document.documentElement.style.scrollBehavior = "auto"),
@@ -38,7 +38,7 @@
       (function () {
         const btn = $(CONFIG_SELECTORS.THEME_BTN),
           applyTheme = (theme) => {
-            document.documentElement.setAttribute("data-theme", theme),
+            (document.documentElement.setAttribute("data-theme", theme),
               btn &&
                 (btn.innerHTML = "dark" === theme ? ICONS.sun : ICONS.moon),
               localStorage.setItem(CONFIG_KEYS.THEME, theme),
@@ -49,48 +49,48 @@
                   if (targetSrc && !img.src.endsWith(targetSrc)) {
                     img.classList.add("is-swap");
                     const loader = new Image();
-                    (loader.onload = () => {
-                      (img.src = targetSrc), img.classList.remove("is-swap");
+                    ((loader.onload = () => {
+                      ((img.src = targetSrc), img.classList.remove("is-swap"));
                     }),
-                      (loader.src = targetSrc);
+                      (loader.src = targetSrc));
                   }
                 });
-              })(theme);
+              })(theme));
           },
           saved = localStorage.getItem(CONFIG_KEYS.THEME),
           systemDark = window.matchMedia(
-            "(prefers-color-scheme: dark)"
+            "(prefers-color-scheme: dark)",
           ).matches;
-        applyTheme(saved || (systemDark ? "dark" : "light")),
+        (applyTheme(saved || (systemDark ? "dark" : "light")),
           btn &&
             btn.addEventListener("click", () => {
               const isDark =
                 "dark" === document.documentElement.getAttribute("data-theme");
               applyTheme(isDark ? "light" : "dark");
-            });
+            }));
       })(),
       (function () {
         const btn = $(CONFIG_SELECTORS.ANIM_BTN),
           applyAnim = (state) => {
-            "disabled" === state
+            ("disabled" === state
               ? (document.body.classList.add("animations-disabled"),
                 btn && (btn.innerHTML = ICONS.motion))
               : (document.body.classList.remove("animations-disabled"),
                 btn && (btn.innerHTML = ICONS.noMotion)),
-              localStorage.setItem(CONFIG_KEYS.ANIMATION, state);
+              localStorage.setItem(CONFIG_KEYS.ANIMATION, state));
           },
           saved = localStorage.getItem(CONFIG_KEYS.ANIMATION),
           prefersReduced = window.matchMedia(
-            "(prefers-reduced-motion: reduce)"
+            "(prefers-reduced-motion: reduce)",
           ).matches;
-        applyAnim(saved || (prefersReduced ? "disabled" : "enabled")),
+        (applyAnim(saved || (prefersReduced ? "disabled" : "enabled")),
           btn &&
-            (btn.addEventListener("click", () => {
+            btn.addEventListener("click", () => {
               const isDisabled = document.body.classList.contains(
-                "animations-disabled"
+                "animations-disabled",
               );
               applyAnim(isDisabled ? "enabled" : "disabled");
-            }            ));
+            }));
       })(),
       (function () {
         $$(".lang-bar-item").forEach((link) => {
@@ -104,8 +104,8 @@
           mainNav &&
           (menuToggle.addEventListener("click", () => {
             const isOpen = mainNav.classList.toggle("is-open");
-            menuToggle.classList.toggle("is-active"),
-              menuToggle.setAttribute("aria-expanded", isOpen);
+            (menuToggle.classList.toggle("is-active"),
+              menuToggle.setAttribute("aria-expanded", isOpen));
           }),
           mainNav.addEventListener("click", (e) => {
             "A" === e.target.tagName &&
@@ -122,8 +122,8 @@
           setTimeout(() => banner.classList.add("is-visible"), 500);
         acceptBtn &&
           acceptBtn.addEventListener("click", () => {
-            localStorage.setItem(CONFIG_KEYS.CONSENT, "true"),
-              banner.classList.remove("is-visible");
+            (localStorage.setItem(CONFIG_KEYS.CONSENT, "true"),
+              banner.classList.remove("is-visible"));
           });
       })(),
       (function () {
@@ -133,8 +133,8 @@
           applyShimmer = (btn, w) => {
             const endX = w + overshoot,
               duration = ((w + 120 + 2 * overshoot) / 420).toFixed(3);
-            btn.style.setProperty("--shim-end-x", `${endX}px`),
-              btn.style.setProperty("--shim-dur", `${duration}s`);
+            (btn.style.setProperty("--shim-end-x", `${endX}px`),
+              btn.style.setProperty("--shim-dur", `${duration}s`));
           },
           measureAndApply = (els) => {
             const widths = els.map((el) => el.offsetWidth);
@@ -147,8 +147,8 @@
           buttons.forEach((btn) => ro.observe(btn));
         } else {
           const all = Array.from(buttons);
-          window.addEventListener("resize", () => measureAndApply(all)),
-            measureAndApply(all);
+          (window.addEventListener("resize", () => measureAndApply(all)),
+            measureAndApply(all));
         }
       })(),
       (async function () {
@@ -162,7 +162,7 @@
             if (!hasIncremented) {
               const current = parseInt(
                 textEl.textContent.replace(/[,.]/g, ""),
-                10
+                10,
               );
               isNaN(current) ||
                 ((textEl.textContent = (current + 1).toLocaleString()),
@@ -171,10 +171,10 @@
             }
           });
         const showFallback = () => {
-            textEl && (textEl.style.display = "none"),
+            (textEl && (textEl.style.display = "none"),
               badgeEl &&
                 ((badgeEl.src = `https://badgen.net/github/assets-dl/${CONFIG_GITHUB.USER}/${CONFIG_GITHUB.REPO}?label=&labelColor=black&color=black&cache=300`),
-                (badgeEl.style.display = "inline"));
+                (badgeEl.style.display = "inline")));
           },
           cached = sessionStorage.getItem(CONFIG_KEYS.DL_CACHE);
         if (cached)
@@ -188,7 +188,7 @@
           } catch (e) {}
         try {
           const res = await fetch(
-            `https://api.github.com/repos/${CONFIG_GITHUB.USER}/${CONFIG_GITHUB.REPO}/releases`
+            `https://api.github.com/repos/${CONFIG_GITHUB.USER}/${CONFIG_GITHUB.REPO}/releases`,
           );
           if (!res.ok) throw new Error("API Error");
           const releases = await res.json();
@@ -202,7 +202,7 @@
             badgeEl && (badgeEl.style.display = "none"),
             sessionStorage.setItem(
               CONFIG_KEYS.DL_CACHE,
-              JSON.stringify({ count: total, timestamp: Date.now() })
+              JSON.stringify({ count: total, timestamp: Date.now() }),
             ));
         } catch (e) {
           showFallback();
@@ -215,11 +215,11 @@
               entries.forEach((entry) => {
                 entry.target.classList.toggle(
                   "is-visible",
-                  entry.isIntersecting
+                  entry.isIntersecting,
                 );
               });
             },
-            { threshold: 0.1 }
+            { threshold: 0.1 },
           );
         elements.forEach((el) => observer.observe(el));
       })(),
@@ -247,26 +247,24 @@
         window.addEventListener("hashchange", () => {
           onOverlay() || clean();
         });
-      })();
-      (function () {
-        const toggle = $(".lang-toggle"),
-          bar = $("#lang-bar");
-        if (!toggle || !bar) return;
-        const setOpen = (open) =>
-          toggle.setAttribute("aria-expanded", open ? "true" : "false");
-        toggle.addEventListener("click", () => {
-          setOpen(toggle.getAttribute("aria-expanded") !== "true");
-        });
-        document.addEventListener("click", (e) => {
-          toggle.contains(e.target) ||
-            bar.contains(e.target) ||
-            setOpen(false);
-        });
-        document.addEventListener("keydown", (e) => {
-          "Escape" === e.key &&
-            "true" === toggle.getAttribute("aria-expanded") &&
-            (setOpen(false), toggle.focus());
-        });
-      })();
+      })());
+    (function () {
+      const toggle = $(".lang-toggle"),
+        bar = $("#lang-bar");
+      if (!toggle || !bar) return;
+      const setOpen = (open) =>
+        toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      toggle.addEventListener("click", () => {
+        setOpen(toggle.getAttribute("aria-expanded") !== "true");
+      });
+      document.addEventListener("click", (e) => {
+        toggle.contains(e.target) || bar.contains(e.target) || setOpen(false);
+      });
+      document.addEventListener("keydown", (e) => {
+        "Escape" === e.key &&
+          "true" === toggle.getAttribute("aria-expanded") &&
+          (setOpen(false), toggle.focus());
+      });
+    })();
   });
 })();

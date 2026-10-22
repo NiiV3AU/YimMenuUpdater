@@ -16,7 +16,9 @@ const SITE = "ymu.pages.dev";
 const CATEGORIES = ["performance", "accessibility", "best-practices", "seo"];
 
 if (process.argv.includes("--if-enabled") && !process.env.FETCH_SCORES) {
-  console.log("scores: skipped (set FETCH_SCORES=1 or run 'npm run scores' to fetch)");
+  console.log(
+    "scores: skipped (set FETCH_SCORES=1 or run 'npm run scores' to fetch)",
+  );
   process.exit(0);
 }
 
@@ -26,10 +28,9 @@ const existing = await readFile(OUT, "utf8")
 const scores = { ...existing };
 
 try {
-  const res = await fetch(
-    `https://api.motion.dev/score/badge?url=${SITE}`,
-    { signal: AbortSignal.timeout(15_000) },
-  );
+  const res = await fetch(`https://api.motion.dev/score/badge?url=${SITE}`, {
+    signal: AbortSignal.timeout(15_000),
+  });
   const grade = (await res.text()).match(/MotionScore:\s*([A-Z][+-]?)/)?.[1];
   if (res.ok && grade) {
     scores.motion = grade;
@@ -71,9 +72,18 @@ try {
   const mobile = await psiRetry("mobile");
   const desktop = await psiRetry("desktop");
   const lh = {
-    performance: Math.min(score(mobile, "performance"), score(desktop, "performance")),
-    accessibility: Math.min(score(mobile, "accessibility"), score(desktop, "accessibility")),
-    bestPractices: Math.min(score(mobile, "best-practices"), score(desktop, "best-practices")),
+    performance: Math.min(
+      score(mobile, "performance"),
+      score(desktop, "performance"),
+    ),
+    accessibility: Math.min(
+      score(mobile, "accessibility"),
+      score(desktop, "accessibility"),
+    ),
+    bestPractices: Math.min(
+      score(mobile, "best-practices"),
+      score(desktop, "best-practices"),
+    ),
     seo: Math.min(score(mobile, "seo"), score(desktop, "seo")),
   };
   if (Object.values(lh).every((v) => v > 0)) {
@@ -85,7 +95,10 @@ try {
     console.warn("lighthouse: implausible scores, keeping existing values");
   }
 } catch (e) {
-  console.warn("lighthouse: fetch failed, keeping existing values —", String(e));
+  console.warn(
+    "lighthouse: fetch failed, keeping existing values —",
+    String(e),
+  );
 }
 
 await writeFile(OUT, JSON.stringify(scores) + "\n");
