@@ -1,20 +1,38 @@
 # YMU — YimMenuUpdater
 
-> YMU is a modern, source-available Windows launcher for YimMenu, a mod menu for Grand Theft Auto V. It downloads and SHA-256-verifies the latest YimMenu (Legacy) and YimMenuV2 (Enhanced) DLLs, injects them into GTA V, and manages Lua scripts from a clean desktop app.
+> YMU (YimMenuUpdater) is a free, source-available Windows launcher, updater, and native Win32 DLL injector for Grand Theft Auto V modding, supporting both YimMenu (GTA V Legacy) and YimMenuV2 (GTA V Enhanced).
 
-YMU is free and open source. It supports both GTA V editions (Legacy and Enhanced), custom install paths and custom DLLs, automatic update checks, a Lua script manager, 16 UI languages, and light/dark themes. The website (ymu.pages.dev) is a localized landing page; the app itself and its releases live on GitHub.
+YMU is licensed under the PolyForm Shield License 1.0.0 (source-available, free for non-competitive use; not OSI-approved open source). The downstream mod menus it manages—YimMenu (Legacy) and YimMenuV2 (Enhanced)—are independent open-source projects.
 
-## Site
+## Capabilities & Architecture (v1.2.0)
 
-- [Home / language selection](https://ymu.pages.dev/): choose a language.
-- [Main site (English)](https://ymu.pages.dev/en/): features, how-to, download, and FAQ.
+- **Dual-Edition Architecture**: Full support for both GTA V Legacy (`YimMenu.dll`) and GTA V Enhanced (`YimMenuV2.dll`) with independent game directories, custom DLL paths, independent configurations, and automatic edition detection.
+- **Automated Downloads & Integrity Verification**: Direct downloads from official GitHub release channels with automated SHA-256 checksum verification to protect against corrupted or tampered binaries. (Current `YMU.exe` v1.2.0 SHA-256: `72389398346378578757e6fdba9693323f157af71b01c2b3284e8b26385a64d4`).
+- **BattlEye Anti-Cheat & FSL Detection**: Smart BattlEye anti-cheat service detection with a one-click `-nobattleye` toggle for `commandline.txt` (featuring seamless in-place UAC elevation if required), plus FSL loader detection (`WINMM.dll` vs deprecated `version.dll`).
+- **Native Win32 UTF-16 Injection Engine**: Built with native Win32 Ctypes (`LoadLibraryW` with UTF-16 encoding) ensuring seamless injection across non-ASCII/Unicode directory paths (German Umlauts, Cyrillic, Turkish, and CJK characters) and robust post-injection module verification via `EnumProcessModulesEx`.
+- **Lua Script Manager & Diagnostics**: Built-in manager for Lua scripts featuring one-click Safe Mode (instant disable/enable of all scripts), pointer and offset cache cleaning, and direct access to menu log files for rapid troubleshooting.
+- **16 UI Localizations with Full RTL**: Complete interface localization across 16 languages with bidirectional Right-to-Left (RTL) support (including Arabic) and adaptive Dark/Light themes.
 
-## Project
+## Site & Canonical Entry Points
 
-- [GitHub repository](https://github.com/NiiV3AU/YMU): full source code, issues, and documentation.
-- [Latest release](https://github.com/NiiV3AU/YMU/releases/latest): download the newest YMU.exe.
+- [Language Gateway (Root)](https://ymu.pages.dev/): Language selection gateway (`x-default`).
+- [English (en)](https://ymu.pages.dev/en/): Features, download, setup guide, and FAQ.
+- [Deutsch (de)](https://ymu.pages.dev/de/): Funktionen, Download, Anleitung und FAQ.
+- [Français (fr)](https://ymu.pages.dev/fr/): Fonctionnalités, téléchargement, guide et FAQ.
+- [Español (es)](https://ymu.pages.dev/es/): Características, descarga, guía y FAQ.
+- [Português (pt)](https://ymu.pages.dev/pt/): Recursos, download, guia e FAQ.
+- [Türkçe (tr)](https://ymu.pages.dev/tr/): Özellikler, indirme, rehber ve SSS.
+- [Русский (ru)](https://ymu.pages.dev/ru/): Возможности, загрузка, руководство и FAQ.
+- [Polski (pl)](https://ymu.pages.dev/pl/): Funkcje, pobieranie, poradnik i FAQ.
+- [简体中文 (zh-Hans)](https://ymu.pages.dev/zh-Hans/): 功能特性、下载、使用指南及常见问题.
+- [日本語 (ja)](https://ymu.pages.dev/ja/): 機能、ダウンロード、導入手順、よくある質問.
+- [한국어 (ko)](https://ymu.pages.dev/ko/): 주요 기능, 다운로드, 사용 가이드 및 FAQ.
+- [العربية (ar)](https://ymu.pages.dev/ar/): المميزات، التنزيل، الدليل والأسئلة الشائعة.
 
-## Related projects
+## Project & Upstream Links
 
-- [YimMenu (Legacy)](https://github.com/Mr-X-GTA/YimMenu): the GTA V Legacy mod menu that YMU installs and updates.
-- [YimMenuV2 (Enhanced)](https://github.com/YimMenu/YimMenuV2): the GTA V Enhanced mod menu that YMU installs and updates.
+- [GitHub Repository](https://github.com/NiiV3AU/YMU): Source code, issue tracker, and releases.
+- [Latest Release](https://github.com/NiiV3AU/YMU/releases/latest): Official executable download (`YMU.exe`).
+- [YimMenu (Legacy)](https://github.com/Mr-X-GTA/YimMenu): Open-source mod menu for GTA V Legacy.
+- [YimMenuV2 (Enhanced)](https://github.com/YimMenu/YimMenuV2): Open-source mod menu for GTA V Enhanced.
+- [PolyForm Shield License 1.0.0](https://polyformproject.org/licenses/shield/1.0.0): Licensing terms for YMU.

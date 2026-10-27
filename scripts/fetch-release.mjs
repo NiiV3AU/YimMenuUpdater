@@ -121,13 +121,13 @@ async function fetchLatestRelease() {
     } else {
       // Notfall-Fallback
       const fallback = {
-        version: "1.1.10",
-        cleanVersion: "1.1.10",
-        tag: "v1.1.10",
-        name: "YMU v1.1.10",
-        dateFormatted: "Sep 03, 2026",
-        bannerId: "ymu-alert-v1-1-10-release",
-        sha: "707a8d841a39c42eacb1900d025cbcc08243ddd62c571bb107e0a9de5930ec8d",
+        version: "1.2.0",
+        cleanVersion: "1.2.0",
+        tag: "v1.2.0",
+        name: "YMU v1.2.0",
+        dateFormatted: "Oct 22, 2026",
+        bannerId: "ymu-alert-v1-2-0-release",
+        sha: "72389398346378578757e6fdba9693323f157af71b01c2b3284e8b26385a64d4",
         htmlUrl: "https://github.com/NiiV3AU/YMU/releases/latest",
       };
       await writeFile(OUT, JSON.stringify(fallback, null, 2) + "\n", "utf8");

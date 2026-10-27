@@ -13,7 +13,7 @@ permalink: "/{{ lang.code }}/"
   {%- for item in languages.items -%}
   <link rel="alternate" hreflang="{{ item.code }}" href="{{ metadata.url }}/{{ item.code }}/" />
   {%- endfor -%}
-  <link rel="alternate" hreflang="x-default" href="{{ metadata.url }}/en/" />
+  <link rel="alternate" hreflang="x-default" href="{{ metadata.url }}/" />
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>{{ locales[lang.code].page_title }}</title>
@@ -23,8 +23,12 @@ permalink: "/{{ lang.code }}/"
   <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | url }}">
   <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | url }}">
   <link rel="manifest" href="{{ '/site.webmanifest' | url }}">
-  <link rel="preload" href="/assets/fonts/rubik-v31-arabic_cyrillic_cyrillic-ext_latin_latin-ext-800.woff2" as="font"
-    type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" href="/assets/fonts/rubik-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  {%- if lang.code == 'ar' %}
+  <link rel="preload" href="/assets/fonts/rubik-arabic-wght-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  {%- elif lang.code == 'ru' or lang.code == 'uk' %}
+  <link rel="preload" href="/assets/fonts/rubik-cyrillic-wght-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+  {%- endif %}
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
   <meta name="description" content="{{ locales[lang.code].meta_description }}" />
   <meta property="og:type" content="website">
@@ -59,47 +63,152 @@ permalink: "/{{ lang.code }}/"
     })();
   </script>
   <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "YimMenuUpdater",
-        "operatingSystem": "Windows 10, Windows 11",
-        "applicationCategory": "UtilitiesApplication",
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "EUR"
-        },
-        "description": "{{ locales[lang.code].json_ld.description }}",
-        "softwareVersion": "{{ release.cleanVersion }}",
-        "author": {
-          "@type": "Person",
-          "name": "NiiV3AU",
-          "url": "https://github.com/NiiV3AU"
-        },
-        "downloadUrl": "https://github.com/NiiV3AU/YMU/releases",
-        "featureList": "{{ locales[lang.code].json_ld.feature_list }}",
-        "keywords": "{{ locales[lang.code].json_ld.keywords }}",
-        "isBasedOn": [
-          {
-            "@type": "SoftwareApplication",
-            "name": "Grand Theft Auto V",
-            "applicationCategory": "GameApplication",
-            "operatingSystem": "Windows"
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "SoftwareApplication",
+          "@id": "https://ymu.pages.dev/#software",
+          "name": "YimMenuUpdater",
+          "alternateName": "YMU",
+          "url": "https://ymu.pages.dev/{{ lang.code }}/",
+          "inLanguage": "{{ lang.code }}",
+          "operatingSystem": "Windows 10, Windows 11",
+          "applicationCategory": "UtilitiesApplication",
+          "isAccessibleForFree": true,
+          "license": "https://polyformproject.org/licenses/shield/1.0.0",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
           },
-          {
-            "@type": "SoftwareApplication",
-            "name": "YimMenu",
-            "applicationCategory": "UtilitiesApplication",
-            "description": "{{ locales[lang.code].json_ld.yimmenu_desc }}"
-          }
-        ]
-      }
-    </script>
+          "description": {{ locales[lang.code].json_ld.description | dump | safe }},
+          "softwareVersion": "{{ release.cleanVersion }}",
+          "downloadUrl": "https://github.com/NiiV3AU/YMU/releases/latest",
+          "fileFormat": "application/vnd.microsoft.portable-executable",
+          "featureList": {{ locales[lang.code].json_ld.feature_list | dump | safe }},
+          "keywords": {{ locales[lang.code].json_ld.keywords | dump | safe }},
+          "screenshot": [
+            "https://ymu.pages.dev/assets/img/Download.webp",
+            "https://ymu.pages.dev/assets/img/Inject.webp",
+            "https://ymu.pages.dev/assets/img/Settings.webp"
+          ],
+          "author": {
+            "@type": "Person",
+            "name": "NiiV3AU",
+            "url": "https://github.com/NiiV3AU"
+          },
+          "isBasedOn": [
+            {
+              "@type": "SoftwareApplication",
+              "name": "Grand Theft Auto V",
+              "applicationCategory": "GameApplication",
+              "operatingSystem": "Windows"
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "YimMenu",
+              "applicationCategory": "UtilitiesApplication",
+              "description": {{ locales[lang.code].json_ld.yimmenu_desc | dump | safe }}
+            },
+            {
+              "@type": "SoftwareApplication",
+              "name": "YimMenuV2",
+              "applicationCategory": "UtilitiesApplication",
+              "description": {{ locales[lang.code].json_ld.yimmenu_desc | dump | safe }}
+            }
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "@id": "https://ymu.pages.dev/{{ lang.code }}/#faq",
+          "inLanguage": "{{ lang.code }}",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": {{ locales[lang.code].faq_section.q1_question | stripHtml | dump | safe }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ locales[lang.code].faq_section.q1_answer | stripHtml | dump | safe }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ locales[lang.code].faq_section.q2_question | stripHtml | dump | safe }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ locales[lang.code].faq_section.q2_answer | stripHtml | dump | safe }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ locales[lang.code].faq_section.q3_question | stripHtml | dump | safe }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ locales[lang.code].faq_section.q3_answer | stripHtml | dump | safe }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ locales[lang.code].faq_section.q4_question | stripHtml | dump | safe }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ [locales[lang.code].faq_section.q4_answer_p1, locales[lang.code].faq_section.q4_answer_p2, locales[lang.code].faq_section.q4_answer_p3] | join(" ") | stripHtml | dump | safe }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ locales[lang.code].faq_section.q5_question | stripHtml | dump | safe }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ locales[lang.code].faq_section.q5_answer | stripHtml | dump | safe }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ locales[lang.code].faq_section.q6_question | stripHtml | dump | safe }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ locales[lang.code].faq_section.q6_answer | stripHtml | dump | safe }}
+              }
+            },
+            {
+              "@type": "Question",
+              "name": {{ locales[lang.code].faq_section.q7_question | stripHtml | dump | safe }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ locales[lang.code].faq_section.q7_answer | stripHtml | dump | safe }}
+              }
+            }
+            {%- if locales[lang.code].faq_section.q8_question %},
+            {
+              "@type": "Question",
+              "name": {{ locales[lang.code].faq_section.q8_question | stripHtml | dump | safe }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ locales[lang.code].faq_section.q8_answer | stripHtml | dump | safe }}
+              }
+            }
+            {%- endif %}
+            {%- if locales[lang.code].faq_section.q9_question %},
+            {
+              "@type": "Question",
+              "name": {{ locales[lang.code].faq_section.q9_question | stripHtml | dump | safe }},
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": {{ locales[lang.code].faq_section.q9_answer | stripHtml | dump | safe }}
+              }
+            }
+            {%- endif %}
+          ]
+        }
+      ]
+    }
+  </script>
 </head>
 
 <body>
-  <div id="alert-banner" class="alert-banner info-mode" role="alert" style="display: none;">
+  <div id="alert-banner" class="alert-banner info-mode" role="alert">
     <div class="container alert-container">
       <div class="alert-content">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20" class="alert-icon"
@@ -111,7 +220,7 @@ permalink: "/{{ lang.code }}/"
         {% set placeholder = alert_placeholders[lang.code] or alert_placeholders['en'] %}
         <span class="alert-text">{{ placeholder | replace('{version}', release.tag) | safe }}</span>
       </div>
-      <button id="alert-close-btn" class="alert-close" aria-label="Close alert">
+      <button id="alert-close-btn" class="alert-close" aria-label="{{ locales[lang.code].ui_aria.close_alert or 'Close alert' }}">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <path d="M18 6 6 18"></path>
@@ -124,13 +233,17 @@ permalink: "/{{ lang.code }}/"
         const alertBanner = document.getElementById('alert-banner');
         const closeBtn = document.getElementById('alert-close-btn');
         const bannerId = '{{ release.bannerId }}';
-        if (!localStorage.getItem(bannerId)) {
-          alertBanner.style.display = 'block';
-        }
+        try {
+          if (localStorage.getItem(bannerId)) {
+            alertBanner.classList.add('is-dismissed');
+            alertBanner.style.display = 'none';
+          }
+        } catch (e) {}
         if (closeBtn) {
           closeBtn.addEventListener('click', function () {
+            alertBanner.classList.add('is-dismissed');
             alertBanner.style.display = 'none';
-            localStorage.setItem(bannerId, 'dismissed');
+            try { localStorage.setItem(bannerId, 'dismissed'); } catch (e) {}
           });
         }
       })();
@@ -141,7 +254,7 @@ permalink: "/{{ lang.code }}/"
       <div class="logo">
         <div class="logo-full">
           <a href="https://niveau.pages.dev" target="_blank" rel="noopener" class="logo-svg-link"
-            aria-label="NiiV3AU's Portfolio">
+            aria-label="{{ locales[lang.code].ui_aria.portfolio_aria or 'NiiV3AU Portfolio' }}">
             <svg width="50" height="50" viewBox="0 0 50 50" class="logo-nv3-svg" fill="none"
               xmlns="http://www.w3.org/2000/svg">
               <path
@@ -186,12 +299,12 @@ permalink: "/{{ lang.code }}/"
             </svg>
           </a>
           <span class="logo-separator">&nbsp;|&nbsp;</span>
-          <a href="#" class="logo-text-link">
+          <a href="/{{ lang.code }}/" class="logo-text-link">
             <span class="logo-text-full">YimMenuUpdater</span>
             <span class="logo-text-short">YMU</span>
           </a>
         </div>
-        <a href="#" class="logo-short">YMU</a>
+        <a href="/{{ lang.code }}/" class="logo-short">YMU</a>
       </div>
       <nav class="nav-main" id="main-navigation">
         <ul class="nav-links">
@@ -205,12 +318,15 @@ permalink: "/{{ lang.code }}/"
             <a href="#download">{{ locales[lang.code].nav.download }}</a>
           </li>
           <li>
+            <a href="#faq">{{ locales[lang.code].nav.faq or 'FAQ' }}</a>
+          </li>
+          <li>
             <a href="#community">{{ locales[lang.code].nav.community }}</a>
           </li>
         </ul>
         <div class="nav-icons">
           <a href="https://github.com/NiiV3AU/YMU" target="_blank" rel="noopener noreferrer"
-            aria-label="GitHub Repository">
+            aria-label="{{ locales[lang.code].ui_aria.github_aria or 'GitHub Repository' }}">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
               class="main-grid-item-icon-header" fill="none">
               <path
@@ -220,7 +336,7 @@ permalink: "/{{ lang.code }}/"
             <span>GitHub</span>
           </a>
           <a href="https://discord.gg/S4PKmKr22k" target="_blank" rel="noopener noreferrer"
-            aria-label="Discord Community">
+            aria-label="{{ locales[lang.code].ui_aria.discord_aria or 'Discord Community' }}">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20"
               class="main-grid-item-icon-header" fill="none">
               <path
@@ -234,7 +350,7 @@ permalink: "/{{ lang.code }}/"
       <div class="header-actions">
         <div class="header-icons">
           <a href="https://github.com/NiiV3AU/YMU" target="_blank" rel="noopener noreferrer"
-            aria-label="GitHub Repository">
+            aria-label="{{ locales[lang.code].ui_aria.github_aria or 'GitHub Repository' }}">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
               class="main-grid-item-icon-header" fill="none">
               <path
@@ -243,7 +359,7 @@ permalink: "/{{ lang.code }}/"
             </svg>
           </a>
           <a href="https://discord.gg/S4PKmKr22k" target="_blank" rel="noopener noreferrer"
-            aria-label="Discord Community">
+            aria-label="{{ locales[lang.code].ui_aria.discord_aria or 'Discord Community' }}">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
               class="main-grid-item-icon-header" fill="none">
               <path
@@ -252,7 +368,8 @@ permalink: "/{{ lang.code }}/"
             </svg>
           </a>
         </div>
-        <button class="mobile-menu-toggle" type="button" aria-label="Mobile Menu" aria-expanded="false"
+        <button class="mobile-menu-toggle" type="button"
+          aria-label="{{ locales[lang.code].ui_aria.mobile_menu_aria or 'Mobile Menu' }}" aria-expanded="false"
           aria-controls="main-navigation">
           <span class="line line1"></span>
           <span class="line line2"></span>
@@ -262,9 +379,11 @@ permalink: "/{{ lang.code }}/"
           aria-label="{{ locales[lang.code].lang_toggle_aria_label }}">
           {{ lang.code | upper }}
         </button>
-        <button id="theme-toggle-btn" class="theme-toggle" aria-label="Toggle theme"></button>
+        <button id="theme-toggle-btn" class="theme-toggle"
+          aria-label="{{ locales[lang.code].ui_aria.toggle_theme_aria or 'Toggle theme' }}"></button>
         <div class="tooltip-wrapper">
-          <button id="animation-toggle-btn" class="animation-toggle" aria-label="Toggle animations"></button>
+          <button id="animation-toggle-btn" class="animation-toggle"
+            aria-label="{{ locales[lang.code].ui_aria.toggle_anim_aria or 'Toggle animations' }}"></button>
           <div id="animation-tooltip" class="header-tooltip">
             <span>{{ locales[lang.code].animation_tooltip_text }}</span>
           </div>
@@ -405,25 +524,25 @@ permalink: "/{{ lang.code }}/"
         <p class="section-subtitle text-center">{{ locales[lang.code].look_and_feel_section.subtitle }}</p>
         <div class="look-grid">
           <figure class="look-card">
-            <a class="look-card-link" href="#lightbox-download" aria-label="View enlarged image of Download screen">
-              <img class="theme-img" src="/assets/img/Download.webp" alt="Download" width="862" height="552"
+            <a class="look-card-link" href="#lightbox-download" aria-label="{{ locales[lang.code].look_and_feel_section.img_download_enlarge_aria or 'View enlarged image of Download screen' }}">
+              <img class="theme-img" src="/assets/img/Download.webp" alt="{{ locales[lang.code].look_and_feel_section.img_download_alt or 'Download' }}" width="862" height="552"
                 loading="lazy" data-dark="/assets/img/Download.webp" data-light="/assets/img/Download_Light.webp" />
             </a>
-            <figcaption>Download</figcaption>
+            <figcaption>{{ locales[lang.code].look_and_feel_section.img_download_caption or 'Download' }}</figcaption>
           </figure>
           <figure class="look-card">
-            <a class="look-card-link" href="#lightbox-launch" aria-label="View enlarged image of Launch screen">
-              <img class="theme-img" src="/assets/img/Inject.webp" alt="Launch and Inject" width="862" height="552"
+            <a class="look-card-link" href="#lightbox-launch" aria-label="{{ locales[lang.code].look_and_feel_section.img_inject_enlarge_aria or 'View enlarged image of Launch screen' }}">
+              <img class="theme-img" src="/assets/img/Inject.webp" alt="{{ locales[lang.code].look_and_feel_section.img_inject_alt or 'Launch and Inject' }}" width="862" height="552"
                 loading="lazy" data-dark="/assets/img/Inject.webp" data-light="/assets/img/Inject_Light.webp" />
             </a>
-            <figcaption>Launch & Inject</figcaption>
+            <figcaption>{{ locales[lang.code].look_and_feel_section.img_inject_caption or 'Launch & Inject' }}</figcaption>
           </figure>
           <figure class="look-card">
-            <a class="look-card-link" href="#lightbox-settings" aria-label="View enlarged image of Settings screen">
-              <img class="theme-img" src="/assets/img/Settings.webp" alt="Settings" width="862" height="552"
+            <a class="look-card-link" href="#lightbox-settings" aria-label="{{ locales[lang.code].look_and_feel_section.img_settings_enlarge_aria or 'View enlarged image of Settings screen' }}">
+              <img class="theme-img" src="/assets/img/Settings.webp" alt="{{ locales[lang.code].look_and_feel_section.img_settings_alt or 'Settings' }}" width="862" height="552"
                 loading="lazy" data-dark="/assets/img/Settings.webp" data-light="/assets/img/Settings_Light.webp" />
             </a>
-            <figcaption>Settings</figcaption>
+            <figcaption>{{ locales[lang.code].look_and_feel_section.img_settings_caption or 'Settings' }}</figcaption>
           </figure>
         </div>
       </div>
@@ -518,7 +637,7 @@ permalink: "/{{ lang.code }}/"
                 <span class="inner-label">{{ locales[lang.code].download_section.download_header }}</span>
                 <span class="inner-value code-font-clean">
                   <span id="github-downloads">...</span>
-                  <img id="github-downloads-badge" src="" alt="Download Count"
+                  <img id="github-downloads-badge" alt="{{ locales[lang.code].ui_aria.download_count_alt or 'Download Count' }}"
                     style="display: none; vertical-align: middle; height: 20px;" />
                 </span>
               </div>
@@ -526,14 +645,16 @@ permalink: "/{{ lang.code }}/"
                 <span class="inner-label"><bdi>SHA-256</bdi>:</span>
                 <span class="sha256-wrap">
                   <span class="sha256-value code-font-clean" id="ymu-sha256" role="button" tabindex="0"
-                    aria-label="Copy the SHA-256 of YMU.exe">…</span>
+                    data-sha="{{ release.sha }}" data-copy-text="{{ locales[lang.code].ui_aria.copy_text or 'Copy' }}"
+                    data-copied-text="{{ locales[lang.code].ui_aria.copied_text or 'Copied!' }}"
+                    aria-label="{{ locales[lang.code].ui_aria.copy_sha_aria or 'Copy the SHA-256 of YMU.exe' }}">{{ release.sha }}</span>
                   <span class="sha-tooltip" aria-hidden="true">
                     <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none"
                       stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                       <rect width="14" height="14" x="8" y="8" rx="2" ry="2"></rect>
                       <path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"></path>
                     </svg>
-                    <span class="sha-tooltip-text">Copy</span>
+                    <span class="sha-tooltip-text">{{ locales[lang.code].ui_aria.copy_text or 'Copy' }}</span>
                   </span>
                 </span>
               </div>
@@ -543,9 +664,9 @@ permalink: "/{{ lang.code }}/"
                 class="btn btn-primary btn-large btn-download-main" id="download-btn-main">
                 {{ locales[lang.code].download_section.main_button | withReleaseVersion(release.tag) | safe }}
               </a>
-              <a href="https://www.virustotal.com/gui/file/{{ release.sha or '707a8d841a39c42eacb1900d025cbcc08243ddd62c571bb107e0a9de5930ec8d' }}"
+              <a href="https://www.virustotal.com/gui/file/{{ release.sha }}"
                 target="_blank" rel="noopener noreferrer" class="vt-badge" id="vt-btn-main"
-                aria-label="View the VirusTotal scan report for YMU.exe">
+                aria-label="{{ locales[lang.code].ui_aria.virustotal_aria or 'View the VirusTotal scan report for YMU.exe' }}">
                 <svg class="vt-logo" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
                   fill="currentColor" aria-hidden="true">
                   <path d="M10.87 12L0 22.68h24V1.32H0zm10.73 8.52H5.28l8.637-8.448L5.28 3.48H21.6z"></path>
@@ -707,6 +828,26 @@ permalink: "/{{ lang.code }}/"
               </div>
             </div>
           </details>
+          {%- if locales[lang.code].faq_section.q8_question %}
+          <details class="faq-item">
+            <summary class="faq-question">{{ locales[lang.code].faq_section.q8_question }}</summary>
+            <div class="faq-answer">
+              <div class="details-content-wrapper">
+                <p>{{ locales[lang.code].faq_section.q8_answer | safe }}</p>
+              </div>
+            </div>
+          </details>
+          {%- endif %}
+          {%- if locales[lang.code].faq_section.q9_question %}
+          <details class="faq-item">
+            <summary class="faq-question">{{ locales[lang.code].faq_section.q9_question }}</summary>
+            <div class="faq-answer">
+              <div class="details-content-wrapper">
+                <p>{{ locales[lang.code].faq_section.q9_answer | safe }}</p>
+              </div>
+            </div>
+          </details>
+          {%- endif %}
         </div>
       </div>
     </section>
@@ -815,10 +956,10 @@ permalink: "/{{ lang.code }}/"
     </div>
   </footer>
   <div id="lightbox-download" class="lightbox-overlay">
-    <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
-    <img class="theme-img lightbox-image" src="/assets/img/Download.webp" alt="Download (enlarged)" width="862"
+    <a class="lightbox-backdrop" href="#look-and-feel" aria-label="{{ locales[lang.code].ui_aria.close_lightbox_aria or 'Close enlarged image view' }}"></a>
+    <img class="theme-img lightbox-image" src="/assets/img/Download.webp" alt="{{ locales[lang.code].look_and_feel_section.img_download_alt or 'Download' }}" width="862"
       height="552" loading="lazy" data-dark="/assets/img/Download.webp" data-light="/assets/img/Download_Light.webp" />
-    <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
+    <a class="lightbox-close" href="#look-and-feel" aria-label="{{ locales[lang.code].ui_aria.close_lightbox_aria or 'Close enlarged image view' }}">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
         focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="2">
@@ -828,10 +969,10 @@ permalink: "/{{ lang.code }}/"
     </a>
   </div>
   <div id="lightbox-launch" class="lightbox-overlay">
-    <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
-    <img class="theme-img lightbox-image" src="/assets/img/Inject.webp" alt="Inject (enlarged)" width="862" height="552"
+    <a class="lightbox-backdrop" href="#look-and-feel" aria-label="{{ locales[lang.code].ui_aria.close_lightbox_aria or 'Close enlarged image view' }}"></a>
+    <img class="theme-img lightbox-image" src="/assets/img/Inject.webp" alt="{{ locales[lang.code].look_and_feel_section.img_inject_alt or 'Launch and Inject' }}" width="862" height="552"
       loading="lazy" data-dark="/assets/img/Inject.webp" data-light="/assets/img/Inject_Light.webp" />
-    <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
+    <a class="lightbox-close" href="#look-and-feel" aria-label="{{ locales[lang.code].ui_aria.close_lightbox_aria or 'Close enlarged image view' }}">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
         focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="2">
@@ -841,10 +982,10 @@ permalink: "/{{ lang.code }}/"
     </a>
   </div>
   <div id="lightbox-settings" class="lightbox-overlay">
-    <a class="lightbox-backdrop" href="#look-and-feel" aria-label="Close enlarged image view"></a>
-    <img class="theme-img lightbox-image" src="/assets/img/Settings.webp" alt="Settings (enlarged)" width="862"
+    <a class="lightbox-backdrop" href="#look-and-feel" aria-label="{{ locales[lang.code].ui_aria.close_lightbox_aria or 'Close enlarged image view' }}"></a>
+    <img class="theme-img lightbox-image" src="/assets/img/Settings.webp" alt="{{ locales[lang.code].look_and_feel_section.img_settings_alt or 'Settings' }}" width="862"
       height="552" loading="lazy" data-dark="/assets/img/Settings.webp" data-light="/assets/img/Settings_Light.webp" />
-    <a class="lightbox-close" href="#look-and-feel" aria-label="Close enlarged image view">
+    <a class="lightbox-close" href="#look-and-feel" aria-label="{{ locales[lang.code].ui_aria.close_lightbox_aria or 'Close enlarged image view' }}">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"
         focusable="false" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
         stroke-width="2">
@@ -860,11 +1001,11 @@ permalink: "/{{ lang.code }}/"
       class="btn btn-primary">{{ locales[lang.code].privacy_section.cookie_banner_button }}</button>
   </div>
   <div id="privacy-modal" class="lightbox-overlay">
-    <a class="lightbox-backdrop" href="#_" aria-label="Close privacy information"></a>
+    <a class="lightbox-backdrop" href="#_" aria-label="{{ locales[lang.code].ui_aria.close_privacy_aria or 'Close privacy information' }}"></a>
     <div class="privacy-modal-content">
       <div class="privacy-modal-header">
         <h2>{{ locales[lang.code].privacy_section.privacy_modal_title }}</h2>
-        <a class="modal-close-btn" href="#_" aria-label="Close privacy information"><svg
+        <a class="modal-close-btn" href="#_" aria-label="{{ locales[lang.code].ui_aria.close_privacy_aria or 'Close privacy information' }}"><svg
             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none"
             stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2">
             <path d="M18 6 6 18" />
@@ -873,20 +1014,20 @@ permalink: "/{{ lang.code }}/"
       </div>
       <div class="privacy-modal-body">
         <p>{{ locales[lang.code].privacy_section.privacy_modal_intro }}</p>
-        <h4>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_title }}</h4>
+        <h3>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_title }}</h3>
         <p>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_desc }}</p>
         <ul>
           <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item1 | safe }}</li>
           <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item2 | safe }}</li>
           <li>{{ locales[lang.code].privacy_section.privacy_modal_local_storage_item3 | safe }}</li>
         </ul>
-        <h4>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_title }}</h4>
+        <h3>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_title }}</h3>
         <p>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_desc }}</p>
         <ul>
           <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item1 | safe }}</li>
           <li>{{ locales[lang.code].privacy_section.privacy_modal_session_storage_item2 | safe }}</li>
         </ul>
-        <h4>{{ locales[lang.code].privacy_section.privacy_modal_analytics_title }}</h4>
+        <h3>{{ locales[lang.code].privacy_section.privacy_modal_analytics_title }}</h3>
         <p>{{ locales[lang.code].privacy_section.privacy_modal_analytics_desc }}</p>
         <ul>
           <li>{{ locales[lang.code].privacy_section.privacy_modal_analytics_item1 | safe }}</li>
@@ -898,19 +1039,22 @@ permalink: "/{{ lang.code }}/"
   <script>
     (function () {
       var shaEl = document.getElementById("ymu-sha256");
-      var vtBtn = document.getElementById("vt-btn-main");
       if (!shaEl) return;
       var wrap = shaEl.closest(".sha256-wrap");
       var ttText = wrap ? wrap.querySelector(".sha-tooltip-text") : null;
+      var fullSha = shaEl.getAttribute("data-sha");
+
       function copy() {
         var t = shaEl.getAttribute("data-sha");
         if (!t || !navigator.clipboard) return;
+        var copiedLabel = shaEl.getAttribute("data-copied-text") || "Copied!";
+        var copyLabel = shaEl.getAttribute("data-copy-text") || "Copy";
         navigator.clipboard.writeText(t).then(function () {
           shaEl.classList.add("copied");
-          if (ttText) ttText.textContent = "Copied!";
+          if (ttText) ttText.textContent = copiedLabel;
           setTimeout(function () {
             shaEl.classList.remove("copied");
-            if (ttText) ttText.textContent = "Copy";
+            if (ttText) ttText.textContent = copyLabel;
           }, 1200);
         });
       }
@@ -929,7 +1073,6 @@ permalink: "/{{ lang.code }}/"
         var x = e.clientX - r.left;
         tip.style.left = Math.max(half, Math.min(x, r.width - half)) + "px";
       });
-      var fullSha = null;
       function renderSha() {
         if (!fullSha) return;
         shaEl.textContent = fullSha;
@@ -938,25 +1081,12 @@ permalink: "/{{ lang.code }}/"
           shaEl.textContent = fullSha.slice(0, keep) + "…" + fullSha.slice(-keep);
         }
       }
+      renderSha();
       var resizeTimer;
       window.addEventListener("resize", function () {
         clearTimeout(resizeTimer);
         resizeTimer = setTimeout(renderSha, 150);
       });
-      fetch("https://api.github.com/repos/NiiV3AU/YMU/releases/latest")
-        .then(function (r) {
-          if (!r.ok) throw new Error("bad status");
-          return r.json();
-        })
-        .then(function (d) {
-          var m = (d.body || "").match(/\b[a-fA-F0-9]{64}\b/);
-          if (!m) return;
-          fullSha = m[0].toLowerCase();
-          shaEl.setAttribute("data-sha", fullSha);
-          renderSha();
-          if (vtBtn) vtBtn.href = "https://www.virustotal.com/gui/file/" + fullSha;
-        })
-        .catch(function () { });
     })();
   </script>
 </body>

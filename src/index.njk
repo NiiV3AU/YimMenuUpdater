@@ -8,16 +8,65 @@ eleventyExcludeFromCollections: true
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="robots" content="noindex, follow" />
+  <meta name="robots" content="index, follow" />
   <meta name="description"
-    content="Select your preferred language to access the official site of YMU – The smart launcher for YimMenu." />
-  <title>YMU - Select Language</title>
+    content="Official website of YimMenuUpdater (YMU) – the free, source-available Windows launcher, updater, and native Win32 DLL injector for YimMenu (GTA V Legacy) and YimMenuV2 (GTA V Enhanced). Select your language." />
+  <title>YimMenuUpdater (YMU) – GTA V Legacy &amp; Enhanced Mod Launcher &amp; Manager</title>
   <meta name="google-site-verification" content="_f6dGnLNZBlwsL9BdFwl6TM5fzcSC5_ubno6fyX9SIg" />
+  <link rel="canonical" href="{{ metadata.url }}/" />
+  <link rel="alternate" hreflang="x-default" href="{{ metadata.url }}/" />
+  {%- for item in languages.items %}
+  <link rel="alternate" hreflang="{{ item.code }}" href="{{ metadata.url }}/{{ item.code }}/" />
+  {%- endfor %}
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://ymu.pages.dev/" />
+  <meta property="og:title" content="YimMenuUpdater (YMU) – GTA V Legacy &amp; Enhanced Mod Launcher" />
+  <meta property="og:description" content="Automated SHA-256 verified updates, native Win32 UTF-16 injection, one-click BattlEye toggle, and Lua script management for YimMenu (Legacy &amp; Enhanced)." />
+  <meta property="og:image" content="https://ymu.pages.dev/assets/img/og-preview.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@NiiV3AU" />
+  <meta name="twitter:url" content="https://ymu.pages.dev/" />
+  <meta name="twitter:title" content="YimMenuUpdater (YMU) – GTA V Legacy &amp; Enhanced Mod Launcher" />
+  <meta name="twitter:description" content="Automated SHA-256 verified updates, native Win32 UTF-16 injection, one-click BattlEye toggle, and Lua script management for YimMenu (Legacy &amp; Enhanced)." />
+  <meta name="twitter:image" content="https://ymu.pages.dev/assets/img/og-preview.jpg" />
+  <link rel="preload" href="/assets/fonts/rubik-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="manifest" href="/site.webmanifest">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://ymu.pages.dev/#website",
+        "url": "https://ymu.pages.dev/",
+        "name": "YimMenuUpdater",
+        "description": "Official website of YimMenuUpdater (YMU) – GTA V Legacy & Enhanced Mod Launcher & Manager",
+        "inLanguage": "en"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://ymu.pages.dev/#software",
+        "name": "YimMenuUpdater",
+        "alternateName": "YMU",
+        "url": "https://ymu.pages.dev/",
+        "operatingSystem": "Windows 10, Windows 11",
+        "applicationCategory": "UtilitiesApplication",
+        "softwareVersion": "{{ release.cleanVersion }}",
+        "isAccessibleForFree": true,
+        "license": "https://polyformproject.org/licenses/shield/1.0.0",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        }
+      }
+    ]
+  }
+  </script>
   <script>
     (function () {
       try {
@@ -33,6 +82,23 @@ eleventyExcludeFromCollections: true
     })();
   </script>
   <style>
+    @font-face {
+      font-family: "Rubik";
+      src: url("/assets/fonts/rubik-latin-wght-normal.woff2") format("woff2");
+      font-weight: 300 900;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    @font-face {
+      font-family: "Rubik Fallback";
+      src: local("Segoe UI"), local("Roboto"), local("Arial");
+      size-adjust: 105.5%;
+      ascent-override: 90%;
+      descent-override: 22%;
+      line-gap-override: 0%;
+    }
+
     *,
     *::before,
     *::after {
@@ -51,7 +117,7 @@ eleventyExcludeFromCollections: true
       --radius: 10px;
       --radius-btn: var(--radius);
       --card-shadow: 0 4px 24px rgba(60, 70, 90, 0.16);
-      --font: "Rubik", -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Arabic", "Yu Gothic UI", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", Roboto, Helvetica, Arial, sans-serif;
+      --font: "Rubik", "Rubik Fallback", -apple-system, BlinkMacSystemFont, "Segoe UI", "Segoe UI Arabic", "Yu Gothic UI", "Microsoft YaHei UI", "Microsoft JhengHei UI", "Malgun Gothic", Roboto, Helvetica, Arial, sans-serif;
     }
 
     :root[data-theme="dark"] {
@@ -278,47 +344,64 @@ eleventyExcludeFromCollections: true
           "{{ item.code }}"{% if not loop.last %},{% endif %}
         {%- endfor -%}
       ];
-    try {
-      var dest = null;
-      var saved = localStorage.getItem("user_lang_preference");
-      if (saved && availableLangs.includes(saved)) {
-        dest = saved;
-      } else {
-        var browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
-        var langMap = {
-          "zh-cn": "zh-Hans", "zh-sg": "zh-Hans", "zh-my": "zh-Hans",
-          "zh": "zh-Hans",
-          "zh-tw": "zh-TW", "zh-hk": "zh-Hant", "zh-mo": "zh-Hant"
-        };
-        for (var i = 0; i < browserLangs.length; i++) {
-          var fullCode = browserLangs[i].toLowerCase();
-          if (availableLangs.includes(fullCode)) {
-            dest = fullCode;
-            break;
+
+      var langLinks = document.querySelectorAll(".lang-grid a");
+      langLinks.forEach(function (link) {
+        link.addEventListener("click", function () {
+          var code = this.getAttribute("data-lang-code");
+          if (code) {
+            try {
+              localStorage.setItem("user_lang_preference", code);
+            } catch (e) {}
           }
-          var mapped = langMap[fullCode];
-          if (mapped && availableLangs.includes(mapped)) {
-            dest = mapped;
-            break;
+        });
+      });
+
+      try {
+        var dest = null;
+        var saved = localStorage.getItem("user_lang_preference");
+        if (saved && availableLangs.includes(saved)) {
+          if (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) {
+            window.location.replace("/" + saved + "/");
+            return;
           }
-          var prefix = fullCode.substring(0, 2);
-          if (availableLangs.includes(prefix)) {
-            dest = prefix;
-            break;
+          dest = saved;
+        } else {
+          var browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+          var langMap = {
+            "zh-cn": "zh-Hans", "zh-sg": "zh-Hans", "zh-my": "zh-Hans",
+            "zh": "zh-Hans",
+            "zh-tw": "zh-TW", "zh-hk": "zh-Hant", "zh-mo": "zh-Hant"
+          };
+          for (var i = 0; i < browserLangs.length; i++) {
+            var fullCode = browserLangs[i].toLowerCase();
+            if (availableLangs.includes(fullCode)) {
+              dest = fullCode;
+              break;
+            }
+            var mapped = langMap[fullCode];
+            if (mapped && availableLangs.includes(mapped)) {
+              dest = mapped;
+              break;
+            }
+            var prefix = fullCode.substring(0, 2);
+            if (availableLangs.includes(prefix)) {
+              dest = prefix;
+              break;
+            }
           }
         }
-      }
-      if (dest) {
-        var link = document.querySelector('a[data-lang-code="' + dest + '"]');
-        if (link) {
-          link.classList.add("recommended");
-          link.focus({ preventScroll: true });
+        if (dest) {
+          var link = document.querySelector('a[data-lang-code="' + dest + '"]');
+          if (link) {
+            link.classList.add("recommended");
+            link.focus({ preventScroll: true });
+          }
         }
+      } catch (e) {
+        console.error("Language hint failed", e);
       }
-    } catch (e) {
-      console.error("Language hint failed", e);
-    }
-      }) ();
+    })();
   </script>
 </body>
 
