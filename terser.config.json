@@ -2,9 +2,10 @@
   "module": true,
   "compress": {
     "drop_console": true,
-    "drop_debugger": true
+    "drop_debugger": true,
+    "passes": 2
   },
-  "mangle": false,
+  "mangle": true,
   "output": {
     "comments": false
   }
