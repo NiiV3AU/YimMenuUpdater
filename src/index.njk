@@ -345,50 +345,30 @@ eleventyExcludeFromCollections: true
         {%- endfor -%}
       ];
 
-      var langLinks = document.querySelectorAll(".lang-grid a");
-      langLinks.forEach(function (link) {
-        link.addEventListener("click", function () {
-          var code = this.getAttribute("data-lang-code");
-          if (code) {
-            try {
-              localStorage.setItem("user_lang_preference", code);
-            } catch (e) {}
-          }
-        });
-      });
-
       try {
+        try { localStorage.removeItem("user_lang_preference"); } catch (e) {}
         var dest = null;
-        var saved = localStorage.getItem("user_lang_preference");
-        if (saved && availableLangs.includes(saved)) {
-          if (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches) {
-            window.location.replace("/" + saved + "/");
-            return;
+        var browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
+        var langMap = {
+          "zh-cn": "zh-Hans", "zh-sg": "zh-Hans", "zh-my": "zh-Hans",
+          "zh": "zh-Hans",
+          "zh-tw": "zh-TW", "zh-hk": "zh-Hant", "zh-mo": "zh-Hant"
+        };
+        for (var i = 0; i < browserLangs.length; i++) {
+          var fullCode = browserLangs[i].toLowerCase();
+          if (availableLangs.includes(fullCode)) {
+            dest = fullCode;
+            break;
           }
-          dest = saved;
-        } else {
-          var browserLangs = navigator.languages || [navigator.language || navigator.userLanguage];
-          var langMap = {
-            "zh-cn": "zh-Hans", "zh-sg": "zh-Hans", "zh-my": "zh-Hans",
-            "zh": "zh-Hans",
-            "zh-tw": "zh-TW", "zh-hk": "zh-Hant", "zh-mo": "zh-Hant"
-          };
-          for (var i = 0; i < browserLangs.length; i++) {
-            var fullCode = browserLangs[i].toLowerCase();
-            if (availableLangs.includes(fullCode)) {
-              dest = fullCode;
-              break;
-            }
-            var mapped = langMap[fullCode];
-            if (mapped && availableLangs.includes(mapped)) {
-              dest = mapped;
-              break;
-            }
-            var prefix = fullCode.substring(0, 2);
-            if (availableLangs.includes(prefix)) {
-              dest = prefix;
-              break;
-            }
+          var mapped = langMap[fullCode];
+          if (mapped && availableLangs.includes(mapped)) {
+            dest = mapped;
+            break;
+          }
+          var prefix = fullCode.substring(0, 2);
+          if (availableLangs.includes(prefix)) {
+            dest = prefix;
+            break;
           }
         }
         if (dest) {
