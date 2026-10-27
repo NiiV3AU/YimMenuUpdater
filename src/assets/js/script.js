@@ -7,6 +7,7 @@
       CONSENT: "ymu_privacy_consent",
       DL_CACHE: "ymu_github_dl_data",
       SCROLL: "ymu_scroll_pos_restore",
+      LANG_PREF: "user_lang_preference",
     },
     CONFIG_GITHUB = { USER: "NiiV3AU", REPO: "YMU", CACHE_MINUTES: 5 },
     CONFIG_SELECTORS = {
@@ -25,6 +26,12 @@
         '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"  class="animation-toggle-icon" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><circle cx="12" cy="12" r="10" /><line x1="10" x2="10" y1="15" y2="9" /><line x1="14" x2="14" y1="15" y2="9" /></svg>',
     };
   document.addEventListener("DOMContentLoaded", () => {
+    try {
+      const currentLang = document.documentElement.lang;
+      if (currentLang) {
+        localStorage.setItem(CONFIG_KEYS.LANG_PREF, currentLang);
+      }
+    } catch (_) {}
     (!(function () {
       const savedPos = sessionStorage.getItem(CONFIG_KEYS.SCROLL);
       savedPos &&
@@ -96,6 +103,11 @@
         $$(".lang-bar-item").forEach((link) => {
           link.addEventListener("click", () => {
             sessionStorage.setItem(CONFIG_KEYS.SCROLL, window.scrollY);
+            try {
+              if (link.dataset.lang) {
+                localStorage.setItem(CONFIG_KEYS.LANG_PREF, link.dataset.lang);
+              }
+            } catch (_) {}
           });
         });
         const menuToggle = $(".mobile-menu-toggle"),
