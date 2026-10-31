@@ -44,6 +44,7 @@ module.exports = async function (eleventyConfig) {
           removeRedundantAttributes: true,
           removeDefaultTypeAttributes: true,
           removeEmptyAttributes: true,
+          sortAttributes: true,
           sortClassNames: true,
         });
       } catch (e) {

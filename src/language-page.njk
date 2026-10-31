@@ -48,6 +48,10 @@ permalink: "/{{ lang.code }}/"
     (function () {
       try {
         document.documentElement.classList.add("js");
+        const bannerId = '{{ release.bannerId }}';
+        if (bannerId && localStorage.getItem(bannerId)) {
+          document.documentElement.classList.add("banner-dismissed");
+        }
         const theme = localStorage.getItem("theme");
         if (theme === "dark") {
           document.documentElement.setAttribute("data-theme", "dark");
@@ -58,7 +62,7 @@ permalink: "/{{ lang.code }}/"
           document.documentElement.setAttribute("data-theme", "dark");
         }
       } catch (e) {
-        console.error("Error applying initial theme:", e);
+        console.error("Error applying initial theme/state:", e);
       }
     })();
   </script>
@@ -376,7 +380,7 @@ permalink: "/{{ lang.code }}/"
           <span class="line line3"></span>
         </button>
         <button type="button" class="lang-toggle" aria-haspopup="true" aria-expanded="false" aria-controls="lang-bar"
-          aria-label="{{ locales[lang.code].lang_toggle_aria_label }}">
+          aria-label="{{ locales[lang.code].lang_toggle_aria_label }} ({{ lang.code | upper }})">
           {{ lang.code | upper }}
         </button>
         <button id="theme-toggle-btn" class="theme-toggle"

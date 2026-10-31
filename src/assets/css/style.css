@@ -107,7 +107,7 @@
   --border-color: #333333;
   --border-2: #555555;
   --text-primary: #e0e0e0;
-  --text-secondary: #8b8b8b;
+  --text-secondary: #9e9e9e;
   --text-muted: #777777;
   --card-shadow: none;
   --glow-color-rgb: 93, 93, 93;
@@ -304,6 +304,7 @@ a {
   color: var(--info-text);
 }
 
+html.banner-dismissed #alert-banner,
 .alert-banner.is-dismissed {
   display: none !important;
 }
